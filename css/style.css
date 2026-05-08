@@ -1,0 +1,285 @@
+/* 
+   沧州恒基泰管道装备有限公司网站样式
+   Author: GitHub Copilot
+   Date: 2025-05-18
+*/
+
+/* 全局变量 */
+:root {
+    --primary-color: #1a5aa3;    
+    --secondary-color: #003366;  
+    --accent-color: #e95504;     
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --grey-color: #6c757d;
+    --border-color: #dee2e6;
+    --box-shadow: 0 8px 20px rgba(0,0,0,0.08);  
+    --transition: all 0.3s ease;
+}
+
+/* 产品卡片样式 */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card .image-container {
+    position: relative;
+    padding-top: 75%; /* 4:3 宽高比 */
+    overflow: hidden;
+}
+
+.product-card .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 标题样式 */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title h2:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.section-title p {
+    color: var(--grey-color);
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* 轮播图 Hero区域 */
+.hero-slider {
+    position: relative;
+    height: 680px;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-item.active {
+    opacity: 1;
+}
+
+.slider-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.slide-content {
+    max-width: 600px;
+}
+
+.slide-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.slide-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* 产品卡片 */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.product-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.product-info p {
+    color: var(--grey-color);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* 新闻列表 */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.news-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* 底部导航 */
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.footer-top {
+    padding: 70px 0 40px;
+}
+
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+.footer-widget h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.footer-widget ul li {
+    margin-bottom: 10px;
+}
+
+.footer-widget ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+}
+
+.footer-widget ul li a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 响应式调整 */
+@media (max-width: 991px) {
+    .section-title h2 {
+        font-size: 30px;
+    }
+    
+    .hero-slider {
+        height: 500px;
+    }
+
+    .slide-content h1 {
+        font-size: 36px;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title h2 {
+        font-size: 26px;
+    }
+    
+    .hero-slider {
+        height: 400px;
+    }
+
+    .slide-content h1 {
+        font-size: 28px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}

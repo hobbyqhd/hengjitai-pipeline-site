@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "category1": "企業ニュース",
+    "category2": "業界動向",
+    "category3": "技術記事",
+    "category4": "メディア掲載"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": []
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": [
+        {
+          "title": "外部亜鉛メッキ内部プラスチック被覆鋼管",
+          "slug": "Galvanized-outer-and-plastic-coated-steel-pipe.html",
+          "date": "2025-08-30",
+          "publishDate": "2025-08-30",
+          "content": "外部亜鉛メッキ内部プラスチック被覆鋼管は鋼の機械的強度とプラスチックの耐食性を組み合わせ、優れた耐食性と耐摩耗性を提供し、給排水、消防、鉱業その他のパイプラインシステムで広く使用されています。",
+          "src": "/images/news/Galvanized-outer-and-plastic-coated-steel-pipe.jpg",
+          "alt": "外部亜鉛メッキ内部プラスチック被覆鋼管",
+          "detailUrl": "Galvanized-outer-and-plastic-coated-steel-pipe.html"
+        },
+        {
+          "title": "熱浸漬プラスチック鋼電線保護管",
+          "slug": "hot-dip-plastic-electric-wire-conduit.html",
+          "date": "2025-08-20",
+          "publishDate": "2025-08-20",
+          "content": "熱浸漬プラスチック鋼電線保護管は流動床浸漬技術を使用し、優れた帯電防止、難燃性、耐食性能を持ち、電力、通信、鉱業その他のパイプラインシステム建設に理想的です。",
+          "src": "/images/news/hot-dip-plastic-electric-wire-conduit.jpg",
+          "alt": "熱浸漬プラスチック鋼電線保護管",
+          "detailUrl": "hot-dip-plastic-electric-wire-conduit.html"
+        },
+        {
+          "title": "カラー二重耐性粉体塗装鋼管",
+          "slug": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html",
+          "date": "2025-08-17",
+          "publishDate": "2025-08-17",
+          "content": "カラー二重耐性粉体塗装鋼管は、耐食性と耐摩耗性を多様な色彩と組み合わせ、市政、工業用途、消防その他の分野に適用されます。安全性、経済性、環境保護を統合した高性能パイプラインです。",
+          "src": "/images/news/Groove-connection-color-double-resistance-powder-coated-steel-pipe.jpg",
+          "alt": "溝型接続カラー二重耐性粉体塗装鋼管",
+          "detailUrl": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html"
+        },
+        {
+          "title": "TPEP防食鋼管",
+          "slug": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html",
+          "date": "2025-08-10",
+          "publishDate": "2025-08-10",
+          "content": "TPEP防食鋼管は3PEとFBEコーティングによる二重保護技術で、石油、ガス、化学物質、水輸送パイプラインに優れた耐食性、高い機械的強度、長い耐用年数を提供します。",
+          "src": "/images/news/1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.jpg",
+          "alt": "TPEP防食鋼管",
+          "detailUrl": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html"
+        },
+        {
+          "title": "DN300溝型白色プラスチック内張り鋼管",
+          "slug": "DN300-grooved-white-plastic.html",
+          "date": "2025-07-31",
+          "publishDate": "2025-07-31",
+          "content": "DN300溝型白色プラスチック内張り鋼管は食品グレードのエポキシコーティングを特徴とし、革命的な設置・保守の優位性により、溶接と比較して工期を65%短縮し、スマート水道事業と緊急給水の理想的な選択肢です。",
+          "src": "/images/news/DN300-grooved-white-plastic.jpg",
+          "alt": "DN300溝型白色プラスチック内張り鋼管",
+          "detailUrl": "DN300-grooved-white-plastic.html"
+        },
+        {
+          "title": "ガス輸送用DN1000 3PE防食鋼管",
+          "slug": "dn1000-gas-3pe.html",
+          "date": "2025-07-24",
+          "publishDate": "2025-07-24",
+          "content": "ガス輸送用DN1000 3PE防食鋼管は、50年の設計寿命を持つ三層複合防食構造を特徴とし、高圧ガス輸送および厳しい環境のパイプラインシステムに適用され、長期安定運用を保証します。",
+          "src": "/images/news/dn1000-gas-3pe.jpg",
+          "alt": "ガス輸送用DN1000 3PE防食鋼管",
+          "detailUrl": "dn1000-gas-3pe.html"
+        },
+        {
+          "title": "DN1200防食鋼管技術の技術解析",
+          "slug": "DN1200-anti-corrosion.html",
+          "date": "2025-07-17",
+          "publishDate": "2025-07-17",
+          "content": "河北恒源のDN1200防食鋼管の技術解析は、先進的なコーティング技術、精密な端末処理、厳格な品質管理手法を含み、大規模工業パイプラインに耐久性のある防食保護を提供します。",
+          "src": "/images/news/DN1200-tech.jpg",
+          "alt": "DN1200防食鋼管技術の技術解析",
+          "detailUrl": "DN1200-anti-corrosion.html"
+        },
+        {
+          "title": "鉱山用DN600溝型継手プラスチック内張り換気鋼管",
+          "slug": "DN600-plastic-coating-formining.html",
+          "date": "2025-07-04",
+          "publishDate": "2025-07-04",
+          "content": "河北恒源実業有限公司のDN600鉱山用プラスチック内張り換気鋼管は、鋼プラスチック複合構造を採用し、優れた安全防腐性能と流体力学的優位性を備えており、現代的な鉱山事業に最適な配管ソリューションです。",
+          "src": "/images/news/dn600-tech.jpg",
+          "alt": "鉱山用DN600溝型継手プラスチック内張り換気鋼管",
+          "detailUrl": "DN600-plastic-coating-formining.html"
+        },
+        {
+          "title": "TPEP防食鋼管 - 高性能パイプライン・ソリューション",
+          "slug": "DN1200-TPEP-anti-corrosion-steel-pipe.html",
+          "date": "2025-06-26",
+          "publishDate": "2025-06-26",
+          "content": "TPEP防食鋼管は、外壁三層ポリエチレン（3PE）と内壁溶融結合エポキシ樹脂（FBE）の複合工法により、防食性能の全面的な向上を実現しています。従来の単層防食管材と比較して、防食寿命は3～5倍向上し、高塩分・高湿度などの厳しい環境下で卓越した性能を発揮します。第四世代熱溶融結合巻付け工法を採用し、鋼プラスチック合金層を形成し、耐衝撃性と化学的不活性を兼ね備えています。南水北調中線工程、山東臨沂双堠水库送水工程などの重要プロジェクトで成功裏に適用され、50kmの配管で漏水ゼロを実現し、運用保守コストを30％削減しました。市政給排水、長距離送水、工業特殊シーンに適用し、設計寿命50年を誇ります。",
+          "src": "/images/hp-products/%E5%A4%A7%E5%8F%A3%E5%BE%84%E5%86%85%E7%8E%AF%E6%B0%A7%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1/(1420%C3%9712%E7%B1%B3)%E5%86%85%E7%8E%AF%E6%B0%A7%E7%B2%89%E6%9C%AB%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1.jpg",
+          "alt": "TPEP防食鋼管 - 大口径内エポキシ粉末コーティング鋼管",
+          "detailUrl": "DN1200-TPEP-anti-corrosion-steel-pipe.html"
+        },
+        {
+          "title": "DN1000 高性能樹脂コーティング複合鋼管の技術解説",
+          "slug": "dn1000-coated-steel-pipe-tech.html",
+          "date": "2025-06-17",
+          "publishDate": "2025-06-17",
+          "categoryKey": "category3",
+          "category": "技術記事",
+          "content": "<p>DN1000樹脂コーティング鋼管は、大規模な都市インフラおよび工業用水供給システムの主要なパイプラインとして、鋼材の機械的強度とプラスチックコーティングの優れた防食性能を完璧に融合させています。革新的な二重コーティング保護システムを採用しており、内壁の平滑度は従来の鋼管に比べて40%以上向上し、輸送効率が15%～20%向上しています。</p><p>本製品は、内面に食品グレードのエポキシ樹脂コーティング（厚さ≥0.35mm）を採用し、中国国家規格GB/T 17219の飲料水衛生基準に完全に準拠しています。外面には高密度ポリエチレン（PE）またはエポキシ粉体（厚さ≥0.5mm）を使用し、優れた耐UV性、耐薬品性を備え、-40℃～80℃の温度差に対応可能です。</p>",
+          "src": "/images/news/dn1000-tech.jpg",
+          "alt": "DN1000樹脂コーティング鋼管の技術特性紹介",
+          "detailUrl": "dn1000-coated-steel-pipe-tech.html"
+        }
+      ]
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

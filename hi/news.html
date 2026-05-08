@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<!-- 
+注意：新闻系统数据结构说明
+1. 新闻数据从file-list.json中加载，结构为：
+   - categories: 分类名称映射
+   - files: 分类列表，每个分类包含category字段和results数组
+   
+2. 重要：categoryKey来源
+   - 新闻项(newsItem)不包含categoryKey字段
+   - categoryKey应该从所属分类对象(fileEntry.category)获取
+   - 所有语言版本保持一致，不再单独设定categoryKey字段
+   
+3. 详情页链接生成
+   - 使用格式：news/published/{categoryKey}/{newsItem.slug}
+   - categoryKey来自fileEntry.category而非newsItem
+-->
+<html lang="hi" >
+<head>
+    <meta charset="UTF-8">
+    <style>
+        [v-cloak] { display: none !important; }
+    </style>
+    <!-- 基本元数据 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="application-name" content="हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड">
+    <title>समाचार - हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड</title>
+    <meta name="description" content="हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड से नवीनतम समाचार, उद्योग अपडेट और प्रदर्शनी जानकारी।">
+    <meta name="keywords" content="कंपनी समाचार, उद्योग समाचार, प्रदर्शनी जानकारी">
+    <meta name="author" content="हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="hi">
+    <link rel="canonical" href="https://hengjitaipipeline.com/hi/news.html">
+    
+    <!-- OpenGraph 标签 -->
+    <meta property="og:title" content="समाचार">
+    <meta property="og:description" content="हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड से नवीनतम समाचार, उद्योग अपडेट और प्रदर्शनी जानकारी।">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:url" content="https://hengjitaipipeline.com/hi/news.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="समाचार">
+    <meta name="twitter:description" content="हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड से नवीनतम समाचार, उद्योग अपडेट और प्रदर्शनी जानकारी।">
+    <meta name="twitter:image" content="/images/logo.png">
+    <meta name="twitter:site" content="@hengjitaipipeline">
+    
+    <!-- 多语言支持 -->
+    <link rel="alternate" hreflang="zh-CN" href="https://hengjitaipipeline.com/cn/news.html" />
+<link rel="alternate" hreflang="x-default" href="https://hengjitaipipeline.com/en/news.html" />
+<link rel="alternate" hreflang="ja" href="https://hengjitaipipeline.com/jp/news.html" />
+<link rel="alternate" hreflang="ru" href="https://hengjitaipipeline.com/ru/news.html" />
+<link rel="alternate" hreflang="ar" href="https://hengjitaipipeline.com/ar/news.html" />
+<link rel="alternate" hreflang="es" href="https://hengjitaipipeline.com/es/news.html" />
+<link rel="alternate" hreflang="fr" href="https://hengjitaipipeline.com/fr/news.html" />
+<link rel="alternate" hreflang="pt" href="https://hengjitaipipeline.com/pt/news.html" />
+<link rel="alternate" hreflang="hi" href="https://hengjitaipipeline.com/hi/news.html" />
+<link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/news.html" />
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड",
+  "url": "https://hengjitaipipeline.com",
+  "logo": "/images/logo.png"
+}</script>
+    
+    <!-- 样式表 -->
+    <link rel="stylesheet" href="../css/combined.min.css">
+    <!-- RTL CSS 根据需要加载 -->
+    <!-- 非RTL语言不需要加载RTL样式 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body class="bg-white" >
+    <!-- 浮动导航菜单 -->
+    <div id="floating-nav-container"></div>
+
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center h-12" title="हेबेई कांगझोउ हेंगजिताई कं., लिमिटेड">
+                    <img src="../images/logo.jpg" alt="हेंगजिताई" class="h-full">
+                </a>
+                
+                <!-- 导航菜单 -->
+                
+<nav class="hidden lg:flex space-x-8">
+    <div class="nav-item">
+        <a href="index.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="होम">
+            होम
+        </a>
+    </div>
+    <div class="nav-item">
+        <a href="about.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="हमारे बारे में">
+            हमारे बारे में
+        </a>
+    </div>
+    <div class="nav-item dropdown relative group">
+        <a href="products.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="उत्पाद">
+            उत्पाद <i class="fas fa-chevron-down text-xs ml-1"></i>
+        </a>
+        <div class="dropdown-menu hidden group-hover:block absolute bg-white min-w-[200px] shadow-lg rounded-lg mt-1 py-2 z-50 left-0">
+            <a href="products.html?search=%E0%A4%95%E0%A5%8B%E0%A4%9F%E0%A4%BF%E0%A4%82%E0%A4%97" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                प्लास्टिक लेपित स्टील पाइप
+            </a>
+            <a href="products.html?search=%E0%A4%9C%E0%A4%82%E0%A4%97" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                जंग रोधी स्टील पाइप
+            </a>
+            <a href="products.html?search=%E0%A4%87%E0%A4%B8%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A4" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                स्टील पाइप
+            </a>
+            <a href="products.html?search=%E0%A4%AB%E0%A4%BF%E0%A4%9F%E0%A4%BF%E0%A4%82%E0%A4%97" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                पाइप फिटिंग्स
+            </a>
+        </div>
+    </div>
+    <div class="nav-item">
+        <a href="quality.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="गुणवत्ता नियंत्रण">
+            गुणवत्ता नियंत्रण
+        </a>
+    </div>
+    
+    <div class="nav-item">
+        <a href="cases.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="केस स्टडीज">
+            केस स्टडीज
+        </a>
+    </div>
+    
+    <div class="nav-item">
+        <a href="news.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="समाचार">
+            समाचार
+        </a>
+    </div>
+    <div class="nav-item">
+        <a href="contact.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="संपर्क करें">
+            संपर्क करें
+        </a>
+    </div>
+</nav>
+
+                <div class="flex items-center space-x-6">
+                    <!-- 语言选择菜单 -->
+                    
+<div id="language-dropdown" class="language-dropdown relative">
+    <button id="language-button" type="button" class="flex items-center space-x-2 text-gray-700 hover:text-primary">
+        <span>हिन्दी</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+    </button>
+    <div id="language-menu" class="hidden absolute right-0 w-48 mt-2 py-2 bg-white rounded-lg shadow-lg z-50">
+        <a href="../cn/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a><a href="../en/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a><a href="../jp/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a><a href="../ru/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a><a href="../ar/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a><a href="../es/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a><a href="../fr/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a><a href="../pt/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a><a href="../de/news.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section class="page-banner relative h-[300px]">
+            <div class="absolute inset-0">
+                <img src="../images/banner/news-banner.jpg" alt="समाचार" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute inset-0 bg-primary/50">
+                <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+                    <h1 class="text-4xl font-bold text-white mb-4">समाचार</h1>
+                    <div class="text-white">
+                        <a href="index.html" class="hover:text-gray-200" title="होम पर वापस जाएं">होम</a> / समाचार
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-white" id="news-categories">
+            <div id="app" class="container mx-auto px-4" v-cloak>
+                <div class="flex flex-wrap items-center justify-center gap-4 mb-16">
+                    <button 
+                        :class="{
+                            'px-6 py-3 bg-primary text-white rounded-full hover:bg-opacity-90 transition-all': activeButton === 'all',
+                            'px-6 py-3 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-all': activeButton !== 'all'
+                        }" 
+                        :aria-label="buttonLabels.allNews"
+                        @click="filterByCategory('all')"
+                    >
+                        सभी समाचार
+                    </button>
+                    <button 
+                        v-for="(name, key) in categoryMap" 
+                        :key="key"
+                        :class="{
+                            'px-6 py-3 bg-primary text-white rounded-full hover:bg-opacity-90 transition-all': activeButton === key,
+                            'px-6 py-3 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition-all': activeButton !== key
+                        }" 
+                        :aria-label="buttonLabels.viewCategory.replace('{category}', name)"
+                        @click="filterByCategory(key)"
+                    >
+                        {{ name }}
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- 左侧新闻列表 -->
+                    <div class="lg:col-span-2">
+                        <div v-if="filteredNewsList.length === 0 && activeSearchKeyword" class="text-center py-8 text-gray-500">
+                            {{ activeSearchKeyword }} के लिए कोई परिणाम नहीं मिला।
+                        </div>
+                        <div v-else-if="filteredNewsList.length === 0" class="text-center py-8 text-gray-500">
+                            इस श्रेणी में कोई समाचार नहीं है।
+                        </div>
+                        <div v-for="(news, index) in filteredNewsList" :key="index" class="news-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 mb-8 flex flex-col md:flex-row">
+                            <div class="md:w-1/3 h-[240px] md:h-auto overflow-hidden">
+                                <img :src="news.src" :alt="news.alt" class="w-full h-full object-cover">
+                            </div>
+                            <div class="md:w-2/3 p-6">
+                                <div class="flex items-center gap-4 text-gray-500 mb-4">
+                                    <span><i class="far fa-calendar-alt mr-2"></i>{{ news.date }}</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">{{ news.category }}</span>
+                                </div>
+                                <h2 class="text-xl font-semibold text-gray-900 mb-3">
+                                    {{ news.title }}
+                                </h2>
+                                <p class="text-gray-600 mb-4 line-clamp-3" v-if="!news.content.includes('<')">
+                                    {{ news.content }}
+                                </p>
+                                <p class="text-gray-600 mb-4 line-clamp-3" v-else v-html="stripHtml(news.content)"></p>
+                                <a :href="news.detailUrl" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium" :title="buttonLabels.readMore.replace('{title}', news.title)">और पढ़ें <i class="fas fa-external-link-alt ml-1"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- 分页 -->
+                        <div class="flex justify-center items-center gap-2 mt-12">
+                            <!-- 上一页按钮 -->
+                            <button 
+                                :class="{
+                                    'w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-500 hover:border-primary hover:text-primary': true,
+                                    'opacity-50 cursor-not-allowed': this.currentPage === 1
+                                }" 
+                                @click="changePage(currentPage - 1)"
+                                :disabled="this.currentPage === 1"
+                                :aria-label="buttonLabels.prevPage"
+                            >
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <!-- 动态生成页码按钮 -->
+                            <button 
+                                v-for="page in totalPages" 
+                                :key="page"
+                                :class="{
+                                    'w-10 h-10 flex items-center justify-center rounded-full': true,
+                                    'bg-primary text-white': page === currentPage,
+                                    'border border-gray-300 text-gray-700 hover:border-primary hover:text-primary': page !== currentPage
+                                }" 
+                                @click="changePage(page)"
+                                :aria-label="buttonLabels.pageNumber.replace('{number}', page)"
+                            >
+                                {{ page }}
+                            </button>
+                            <!-- 下一页按钮 -->
+                            <button 
+                                :class="{
+                                    'w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-500 hover:border-primary hover:text-primary': true,
+                                    'opacity-50 cursor-not-allowed': this.currentPage === totalPages
+                                }" 
+                                @click="changePage(currentPage + 1)"
+                                :disabled="this.currentPage === totalPages"
+                                :aria-label="buttonLabels.nextPage"
+                            >
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 右侧边栏 -->
+                    <div class="lg:col-span-1">
+                        <!-- 搜索框 -->
+                        <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">खोज</h3>
+                            <form action="#" method="get" class="flex" @submit.prevent="performSearch">
+                                <input 
+                                    type="text" 
+                                    :placeholder="buttonLabels.searchPlaceholder" 
+                                    class="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                    v-model="searchKeyword"
+                                >
+                                <button type="submit" class="bg-primary text-white px-4 rounded-r-lg hover:bg-opacity-90" :aria-label="buttonLabels.search">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- 新闻分类 -->
+                        <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">समाचार श्रेणियाँ</h3>
+                            <ul class="space-y-3">
+                                <li v-for="(name, key) in categoryMap" :key="key" class="flex items-center justify-between">
+                                    <a href="#" class="text-gray-700 hover:text-primary" :title="buttonLabels.viewAllCategory.replace('{category}', name)" @click.prevent="filterByCategory(key)">{{ name }}</a>
+                                    <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">{{ processedNewsList.filter(news => news.categoryKey === key).length }}</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 热门新闻 -->
+                        <div class="bg-white p-6 rounded-xl shadow-md mb-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">लोकप्रिय समाचार</h3>
+                            <div class="space-y-4">
+                                <div v-for="(hotNews, index) in hotNewsList" :key="index" class="flex gap-4">
+                                    <div class="w-20 h-20 flex-shrink-0">
+                                        <img :src="hotNews.src" class="w-full h-full object-cover rounded" :alt="hotNews.alt || hotNews.title" :title="hotNews.title">
+                                    </div>
+                                    <div>
+                                        <h2 class="text-sm font-medium line-clamp-2 mb-1">
+                                            <a :href="hotNews.link" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary" :title="hotNews.title">
+                                                {{ hotNews.title }}
+                                            </a>
+                                        </h2>
+                                        <p class="text-gray-500 text-xs">{{ hotNews.date }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 标签云 -->
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">लोकप्रिय टैग</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <a 
+                                    v-for="cat in uniqueCategories" 
+                                    :key="cat.key"
+                                    href="#" 
+                                    @click.prevent="filterByCategory(cat.key)"
+                                    class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white transition-all" 
+                                    :title="buttonLabels.viewTaggedNews.replace('{category}', cat.name)"
+                                >
+                                    {{ cat.name }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">हमारे बारे में</h3>
+                <p class="text-gray-400 mb-4">कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड, 2003 में स्थापित, एक राष्ट्रीय उच्च तकनीक उद्यम है जो प्लास्टिक लेपित स्टील पाइप और पाइपलाइन जंग रोधी समाधानों में विशेषज्ञता रखता है।</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">त्वरित लिंक</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-primary">होम</a></li>
+                    <li><a href="about.html" class="text-gray-400 hover:text-primary">हमारे बारे में</a></li>
+                    <li><a href="products.html" class="text-gray-400 hover:text-primary">उत्पाद</a></li>
+                    <li><a href="quality.html" class="text-gray-400 hover:text-primary">गुणवत्ता नियंत्रण</a></li>
+                    <li><a href="cases.html" class="text-gray-400 hover:text-primary">केस स्टडीज</a></li>
+                    <li><a href="news.html" class="text-gray-400 hover:text-primary">समाचार</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-primary">संपर्क करें</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">उत्पाद</h3>
+                <ul class="space-y-2">
+                    <li><a href="products.html?search=%E0%A4%95%E0%A5%8B%E0%A4%9F%E0%A4%BF%E0%A4%82%E0%A4%97" class="text-gray-400 hover:text-primary">प्लास्टिक लेपित स्टील पाइप</a></li>
+                    <li><a href="products.html?search=%E0%A4%9C%E0%A4%82%E0%A4%97" class="text-gray-400 hover:text-primary">जंग रोधी स्टील पाइप</a></li>
+                    <li><a href="products.html?search=%E0%A4%87%E0%A4%B8%E0%A5%8D%E0%A4%AA%E0%A4%BE%E0%A4%A4" class="text-gray-400 hover:text-primary">स्टील पाइप</a></li>
+                    <li><a href="products.html?search=%E0%A4%AB%E0%A4%BF%E0%A4%9F%E0%A4%BF%E0%A4%82%E0%A4%97" class="text-gray-400 hover:text-primary">पाइप फिटिंग्स</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">संपर्क</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                        <span>中国河北省沧州市盐山县边务镇李郭庄村口南100米</span>
+                    </li>
+                    <li>
+                        <a href="mailto:sales@hypipelines.com" class="flex items-center hover:text-primary">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>sales@hypipelines.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+86 189-3171-0082" class="flex items-center hover:text-primary">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>+86 189-3171-0082</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-4 text-center">
+            <p class="text-gray-400">© 2026 कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड। सर्वाधिकार सुरक्षित</p>
+        </div>
+    </div>
+</footer>
+
+    
+
+<div id="back-to-top" class="fixed bottom-8 right-8 hidden z-50">
+    <a href="#" class="bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark">
+        <i class="fas fa-arrow-up"></i>
+        <span class="sr-only">वापस शीर्ष पर</span>
+    </a>
+</div>
+
+    <!-- JavaScript 文件 -->
+    <script src="../js/main.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/floating-nav.js"></script>
+    <script src="../js/floating-nav-config.js"></script>
+    <script src="../js/news.js"></script>
+    <script>
+        const { createApp } = Vue;
+        
+        // 语言特有的标签和消息
+        const translations = {
+            allNews: "सभी समाचार",
+            noSearchResults: "{{ activeSearchKeyword }} के लिए कोई परिणाम नहीं मिला।",
+            noCategoryNews: "इस श्रेणी में कोई समाचार नहीं है।",
+            readMore: "और पढ़ें",
+            search: "खोज",
+            newsCategories: "समाचार श्रेणियाँ",
+            hotNews: "लोकप्रिय समाचार",
+            hotTags: "लोकप्रिय टैग",
+            buttonLabels: {
+                allNews: "सभी समाचार देखें",
+                viewCategory: "{category} देखें",
+                readMore: "{title} के बारे में अधिक पढ़ें",
+                prevPage: "पिछला पृष्ठ",
+                nextPage: "अगला पृष्ठ",
+                pageNumber: "पृष्ठ {number}",
+                search: "खोज",
+                searchPlaceholder: "कीवर्ड दर्ज करें...",
+                viewAllCategory: "सभी {category} देखें",
+                viewTaggedNews: "{category} के बारे में समाचार देखें"
+            }
+        };
+    
+        createApp({
+            data() {
+                return {
+                    newsList: [],
+                    hotNewsList: [],
+                    currentCategory: 'all',
+                    activeButton: 'all',
+                    searchKeyword: '',
+                    activeSearchKeyword: '',
+                    itemsPerPage: 5, 
+                    currentPage: 1,
+                    fileList: [], // 存储已发布的新闻列表数据
+                    categoryMap: {}, // 存储新闻分类映射关系
+                    buttonLabels: translations.buttonLabels,
+                    lang: "hi"
+                }
+            },
+            computed: {                    processedNewsList() {
+                    // 处理新闻列表，过滤未发布的新闻
+                    if (!this.fileList || Object.keys(this.categoryMap).length === 0) { // 确保 categoryMap 也已加载
+                        console.log('文件列表或分类映射尚未加载');
+                        return [];
+                    }
+                    let allNews = [];
+                    // 获取当前日期 (YYYY-MM-DD)
+                    const today = new Date().toISOString().split('T')[0];
+                    
+                    this.fileList.forEach(fileEntry => {
+                        // 获取当前分类的category
+                        const currentCategory = fileEntry.category;
+                        console.log(`处理分类: ${currentCategory}`);
+                        
+                        if (fileEntry.results && Array.isArray(fileEntry.results)) {
+                            fileEntry.results.forEach(newsItem => {
+                                // 仅添加已发布的新闻（publishDate 小于或等于今天）
+                                if (!newsItem.publishDate || newsItem.publishDate <= today) {
+                                    // detailUrl可能已经包含完整路径，如果没有则构建
+                                    let detailUrl = newsItem.detailUrl;
+                                    if (!detailUrl.startsWith('http')) {
+                                        // 如果是相对路径但不完整，添加完整路径
+                                        if (!detailUrl.startsWith('news/')) {
+                                            // 如果只是简单文件名，添加完整路径
+                                            detailUrl = `news/published/${currentCategory}/${newsItem.slug}`;
+                                        } else if (!detailUrl.includes('published/') && detailUrl.startsWith('news/')) {
+                                            // 如果已经有 news/ 前缀但缺少 published/ 部分
+                                            const parts = detailUrl.split('/');
+                                            parts.splice(1, 0, 'published');
+                                            detailUrl = parts.join('/');
+                                        }
+                                    }
+                                    
+                                    // 图片路径处理，确保使用正确的路径前缀
+                                    let imgSrc = newsItem.src;
+                                    if (!imgSrc.startsWith('http') && !imgSrc.startsWith('/')) {
+                                        imgSrc = `/${imgSrc}`;
+                                    }
+                                    
+                                    // 通过category从categoryMap获取分类名称
+                                    const categoryName = this.categoryMap[currentCategory] || currentCategory; // 如果找不到映射，回退到显示key
+
+                                    const newsData = {
+                                        title: newsItem.title,
+                                        slug: newsItem.slug,
+                                        date: newsItem.date,
+                                        publishDate: newsItem.publishDate,
+                                        categoryKey: currentCategory, // 使用fileEntry的category
+                                        category: categoryName, // 使用查找到的categoryName
+                                        content: newsItem.content,
+                                        src: imgSrc,
+                                        alt: newsItem.alt,
+                                        detailUrl: detailUrl
+                                    };
+                                    console.log(`添加新闻: ${newsData.title}, 分类: ${newsData.category}`);
+                                    allNews.push(newsData);
+                                }
+                            });
+                        }
+                    });
+                    // 按日期排序，最新的在前
+                    return allNews.sort((a, b) => {
+                        // 使用 date 字段，如果不存在则使用 publishDate
+                        const dateA = a.date || a.publishDate;
+                        const dateB = b.date || b.publishDate;
+                        
+                        // 确保日期格式正确，避免无效日期比较
+                        try {
+                            return new Date(dateB) - new Date(dateA);
+                        } catch (e) {
+                            // 如果日期解析出错，尝试按字符串比较
+                            return dateB > dateA ? 1 : (dateB < dateA ? -1 : 0);
+                        }
+                    });
+                },
+                filteredNewsList() {
+                    let filtered = this.processedNewsList;
+    
+                    // 根据分类过滤 (使用 categoryKey)
+                    if (this.currentCategory !== 'all') {
+                        filtered = filtered.filter(news => news.categoryKey === this.currentCategory);
+                    }
+    
+                    // 根据实际搜索关键词过滤
+                    if (this.activeSearchKeyword) {
+                        const keyword = this.activeSearchKeyword.toLowerCase();
+                        filtered = filtered.filter(news => 
+                            news.title.toLowerCase().includes(keyword) || 
+                            this.stripHtml(news.content).toLowerCase().includes(keyword)
+                        );
+                    }
+                    // 计算分页
+                    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+                    const endIndex = startIndex + this.itemsPerPage;
+                    return filtered.slice(startIndex, endIndex);
+                },
+                uniqueCategories() {
+                    // 从 categoryMap 生成 uniqueCategories，用于标签云等
+                    return Object.entries(this.categoryMap).map(([key, name]) => ({ key, name }));
+                },
+                    // 总页数
+                totalPages() {
+                    // 使用 processedNewsList 作为基础，因为它已经进行了 publishDate 过滤
+                    let filtered = this.processedNewsList;
+    
+                    // 根据分类过滤
+                    if (this.currentCategory !== 'all') {
+                        filtered = filtered.filter(news => news.categoryKey === this.currentCategory);
+                    }
+    
+                    // 根据实际搜索关键词过滤
+                    if (this.activeSearchKeyword) {
+                        const keyword = this.activeSearchKeyword.toLowerCase();
+                        filtered = filtered.filter(news => 
+                            news.title.toLowerCase().includes(keyword) || 
+                            this.stripHtml(news.content).toLowerCase().includes(keyword)
+                        );
+                    }
+    
+                    return Math.ceil(filtered.length / this.itemsPerPage);
+                }
+            },
+            methods: {
+                filterByCategory(categoryKey) { // 参数改为 categoryKey
+                    this.currentCategory = categoryKey;
+                    this.activeButton = categoryKey; 
+                    this.currentPage = 1; // 切换分类时回到第一页
+                },
+                // 新增搜索方法
+                performSearch() {
+                    this.activeSearchKeyword = this.searchKeyword; 
+                },
+                // 切换页码
+                changePage(page) {
+                    if (page >= 1 && page <= this.totalPages) {
+                        this.currentPage = page;
+                    }
+                },
+                // 去除HTML标签，只保留文本内容
+                stripHtml(html) {
+                    // 创建一个临时div用于解析HTML
+                    const temp = document.createElement('div');
+                    temp.innerHTML = html;
+                    return temp.textContent || temp.innerText || '';
+                }
+            },                mounted() {
+                    // 重置状态
+                    this.currentCategory = 'all';
+                    this.activeButton = 'all';
+                    this.searchKeyword = '';
+                    this.activeSearchKeyword = '';
+                    this.currentPage = 1;
+                    
+                    try {
+                        // 获取已发布新闻列表
+                        fetch(`/hi/news/file-list.json`)
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error(`HTTP error! status: ${response.status}`);
+                                }
+                                return response.json();
+                            })
+                            .then(data => {
+                                console.log("加载新闻数据:", data);
+                                if (data && data.categories && data.files) {
+                                    // 清理旧数据
+                                    this.categoryMap = {};
+                                    this.fileList = [];
+                                    
+                                    // 设置新数据
+                                    this.categoryMap = data.categories;
+                                    this.fileList = data.files;
+                                    console.log("分类映射:", this.categoryMap);
+                                    console.log("加载的文件列表:", this.fileList);
+                                    
+                                    // 生成处理后的新闻列表
+                                    this.$nextTick(() => {
+                                        const processedNews = this.processedNewsList;
+                                        console.log("处理后的新闻列表:", processedNews);
+                                        
+                                        // 从处理后的新闻中选取最新的5篇作为热门新闻
+                                        if (processedNews.length > 0) {
+                                            const recentNews = processedNews.slice(0, 5);
+                                            this.hotNewsList = recentNews.map(news => ({
+                                                title: news.title,
+                                                src: news.src,
+                                                alt: news.alt,
+                                                date: news.date,
+                                                link: news.detailUrl
+                                            }));
+                                            console.log("热门新闻列表:", this.hotNewsList);
+                                        }
+                                    });
+                                } else {
+                                    console.error('数据格式不正确。需要包含categories和files:', data);
+                                    // 显示错误状态
+                                    this.fileList = [];
+                                    this.categoryMap = {};
+                            }
+                        })
+                       .catch(error => {
+                            console.error('获取文件列表或分类失败:', error);
+                        });
+                } catch (error) {
+                    console.error('加载新闻数据时出错:', error);
+                }
+            }
+        }).mount('#app');
+    </script>
+    <!-- 浮动消息按钮脚本 -->
+    <script src="../js/floating-message-button.js"></script>
+</body>
+</html>

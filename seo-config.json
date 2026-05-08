@@ -1,0 +1,111 @@
+{
+  "seo": {
+    "baseUrl": "https://hengjitaipipeline.com",
+    "defaultLanguage": "en",
+    "languages": [
+      {
+        "code": "cn",
+        "name": "中文",
+        "hreflang": "zh-CN",
+        "dir": "ltr"
+      },
+      {
+        "code": "en",
+        "name": "English",
+        "hreflang": "en",
+        "dir": "ltr"
+      },
+      {
+        "code": "jp",
+        "name": "日本語",
+        "hreflang": "ja",
+        "dir": "ltr"
+      },
+      {
+        "code": "de",
+        "name": "Deutsch",
+        "hreflang": "de",
+        "dir": "ltr"
+      },
+      {
+        "code": "es",
+        "name": "Español",
+        "hreflang": "es",
+        "dir": "ltr"
+      },
+      {
+        "code": "fr",
+        "name": "Français",
+        "hreflang": "fr",
+        "dir": "ltr"
+      },
+      {
+        "code": "pt",
+        "name": "Português",
+        "hreflang": "pt",
+        "dir": "ltr"
+      },
+      {
+        "code": "ru",
+        "name": "Русский",
+        "hreflang": "ru",
+        "dir": "ltr"
+      },
+      {
+        "code": "ar",
+        "name": "العربية",
+        "hreflang": "ar",
+        "dir": "rtl"
+      },
+      {
+        "code": "hi",
+        "name": "हिन्दी",
+        "hreflang": "hi",
+        "dir": "ltr"
+      }
+    ],
+    "organization": {
+      "name": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd.",
+      "alternateName": "沧州恒基泰管道装备有限公司",
+      "logo": "/images/logo.png",
+      "phone": "+86 189-3171-0082",
+      "address": {
+        "country": "CN",
+        "region": "Hebei",
+        "city": "Cangzhou",
+        "street": "中国河北省沧州市盐山县边务镇李郭庄村口南100米"
+      },
+      "socialLinks": [
+        "https://www.linkedin.com/company/hengjitai-pipeline",
+        "https://www.facebook.com/hengjitaipipeline"
+      ]
+    },
+    "pages": {
+      "priority": {
+        "index.html": "1.0",
+        "products.html": "0.9",
+        "about.html": "0.8",
+        "cases.html": "0.7",
+        "quality.html": "0.7",
+        "news.html": "0.6",
+        "contact.html": "0.5"
+      },
+      "changefreq": {
+        "index.html": "weekly",
+        "products.html": "monthly",
+        "about.html": "monthly",
+        "cases.html": "monthly",
+        "quality.html": "monthly",
+        "news.html": "weekly",
+        "contact.html": "yearly"
+      }
+    },
+    "optimization": {
+      "minifyHtml": true,
+      "compressImages": true,
+      "generateWebP": true,
+      "lazyLoadImages": true,
+      "enableCaching": true
+    }
+  }
+}

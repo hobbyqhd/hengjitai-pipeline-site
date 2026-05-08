@@ -1,0 +1,56 @@
+/* 修复合作客户部分可见性问题 */
+#clients {
+    position: relative;
+    z-index: 10;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 40px;
+}
+
+#clients .container {
+    position: relative;
+    z-index: 11;
+}
+
+#clients img {
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#clients .bg-white {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    visibility: visible !important;
+    border: 1px solid #eaeaea;
+}
+
+/* 确保模态框不会被其他内容遮挡 - 增加z-index优先级 */
+.case-modal-container {
+    z-index: 1050 !important;
+    position: relative; /* 确保z-index生效 */
+}
+
+/* 当模态框打开时，确保合作客户部分不干扰弹窗交互 */
+body.modal-open #clients {
+    position: static;
+}
+
+/* 确保页脚不会覆盖任何内容 */
+footer {
+    position: relative;
+    z-index: 5;
+    margin-top: 20px;
+}
+
+/* 模态框背景遮罩层 - 确保覆盖所有内容 */
+.modal-overlay {
+    z-index: 1040 !important;
+}
+
+/* 模态框容器 - 确保在最上层 */
+.fixed.inset-0.z-50 {
+    z-index: 1060 !important;
+}

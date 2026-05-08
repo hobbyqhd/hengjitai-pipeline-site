@@ -1,0 +1,27 @@
+{
+  "categories": {
+    "category1": "公司新闻",
+    "category2": "行业动态",
+    "category3": "技术文章",
+    "category4": "媒体报道"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": [
+        {
+          "title": "2020年回顾与展望",
+          "slug": "2020-review.html",
+          "date": "2020-12-31",
+          "publishDate": "2020-12-31",
+          "categoryKey": "category1",
+          "category": "公司新闻",
+          "content": "回顾2020年的主要成就和对未来的展望...",
+          "src": "/images/news/assets/published/2020-review/main.jpg",
+          "alt": "2020年回顾",
+          "detailUrl": "news/category1/2020-review.html"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-05-07T13:41:37.984Z",
+  "totalPages": 70,
+  "pagesWithIssues": 0,
+  "pagesWithWarnings": 41,
+  "summaryByLang": {
+    "cn": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 0
+    },
+    "en": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 15
+    },
+    "jp": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 2
+    },
+    "de": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 8
+    },
+    "es": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 8
+    },
+    "fr": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 7
+    },
+    "pt": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 6
+    },
+    "ru": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 4
+    },
+    "ar": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 3
+    },
+    "hi": {
+      "pages": 7,
+      "issues": 0,
+      "warnings": 5
+    }
+  }
+}

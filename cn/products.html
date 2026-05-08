@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        [x-cloak] { display: none !important; }
+        [v-cloak] { display: none !important; }
+        .product-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .category-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .product-image {
+            cursor: zoom-in !important;
+            transition: all 0.3s ease;
+        }
+        .product-image:hover {
+            transform: scale(1.03);
+            opacity: 0.9;
+        }
+        #image-viewer-overlay img {
+            cursor: zoom-out !important;
+        }
+        #image-viewer-overlay {
+            cursor: zoom-out !important;
+        }
+        #image-viewer-overlay #close-viewer {
+            cursor: pointer !important;
+        }
+        
+        /* 图片查看器提示动画 */
+        .viewer-hint {
+            animation: fadeInOut 4s ease-in-out forwards;
+        }
+        
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            15% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            85% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+        }
+        
+        /* 移动端优化 */
+        @media (max-width: 768px) {
+            .viewer-hint {
+                font-size: 0.75rem;
+                padding: 0.5rem;
+                top: 1rem !important;
+                left: 1rem !important;
+            }
+            
+            .viewer-hint svg {
+                width: 0.875rem;
+                height: 0.875rem;
+            }
+            
+            /* 移动端模态框优化 */
+            #product-modal .relative {
+                width: 95% !important;
+                max-width: none !important;
+                max-height: 90vh !important;
+                margin: 1rem;
+            }
+            
+            #product-modal .modal-inner {
+                flex-direction: column !important;
+            }
+            
+            #product-modal .modal-image-section,
+            #product-modal .modal-text-section {
+                width: 100% !important;
+                padding: 1rem !important;
+            }
+            
+            #product-modal .modal-image {
+                max-height: 200px !important;
+            }
+        }
+        
+        /* 产品详情模态框优化 - 消除模糊 */
+        #product-modal {
+            will-change: auto;
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translateZ(0);
+        }
+        
+        #product-modal .relative {
+            transform: translateZ(0);
+            will-change: auto;
+            backface-visibility: hidden;
+        }
+        
+        /* 确保模态框内容清晰 */
+        #product-modal * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            backface-visibility: hidden;
+        }
+        
+        /* 禁用模态框的所有过渡效果 */
+        #product-modal,
+        #product-modal * {
+            transition: none !important;
+            animation: none !important;
+        }
+        
+        /* 专门优化中间内容区域 - 消除模糊 */
+        #product-modal .overflow-y-auto {
+            transform: translate3d(0, 0, 0);
+            -webkit-transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            perspective: 1000px;
+            -webkit-perspective: 1000px;
+            will-change: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* 确保内容区域的子元素也清晰 */
+        #product-modal .overflow-y-auto * {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* 特别优化图片和文本 */
+        #product-modal img,
+        #product-modal p,
+        #product-modal h1,
+        #product-modal h2,
+        #product-modal h3,
+        #product-modal h4,
+        #product-modal span,
+        #product-modal div {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* 专门优化模态框内容区域 */
+        .modal-content {
+            transform: translate3d(0, 0, 0);
+            -webkit-transform: translate3d(0, 0, 0);
+            isolation: isolate;
+            contain: layout style paint;
+        }
+        
+        .modal-inner {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+        
+        .modal-image-section,
+        .modal-text-section {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            isolation: isolate;
+        }
+        
+        .modal-image {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        
+        /* 重要：覆盖外部CSS的backdrop-filter模糊效果 */
+        #product-modal .modal-overlay {
+            -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
+            -webkit-filter: none !important;
+            filter: none !important;
+        }
+        
+        /* 确保产品模态框本身也不受外部模糊影响 */
+        #product-modal {
+            -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
+            -webkit-filter: none !important;
+            filter: none !important;
+        }
+        
+        /* 强制移除所有可能的模糊效果 */
+        #product-modal *,
+        #product-modal .modal-overlay,
+        #product-modal .relative {
+            -webkit-backdrop-filter: none !important;
+            backdrop-filter: none !important;
+            -webkit-filter: none !important;
+            filter: none !important;
+        }
+        
+        /* 额外的清晰度保证 */
+        #product-modal .relative {
+            position: relative;
+            z-index: 9999;
+            isolation: isolate;
+            contain: layout style paint;
+        }
+        
+        /* 确保模态框内容在独立的渲染层 */
+        #product-modal .modal-content {
+            position: relative;
+            z-index: 1;
+            isolation: isolate;
+            contain: layout style paint;
+            background: #ffffff;
+        }
+        
+        /* 防止外部样式污染 */
+        #product-modal {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            z-index: 9999 !important;
+        }
+        
+        /* 产品详情弹窗关闭按钮专门样式 - 确保始终可见和可点击 */
+        #close-product-modal {
+            position: absolute !important;
+            top: 16px !important;
+            right: 16px !important;
+            z-index: 10001 !important;
+            width: 40px !important;
+            height: 40px !important;
+            background-color: white !important;
+            color: #6b7280 !important;
+            border-radius: 50% !important;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+            border: 1px solid #e5e7eb !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: auto !important;
+        }
+        
+        #close-product-modal:hover {
+            background-color: #f9fafb !important;
+            color: #374151 !important;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+            transform: scale(1.05) !important;
+        }
+        
+        #close-product-modal:active {
+            transform: scale(0.95) !important;
+        }
+        
+        #close-product-modal svg {
+            width: 20px !important;
+            height: 20px !important;
+            stroke-width: 2 !important;
+        }
+        
+        /* 图片查看器关闭按钮优化 */
+        #image-viewer-overlay #close-viewer {
+            /* 确保按钮在图片上方 */
+            z-index: 40 !important;
+            /* 确保按钮在图片边界外但仍然可见 */
+            position: absolute !important;
+            /* 精确定位到右上角外侧 - 使用top和right定位，然后用transform调整 */
+            top: -6px !important;
+            right: -6px !important;
+            transform: none !important;
+        }
+        
+        #image-viewer-overlay #close-viewer:hover {
+            /* 悬停时保持位置，只改变外观和轻微缩放 */
+            transform: scale(1.1) !important;
+        }
+        
+        /* 图片容器优化 */
+        #image-viewer-overlay .relative {
+            /* 确保容器能够包含绝对定位的按钮 */
+            position: relative;
+        }
+        
+        /* 图片本身的样式 */
+        #zoomed-image {
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+    <!-- 基本元数据 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="application-name" content="沧州恒基泰管道装备有限公司">
+    <title>产品中心 - 沧州恒基泰管道装备有限公司</title>
+    <meta name="description" content="沧州恒基泰管道装备有限公司专业生产涂塑钢管、防腐钢管及管件系列产品，品质优良，规格齐全。">
+    <meta name="keywords" content="涂塑钢管,防腐钢管,钢管产品,管件配件">
+    <meta name="author" content="沧州恒基泰管道装备有限公司">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="content-language" content="zh-CN">
+    <link rel="canonical" href="https://www.hengjitaipipeline.com/cn/products.html">
+    
+    <!-- OpenGraph 标签 -->
+    <meta property="og:title" content="产品中心">
+    <meta property="og:description" content="沧州恒基泰管道装备有限公司专业生产涂塑钢管、防腐钢管及管件系列产品，品质优良，规格齐全。">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:url" content="https://www.hengjitaipipeline.com/cn/products.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="沧州恒基泰管道装备有限公司">
+    
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="产品中心">
+    <meta name="twitter:description" content="沧州恒基泰管道装备有限公司专业生产涂塑钢管、防腐钢管及管件系列产品，品质优良，规格齐全。">
+    <meta name="twitter:image" content="/images/logo.png">
+    <meta name="twitter:site" content="@hengjitaipipeline">
+    
+    <!-- 多语言支持 -->
+        <link rel="alternate" hreflang="zh-CN" href="https://hengjitaipipeline.com/cn/products.html" />
+    <link rel="alternate" hreflang="x-default" href="https://hengjitaipipeline.com/en/products.html" />
+    <link rel="alternate" hreflang="en" href="https://hengjitaipipeline.com/en/products.html" />
+    <link rel="alternate" hreflang="ja" href="https://hengjitaipipeline.com/jp/products.html" />
+    <link rel="alternate" hreflang="ru" href="https://hengjitaipipeline.com/ru/products.html" />
+    <link rel="alternate" hreflang="ar" href="https://hengjitaipipeline.com/ar/products.html" />
+    <link rel="alternate" hreflang="es" href="https://hengjitaipipeline.com/es/products.html" />
+    <link rel="alternate" hreflang="fr" href="https://hengjitaipipeline.com/fr/products.html" />
+    <link rel="alternate" hreflang="pt" href="https://hengjitaipipeline.com/pt/products.html" />
+    <link rel="alternate" hreflang="hi" href="https://hengjitaipipeline.com/hi/products.html" />
+    <link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" />
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "沧州恒基泰管道装备有限公司",
+        "url": "https://www.hengjitaipipeline.com",
+        "logo": "/images/logo.png"
+    }</script>
+    
+    <!-- 样式表 -->
+    <link rel="stylesheet" href="../css/combined.min.css">
+    <link rel="stylesheet" href="../css/cases-integrated.css">
+    <link rel="stylesheet" href="../css/client-section-fix.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- RTL CSS 根据需要加载 -->
+    <!-- 非RTL语言不需要加载RTL样式 -->
+    
+    <!-- Vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body class="bg-white">
+    <!-- 浮动导航菜单 -->
+    <div id="floating-nav-container"></div>
+
+    <header class="fixed w-full bg-white shadow-md z-50 header-fixed">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center h-12" title="沧州恒基泰管道装备有限公司">
+                    <img src="../images/logo.jpg" alt="恒基泰管道装备" class="h-full">
+                </a>
+                
+                <!-- 导航菜单 -->
+                <nav class="hidden lg:flex space-x-8">
+                    <div class="nav-item">
+                        <a href="index.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="首页">
+                            首页
+                        </a>
+                    </div>
+                    <div class="nav-item dropdown relative group">
+                        <a href="about.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="关于我们">
+                            关于我们 
+                        </a>
+                    </div>
+                    <div class="nav-item dropdown relative group">
+                        <a href="products.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="产品中心">
+                            产品中心 
+                        </a>
+                        <div class="dropdown-menu hidden group-hover:block absolute bg-white min-w-[200px] shadow-lg rounded-lg mt-1 py-2 z-50 left-0">
+                            <a href="products.html?search=%E6%B6%82%E5%A1%91" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">涂塑钢管</a>
+                            <a href="products.html?search=%E9%98%B2%E8%85%90" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">防腐钢管</a>
+                            <a href="products.html?search=%E9%92%A2%E7%AE%A1" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">钢管产品</a>
+                            <a href="products.html?search=%E7%AE%A1%E4%BB%B6" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">管件配件</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="quality.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="质量控制">
+                            质量控制
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="cases.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="工程案例">
+                            工程案例
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="news.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="新闻动态">
+                            新闻动态
+                        </a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="text-gray-700 hover:text-primary hover:border-b-2 hover:border-primary px-3 py-2" title="联系我们">
+                            联系我们
+                        </a>
+                    </div>
+                </nav>
+                
+                <!-- 语言选择菜单 -->
+                <div id="language-dropdown" class="language-dropdown relative">
+                    <button id="language-button" type="button" class="flex items-center space-x-2 text-gray-700 hover:text-primary">
+                        <span>简体中文</span>
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="language-menu" class="hidden absolute right-0 w-48 mt-2 py-2 bg-white rounded-lg shadow-lg z-50">
+                                                <a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>
+                        <a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>
+                        <a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>
+                        <a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>
+                        <a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>
+                        <a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>
+                        <a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>
+                        <a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>
+                        <a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面横幅 -->
+    <section class="relative bg-cover bg-center h-[300px] banner-section" style="background-image: url('../images/banner/products-banner.jpg');">
+        <div class="absolute inset-0 bg-primary/50 flex items-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-white mb-4">产品中心</h1>
+                <div class="text-white">
+                    <a href="index.html" class="hover:text-gray-200" title="首页">首页</a> / 产品中心
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示区域 -->
+    <section class="py-16 bg-white" id="products-section">
+        <div class="container mx-auto px-4" id="products-app" v-cloak>
+            
+            <!-- 视图切换和筛选控件 -->
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+                <!-- 视图模式切换 -->
+                <div class="flex items-center gap-2">
+                    <button 
+                        @click="viewMode = 'categories'" 
+                        :class="viewMode === 'categories' ? 'bg-primary text-white' : 'bg-gray-100 text-gray-700'" 
+                        class="px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all">
+                        <i class="fas fa-th-large mr-2"></i>分类视图
+                    </button>
+                    <button 
+                        @click="viewMode = 'products'" 
+                        :class="viewMode === 'products' ? 'bg-primary text-white' : 'bg-gray-100 text-gray-700'" 
+                        class="px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all">
+                        <i class="fas fa-list mr-2"></i>产品列表
+                    </button>
+                </div>
+
+                <!-- 筛选控件 -->
+                <div class="flex items-center gap-4" v-show="viewMode === 'products'">
+                    <!-- 分类筛选 -->
+                    <select v-model="selectedCategory" class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-primary bg-white">
+                        <option value="">所有分类</option>
+                        <option v-for="category in allCategories" :key="category.id" :value="category.id">
+                            {{ category.name }} ({{ category.count }})
+                        </option>
+                    </select>
+
+                    <!-- 搜索框 -->
+                    <div class="relative">
+                        <input 
+                            v-model="searchQuery" 
+                            type="text" 
+                            placeholder="搜索产品..." 
+                            class="pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:border-primary">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分类视图 -->
+            <div v-show="viewMode === 'categories'" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div 
+                    v-for="category in allCategories" 
+                    :key="category.id" 
+                    @click="selectCategory(category.id)"
+                    class="category-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="h-[280px] overflow-hidden">
+                        <img 
+                            :src="category.image" 
+                            :alt="category.name" 
+                            :title="category.name"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            @error="handleImageError">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">{{ category.name }}</h3>
+                        <p class="text-sm text-gray-600">{{ category.count }}个产品</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 产品列表视图 -->
+            <div v-show="viewMode === 'products'">
+                <!-- 当前筛选信息 -->
+                <div v-if="selectedCategory || searchQuery" class="mb-6 p-4 bg-blue-50 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <div class="text-sm text-gray-600">
+                            <span v-if="selectedCategory">分类: {{ getCategoryName(selectedCategory) }}</span>
+                            <span v-if="selectedCategory && searchQuery"> | </span>
+                            <span v-if="searchQuery">搜索: "{{ searchQuery }}"</span>
+                            <span class="ml-2">找到 {{ filteredProducts.length }} 个产品</span>
+                        </div>
+                        <button @click="clearFilters" class="text-primary hover:text-primary-dark text-sm">
+                            <i class="fas fa-times mr-1"></i>清除筛选
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 产品网格 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div 
+                        v-for="product in paginatedProducts" 
+                        :key="product.id" 
+                        class="product-card bg-white rounded-xl overflow-hidden shadow-md">
+                        <div class="h-[240px] overflow-hidden">
+                            <img 
+                                :src="product.image" 
+                                :alt="product.name" 
+                                :title="product.name"
+                                class="w-full h-full object-cover product-image"
+                                loading="lazy"
+                                @click.stop="showImage(product.image, product.name)"
+                                @error="handleImageError">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">
+                                    {{ product.categoryName }}
+                                </span>
+                                <span v-if="product.connectionType" class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">
+                                    {{ product.connectionType.name }}
+                                </span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ product.name }}</h3>
+                            <p class="text-sm text-gray-600 mb-2">{{ product.specification }}</p>
+                            
+                            <!-- 应用领域标签 -->
+                            <div v-if="product.applications && product.applications.length > 0" class="flex flex-wrap gap-1 mb-3">
+                                <span 
+                                    v-for="app in product.applications.slice(0, 2)" 
+                                    :key="app.id"
+                                    class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">
+                                    {{ app.name }}
+                                </span>
+                                <span v-if="product.applications.length > 2" class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">
+                                    +{{ product.applications.length - 2 }}
+                                </span>
+                            </div>
+
+                            <button 
+                                class="text-primary hover:bg-primary hover:text-white border border-primary px-4 py-2 w-full rounded-lg transition-all"
+                                @click="openProductDetails(product)">
+                                查看详情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 分页控件 -->
+                <div v-if="totalPages > 1" class="flex justify-center items-center gap-2 mt-12">
+                    <button 
+                        @click="prevPage" 
+                        :disabled="currentPage <= 1"
+                        :class="['px-3 py-2 rounded border', currentPage <= 1 ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50']">
+                        上一页
+                    </button>
+                    
+                    <button 
+                        v-for="page in displayPages" 
+                        :key="page" 
+                        @click="goToPage(page)"
+                        :class="['px-3 py-2 rounded border', page === currentPage ? 'bg-primary text-white' : 'bg-white text-gray-700 hover:bg-gray-50']">
+                        {{ page }}
+                    </button>
+                    
+                    <button 
+                        @click="nextPage" 
+                        :disabled="currentPage >= totalPages"
+                        :class="['px-3 py-2 rounded border', currentPage >= totalPages ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-white text-gray-700 hover:bg-gray-50']">
+                        下一页
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品详情模态框 -->
+    <div id="product-modal" class="fixed inset-0 z-[9999] hidden flex items-center justify-center">
+        <div class="fixed inset-0 bg-black bg-opacity-70 modal-overlay" @click="closeProductModal"></div>
+        <div class="relative bg-white w-[85%] max-w-3xl max-h-[80vh] rounded-lg shadow-2xl overflow-hidden flex flex-col z-10">
+            <!-- 现代化关闭按钮 - 右上角圆形设计 -->
+            <button id="close-product-modal" class="absolute top-4 right-4 z-[10000] w-10 h-10 bg-white hover:bg-gray-50 text-gray-600 hover:text-gray-800 rounded-full shadow-lg hover:shadow-xl flex items-center justify-center border border-gray-200" title="关闭详情" @click="closeProductModal">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <!-- 标题栏 -->
+            <div class="flex items-center border-b p-4 bg-white sticky top-0 z-10">
+                <h2 id="product-modal-title" class="text-2xl font-bold text-gray-900"></h2>
+            </div>
+            
+            <!-- 内容区域 -->
+            <div class="overflow-y-auto flex-1 modal-content">
+                <div class="flex flex-col md:flex-row modal-inner">
+                    <div class="w-full md:w-1/2 p-6 modal-image-section">
+                        <img id="product-modal-image" src="" alt="" class="w-full object-contain max-h-[300px] rounded-lg modal-image">
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 modal-text-section">
+                        <div id="product-modal-categories" class="flex flex-wrap gap-2 mb-4"></div>
+                        <div id="product-modal-specification" class="mb-4"></div>
+                        <div id="product-modal-applications" class="mb-4"></div>
+                        <div id="product-modal-features" class="mb-4"></div>
+                        <div id="product-modal-connection" class="mb-4"></div>
+                        <div id="product-modal-description" class="text-gray-700"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片查看器 -->
+    <div id="image-viewer-overlay" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex-col justify-center items-center">
+        <!-- 左上角快捷提示 -->
+        <div id="viewer-hint" class="viewer-hint absolute top-6 left-6 text-white text-sm bg-black bg-opacity-50 px-3 py-2 rounded-lg z-20">
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.122 2.122" />
+                </svg>
+                <span>点击任意位置或按ESC关闭</span>
+            </div>
+        </div>
+        
+        <!-- 图片容器 - 相对定位，包含图片和关闭按钮 -->
+        <div class="relative inline-block">
+            <img id="zoomed-image" src="" alt="" class="max-h-[90vh] max-w-[90vw] object-contain shadow-2xl block" title="点击关闭">
+            <!-- 关闭按钮 - 图片右上角，使用绝对定位相对于图片容器 -->
+            <button id="close-viewer" class="absolute w-12 h-12 flex items-center justify-center text-white bg-black bg-opacity-80 hover:bg-opacity-95 rounded-full shadow-xl z-30 transition-all duration-300 group border-2 border-white border-opacity-80 hover:border-opacity-100 hover:scale-110" title="关闭图片查看器 (ESC)" type="button">
+                <!-- 简洁的X图标 -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform group-hover:rotate-90 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">关于我们</h3>
+                    <p class="text-gray-400 mb-4">沧州恒基泰管道装备有限公司成立于2026年，是一家专注于管道装备、钢制管件、管托支吊架和防腐管件配套供应的企业。</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">快速导航</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary">首页</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary">关于我们</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-primary">产品中心</a></li>
+                        <li><a href="quality.html" class="text-gray-400 hover:text-primary">质量控制</a></li>
+                        <li><a href="cases.html" class="text-gray-400 hover:text-primary">工程案例</a></li>
+                        <li><a href="news.html" class="text-gray-400 hover:text-primary">新闻动态</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">产品中心</h3>
+                    <ul class="space-y-2">
+                        <li><a href="products.html?search=%E6%B6%82%E5%A1%91" class="text-gray-400 hover:text-primary">涂塑钢管</a></li>
+                        <li><a href="products.html?search=%E9%98%B2%E8%85%90" class="text-gray-400 hover:text-primary">防腐钢管</a></li>
+                        <li><a href="products.html?search=%E9%92%A2%E7%AE%A1" class="text-gray-400 hover:text-primary">钢管产品</a></li>
+                        <li><a href="products.html?search=%E7%AE%A1%E4%BB%B6" class="text-gray-400 hover:text-primary">管件配件</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">联系我们</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>中国河北省沧州市盐山县边务镇李郭庄村口南100米</span>
+                        </li>
+                        <li>
+                            <a href="mailto:sales@hypipelines.com" class="flex items-center hover:text-primary">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <span>sales@hypipelines.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+86 189-3171-0082" class="flex items-center hover:text-primary">
+                                <i class="fas fa-phone mr-2"></i>
+                                <span>+86 189-3171-0082</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-4 text-center">
+                <p class="text-gray-400">© 2025 沧州恒基泰管道装备有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <div id="back-to-top" class="fixed bottom-8 right-8 hidden z-50">
+        <a href="#" class="bg-primary text-white p-3 rounded-full shadow-lg hover:bg-primary-dark">
+            <i class="fas fa-arrow-up"></i>
+            <span class="sr-only">{{BACK_TO_TOP}}</span>
+        </a>
+    </div>
+
+    <!-- Vue.js 应用脚本 -->
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    allProducts: [],
+                    allCategories: [],
+                    viewMode: 'categories', // 'categories' 或 'products'
+                    selectedCategory: '',
+                    searchQuery: '',
+                    currentPage: 1,
+                    itemsPerPage: 9,
+                    isLoading: true
+                }
+            },
+            computed: {
+                filteredProducts() {
+                    let filtered = [...this.allProducts];
+                    
+                    // 按分类筛选
+                    if (this.selectedCategory) {
+                        filtered = filtered.filter(product => product.categoryId === this.selectedCategory);
+                    }
+                    
+                    // 按搜索关键词筛选
+                    if (this.searchQuery) {
+                        const query = this.searchQuery.toLowerCase();
+                        filtered = filtered.filter(product => 
+                            product.name.toLowerCase().includes(query) ||
+                            product.categoryName.toLowerCase().includes(query) ||
+                            product.specification.toLowerCase().includes(query) ||
+                            product.description.toLowerCase().includes(query)
+                        );
+                    }
+                    
+                    return filtered;
+                },
+                
+                totalPages() {
+                    return Math.ceil(this.filteredProducts.length / this.itemsPerPage) || 1;
+                },
+                
+                paginatedProducts() {
+                    const start = (this.currentPage - 1) * this.itemsPerPage;
+                    const end = start + this.itemsPerPage;
+                    return this.filteredProducts.slice(start, end);
+                },
+                
+                displayPages() {
+                    const pages = [];
+                    let start = Math.max(1, this.currentPage - 2);
+                    let end = Math.min(this.totalPages, start + 4);
+                    
+                    if (end - start < 4) {
+                        start = Math.max(1, end - 4);
+                    }
+                    
+                    for (let i = start; i <= end; i++) {
+                        pages.push(i);
+                    }
+                    
+                    return pages;
+                }
+            },
+            
+            watch: {
+                selectedCategory() {
+                    this.currentPage = 1;
+                },
+                searchQuery() {
+                    this.currentPage = 1;
+                }
+            },
+            
+            mounted() {
+                this.loadProductsData();
+                
+                // 图片查看器事件绑定
+                this.setupImageViewer();
+                
+                // 产品详情模态框事件绑定
+                this.setupProductModal();
+                
+                // ESC键关闭模态框
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        this.hideImage();
+                        this.closeProductModal();
+                    }
+                });
+            },
+
+            methods: {
+                async loadProductsData() {
+                    try {
+                        this.isLoading = true;
+                        const response = await fetch('products.json');
+                        const data = await response.json();
+                        
+                        this.allProducts = data.products || [];
+                        this.allCategories = data.categories || [];
+                        
+                        // 检查URL参数
+                        this.checkUrlParameters();
+                        
+                        this.isLoading = false;
+                    } catch (error) {
+                        console.error('{{JS_ERROR_LOAD_PRODUCTS}}:', error);
+                        this.isLoading = false;
+                    }
+                },
+
+                setupImageViewer() {
+                    // 设置图片查看器关闭事件
+                    const closeViewerBtn = document.getElementById('close-viewer');
+                    const imageViewerOverlay = document.getElementById('image-viewer-overlay');
+                    const zoomedImage = document.getElementById('zoomed-image');
+                    
+                    if (closeViewerBtn) {
+                        closeViewerBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            this.hideImage();
+                        });
+                    }
+                    
+                    if (imageViewerOverlay) {
+                        // 点击背景关闭 - 修复事件绑定
+                        imageViewerOverlay.addEventListener('click', (e) => {
+                            console.log('{{JS_LOG_CLICK_VIEWER}}:', e.target.id, e.target.className);
+                            
+                            // 如果点击的是图片本身，不关闭
+                            if (e.target === zoomedImage) {
+                                console.log('{{JS_LOG_CLICK_IMAGE}}');
+                                return;
+                            }
+                            
+                            // 如果点击的是关闭按钮或其子元素，不处理（让按钮自己处理）
+                            if (e.target.closest('#close-viewer')) {
+                                console.log('{{JS_LOG_CLICK_CLOSE_BUTTON}}');
+                                return;
+                            }
+                            
+                            // 其他情况都视为点击背景，执行关闭
+                            console.log('{{JS_LOG_CLICK_BACKGROUND}}');
+                            e.preventDefault();
+                            e.stopPropagation();
+                            this.hideImage();
+                        });
+                    }
+                    
+                    // 图片点击关闭
+                    if (zoomedImage) {
+                        zoomedImage.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            this.hideImage();
+                            console.log('{{JS_LOG_CLICK_IMAGE_CLOSE}}');
+                        });
+                    }
+                },
+                
+                setupProductModal() {
+                    // 产品详情模态框背景点击关闭
+                    const modalOverlay = document.querySelector('#product-modal .modal-overlay');
+                    if (modalOverlay) {
+                        modalOverlay.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            this.closeProductModal();
+                        });
+                    }
+                    
+                    // 模态框关闭按钮
+                    const closeButton = document.getElementById('close-product-modal');
+                    if (closeButton) {
+                        closeButton.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            this.closeProductModal();
+                        });
+                    }
+                },
+                
+                checkUrlParameters() {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const category = urlParams.get('category');
+                    const search = urlParams.get('search');
+                    
+                    if (category) {
+                        // 切换到产品列表视图并设置分类筛选
+                        this.viewMode = 'products';
+                        this.selectedCategory = category;
+                    }
+                    
+                    if (search) {
+                        // 切换到产品列表视图并设置搜索关键词
+                        this.viewMode = 'products';
+                        this.searchQuery = search;
+                    }
+                },
+                
+                selectCategory(categoryId) {
+                    this.selectedCategory = categoryId;
+                    this.viewMode = 'products';
+                    this.currentPage = 1;
+                    
+                    // 更新URL
+                    const url = new URL(window.location);
+                    url.searchParams.set('category', categoryId);
+                    window.history.pushState({}, '', url);
+                },
+                
+                clearFilters() {
+                    this.selectedCategory = '';
+                    this.searchQuery = '';
+                    this.currentPage = 1;
+                    
+                    // 清除URL参数
+                    const url = new URL(window.location);
+                    url.searchParams.delete('category');
+                    url.searchParams.delete('search');
+                    window.history.pushState({}, '', url);
+                },
+                
+                getCategoryName(categoryId) {
+                    const category = this.allCategories.find(cat => cat.id === categoryId);
+                    return category ? category.name : categoryId;
+                },
+                
+                prevPage() {
+                    if (this.currentPage > 1) {
+                        this.currentPage--;
+                    }
+                },
+                
+                nextPage() {
+                    if (this.currentPage < this.totalPages) {
+                        this.currentPage++;
+                    }
+                },
+                
+                goToPage(page) {
+                    this.currentPage = page;
+                },
+                
+                showImage(src, alt) {
+                    const viewer = document.getElementById('image-viewer-overlay');
+                    const image = document.getElementById('zoomed-image');
+                    const hint = document.getElementById('viewer-hint');
+                    
+                    if (viewer && image) {
+                        // 清除之前的错误状态
+                        image.classList.remove('image-error');
+                        
+                        // 设置图片源
+                        image.src = src;
+                        image.alt = alt || '';
+                        
+                        // 添加图片加载错误处理
+                        image.onerror = () => {
+                            console.log('{{JS_ERROR_IMAGE_LOAD}}:', src);
+                            // 添加错误样式类
+                            image.classList.add('image-error');
+                            // 清除src以避免显示默认的破损图片图标
+                            image.src = '';
+                            image.removeAttribute('src');
+                        };
+                        
+                        // 图片加载成功时移除错误状态
+                        image.onload = () => {
+                            image.classList.remove('image-error');
+                        };
+                        
+                        // 重置提示动画
+                        if (hint) {
+                            hint.style.animation = 'none';
+                            hint.offsetHeight; // 触发重排
+                            hint.style.animation = 'fadeInOut 4s ease-in-out forwards';
+                        }
+                        
+                        viewer.classList.remove('hidden');
+                        viewer.classList.add('flex');
+                        document.body.style.overflow = 'hidden';
+                        
+                        // 添加打开动画
+                        viewer.style.opacity = '0';
+                        setTimeout(() => {
+                            viewer.style.transition = 'opacity 0.3s ease';
+                            viewer.style.opacity = '1';
+                        }, 10);
+                        
+                        console.log('{{JS_LOG_VIEWER_OPENED}}:', src);
+                    } else {
+                        console.error('{{JS_ERROR_VIEWER_NOT_FOUND}}');
+                    }
+                },
+                
+                hideImage() {
+                    const viewer = document.getElementById('image-viewer-overlay');
+                    if (viewer) {
+                        viewer.style.transition = 'opacity 0.3s ease';
+                        viewer.style.opacity = '0';
+                        
+                        setTimeout(() => {
+                            viewer.classList.add('hidden');
+                            viewer.classList.remove('flex');
+                            document.body.style.overflow = '';
+                            viewer.style.transition = '';
+                            viewer.style.opacity = '';
+                            
+                            // 清除图片源和错误状态
+                            const image = document.getElementById('zoomed-image');
+                            if (image) {
+                                image.src = '';
+                                image.alt = '';
+                                image.removeAttribute('src');
+                                image.classList.remove('image-error');
+                                image.onerror = null;
+                                image.onload = null;
+                            }
+                        }, 300);
+                        
+                        console.log('{{JS_LOG_VIEWER_CLOSED}}');
+                    }
+                },
+                
+                handleImageError(event) {
+                    console.log('{{JS_LOG_IMAGE_ERROR}}');
+                    // 图片加载失败时使用默认图片
+                    if (event.target.src !== '/images/hp-products/default.svg') {
+                        event.target.src = '/images/hp-products/default.svg';
+                    }
+                },
+                
+                openProductDetails(product) {
+                    console.log('{{JS_LOG_OPEN_PRODUCT_DETAILS}}:', product);
+                    
+                    if (!product) {
+                        console.error('{{JS_ERROR_PRODUCT_EMPTY}}');
+                        return;
+                    }
+                    
+                    const modal = document.getElementById('product-modal');
+                    if (!modal) {
+                        console.error('{{JS_ERROR_MODAL_NOT_FOUND}}');
+                        return;
+                    }
+                    
+                    try {
+                        // 设置标题
+                        const titleEl = document.getElementById('product-modal-title');
+                        if (titleEl) {
+                            titleEl.textContent = product.name || '{{JS_DEFAULT_UNKNOWN_PRODUCT}}';
+                        }
+                        
+                        // 设置图片
+                        const imageEl = document.getElementById('product-modal-image');
+                        if (imageEl) {
+                            imageEl.src = product.image || '/images/hp-products/default.svg';
+                            imageEl.alt = product.name || '';
+                            imageEl.onerror = this.handleImageError;
+                        }
+                        
+                        // 设置分类标签
+                        const categoriesEl = document.getElementById('product-modal-categories');
+                        if (categoriesEl) {
+                            const categoryName = product.categoryName || '{{JS_DEFAULT_UNCATEGORIZED}}';
+                            categoriesEl.innerHTML = `<span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">${categoryName}</span>`;
+                        }
+                        
+                        // 设置规格
+                        const specEl = document.getElementById('product-modal-specification');
+                        if (specEl) {
+                            const specification = product.specification || '{{JS_DEFAULT_NO_SPECIFICATION}}';
+                            specEl.innerHTML = `<h4 class="font-semibold text-gray-800 mb-2">产品规格</h4><p class="text-gray-600">${specification}</p>`;
+                        }
+                        
+                        // 设置应用领域
+                        const appsEl = document.getElementById('product-modal-applications');
+                        if (appsEl && product.applications && product.applications.length > 0) {
+                            const appTags = product.applications.map(app => 
+                                `<span class="px-2 py-1 bg-green-100 text-green-700 text-sm rounded">${app.name || app}</span>`
+                            ).join('');
+                            appsEl.innerHTML = `<h4 class="font-semibold text-gray-800 mb-2">应用领域</h4><div class="flex flex-wrap gap-2">${appTags}</div>`;
+                        } else if (appsEl) {
+                            appsEl.innerHTML = '';
+                        }
+                        
+                        // 设置产品特性
+                        const featuresEl = document.getElementById('product-modal-features');
+                        if (featuresEl && product.features && product.features.length > 0) {
+                            const featureTags = product.features.map(feature => 
+                                `<span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-sm rounded">${feature}</span>`
+                            ).join('');
+                            featuresEl.innerHTML = `<h4 class="font-semibold text-gray-800 mb-2">产品特性</h4><div class="flex flex-wrap gap-2">${featureTags}</div>`;
+                        } else if (featuresEl) {
+                            featuresEl.innerHTML = '';
+                        }
+                        
+                        // 设置连接类型
+                        const connectionEl = document.getElementById('product-modal-connection');
+                        if (connectionEl && product.connectionType) {
+                            const connectionName = product.connectionType.name || product.connectionType;
+                            connectionEl.innerHTML = `<h4 class="font-semibold text-gray-800 mb-2">连接类型</h4><span class="px-2 py-1 bg-purple-100 text-purple-700 text-sm rounded">${connectionName}</span>`;
+                        } else if (connectionEl) {
+                            connectionEl.innerHTML = '';
+                        }
+                        
+                        // 设置描述
+                        const descEl = document.getElementById('product-modal-description');
+                        if (descEl) {
+                            const description = product.description || '{{JS_DEFAULT_NO_DESCRIPTION}}';
+                            descEl.innerHTML = `<h4 class="font-semibold text-gray-800 mb-2">产品描述</h4><p class="text-gray-700 leading-relaxed">${description}</p>`;
+                        }
+                        
+                        // 显示模态框
+                        modal.classList.remove('hidden');
+                        modal.classList.add('flex');
+                        document.body.style.overflow = 'hidden';
+                        
+                        console.log('{{JS_LOG_MODAL_OPENED}}');
+                        
+                    } catch (error) {
+                        console.error('{{JS_ERROR_OPEN_MODAL}}:', error);
+                        alert('{{JS_ALERT_OPEN_MODAL_FAILED}}');
+                    }
+                },
+                
+                closeProductModal() {
+                    const modal = document.getElementById('product-modal');
+                    if (modal) {
+                        modal.classList.add('hidden');
+                        modal.classList.remove('flex');
+                        document.body.style.overflow = '';
+                        
+                        console.log('{{JS_LOG_MODAL_CLOSED}}');
+                    }
+                }
+            },
+        }).mount('#products-app');
+    </script>
+
+    <!-- JavaScript 文件 -->
+    <script src="../js/floating-nav.js"></script>
+    <script src="../js/floating-nav-config.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/floating-message-button.js"></script>
+</body>
+</html>

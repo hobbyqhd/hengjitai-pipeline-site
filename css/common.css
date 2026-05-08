@@ -1,0 +1,206 @@
+/* 全局基础样式 */
+body {
+    font-family: 'Noto Sans SC', 'Open Sans', sans-serif;
+    min-height: 1024px;
+}
+
+/* 导航相关样式 */
+.nav-item {
+    position: relative;
+}
+
+.nav-item:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+/* 语言切换菜单 */
+.language-select {
+    position: relative;
+}
+
+.language-select .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 160px;
+    background: white; 
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 浮动导航菜单样式 */
+#floating-menu {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* 收起状态 - 左到右布局 */
+#floating-menu.collapsed-menu-ltr {
+    transform: translateX(calc(100% - 30px)) !important;
+}
+#floating-menu.collapsed-menu-ltr #toggle-floating-menu {
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.05);
+}
+
+/* 收起状态 - 右到左布局 */
+#floating-menu.collapsed-menu-rtl {
+    transform: translateX(calc(-100% + 30px)) !important;
+}
+#floating-menu.collapsed-menu-rtl #toggle-floating-menu {
+    background-color: rgba(245, 245, 245, 0.9);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+/* 展开状态 */
+#floating-menu.expanded-menu {
+    transform: translateX(0) !important;
+}
+
+/* 切换按钮样式 */
+#toggle-floating-menu:hover {
+    background-color: rgba(230, 230, 230, 1) !important;
+}
+
+#toggle-floating-menu:focus {
+    outline: 2px solid #4a90e2;
+    background-color: rgba(230, 230, 230, 1) !important;
+}
+
+/* 触摸设备的特殊样式 */
+#floating-menu.touch-device #toggle-floating-menu {
+    padding: 10px 5px;  /* 增加触摸区域 */
+}
+
+@media (max-width: 767px) {
+    #floating-menu {
+        top: 60%;  /* 在移动设备上稍微降低位置，使其更容易点击 */
+    }
+}
+
+.language-select:hover .dropdown-menu {
+    display: block;
+}
+
+/* 移动导航菜单 */
+@media (max-width: 1024px) {
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        z-index: 999;
+        padding-top: 60px;
+        overflow-y: auto;
+    }
+
+    .main-nav.active {
+        left: 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+    
+    .main-nav li {
+        margin-bottom: 10px;
+    }
+
+    .main-nav a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .submenu {
+        position: static;
+        box-shadow: none;
+        min-width: auto;
+    }
+
+    .submenu a {
+        padding-left: 40px;
+    }
+}
+
+/* 卡片动画效果 */
+.contact-card:hover,
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Banner背景 */
+.page-banner {
+    background-size: cover;
+    background-position: center;
+}
+
+.page-banner.contact-banner {
+    background-image: url('../images/banner/cases-banner.jpg');
+}
+
+/* 图片画廊效果 */
+.image-gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* 表单样式 */
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #1a5aa3;
+    box-shadow: 0 0 0 2px rgba(26,90,163,0.2);
+}
+
+/* 社交媒体图标 */
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    border: 1px solid #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* 页面内容区域 */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 动画过渡效果 */
+.transition-all {
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .container {
+            text-align: center;
+            max-width: 700px;
+            padding: 40px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .error-code {
+            font-size: 8rem;
+            margin: 0;
+            opacity: 0.8;
+            font-weight: 700;
+            background: linear-gradient(45deg, #fff, #e0e0e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .error-title {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            font-weight: 300;
+        }
+        .error-description {
+            font-size: 1.3rem;
+            margin: 30px 0;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .action-buttons {
+            margin: 40px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 8px 12px;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        .btn.primary {
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            font-weight: 600;
+        }
+        .btn.primary:hover {
+            background: white;
+            transform: translateY(-3px) scale(1.05);
+        }
+        .language-section {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .language-title {
+            margin-bottom: 25px;
+            opacity: 0.8;
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+        .lang-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 12px;
+            margin-top: 25px;
+        }
+        .lang-btn {
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .lang-btn:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .lang-btn.current-lang {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+        .rtl {
+            direction: rtl;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .error-code { font-size: 5rem; }
+            .error-title { font-size: 1.8rem; }
+            .error-description { font-size: 1.1rem; }
+            .container { padding: 20px; }
+            .lang-grid { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="main-container">
+        <div class="error-code">404</div>
+        <h2 class="error-title" id="error-title">Page Not Found</h2>
+        <p class="error-description" id="error-description">The page you're looking for doesn't exist or has been moved.</p>
+        
+        <div class="action-buttons">
+            <a href="/" class="btn primary" id="home-btn">Go Home</a>
+            <a href="javascript:history.back()" class="btn" id="back-btn">Go Back</a>
+        </div>
+        
+        <div class="language-section">
+            <h3 class="language-title" id="language-title">Choose Your Language</h3>
+            <div class="lang-grid">
+                <a href="/en/" class="btn lang-btn" data-lang="en">English</a>
+                <a href="/cn/" class="btn lang-btn" data-lang="zh">中文</a>
+                <a href="/jp/" class="btn lang-btn" data-lang="ja">日本語</a>
+                <a href="/ru/" class="btn lang-btn" data-lang="ru">Русский</a>
+                <a href="/ar/" class="btn lang-btn" data-lang="ar">العربية</a>
+                <a href="/es/" class="btn lang-btn" data-lang="es">Español</a>
+                <a href="/fr/" class="btn lang-btn" data-lang="fr">Français</a>
+                <a href="/pt/" class="btn lang-btn" data-lang="pt">Português</a>
+                <a href="/hi/" class="btn lang-btn" data-lang="hi">हिंदी</a>
+                <a href="/de/" class="btn lang-btn" data-lang="de">Deutsch</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 多语言内容配置
+        const translations = {
+            'en': {
+                title: '404 - Page Not Found',
+                errorTitle: 'Page Not Found',
+                errorDescription: 'The page you\'re looking for doesn\'t exist or has been moved.',
+                homeBtn: 'Go Home',
+                backBtn: 'Go Back',
+                languageTitle: 'Choose Your Language',
+                direction: 'ltr'
+            },
+            'zh': {
+                title: '404 - 页面未找到',
+                errorTitle: '页面未找到',
+                errorDescription: '您要访问的页面不存在或已被移动。',
+                homeBtn: '返回首页',
+                backBtn: '返回上页',
+                languageTitle: '选择您的语言',
+                direction: 'ltr'
+            },
+            'ja': {
+                title: '404 - ページが見つかりません',
+                errorTitle: 'ページが見つかりません',
+                errorDescription: 'お探しのページは存在しないか、移動されました。',
+                homeBtn: 'ホームへ',
+                backBtn: '戻る',
+                languageTitle: '言語を選択',
+                direction: 'ltr'
+            },
+            'ru': {
+                title: '404 - Страница не найдена',
+                errorTitle: 'Страница не найдена',
+                errorDescription: 'Страница, которую вы ищете, не существует или была перемещена.',
+                homeBtn: 'На главную',
+                backBtn: 'Назад',
+                languageTitle: 'Выберите язык',
+                direction: 'ltr'
+            },
+            'ar': {
+                title: '404 - الصفحة غير موجودة',
+                errorTitle: 'الصفحة غير موجودة',
+                errorDescription: 'الصفحة التي تبحث عنها غير موجودة أو تم نقلها.',
+                homeBtn: 'الصفحة الرئيسية',
+                backBtn: 'العودة',
+                languageTitle: 'اختر لغتك',
+                direction: 'rtl'
+            },
+            'es': {
+                title: '404 - Página no encontrada',
+                errorTitle: 'Página no encontrada',
+                errorDescription: 'La página que buscas no existe o ha sido movida.',
+                homeBtn: 'Ir al inicio',
+                backBtn: 'Volver',
+                languageTitle: 'Elige tu idioma',
+                direction: 'ltr'
+            },
+            'fr': {
+                title: '404 - Page introuvable',
+                errorTitle: 'Page introuvable',
+                errorDescription: 'La page que vous recherchez n\'existe pas ou a été déplacée.',
+                homeBtn: 'Accueil',
+                backBtn: 'Retour',
+                languageTitle: 'Choisissez votre langue',
+                direction: 'ltr'
+            },
+            'pt': {
+                title: '404 - Página não encontrada',
+                errorTitle: 'Página não encontrada',
+                errorDescription: 'A página que você está procurando não existe ou foi movida.',
+                homeBtn: 'Ir para o início',
+                backBtn: 'Voltar',
+                languageTitle: 'Escolha seu idioma',
+                direction: 'ltr'
+            },
+            'hi': {
+                title: '404 - पृष्ठ नहीं मिला',
+                errorTitle: 'पृष्ठ नहीं मिला',
+                errorDescription: 'आप जिस पृष्ठ की तलाश कर रहे हैं वह मौजूद नहीं है या स्थानांतरित हो गया है।',
+                homeBtn: 'होम पर जाएं',
+                backBtn: 'वापस जाएं',
+                languageTitle: 'अपनी भाषा चुनें',
+                direction: 'ltr'
+            },
+            'de': {
+                title: '404 - Seite nicht gefunden',
+                errorTitle: 'Seite nicht gefunden',
+                errorDescription: 'Die gesuchte Seite existiert nicht oder wurde verschoben.',
+                homeBtn: 'Zur Startseite',
+                backBtn: 'Zurück',
+                languageTitle: 'Sprache wählen',
+                direction: 'ltr'
+            }
+        };
+
+        // 检测用户浏览器语言
+        function detectUserLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.toLowerCase();
+            
+            // 语言映射
+            const langMap = {
+                'zh': 'zh', 'zh-cn': 'zh', 'zh-tw': 'zh', 'zh-hk': 'zh',
+                'ja': 'ja', 'ja-jp': 'ja',
+                'ru': 'ru', 'ru-ru': 'ru',
+                'ar': 'ar', 'ar-sa': 'ar', 'ar-eg': 'ar',
+                'es': 'es', 'es-es': 'es', 'es-mx': 'es',
+                'fr': 'fr', 'fr-fr': 'fr', 'fr-ca': 'fr',
+                'pt': 'pt', 'pt-br': 'pt', 'pt-pt': 'pt',
+                'hi': 'hi', 'hi-in': 'hi',
+                'de': 'de', 'de-de': 'de', 'de-at': 'de',
+                'en': 'en'
+            };
+
+            // 精确匹配
+            if (langMap[langCode]) {
+                return langMap[langCode];
+            }
+            
+            // 主语言匹配
+            const mainLang = langCode.split('-')[0];
+            if (langMap[mainLang]) {
+                return langMap[mainLang];
+            }
+            
+            return 'en'; // 默认英语
+        }
+
+        // 应用语言设置
+        function applyLanguage(langCode) {
+            const lang = translations[langCode] || translations['en'];
+            
+            // 更新页面内容
+            document.getElementById('page-title').textContent = lang.title;
+            document.getElementById('error-title').textContent = lang.errorTitle;
+            document.getElementById('error-description').textContent = lang.errorDescription;
+            document.getElementById('home-btn').textContent = lang.homeBtn;
+            document.getElementById('back-btn').textContent = lang.backBtn;
+            document.getElementById('language-title').textContent = lang.languageTitle;
+            
+            // 设置页面方向（RTL支持）
+            const container = document.getElementById('main-container');
+            const html = document.documentElement;
+            
+            if (lang.direction === 'rtl') {
+                container.classList.add('rtl');
+                html.setAttribute('dir', 'rtl');
+                html.setAttribute('lang', langCode);
+            } else {
+                container.classList.remove('rtl');
+                html.setAttribute('dir', 'ltr');
+                html.setAttribute('lang', langCode);
+            }
+            
+            // 高亮当前语言按钮
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('current-lang');
+                if (btn.getAttribute('data-lang') === langCode) {
+                    btn.classList.add('current-lang');
+                }
+            });
+        }
+
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            const detectedLang = detectUserLanguage();
+            applyLanguage(detectedLang);
+            
+            // 添加语言切换事件
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const selectedLang = this.getAttribute('data-lang');
+                    applyLanguage(selectedLang);
+                    
+                    // 延迟跳转，让用户看到语言变化
+                    setTimeout(() => {
+                        window.location.href = this.href;
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

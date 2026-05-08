@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" {{RTL_DIR}}>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
+    <meta name="viewport" content="{{META_VIEWPORT}}">
+    <meta name="theme-color" content="{{META_THEME_COLOR}}">
+    <meta name="application-name" content="{{META_APPLICATION_NAME}}">
+    <title>{{META_TITLE}}</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <meta name="keywords" content="{{META_KEYWORDS}}">
+    <meta name="robots" content="{{META_ROBOTS}}">
+    <link rel="canonical" href="{{META_CANONICAL_URL}}">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="{{OG_TITLE}}">
+    <meta property="og:description" content="{{OG_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE}}">
+    <meta property="og:url" content="{{OG_URL}}">
+    <meta property="og:type" content="{{OG_TYPE}}">
+    <meta property="og:site_name" content="{{OG_SITE_NAME}}">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="{{TWITTER_CARD}}">
+    <meta name="twitter:title" content="{{TWITTER_TITLE}}">
+    <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{TWITTER_IMAGE}}">
+    <meta name="twitter:site" content="{{TWITTER_SITE}}">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {{STRUCTURED_DATA}}
+    </script>
+    
+    {{ALTERNATE_LINKS}}
+    <link rel="stylesheet" href="{{CSS_JS_BASE_PATH}}css/combined.min.css">
+    {{RTL_CSS_LINK_TAG}}
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-white" {{RTL_DIR}}>
+    <!-- 浮动导航菜单 -->
+    <div id="floating-nav-container"></div>
+
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <a href="{{BASE_PREFIX}}{{LANG}}/index.html" class="flex items-center h-12" title="{{COMPANY_NAME}}">
+                    <img src="{{CSS_JS_BASE_PATH}}images/logo.jpg" alt="{{COMPANY_NAME}}" class="h-full">
+                </a>
+                
+                <!-- 导航菜单 -->
+                {{NAVIGATION_MENU}}
+                
+                <div class="flex items-center space-x-6">
+                    <!-- 语言选择菜单 -->
+                    {{LANGUAGE_SELECTOR}}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section class="page-banner relative h-[400px]">
+            <div class="absolute inset-0">
+                <img src="{{BANNER_IMAGE_PATH}}" alt="{{PRODUCTS_TITLE}}" class="w-full h-full object-cover" loading="eager">
+            </div>
+            <div class="absolute inset-0 bg-primary/30">
+                <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+                    <h1 class="text-4xl font-bold text-white mb-4">
+                        {{PRODUCTS_TITLE}}
+                    </h1>
+                    <div class="flex items-center text-white/90">
+                        {{BREADCRUMB_LINKS}}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类选择部分 -->
+        <section class="py-6 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap gap-4 justify-end">
+                    {{CATEGORY_SELECTOR}}
+                </div>
+            </div>
+        </section>
+        
+        <!-- 产品列表部分，将由脚本动态生成 -->
+        {{PRODUCTS_CONTENT}}
+
+        <!-- 返回顶部按钮 -->
+        {{BACK_TO_TOP_BUTTON}}
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        {{FOOTER_CONTENT}}
+    </footer>
+    
+    <!-- 产品过滤和详情模态框脚本 -->
+    <script defer src="{{CSS_JS_BASE_PATH}}js/main.js"></script>
+    <!-- 图片预览功能脚本 -->
+    <script defer src="{{CSS_JS_BASE_PATH}}js/image-viewer.js"></script>
+    <script defer src="{{CSS_JS_BASE_PATH}}js/product-modal.js"></script>
+    <script defer src="{{CSS_JS_BASE_PATH}}js/product-filter.js"></script>
+    <script defer src="{{CSS_JS_BASE_PATH}}js/dropdown.js"></script>
+    <script defer src="{{CSS_JS_BASE_PATH}}js/floating-nav.js"></script>
+    <script defer src="{{CSS_JS_BASE_PATH}}js/floating-nav-config.js"></script>
+    <script defer src="{{CSS_JS_BASE_PATH}}js/floating-message-button.js"></script>
+</body>
+</html>

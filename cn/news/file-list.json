@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "category1": "公司新闻",
+    "category2": "行业动态",
+    "category3": "技术文章",
+    "category4": "媒体报道"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": []
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": [
+        {
+          "title": "外镀锌内涂塑钢管",
+          "slug": "Galvanized-outer-and-plastic-coated-steel-pipe.html",
+          "date": "2025-08-21",
+          "publishDate": "2025-08-21",
+          "content": "外镀锌内涂塑钢管结合钢材的机械强度与塑料的耐腐蚀性，具有卓越的耐蚀性和耐磨性，广泛应用于给排水、消防、煤矿等领域的管道系统建设。",
+          "src": "/images/news/Galvanized-outer-and-plastic-coated-steel-pipe.jpg",
+          "alt": "外镀锌内涂塑钢管",
+          "detailUrl": "Galvanized-outer-and-plastic-coated-steel-pipe.html"
+        },
+        {
+          "title": "热浸塑钢质电缆保护管",
+          "slug": "hot-dip-plastic-electric-wire-conduit.html",
+          "date": "2025-08-11",
+          "publishDate": "2025-08-11",
+          "content": "热浸塑钢质电缆保护管采用流化床浸渍工艺，具有卓越的抗静电、阻燃、耐腐蚀性能，是电力、通信、矿山等管道系统建设的理想选择。",
+          "src": "/images/news/hot-dip-plastic-electric-wire-conduit.jpg",
+          "alt": "热浸塑钢质电缆保护管",
+          "detailUrl": "hot-dip-plastic-electric-wire-conduit.html"
+        },
+        {
+          "title": "彩色双抗粉末涂塑钢管",
+          "slug": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html",
+          "date": "2025-08-08",
+          "publishDate": "2025-08-08",
+          "content": "彩色双抗粉末涂塑钢管集抗腐蚀与抗磨损于一体，颜色多样化，适用于市政、工业、消防等多个领域，是兼具安全、经济、环保的高性能管道。",
+          "src": "/images/news/Groove-connection-color-double-resistance-powder-coated-steel-pipe.jpg",
+          "alt": "沟槽连接彩色双抗粉末涂塑钢管",
+          "detailUrl": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html"
+        },
+        {
+          "title": "TPEP防腐钢管",
+          "slug": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html",
+          "date": "2025-08-01",
+          "publishDate": "2025-08-01",
+          "content": "TPEP防腐钢管采用三层聚乙烯（3PE）和熔结环氧粉末（FBE）双重防腐技术，专为严苛环境设计，广泛应用于石油、天然气、化工、供水等领域的长距离输送管道。",
+          "src": "/images/news/1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.jpg",
+          "alt": "TPEP防腐钢管大口径输送水",
+          "detailUrl": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html"
+        },
+        {
+          "title": "DN300沟槽式白色涂塑钢管",
+          "slug": "DN300-grooved-white-plastic.html",
+          "date": "2025-07-22",
+          "publishDate": "2025-07-22",
+          "content": "DN300沟槽式白色涂塑钢管采用食品级环氧涂层，具备革命性的安装维保优势，较焊接节省工期65%，是智慧水务与应急供水的理想选择。",
+          "src": "/images/news/DN300-grooved-white-plastic.jpg",
+          "alt": "DN300沟槽式白色涂塑钢管",
+          "detailUrl": "DN300-grooved-white-plastic.html"
+        },
+        {
+          "title": "DN1000燃气输送用3PE防腐钢管",
+          "slug": "dn1000-gas-3pe.html",
+          "date": "2025-07-15",
+          "publishDate": "2025-07-15",
+          "content": "DN1000燃气输送用3PE防腐钢管采用三层复合防腐结构，设计寿命50年，适用于高压燃气输送和严苛环境下的管道系统，确保长期稳定运行。",
+          "src": "/images/news/dn1000-gas-3pe.jpg",
+          "alt": "DN1000燃气输送用3PE防腐钢管",
+          "detailUrl": "dn1000-gas-3pe.html"
+        },
+        {
+          "title": "DN1200防腐钢管技术解析",
+          "slug": "DN1200-anti-corrosion.html",
+          "date": "2025-07-08",
+          "publishDate": "2025-07-08",
+          "content": "DN1200防腐钢管采用多层防腐涂层工艺，显著提升了管道的耐腐蚀性能和使用寿命，广泛应用于市政、工业等领域，保障输送安全与工程质量。",
+          "src": "/images/news/DN1200-tech.jpg",
+          "alt": "DN1200防腐钢管",
+          "detailUrl": "DN1200-anti-corrosion.html"
+        },
+        {
+          "title": "矿用DN600沟槽连接涂塑通风钢管",
+          "slug": "DN600-plastic-coating-formining.html",
+          "date": "2025-07-01",
+          "publishDate": "2025-07-01",
+          "content": "沧州恒基泰管道装备有限公司出品的DN600矿用涂塑通风钢管，采用钢塑复合结构，具备卓越的安全防腐性能与流体动力学优势，是现代化矿井建设的优选管材。",
+          "src": "/images/news/dn600-tech.jpg",
+          "alt": "矿用DN600沟槽连接涂塑通风钢管",
+          "detailUrl": "DN600-plastic-coating-formining.html"
+        },
+        {
+          "title": "TPEP防腐钢管 - 高性能管道解决方案",
+          "slug": "DN1200-TPEP-anti-corrosion-steel-pipe.html",
+          "date": "2025-06-23",
+          "publishDate": "2025-06-23",
+          "content": "TPEP防腐钢管通过外壁三层聚乙烯(3PE)与内壁熔结环氧树脂(FBE)的复合工艺，实现了防腐性能的全面升级。相较于传统单层防腐管材，其防腐寿命提升3-5倍，在高盐碱、潮湿等严苛环境下表现卓越。采用第四代热熔结缠绕工艺，形成钢塑合金层，兼具抗冲击性与化学惰性。成功应用于南水北调中线工程、山东临沂双堠水库输水工程等重大项目，实现50km管线零渗漏，运维成本降低30%，适用于市政给排水、长距离输水及工业特殊场景，设计寿命50年。",
+          "src": "/images/hp-products/%E5%A4%A7%E5%8F%A3%E5%BE%84%E5%86%85%E7%8E%AF%E6%B0%A7%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1/(1420%C3%9712%E7%B1%B3)%E5%86%85%E7%8E%AF%E6%B0%A7%E7%B2%89%E6%9C%AB%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1.jpg",
+          "alt": "TPEP防腐钢管 - 大口径内环氧粉末涂塑钢管",
+          "detailUrl": "DN1200-TPEP-anti-corrosion-steel-pipe.html"
+        },
+        {
+          "title": "DN1000高性能涂塑复合钢管技术解析",
+          "slug": "dn1000-coated-steel-pipe-tech.html",
+          "date": "2025-06-16",
+          "publishDate": "2025-06-16",
+          "categoryKey": "category3",
+          "category": "技术文章",
+          "content": "<p>DN1000涂塑钢管作为大型市政及工业输水系统的核心管道，完美融合了钢材的机械强度与塑料涂层的卓越防腐性能。采用创新的双涂层防护体系，内壁光滑度较传统钢管提升40%以上，输送效率提高15%-20%。</p><p>产品采用食品级环氧树脂内涂层(厚度≥0.35mm)，完全符合GB/T 17219饮用水卫生标准，外层采用高密度PE或环氧粉末(厚度≥0.5mm)，具备优异的抗UV及化学腐蚀性能，可耐-40℃~80℃温差。</p>",
+          "src": "/images/news/dn1000-tech.jpg",
+          "alt": "DN1000涂塑钢管技术特性展示",
+          "detailUrl": "dn1000-coated-steel-pipe-tech.html"
+        }
+      ]
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

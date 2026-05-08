@@ -1,0 +1,162 @@
+/**
+ * 产品详情模态框滚动条增强样式
+ * 为产品详情模态框内容区域添加美观且易用的滚动条
+ */
+
+/* 产品模态框整体的滚动处理 */
+#product-modal {
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* 产品描述区域滚动条 */
+#product-modal-description {
+  overflow-y: auto;
+  max-height: 150px; /* 增加最大高度，提供更大的查看空间 */
+  padding-right: 5px; /* 为滚动条留出空间 */
+}
+
+/* Firefox滚动条定制 */
+@supports (scrollbar-width: thin) {
+  #product-modal-description {
+    scrollbar-width: thin;
+  }
+}
+
+/* RTL 语言支持 */
+html[lang="ar"] #product-modal-description {
+  padding-right: 0;
+  padding-left: 5px; /* 为RTL语言调整滚动条位置 */
+  direction: rtl;
+}
+
+/* Webkit浏览器滚动条样式 */
+@supports (-webkit-appearance:none) {
+  #product-modal-description::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  #product-modal-description::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  #product-modal-description::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  #product-modal-description::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/* 为应用领域、产品特性和连接方式标签容器添加横向滚动 */
+#product-modal .mb-4.flex.flex-row.items-start.gap-x-4 {
+  overflow-x: auto;
+  padding-bottom: 5px; /* 为滚动条留出空间 */
+  /* scrollbar-width: thin; 移除可能不兼容的CSS */
+  -webkit-overflow-scrolling: touch; /* 增加iOS滚动的流畅度 */
+}
+
+/* 只为支持webkit的浏览器应用自定义滚动条样式 */
+@supports (-webkit-appearance:none) {
+  #product-modal .mb-4.flex.flex-row.items-start.gap-x-4::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  #product-modal .mb-4.flex.flex-row.items-start.gap-x-4::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  #product-modal .mb-4.flex.flex-row.items-start.gap-x-4::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  #product-modal .mb-4.flex.flex-row.items-start.gap-x-4::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/* 确保模态框内容在小屏幕上也能完全显示并滚动 */
+#product-modal .bg-white {
+  max-height: 90vh; /* 保持最大高度为视口的90% */
+  display: flex;
+  flex-direction: column;
+}
+
+#product-modal .flex.flex-col.md\:flex-row {
+  overflow-y: auto; /* 使主内容区域可滚动 */
+}
+
+/* 只为支持webkit的浏览器应用自定义滚动条样式 */
+@supports (-webkit-appearance:none) {
+  #product-modal .flex.flex-col.md\:flex-row::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  #product-modal .flex.flex-col.md\:flex-row::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  #product-modal .flex.flex-col.md\:flex-row::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  #product-modal .flex.flex-col.md\:flex-row::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+/* 移动设备优化 */
+@media (max-width: 640px) {
+  #product-modal-description {
+    max-height: 120px; /* 在移动设备上稍微减小高度 */
+  }
+  
+  #product-modal .bg-white {
+    max-height: 95vh; /* 在移动设备上使用更多视口空间 */
+  }
+
+  /* 优化移动设备上的滚动指示器 */
+  #product-modal-description {
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  /* 添加滚动提示阴影 */
+  #product-modal-description:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* 当内容可滚动时显示阴影 */
+  #product-modal-description.can-scroll:after {
+    opacity: 1;
+  }
+}
+
+/* Safari 特定修复 */
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    #product-modal-description {
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
+
+/* iOS点击高亮修复 */
+#product-modal * {
+  -webkit-tap-highlight-color: transparent;
+}

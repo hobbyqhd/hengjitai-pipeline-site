@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沧州恒基泰管道装备有限公司 | Cangzhou Hengjitai Pipeline Equipment Co., Ltd.</title>
+    <script>
+        // 语言重定向脚本 - 自动匹配浏览器语言并立即重定向
+        (function() {
+            // 获取浏览器语言
+            var userLang = navigator.language || navigator.userLanguage;
+            userLang = userLang.toLowerCase();
+            
+            // 所有支持的语言映射
+            var langMap = {
+                'zh': 'cn',    // 中文
+                'cn': 'cn',    // 中文替代
+                'de': 'de',    // 德语
+                'es': 'es',    // 西班牙语
+                'fr': 'fr',    // 法语
+                'pt': 'pt',    // 葡萄牙语
+                'hi': 'hi',    // 印地语
+                'ja': 'jp',    // 日语
+                'jp': 'jp',    // 日语替代写法
+                'ru': 'ru',    // 俄语
+                'ar': 'ar',    // 阿拉伯语
+                'en': 'en'     // 英语
+            };
+            
+            // 查找匹配的语言
+            var redirectLang = 'en'; // 默认为英语
+            
+            // 获取浏览器语言的主要部分（例如，zh-CN 变成 zh）
+            var langPrefix = userLang.split('-')[0];
+            
+            // 检查是否有完全匹配
+            if (langMap[userLang]) {
+                redirectLang = langMap[userLang];
+            } 
+            // 检查是否有语言前缀匹配
+            else if (langMap[langPrefix]) {
+                redirectLang = langMap[langPrefix];
+            }
+            
+            // 直接执行重定向，不等待页面加载
+            window.location.replace(redirectLang + '/');
+        })();
+    </script>
+    <!-- 添加无CSS无内容的样式，避免页面闪烁 -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, sans-serif;
+            color: #1B3C8C;
+            visibility: hidden; /* 不显示加载提示 */
+        }
+        /* 添加一个隐藏的后备链接，以防脚本无法执行（搜索引擎爬虫等场景） */
+        .fallback-links {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            visibility: hidden; /* 默认隐藏 */
+            opacity: 0;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+        .fallback-links a {
+            color: #666;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+    </style>
+    <noscript>
+        <!-- 如果JavaScript被禁用，显示语言选择链接 -->
+        <style>
+            .fallback-links {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+    <div class="loading">正在加载... / Loading...</div>
+    <div class="fallback-links">
+        <a href="cn/">中文</a> |
+        <a href="en/">English</a> |
+        <a href="jp/">日本語</a> |
+        <a href="ru/">Русский</a> |
+        <a href="ar/">العربية</a> |
+        <a href="es/">Español</a> |
+        <a href="fr/">Français</a> |
+        <a href="pt/">Português</a> |
+        <a href="hi/">हिन्दी</a> |
+        <a href="de/">Deutsch</a>
+    </div>
+</body>
+</html>

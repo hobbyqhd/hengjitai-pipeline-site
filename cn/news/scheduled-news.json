@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "category1": "公司新闻",
+    "category2": "行业动态",
+    "category3": "技术文章",
+    "category4": "媒体报道"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": [
+        {
+          "title": "2020螺旋钢管 品质宣传画报",
+          "slug": "2020.html",
+          "date": "2026-07-15",
+          "publishDate": "2026-07-15",
+          "content": "以卓越品质铸就非凡工程，我们承诺每一米钢管都承载着安全与信赖。磐石之基，传世之管。",
+          "src": "/images/news/spiral-steel-pipe-2020.jpg",
+          "alt": "2020螺旋钢管",
+          "detailUrl": "2020.html"
+        },
+        {
+          "title": "大口径涂塑钢管介绍",
+          "slug": "大口径涂塑.html",
+          "date": "2026-07-14",
+          "publishDate": "2026-07-14",
+          "content": "详细介绍大口径涂塑钢管的特性、应用与优势...",
+          "src": "/images/news/large-diameter-coated-pipe.jpg",
+          "alt": "大口径涂塑钢管",
+          "detailUrl": "大口径涂塑.html"
+        }
+      ]
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": []
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

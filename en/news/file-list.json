@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "category1": "Company News",
+    "category2": "Industry Updates",
+    "category3": "Technical Articles",
+    "category4": "Media Coverage"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": []
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": [
+        {
+          "title": "Galvanized Outer and Plastic Coated Steel Pipe",
+          "slug": "Galvanized-outer-and-plastic-coated-steel-pipe.html",
+          "date": "2025-08-22",
+          "publishDate": "2025-08-22",
+          "content": "Galvanized outer and plastic coated steel pipe combines steel's mechanical strength with plastic's corrosion resistance, featuring excellent corrosion and wear resistance, widely used in water supply and drainage, fire protection, coal mining and other pipeline system construction.",
+          "src": "/images/news/Galvanized-outer-and-plastic-coated-steel-pipe.jpg",
+          "alt": "Galvanized outer and plastic coated steel pipe",
+          "detailUrl": "Galvanized-outer-and-plastic-coated-steel-pipe.html"
+        },
+        {
+          "title": "Hot-Dip Plastic Steel Electric Cable Protection Tube",
+          "slug": "hot-dip-plastic-electric-wire-conduit.html",
+          "date": "2025-08-12",
+          "publishDate": "2025-08-12",
+          "content": "Hot-dip plastic steel electric cable protection tube uses fluidized bed immersion technology, featuring excellent anti-static, flame-retardant, and corrosion-resistant properties, ideal for power, communications, mining and other pipeline system construction.",
+          "src": "/images/news/hot-dip-plastic-electric-wire-conduit.jpg",
+          "alt": "Hot-dip plastic steel electric cable protection tube",
+          "detailUrl": "hot-dip-plastic-electric-wire-conduit.html"
+        },
+        {
+          "title": "Color Double-Resistance Powder Coated Steel Pipe",
+          "slug": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html",
+          "date": "2025-08-09",
+          "publishDate": "2025-08-09",
+          "content": "Color double-resistance powder coated steel pipe combines corrosion and wear resistance with diverse colors, suitable for municipal, industrial, fire protection and other applications. It's a high-performance pipeline that combines safety, economy and environmental protection.",
+          "src": "/images/news/Groove-connection-color-double-resistance-powder-coated-steel-pipe.jpg",
+          "alt": "Groove Connection Color Double-Resistance Powder Coated Steel Pipe",
+          "detailUrl": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html"
+        },
+        {
+          "title": "TPEP Anti-Corrosion Steel Pipe",
+          "slug": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html",
+          "date": "2025-08-02",
+          "publishDate": "2025-08-02",
+          "content": "TPEP anti-corrosion steel pipe features dual protection technology with 3PE and FBE coatings, providing superior corrosion resistance, high mechanical strength, and extended service life for oil, gas, chemical, and water transportation pipelines.",
+          "src": "/images/news/1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.jpg",
+          "alt": "TPEP Anti-Corrosion Steel Pipe",
+          "detailUrl": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html"
+        },
+        {
+          "title": "DN300 Grooved White Plastic-Lined Steel Pipe",
+          "slug": "DN300-grooved-white-plastic.html",
+          "date": "2025-07-23",
+          "publishDate": "2025-07-23",
+          "content": "DN300 grooved white plastic-lined steel pipe features food-grade epoxy coating with revolutionary installation and maintenance advantages, reducing construction time by 65% compared to welding, making it the ideal choice for smart water utilities and emergency water supply.",
+          "src": "/images/news/DN300-grooved-white-plastic.jpg",
+          "alt": "DN300 Grooved White Plastic-Lined Steel Pipe",
+          "detailUrl": "DN300-grooved-white-plastic.html"
+        },
+        {
+          "title": "DN1000 3PE Anti-Corrosion Steel Pipe for Gas Transmission",
+          "slug": "dn1000-gas-3pe.html",
+          "date": "2025-07-16",
+          "publishDate": "2025-07-16",
+          "content": "DN1000 3PE anti-corrosion steel pipe for gas transmission features triple-layer composite anti-corrosion structure with 50-year design life, suitable for high-pressure gas transmission and harsh environment pipeline systems, ensuring long-term stable operation.",
+          "src": "/images/news/dn1000-gas-3pe.jpg",
+          "alt": "DN1000 3PE Anti-Corrosion Steel Pipe for Gas Transmission",
+          "detailUrl": "dn1000-gas-3pe.html"
+        },
+        {
+          "title": "DN1200 Anti-Corrosion Steel Pipe Technical Analysis",
+          "slug": "DN1200-anti-corrosion.html",
+          "date": "2025-07-09",
+          "publishDate": "2025-07-09",
+          "content": "Technical analysis of DN1200 inner epoxy outer 3PE anti-corrosion steel pipe - the preferred solution for long-distance water transport projects with superior corrosion resistance and hydraulic performance.",
+          "src": "/images/news/DN1200-tech.jpg",
+          "alt": "DN1200 Anti-Corrosion Steel Pipe",
+          "detailUrl": "DN1200-anti-corrosion.html"
+        },
+        {
+          "title": "Mining DN600 Grooved Coupling Plastic-Lined Ventilation Steel Pipe",
+          "slug": "DN600-plastic-coating-formining.html",
+          "date": "2025-07-02",
+          "publishDate": "2025-07-02",
+          "content": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd.'s DN600 mining plastic-lined ventilation steel pipe features a steel-plastic composite structure with outstanding safety anti-corrosion properties and fluid dynamics advantages, making it the preferred piping solution for modern mining operations.",
+          "src": "/images/news/dn600-tech.jpg",
+          "alt": "Mining DN600 Grooved Coupling Plastic-Lined Ventilation Steel Pipe",
+          "detailUrl": "DN600-plastic-coating-formining.html"
+        },
+        {
+          "title": "TPEP Anti-Corrosion Steel Pipe - High-Performance Pipeline Solution",
+          "slug": "DN1200-TPEP-anti-corrosion-steel-pipe.html",
+          "date": "2025-06-24",
+          "publishDate": "2025-06-24",
+          "content": "TPEP anti-corrosion steel pipes achieve comprehensive anti-corrosion performance upgrades through composite technology of outer wall three-layer polyethylene (3PE) and inner wall fusion-bonded epoxy resin (FBE). Compared to traditional single-layer anti-corrosion pipes, their anti-corrosion lifespan is improved by 3-5 times, demonstrating excellent performance in harsh environments like high salinity and humidity. Using fourth-generation thermally bonded wrapping technology, it forms steel-plastic alloy layers that combine impact resistance and chemical inertness. Successfully applied to major projects like the South-to-North Water Transfer Project and Shandong Linyi Shuanghou Reservoir Water Transfer Project, achieving zero leakage over 50km pipelines, reducing operation and maintenance costs by 30%. Suitable for municipal water supply and drainage, long-distance water transmission, and industrial special scenarios, with a design life of 50 years.",
+          "src": "/images/hp-products/%E5%A4%A7%E5%8F%A3%E5%BE%84%E5%86%85%E7%8E%AF%E6%B0%A7%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1/(1420%C3%9712%E7%B1%B3)%E5%86%85%E7%8E%AF%E6%B0%A7%E7%B2%89%E6%9C%AB%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1.jpg",
+          "alt": "TPEP Anti-Corrosion Steel Pipe - Large-Diameter Inner Epoxy Powder Coated Steel Pipe",
+          "detailUrl": "DN1200-TPEP-anti-corrosion-steel-pipe.html"
+        },
+        {
+          "title": "Technical Explanation of DN1000 High-Performance Resin-Coated Composite Steel Pipe",
+          "slug": "dn1000-coated-steel-pipe-tech.html",
+          "date": "2025-06-18",
+          "publishDate": "2025-06-18",
+          "categoryKey": "category3",
+          "category": "Technical Article",
+          "content": "<p>The DN1000 resin-coated steel pipe perfectly combines the mechanical strength of steel with the excellent anti-corrosion performance of plastic coating, serving as a major pipeline for large-scale urban infrastructure and industrial water supply systems. It adopts an innovative dual-coating protection system, with the inner wall smoothness improved by more than 40% compared to conventional steel pipes, resulting in a 15%-20% increase in transport efficiency.</p><p>This product uses a food-grade epoxy resin coating (thickness ≥0.35mm) on the inner surface, fully complying with the Chinese national standard GB/T 17219 for drinking water hygiene. The outer surface uses high-density polyethylene (PE) or epoxy powder (thickness ≥0.5mm), providing excellent UV and chemical resistance, and can withstand temperature differences from -40℃ to 80℃.</p>",
+          "src": "/images/news/dn1000-tech.jpg",
+          "alt": "Introduction to the Technical Features of DN1000 Resin-Coated Steel Pipe",
+          "detailUrl": "dn1000-coated-steel-pipe-tech.html"
+        }
+      ]
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "category1": "Actualités de l'Entreprise",
+    "category2": "Dynamique de l'Industrie",
+    "category3": "Articles Techniques",
+    "category4": "Rapports Médiatiques"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": [
+        {
+          "title": "Brochure qualité des tubes d'acier spiralés 2020",
+          "slug": "2020.html",
+          "date": "2026-07-15",
+          "publishDate": "2026-07-15",
+          "content": "Créer une ingénierie exceptionnelle avec une qualité supérieure, nous nous engageons à ce que chaque mètre de tube d'acier porte sécurité et confiance. Fondation de pierre, tubes pour les générations.",
+          "src": "/images/news/spiral-steel-pipe-2020.jpg",
+          "alt": "Tube d'acier spiralé 2020",
+          "detailUrl": "2020.html"
+        },
+        {
+          "title": "Introduction aux tubes d'acier revêtus de grand diamètre",
+          "slug": "grand-diametre-revetu.html",
+          "date": "2026-07-14",
+          "publishDate": "2026-07-14",
+          "content": "Introduction complète aux caractéristiques, applications et avantages des tubes d'acier revêtus de grand diamètre...",
+          "src": "/images/news/large-diameter-coated-pipe.jpg",
+          "alt": "Tube d'acier revêtu de grand diamètre",
+          "detailUrl": "grand-diametre-revetu.html"
+        }
+      ]
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": []
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

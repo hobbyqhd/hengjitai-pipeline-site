@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "category1": "Notícias da Empresa",
+    "category2": "Dinâmica da Indústria",
+    "category3": "Artigos Técnicos",
+    "category4": "Relatórios da Mídia"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": [
+        {
+          "title": "Brochura de qualidade de tubos de aço espiral 2020",
+          "slug": "2020.html",
+          "date": "2026-07-15",
+          "publishDate": "2026-07-15",
+          "content": "Criando engenharia excepcional com qualidade superior, nos comprometemos que cada metro de tubo de aço carregue segurança e confiabilidade. Fundação de pedra, tubos para gerações.",
+          "src": "/images/news/spiral-steel-pipe-2020.jpg",
+          "alt": "Tubo de aço espiral 2020",
+          "detailUrl": "2020.html"
+        },
+        {
+          "title": "Introdução aos tubos de aço revestidos de grande diâmetro",
+          "slug": "grande-diametro-revestido.html",
+          "date": "2026-07-14",
+          "publishDate": "2026-07-14",
+          "content": "Introdução abrangente às características, aplicações e vantagens dos tubos de aço revestidos de grande diâmetro...",
+          "src": "/images/news/large-diameter-coated-pipe.jpg",
+          "alt": "Tubo de aço revestido de grande diâmetro",
+          "detailUrl": "grande-diametro-revestido.html"
+        }
+      ]
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": []
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

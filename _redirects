@@ -1,0 +1,24 @@
+# 强制 HTTPS 重定向
+http://hengjitaipipeline.com/* https://hengjitaipipeline.com/:splat 301!
+http://www.hengjitaipipeline.com/* https://www.hengjitaipipeline.com/:splat 301!
+
+# www 到非 www 重定向（如果您使用 www）
+# https://www.hengjitaipipeline.com/* https://hengjitaipipeline.com/:splat 301!
+
+# 语言首页优化重定向
+/zh/* /cn/:splat 301
+/zh-cn/* /cn/:splat 301
+/ja/* /jp/:splat 301
+/japanese/* /jp/:splat 301
+
+# 常见错误路径重定向
+/home /en/ 301
+/index /en/ 301
+/index.html /en/ 301
+
+# 旧版 URL 重定向（如果有的话）
+# /old-products/* /en/products/ 301
+# /old-about/* /en/about.html 301
+
+# 404 页面设置（可选）
+# /* /en/404.html 404

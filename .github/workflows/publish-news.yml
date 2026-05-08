@@ -1,0 +1,277 @@
+name: Multi-Language News Publication
+
+on:
+  schedule:
+    # 北京时间每天早上 8:30 (UTC+8 = 00:30 UTC)
+    - cron: '30 0 * * *'
+  # 允许手动触发，用于测试和紧急发布
+  workflow_dispatch:
+    inputs:
+      language:
+        description: '选择要发布的语言'
+        required: true
+        type: choice
+        options:
+          - all
+          - cn
+          - en
+          - jp
+          - fr
+          - de
+          - es
+          - pt
+          - ru
+          - ar
+          - hi
+      update_sitemap:
+        description: '是否更新站点地图'
+        required: true
+        type: boolean
+        default: true
+
+jobs:
+  determine-languages:
+    runs-on: ubuntu-latest
+    outputs:
+      languages: ${{ steps.set-languages.outputs.languages }}
+    steps:
+      - name: Set languages to process
+        id: set-languages
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ github.event.inputs.language }}" != "all" ]]; then
+            echo "languages=['${{ github.event.inputs.language }}']" >> $GITHUB_OUTPUT
+          else
+            echo "languages=['cn', 'en', 'jp', 'fr', 'de', 'es', 'pt', 'ru', 'ar', 'hi']" >> $GITHUB_OUTPUT
+          fi
+
+  publish-news:
+    needs: determine-languages
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ${{ fromJson(needs.determine-languages.outputs.languages) }}
+      # 允许其他语言继续执行，即使某个语言失败
+      fail-fast: false
+      # 限制并发执行数量，避免同时推送太多更新
+      max-parallel: 2
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 获取完整历史记录
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}  # 优先使用PAT
+          ref: ${{ github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Run publication script for ${{ matrix.language }}
+        id: publish
+        continue-on-error: true
+        run: |
+          if [ -f "${{ matrix.language }}/news/scripts/publish-news.js" ]; then
+            if node ${{ matrix.language }}/news/scripts/publish-news.js; then
+              echo "✓ ${{ matrix.language }} 新闻发布脚本执行成功"
+              echo "script_exists=true" >> $GITHUB_OUTPUT
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+            else
+              echo "⚠️ ${{ matrix.language }} 新闻发布脚本执行完成，无新闻需要发布"
+              echo "script_exists=true" >> $GITHUB_OUTPUT
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "⚠️ 未找到 ${{ matrix.language }} 的发布脚本"
+            echo "script_exists=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      # 不再需要单独检查变更，由 git-auto-commit-action 自动处理
+
+      - name: Configure Git
+        if: steps.publish.outputs.script_exists == 'true'
+        run: |
+          git config --global user.name 'News Publication Bot'
+          git config --global user.email 'bot@example.com'
+
+      - name: Check and publish changes
+        if: steps.publish.outputs.script_exists == 'true'
+        run: |
+          # 存储当前的git状态
+          echo "检查工作区状态..."
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "发现未提交的更改，准备处理..."
+
+            # 保存当前更改
+            git stash push -m "Temporary stash before rebase"
+            echo "已暂存当前更改"
+          fi
+
+          echo "获取远程更改..."
+          git fetch origin main
+
+          echo "重置到远程main分支..."
+          git reset --hard origin/main
+
+          if [[ -n "$(git stash list | head -n1)" ]]; then
+            echo "恢复暂存的更改..."
+            git stash pop
+          fi
+
+          echo "检查是否有更改需要提交..."
+          if git status --porcelain | grep .; then
+            echo "发现更改，准备提交..."
+
+            # 添加所有更改
+            git add -A
+
+            # 提交更改
+            git commit -m "Auto-publish ${{ matrix.language }} news for $(date +'%Y-%m-%d')"
+
+            # 尝试推送，如果失败则重试
+            for i in 1 2 3; do
+              if git push origin main; then
+                echo "✅ 成功推送更改"
+                break
+              else
+                if [ $i -lt 3 ]; then
+                  echo "⚠️ 推送失败，正在重试 ($i/3)..."
+                  git fetch origin main
+                  git reset --hard origin/main
+                  git stash pop
+                  git add -A
+                  git commit -m "Auto-publish ${{ matrix.language }} news for $(date +'%Y-%m-%d')"
+                else
+                  echo "❌ 推送失败，已达到最大重试次数"
+                  exit 1
+                fi
+              fi
+            done
+          else
+            echo "✓ 没有需要发布的更改"
+            exit 0  # 成功退出，因为这是正常情况
+          fi
+
+      - name: Notify publication status
+        run: |
+          if [ "${{ steps.publish.outputs.script_exists }}" == "false" ]; then
+            echo "⚠️ ${{ matrix.language }}: 未找到发布脚本"
+          elif [ "${{ steps.publish.outputs.has_changes }}" == "true" ]; then
+            echo "✅ ${{ matrix.language }}: 新闻已成功发布"
+          else
+            echo "ℹ️ ${{ matrix.language }}: 没有需要发布的新闻"
+          fi
+
+  update-sitemap:
+    needs: publish-news
+    if: always() && (github.event_name != 'workflow_dispatch' || github.event.inputs.update_sitemap == 'true')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code (if not already done)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 获取完整历史记录
+          token: ${{ secrets.PAT || secrets.GITHUB_TOKEN }}  # 优先使用PAT
+          ref: ${{ github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Generate sitemaps (pages + images)
+        run: |
+          echo "开始生成站点地图..."
+          node scripts/generate-sitemap-enhanced.js
+          node scripts/generate-sitemap-enhanced.js --images
+
+      - name: Compute commit date
+        id: date
+        run: echo "today=$(date -u +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      # 在同步最新代码的情况下提交站点地图变更
+      - name: Fetch latest changes
+        run: |
+          git pull --rebase origin ${GITHUB_REF#refs/heads/}
+        continue-on-error: true
+
+      - name: Commit and push sitemap changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore(sitemap): update sitemaps for ${{ steps.date.outputs.today }}"
+          commit_user_name: Sitemap Generator Bot
+          commit_user_email: bot@example.com
+          commit_author: Sitemap Generator Bot <bot@example.com>
+          file_pattern: 'sitemap*.xml'
+
+      - name: Notify search engines via IndexNow (Bing/Yandex/Naver)
+        if: env.INDEXNOW_KEY != ''
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/indexnow-ping.js --limit=200
+
+      - name: Notify sitemap status
+        run: |
+          echo "✅ 站点地图处理完成"
+
+  send-notification:
+    needs: [publish-news, update-sitemap]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate workflow summary
+        run: |
+          echo "# 多语言新闻发布系统执行报告" >> $GITHUB_STEP_SUMMARY
+          echo "执行时间: $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "## 执行结果摘要" >> $GITHUB_STEP_SUMMARY
+
+          PUBLISH_STATUS="${{ needs.publish-news.result }}"
+          SITEMAP_STATUS="${{ needs.update-sitemap.result }}"
+
+          if [[ "$PUBLISH_STATUS" == "success" ]]; then
+            echo "- 新闻发布: ✅ 成功" >> $GITHUB_STEP_SUMMARY
+          elif [[ "$PUBLISH_STATUS" == "skipped" ]]; then
+            echo "- 新闻发布: ⏭️ 已跳过" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- 新闻发布: ❌ 失败或部分失败" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          if [[ "$SITEMAP_STATUS" == "success" ]]; then
+            echo "- 站点地图更新: ✅ 成功" >> $GITHUB_STEP_SUMMARY
+          elif [[ "$SITEMAP_STATUS" == "skipped" ]]; then
+            echo "- 站点地图更新: ⏭️ 已跳过" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- 站点地图更新: ❌ 失败" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Set overall workflow status
+        id: status
+        run: |
+          PUBLISH_STATUS="${{ needs.publish-news.result }}"
+          SITEMAP_STATUS="${{ needs.update-sitemap.result }}"
+
+          if [[ "$PUBLISH_STATUS" == "success" && "$SITEMAP_STATUS" == "success" ]]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          elif [[ "$PUBLISH_STATUS" == "failure" || "$SITEMAP_STATUS" == "failure" ]]; then
+            echo "status=failure" >> $GITHUB_OUTPUT
+          else
+            echo "status=partial" >> $GITHUB_OUTPUT
+          fi
+
+      # 使用 GitHub 的通知系统
+      - name: Report success status
+        if: steps.status.outputs.status == 'success'
+        run: |
+          echo "::notice::✅ 多语言新闻发布系统执行成功"
+
+      - name: Report partial success status
+        if: steps.status.outputs.status == 'partial'
+        run: |
+          echo "::warning::⚠️ 多语言新闻发布系统部分任务成功，部分任务失败或跳过"
+
+      - name: Report failure status
+        if: steps.status.outputs.status == 'failure'
+        run: |
+          echo "::error::❌ 多语言新闻发布系统执行失败，请检查日志"

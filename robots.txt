@@ -1,0 +1,104 @@
+User-agent: *
+Allow: /
+
+# Allow all language versions
+Allow: /cn/
+Allow: /en/
+Allow: /jp/
+Allow: /fr/
+Allow: /de/
+Allow: /es/
+Allow: /pt/
+Allow: /ru/
+Allow: /ar/
+Allow: /hi/
+
+# Main sitemap
+Sitemap: https://hengjitaipipeline.com/sitemap.xml
+
+# Language-specific sitemaps
+Sitemap: https://hengjitaipipeline.com/sitemap-cn.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-en.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-jp.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-fr.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-de.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-es.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-pt.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-ru.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-ar.xml
+Sitemap: https://hengjitaipipeline.com/sitemap-hi.xml
+
+# Image sitemap
+Sitemap: https://hengjitaipipeline.com/sitemap-images.xml
+
+# Crawling settings for better indexing
+Crawl-delay: 1
+
+# Allow public sections
+Allow: /*/news/published/
+Allow: /*/news/published/category*/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /webfonts/
+
+# Common files
+Allow: /favicon.ico
+Allow: /sitemap*.xml
+Allow: /robots.txt
+Allow: /_headers
+Allow: /_redirects
+
+# Private directories and files
+Disallow: /*/news/scripts/
+Disallow: /*/news/scheduled/
+Disallow: /scripts/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /package*.json
+Disallow: /*.config.js
+Disallow: /wrangler.jsonc
+Disallow: /doc/
+
+# Prevent indexing of duplicate content
+Disallow: /*?*
+Disallow: /*#*
+Disallow: /*/products-old.html
+
+# Block common bot attacks
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+# Allow important search engines with specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+Disallow: /templates/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+
+# Development and temporary files
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /*.yml$
+Disallow: /*.yaml$
+Disallow: /*.config.*
+
+# Clean URL parameters
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
+Clean-param: fbclid&gclid

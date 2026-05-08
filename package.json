@@ -1,0 +1,39 @@
+{
+  "name": "hengjitai-pipeline-site",
+  "version": "1.0.0",
+  "description": "Cangzhou Hengjitai Pipeline Equipment multilingual enterprise website",
+  "scripts": {
+    "build:tailwind": "tailwindcss --postcss -i ./css/tailwind-source.css -o ./css/tailwind.min.css --minify",
+    "watch:tailwind": "tailwindcss --postcss -i ./css/tailwind-source.css -o ./css/tailwind.min.css --watch",
+    "build:css": "postcss ./css/main.css -o ./css/combined.min.css",
+    "build:css:imports": "npm run build:css",
+    "cleanup:css": "echo \"No CSS cleanup required\"",
+    "build": "npm run build:tailwind && npm run build:css",
+    "generate:pages": "node \"./scripts/1. generate-page.js\"",
+    "generate:products": "node \"./scripts/2. generate-multilingual-products.js\"",
+    "generate:cases": "node \"./scripts/3. generate-cases-page-improved.js\"",
+    "generate:site": "npm run generate:pages && npm run generate:products && npm run generate:cases",
+    "seo:sitemap": "node ./scripts/generate-sitemap-enhanced.js && node ./scripts/generate-sitemap-enhanced.js --images",
+    "seo:audit": "node ./scripts/seo-audit.js",
+    "seo:images": "node ./scripts/image-seo-check.js",
+    "seo:validate": "node ./scripts/seo-link-validator.js",
+    "seo:webp": "node ./scripts/convert-images-to-webp.js",
+    "seo:all": "npm run seo:sitemap && npm run seo:audit -- --all && npm run seo:validate",
+    "deploy": "npm run seo:sitemap && wrangler deploy",
+    "deploy:full": "node ./scripts/deploy-with-seo.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "cheerio": "^1.2.0",
+    "concat-files": "^0.1.1",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^11.0.1",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^16.1.0",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.3.2"
+  }
+}

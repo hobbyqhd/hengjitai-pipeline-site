@@ -1,0 +1,127 @@
+{
+  "categories": {
+    "category1": "Actualités de l'entreprise",
+    "category2": "Actualités de l'industrie",
+    "category3": "Articles techniques",
+    "category4": "Couverture médiatique"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": []
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": [
+        {
+          "title": "Tube en acier galvanisé extérieur et revêtu de plastique intérieur",
+          "slug": "Galvanized-outer-and-plastic-coated-steel-pipe.html",
+          "date": "2025-08-24",
+          "publishDate": "2025-08-24",
+          "content": "Le tube en acier galvanisé extérieur et revêtu de plastique intérieur combine la résistance mécanique de l'acier avec la résistance à la corrosion du plastique, offrant une excellente résistance à la corrosion et à l'usure, largement utilisé dans l'approvisionnement et l'évacuation d'eau, la protection incendie, l'exploitation minière et autres systèmes de canalisations.",
+          "src": "/images/news/Galvanized-outer-and-plastic-coated-steel-pipe.jpg",
+          "alt": "Tube en acier galvanisé extérieur et revêtu de plastique intérieur",
+          "detailUrl": "Galvanized-outer-and-plastic-coated-steel-pipe.html"
+        },
+        {
+          "title": "Tube de protection de câble électrique en acier plastifié par immersion à chaud",
+          "slug": "hot-dip-plastic-electric-wire-conduit.html",
+          "date": "2025-08-14",
+          "publishDate": "2025-08-14",
+          "content": "Le tube de protection de câble électrique en acier plastifié par immersion à chaud utilise la technologie d'immersion en lit fluidisé, offrant d'excellentes propriétés antistatiques, ignifuges et anticorrosion, idéal pour la construction de systèmes de canalisations électriques, de télécommunications, minières et autres.",
+          "src": "/images/news/hot-dip-plastic-electric-wire-conduit.jpg",
+          "alt": "Tube de protection de câble électrique en acier plastifié par immersion à chaud",
+          "detailUrl": "hot-dip-plastic-electric-wire-conduit.html"
+        },
+        {
+          "title": "Tube en acier revêtu de poudre coloré double résistance",
+          "slug": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html",
+          "date": "2025-08-11",
+          "publishDate": "2025-08-11",
+          "content": "Le tube en acier revêtu de poudre coloré double résistance combine résistance à la corrosion et à l'usure avec des couleurs diverses, adapté aux applications municipales, industrielles, de protection incendie et autres. C'est un pipeline haute performance qui allie sécurité, économie et protection environnementale.",
+          "src": "/images/news/Groove-connection-color-double-resistance-powder-coated-steel-pipe.jpg",
+          "alt": "Tube en acier revêtu de poudre coloré double résistance à connexion rainurée",
+          "detailUrl": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html"
+        },
+        {
+          "title": "Tube d'Acier Anticorrosion TPEP",
+          "slug": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html",
+          "date": "2025-08-04",
+          "publishDate": "2025-08-04",
+          "content": "Tube d'acier anticorrosion TPEP avec technologie de protection double par revêtements 3PE et FBE, offrant une résistance à la corrosion supérieure, une haute résistance mécanique et une longue durée de vie pour les pipelines de transport de pétrole, gaz, produits chimiques et eau.",
+          "src": "/images/news/1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.jpg",
+          "alt": "Tube d'Acier Anticorrosion TPEP",
+          "detailUrl": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html"
+        },
+        {
+          "title": "Tuyau d'Acier Plastifié Blanc Rainuré DN300",
+          "slug": "DN300-grooved-white-plastic.html",
+          "date": "2025-07-25",
+          "publishDate": "2025-07-25",
+          "content": "Le tuyau d'acier plastifié blanc rainuré DN300 présente un revêtement époxy de qualité alimentaire avec des avantages révolutionnaires d'installation et de maintenance, réduisant le temps de construction de 65% par rapport au soudage, en faisant le choix idéal pour les services d'eau intelligents et l'approvisionnement en eau d'urgence.",
+          "src": "/images/news/DN300-grooved-white-plastic.jpg",
+          "alt": "Tuyau d'Acier Plastifié Blanc Rainuré DN300",
+          "detailUrl": "DN300-grooved-white-plastic.html"
+        },
+        {
+          "title": "Tuyau d'Acier Anticorrosion 3PE DN1000 pour Transport de Gaz",
+          "slug": "dn1000-gas-3pe.html",
+          "date": "2025-07-18",
+          "publishDate": "2025-07-18",
+          "content": "Le tuyau d'acier anticorrosion 3PE DN1000 pour transport de gaz présente une structure anticorrosion composite à trois couches avec une durée de vie de conception de 50 ans, adapté au transport de gaz haute pression et aux systèmes de canalisations d'environnement difficile, garantissant un fonctionnement stable à long terme.",
+          "src": "/images/news/dn1000-gas-3pe.jpg",
+          "alt": "Tuyau d'Acier Anticorrosion 3PE DN1000 pour Transport de Gaz",
+          "detailUrl": "dn1000-gas-3pe.html"
+        },
+        {
+          "title": "Analyse Technique du Tuyau d'Acier Anticorrosion DN1200",
+          "slug": "DN1200-anti-corrosion.html",
+          "date": "2025-07-11",
+          "publishDate": "2025-07-11",
+          "content": "Analyse technique du tuyau d'acier anticorrosion DN1200 époxy intérieur 3PE extérieur - la solution préférée pour les projets de transport d'eau longue distance avec une résistance à la corrosion et des performances hydrauliques supérieures.",
+          "src": "/images/news/DN1200-tech.jpg",
+          "alt": "Tuyau d'Acier Anticorrosion DN1200",
+          "detailUrl": "DN1200-anti-corrosion.html"
+        },
+        {
+          "title": "Conduit d'Aération en Acier DN600 à Revêtement Plastique avec Raccord Rainuré pour Mines",
+          "slug": "DN600-plastic-coating-formining.html",
+          "date": "2025-07-05",
+          "publishDate": "2025-07-05",
+          "content": "Le conduit d'aération en acier DN600 à revêtement plastique pour mines de Cangzhou Hengjitai Pipeline Equipment Co., Ltd. présente une structure composite acier-plastique offrant d'excellentes propriétés anticorrosion de sécurité et des avantages en dynamique des fluides, ce qui en fait la solution de canalisation privilégiée pour les opérations minières modernes.",
+          "src": "/images/news/dn600-tech.jpg",
+          "alt": "Conduit d'Aération en Acier DN600 à Revêtement Plastique avec Raccord Rainuré pour Mines",
+          "detailUrl": "DN600-plastic-coating-formining.html"
+        },
+        {
+          "title": "Tube d'acier anti-corrosion TPEP - Solution de pipeline haute performance",
+          "slug": "DN1200-TPEP-anti-corrosion-steel-pipe.html",
+          "date": "2025-06-27",
+          "publishDate": "2025-06-27",
+          "content": "Les tubes d'acier anti-corrosion TPEP réalisent une amélioration complète des performances anti-corrosion grâce à la technologie composite de polyéthylène tricouche (3PE) sur la paroi externe et de résine époxy fusionnée (FBE) sur la paroi interne. Comparés aux matériaux de tubes anti-corrosion monocouche traditionnels, leur durée de vie anti-corrosion est améliorée de 3 à 5 fois, montrant d'excellentes performances dans des environnements difficiles comme la haute salinité et l'humidité. Adoptant la technologie d'enroulement par fusion thermique de quatrième génération, ils forment des couches d'alliage acier-plastique qui combinent résistance aux chocs et inertie chimique. Appliqués avec succès à des projets majeurs comme le projet de transfert d'eau Sud-Nord et le projet de transfert d'eau du réservoir Shuanghou de Linyi au Shandong, réalisant zéro fuite sur 50 km de canalisations et réduisant les coûts d'exploitation et de maintenance de 30%. Adaptés à l'approvisionnement et au drainage municipal, au transport d'eau longue distance et aux scénarios industriels spéciaux, avec une durée de vie de conception de 50 ans.",
+          "src": "/images/hp-products/%E5%A4%A7%E5%8F%A3%E5%BE%84%E5%86%85%E7%8E%AF%E6%B0%A7%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1/(1420%C3%9712%E7%B1%B3)%E5%86%85%E7%8E%AF%E6%B0%A7%E7%B2%89%E6%9C%AB%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1.jpg",
+          "alt": "Tube d'acier anti-corrosion TPEP - Tube d'acier revêtu de poudre époxy interne de grand diamètre",
+          "detailUrl": "DN1200-TPEP-anti-corrosion-steel-pipe.html"
+        },
+        {
+          "title": "Explication technique du tuyau en acier composite à revêtement en résine haute performance DN1000",
+          "slug": "dn1000-coated-steel-pipe-tech.html",
+          "date": "2025-06-19",
+          "publishDate": "2025-06-19",
+          "content": "<p>Le tuyau en acier DN1000 à revêtement en résine combine parfaitement la résistance mécanique de l’acier avec l’excellente performance anticorrosion du revêtement plastique, servant de conduite principale pour les infrastructures urbaines à grande échelle et les systèmes d’alimentation en eau industriels. Il adopte un système de protection innovant à double revêtement, avec une amélioration de plus de 40 % de la douceur de la paroi intérieure par rapport aux tuyaux en acier conventionnels, ce qui entraîne une augmentation de 15 % à 20 % de l’efficacité du transport.</p><p>Ce produit utilise un revêtement en résine époxy de qualité alimentaire (épaisseur ≥0,35 mm) sur la surface intérieure, conforme à la norme nationale chinoise GB/T 17219 pour l’hygiène de l’eau potable. La surface extérieure utilise du polyéthylène haute densité (PE) ou de la poudre d’époxy (épaisseur ≥0,5 mm), offrant une excellente résistance aux UV et aux produits chimiques, et peut supporter des différences de température de -40 ℃ à 80 ℃.</p>",
+          "src": "/images/news/dn1000-tech.jpg",
+          "alt": "Présentation des caractéristiques techniques du tuyau en acier DN1000 à revêtement en résine",
+          "detailUrl": "dn1000-coated-steel-pipe-tech.html"
+        }
+      ]
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

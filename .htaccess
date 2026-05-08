@@ -1,0 +1,52 @@
+# 设置默认文档顺序，优先选择index.html
+DirectoryIndex index.html index.php
+
+# 目录访问重定向规则
+RewriteEngine On
+
+# 防止访问不存在的嵌套路径（如 /cn/cn, /jp/jp 等）
+RewriteCond %{REQUEST_URI} ^/(cn|en|jp|ru|ar|es|fr|pt|hi|de)/(cn|en|jp|ru|ar|es|fr|pt|hi|de)
+RewriteRule ^.*$ /404.html [R=404,L]
+
+# 防止访问语言目录下不存在的子目录
+RewriteCond %{REQUEST_URI} ^/(cn|en|jp|ru|ar|es|fr|pt|hi|de)/[^/]+/$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/(.+)$ /$1/404.html [R=404,L]
+
+# 如果访问的是语言目录，重定向到该目录的index.html（确保有尾斜杠）
+RewriteCond %{REQUEST_URI} ^/(cn|en|jp|ru|ar|es|fr|pt|hi|de)$
+RewriteRule ^(.*)$ $1/ [R=301,L]
+
+# 如果访问语言目录且没有指定文件，默认加载index.html
+RewriteCond %{REQUEST_URI} ^/(cn|en|jp|ru|ar|es|fr|pt|hi|de)/$
+RewriteCond %{REQUEST_FILENAME}/index.html -f
+RewriteRule ^(.*)$ $1index.html [L]
+
+# 新闻相关文件的缓存控制 - 10分钟缓存
+<FilesMatch "file-list\.json$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "public, max-age=600, must-revalidate"
+    </IfModule>
+    <IfModule mod_expires.c>
+        ExpiresActive on
+        ExpiresDefault "access plus 10 minutes"
+    </IfModule>
+</FilesMatch>
+
+<FilesMatch "news\.html$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "public, max-age=600, must-revalidate"
+    </IfModule>
+    <IfModule mod_expires.c>
+        ExpiresActive on
+        ExpiresDefault "access plus 10 minutes"
+    </IfModule>
+</FilesMatch>
+
+# 设置基本安全头
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>

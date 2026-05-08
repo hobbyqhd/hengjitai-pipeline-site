@@ -1,0 +1,127 @@
+{
+  "categories": {
+    "category1": "Unternehmensnachrichten",
+    "category2": "Branchenneuigkeiten",
+    "category3": "Technische Artikel",
+    "category4": "Medienpräsenz"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": []
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": [
+        {
+          "title": "Außenverzinktes und innen kunststoffbeschichtetes Stahlrohr",
+          "slug": "Galvanized-outer-and-plastic-coated-steel-pipe.html",
+          "date": "2025-08-23",
+          "publishDate": "2025-08-23",
+          "content": "Außenverzinktes und innen kunststoffbeschichtetes Stahlrohr kombiniert die mechanische Festigkeit von Stahl mit der Korrosionsbeständigkeit von Kunststoff, bietet hervorragende Korrosions- und Verschleißbeständigkeit, weit verbreitet in Wasserversorgung und -entsorgung, Brandschutz, Bergbau und anderen Rohrleitungssystemen.",
+          "src": "/images/news/Galvanized-outer-and-plastic-coated-steel-pipe.jpg",
+          "alt": "Außenverzinktes und innen kunststoffbeschichtetes Stahlrohr",
+          "detailUrl": "Galvanized-outer-and-plastic-coated-steel-pipe.html"
+        },
+        {
+          "title": "Heißtauch-Kunststoff-Stahl-Elektrokabel-Schutzrohr",
+          "slug": "hot-dip-plastic-electric-wire-conduit.html",
+          "date": "2025-08-13",
+          "publishDate": "2025-08-13",
+          "content": "Heißtauch-Kunststoff-Stahl-Elektrokabel-Schutzrohr verwendet Wirbelschicht-Tauchverfahren und bietet hervorragende antistatische, flammhemmende und korrosionsbeständige Eigenschaften, ideal für Strom-, Kommunikations-, Bergbau- und andere Rohrleitungssysteme.",
+          "src": "/images/news/hot-dip-plastic-electric-wire-conduit.jpg",
+          "alt": "Heißtauch-Kunststoff-Stahl-Elektrokabel-Schutzrohr",
+          "detailUrl": "hot-dip-plastic-electric-wire-conduit.html"
+        },
+        {
+          "title": "Farbiges doppelresistentes pulverbeschichtetes Stahlrohr",
+          "slug": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html",
+          "date": "2025-08-10",
+          "publishDate": "2025-08-10",
+          "content": "Farbiges doppelresistentes pulverbeschichtetes Stahlrohr kombiniert Korrosions- und Verschleißbeständigkeit mit vielfältigen Farben, geeignet für kommunale, industrielle, Brandschutz- und andere Anwendungen. Es ist eine hochleistungsfähige Pipeline, die Sicherheit, Wirtschaftlichkeit und Umweltschutz vereint.",
+          "src": "/images/news/Groove-connection-color-double-resistance-powder-coated-steel-pipe.jpg",
+          "alt": "Nutverbindung farbiges doppelresistentes pulverbeschichtetes Stahlrohr",
+          "detailUrl": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html"
+        },
+        {
+          "title": "TPEP Korrosionsschutz-Stahlrohr",
+          "slug": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html",
+          "date": "2025-08-03",
+          "publishDate": "2025-08-03",
+          "content": "TPEP Korrosionsschutz-Stahlrohr mit doppeltem Schutztechnologie durch 3PE und FBE Beschichtungen, bietet überlegene Korrosionsbeständigkeit, hohe mechanische Festigkeit und lange Lebensdauer für Öl-, Gas-, Chemie- und Wassertransport-Pipelines.",
+          "src": "/images/news/1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.jpg",
+          "alt": "TPEP Korrosionsschutz-Stahlrohr",
+          "detailUrl": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html"
+        },
+        {
+          "title": "DN300 Genutetes Weißes Kunststoffbeschichtetes Stahlrohr",
+          "slug": "DN300-grooved-white-plastic.html",
+          "date": "2025-07-24",
+          "publishDate": "2025-07-24",
+          "content": "DN300 genutetes weißes kunststoffbeschichtetes Stahlrohr mit lebensmittelechter Epoxidbeschichtung und revolutionären Installations- und Wartungsvorteilen, reduziert Bauzeit um 65% gegenüber Schweißen und ist die ideale Wahl für intelligente Wasserwirtschaft und Notwasserversorgung.",
+          "src": "/images/news/DN300-grooved-white-plastic.jpg",
+          "alt": "DN300 Genutetes Weißes Kunststoffbeschichtetes Stahlrohr",
+          "detailUrl": "DN300-grooved-white-plastic.html"
+        },
+        {
+          "title": "DN1000 3PE-Korrosionsschutzstahlrohr für Gasübertragung",
+          "slug": "dn1000-gas-3pe.html",
+          "date": "2025-07-17",
+          "publishDate": "2025-07-17",
+          "content": "DN1000 3PE-Korrosionsschutzstahlrohr für Gasübertragung mit dreischichtiger Verbundkorrosionsschutzstruktur und 50-jähriger Auslegungslebensdauer, geeignet für Hochdruckgasübertragung und raue Umgebungen von Rohrleitungssystemen, gewährleistet langfristig stabilen Betrieb.",
+          "src": "/images/news/dn1000-gas-3pe.jpg",
+          "alt": "DN1000 3PE-Korrosionsschutzstahlrohr für Gasübertragung",
+          "detailUrl": "dn1000-gas-3pe.html"
+        },
+        {
+          "title": "DN1200 Korrosionsschutzstahlrohr Technische Analyse",
+          "slug": "DN1200-anti-corrosion.html",
+          "date": "2025-07-10",
+          "publishDate": "2025-07-10",
+          "content": "Technische Analyse von DN1200 Innenepoxid-Außen3PE-Korrosionsschutzstahlrohr - die bevorzugte Lösung für Fernwassertransportprojekte mit überlegener Korrosionsbeständigkeit und hydraulischer Leistung.",
+          "src": "/images/news/DN1200-tech.jpg",
+          "alt": "DN1200 Korrosionsschutzstahlrohr",
+          "detailUrl": "DN1200-anti-corrosion.html"
+        },
+        {
+          "title": "Bergbau-DN600-Nuten-Verbindungsrohr mit Kunststoffauskleidung für Belüftung",
+          "slug": "DN600-plastic-coating-formining.html",
+          "date": "2025-07-03",
+          "publishDate": "2025-07-03",
+          "content": "Das DN600-Bergbau-Belüftungsstahlrohr mit Kunststoffauskleidung der Cangzhou Hengjitai Pipeline Equipment Co., Ltd. verfügt über eine Stahl-Kunststoff-Verbundstruktur mit hervorragenden Sicherheits-Korrosionsschutzeigenschaften und strömungsdynamischen Vorteilen, wodurch es zur bevorzugten Rohrlösung für moderne Bergbaubetriebe wird.",
+          "src": "/images/news/dn600-tech.jpg",
+          "alt": "Bergbau-DN600-Nuten-Verbindungsrohr mit Kunststoffauskleidung für Belüftung",
+          "detailUrl": "DN600-plastic-coating-formining.html"
+        },
+        {
+          "title": "TPEP Korrosionsschutz-Stahlrohr - Hochleistungs-Rohrleitungslösung",
+          "slug": "DN1200-TPEP-anti-corrosion-steel-pipe.html",
+          "date": "2025-06-25",
+          "publishDate": "2025-06-25",
+          "content": "TPEP Korrosionsschutz-Stahlrohre erreichen durch die Verbundtechnologie der äußeren dreischichtigen Polyethylen (3PE) und inneren schmelzgebundenen Epoxidharz (FBE) eine umfassende Verbesserung der Korrosionsschutzleistung. Im Vergleich zu herkömmlichen einschichtigen Korrosionsschutzrohren wird die Korrosionsschutzlebensdauer um das 3-5-fache verlängert und zeigt hervorragende Leistung in rauen Umgebungen wie hoher Salzgehalt und Feuchtigkeit. Mit der vierten Generation der thermischen Verbindungswickeltechnologie wird eine Stahl-Kunststoff-Legierungsschicht gebildet, die Schlagfestigkeit und chemische Trägheit kombiniert. Erfolgreich in Großprojekten wie dem Süd-Nord-Wassertransferprojekt und dem Wassertransferprojekt des Shuanghou-Reservoirs in Linyi, Shandong, eingesetzt, mit null Leckagen über 50 km Rohrleitungen und 30% Reduzierung der Betriebs- und Wartungskosten. Geeignet für kommunale Wasserversorgung und -entsorgung, Fernwassertransport und industrielle Spezialszenarien mit einer Auslegungslebensdauer von 50 Jahren.",
+          "src": "/images/hp-products/%E5%A4%A7%E5%8F%A3%E5%BE%84%E5%86%85%E7%8E%AF%E6%B0%A7%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1/(1420%C3%9712%E7%B1%B3)%E5%86%85%E7%8E%AF%E6%B0%A7%E7%B2%89%E6%9C%AB%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1.jpg",
+          "alt": "TPEP Korrosionsschutz-Stahlrohr - Großkalibriges inneres Epoxidpulver-beschichtetes Stahlrohr",
+          "detailUrl": "DN1200-TPEP-anti-corrosion-steel-pipe.html"
+        },
+        {
+          "title": "Technische Analyse von DN1000 Hochleistungs-beschichteten Stahlrohren",
+          "slug": "dn1000-coated-steel-pipe-tech.html",
+          "date": "2025-06-20",
+          "publishDate": "2025-06-20",
+          "content": "<p>Das DN1000-beschichtete Stahlrohr ist das Herzstück großer kommunaler und industrieller Wasserversorgungssysteme und vereint die mechanische Festigkeit von Stahl mit der hervorragenden Korrosionsbeständigkeit einer Kunststoffbeschichtung. Dank innovativem Doppelschicht-Schutzsystem ist die Innenwand um über 40% glatter als bei herkömmlichen Stahlrohren, was die Transporteffizienz um 15%-20% steigert.</p><p>Das Produkt verwendet eine lebensmittelechte Epoxidharz-Innenbeschichtung (Dicke ≥0,35 mm), die vollständig der Trinkwasserhygienenorm GB/T 17219 entspricht. Die Außenschicht besteht aus hochdichtem PE oder Epoxidpulver (Dicke ≥0,5 mm) und bietet hervorragenden UV- und Chemikalienschutz. Temperaturbeständig von -40℃ bis 80℃.</p>",
+          "src": "/images/news/dn1000-tech.jpg",
+          "alt": "Eigenschaften der DN1000-beschichteten Stahlrohrtechnik",
+          "detailUrl": "dn1000-coated-steel-pipe-tech.html"
+        }
+      ]
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

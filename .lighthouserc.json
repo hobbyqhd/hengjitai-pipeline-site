@@ -1,0 +1,37 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://localhost:8080/cn/index.html",
+        "http://localhost:8080/en/index.html",
+        "http://localhost:8080/cn/products.html",
+        "http://localhost:8080/cn/about.html",
+        "http://localhost:8080/cn/news/published/category3/DN300-grooved-white-plastic.html"
+      ],
+      "numberOfRuns": 1,
+      "settings": {
+        "preset": "desktop",
+        "skipAudits": ["uses-http2"]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "categories:performance":     ["warn", { "minScore": 0.75 }],
+        "categories:accessibility":   ["error", { "minScore": 0.85 }],
+        "categories:best-practices":  ["warn", { "minScore": 0.85 }],
+        "categories:seo":             ["error", { "minScore": 0.95 }],
+        "first-contentful-paint":     ["warn", { "maxNumericValue": 2500 }],
+        "largest-contentful-paint":   ["warn", { "maxNumericValue": 4000 }],
+        "cumulative-layout-shift":    ["warn", { "maxNumericValue": 0.1 }],
+        "total-blocking-time":        ["warn", { "maxNumericValue": 300 }],
+        "uses-text-compression":      ["warn", { "minScore": 0.9 }],
+        "uses-responsive-images":     "off",
+        "csp-xss":                    "off"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "hengjitai-pipeline-site",
+  "compatibility_date": "2023-01-01",
+  "main": "./index.js",
+  "site": {
+    "bucket": ".",
+    "include": [
+      "**/*.html",
+      "**/*.css",
+      "**/*.js",
+      "**/*.json",
+      "**/*.png",
+      "**/*.jpg",
+      "**/*.jpeg",
+      "**/*.gif",
+      "**/*.svg",
+      "**/*.ico",
+      "**/*.woff",
+      "**/*.woff2",
+      "**/*.ttf",
+      "**/*.eot"
+    ],
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "package.json",
+      "package-lock.json",
+      "README.md",
+      "*.config.js",
+      "wrangler.jsonc"
+    ]
+  }
+}

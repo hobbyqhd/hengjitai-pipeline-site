@@ -1,0 +1,1367 @@
+{
+  "generatedAt": "2026-05-07T13:41:37.984Z",
+  "totalPages": 70,
+  "pagesWithIssues": 0,
+  "pagesWithWarnings": 41,
+  "details": {
+    "cn/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "涂塑钢管制造商-3PE/TPEP防腐钢管厂家｜沧州恒基泰管道装备有限公司",
+        "titleLength": 33,
+        "description": "恒基泰管道装备是管道装备专业供应商，专业生产涂塑钢管、3PE/TPEP防腐钢管、镀锌钢管、内外涂塑复合钢管及管件，DN15-DN2200全规格，已为60+国家市政、消防、燃气项目供货。",
+        "descriptionLength": 91,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "cn/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "涂塑钢管/3PE防腐/TPEP/镀锌钢管全系列产品中心｜恒基泰管道装备",
+        "titleLength": 34,
+        "description": "恒基泰管道装备产品中心：涂塑钢管、3PE/TPEP防腐钢管、内外涂塑复合钢管、镀锌钢管、消防钢管、电缆穿线管及配套管件，DN15-DN2200全规格、可定制颜色与连接方式，规格齐全。",
+        "descriptionLength": 88,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "cn/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "关于恒基泰-涂塑钢管行业资质与生产实力｜沧州恒基泰管道装备有限公司",
+        "titleLength": 29,
+        "description": "沧州恒基泰管道装备有限公司成立于2026年，位于河北省沧州市盐山县边务镇李郭庄村口南100米，专注管道装备、钢制管件、管托支吊架及防腐管件等工程配套产品供应。",
+        "descriptionLength": 89,
+        "h1Count": 1,
+        "imageCount": 17,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "cn/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "应用案例-涂塑钢管市政/消防/燃气工程实例｜恒基泰管道装备",
+        "titleLength": 28,
+        "description": "恒基泰管道装备涂塑钢管成功应用于全国及海外60+国家的市政供水、消防工程、燃气输配、矿用排水、电缆保护等项目，累计供货超100万吨，覆盖500+地标性工程。",
+        "descriptionLength": 75,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "cn/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "质量控制体系-ISO9001/CE/SGS认证｜沧州恒基泰管道装备有限公司",
+        "titleLength": 34,
+        "description": "恒基泰管道装备建立完善的质量管理体系，通过ISO9001、CE、SGS国际认证，配备光谱仪、水压试验台、电火花检测等先进设备，每批涂塑钢管100%全检出厂，质量可追溯。",
+        "descriptionLength": 83,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "cn/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "新闻动态-涂塑钢管行业资讯/技术分享｜沧州恒基泰管道装备有限公司",
+        "titleLength": 29,
+        "description": "恒基泰管道装备新闻中心：涂塑钢管行业最新动态、3PE/TPEP防腐技术分享、市政与燃气工程案例报道、展会信息、企业资讯、产品更新与施工指南，定期更新。",
+        "descriptionLength": 72,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "cn/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "联系恒基泰-涂塑钢管报价/技术咨询｜沧州恒基泰管道装备有限公司",
+        "titleLength": 27,
+        "description": "恒基泰管道装备24小时接受涂塑钢管/3PE防腐钢管/管件的报价咨询、技术支持、定制需求与样品申请。电话+86-317-0000-0000，地址河北省沧州市盐山县边务镇李郭庄村口南100米，欢迎来访洽谈。",
+        "descriptionLength": 87,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "en/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (87 字符，建议 ≤70)",
+        "描述过长 (194 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Plastic-Coated Steel Pipe Manufacturer | 3PE/TPEP Anti-Corrosion Pipes — Cangzhou Hengjitai",
+        "titleLength": 87,
+        "description": "Cangzhou Hengjitai is a pipeline equipment supplier manufacturing plastic-coated steel pipes, 3PE/TPEP anti-corrosion pipes, galvanized pipes & fittings (DN15-DN2200) for 60+ countries.",
+        "descriptionLength": 194,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "en/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (87 字符，建议 ≤70)",
+        "描述过长 (197 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Products: Plastic-Coated, 3PE, TPEP, Galvanized Steel Pipes & Fittings — Cangzhou Hengjitai",
+        "titleLength": 87,
+        "description": "Full product range: plastic-coated steel pipes, 3PE/TPEP anti-corrosion pipes, galvanized pipes, fire-fighting pipes, cable conduits and matching fittings. DN15-DN2200, customizable color & joints.",
+        "descriptionLength": 197,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "en/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (88 字符，建议 ≤70)",
+        "描述过长 (203 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "About Cangzhou Hengjitai — Pipeline Equipment and Steel Fitting Supplier & High-Tech Enterprise",
+        "titleLength": 88,
+        "description": "Established in 2026, Cangzhou Hengjitai covers project-based supply in 100 meters south of the entrance of Liguozhuang Village, Bianwu Town, Yanshan County, Cangzhou, Hebei, China. Annual capacity custom project supply. ISO9001/CE/SGS certified. Backbone supplier of plastic-coated pipes worldwide.",
+        "descriptionLength": 203,
+        "h1Count": 1,
+        "imageCount": 17,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "en/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (87 字符，建议 ≤70)",
+        "描述过长 (216 字符，建议 ≤180)",
+        "hreflang 缺少 x-default"
+      ],
+      "stats": {
+        "title": "Case Studies — Plastic-Coated Steel Pipe Projects in Water, Fire & Gas | Cangzhou Hengjitai",
+        "titleLength": 87,
+        "description": "Hengjitai plastic-coated and 3PE/TPEP pipes have been deployed in municipal water, fire protection, gas distribution, mining drainage and cable protection projects across 60+ countries — over 1,000,000 tons delivered.",
+        "descriptionLength": 216,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "en/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (84 字符，建议 ≤70)",
+        "描述过长 (202 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Quality Control — ISO9001 / CE / SGS Certified Plastic-Coated Pipes | Cangzhou Hengjitai",
+        "titleLength": 84,
+        "description": "Cangzhou Hengjitai operates a comprehensive QA system certified by ISO9001, CE and SGS. Spectrometer, hydrostatic press and spark testing equipment ensure 100% inspection of every plastic-coated pipe batch.",
+        "descriptionLength": 202,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "en/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (78 字符，建议 ≤70)",
+        "描述过长 (191 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "News & Industry Insights — Plastic-Coated Steel Pipes Updates | Cangzhou Hengjitai",
+        "titleLength": 78,
+        "description": "Latest news from Cangzhou Hengjitai: industry updates on plastic-coated steel pipes, 3PE/TPEP coating technology, project reports, exhibition coverage, product launches and installation guidance.",
+        "descriptionLength": 191,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "en/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (77 字符，建议 ≤70)",
+        "描述过长 (202 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Contact Cangzhou Hengjitai — Plastic-Coated Steel Pipe Quotes & Technical Support",
+        "titleLength": 77,
+        "description": "Contact Cangzhou Hengjitai 24/7 for plastic-coated steel pipe quotes, 3PE/TPEP technical consultation, custom orders and samples. Tel +86-317-0000-0000, located in 100 meters south of the entrance of Liguozhuang Village, Bianwu Town, Yanshan County, Cangzhou, Hebei, China.",
+        "descriptionLength": 202,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "jp/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (36 字符，建议 ≤35)"
+      ],
+      "stats": {
+        "title": "塗塑鋼管メーカー｜3PE/TPEP防食鋼管を製造する恒基泰管道設備有限公司",
+        "titleLength": 36,
+        "description": "恒基泰管道設備は国家級ハイテク企業として塗塑鋼管・3PE/TPEP防食鋼管・亜鉛めっき鋼管・継手（DN15-DN2200全規格）を製造し、世界60ヵ国以上の市政・消防・ガス事業に供給しています。",
+        "descriptionLength": 96,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "jp/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "製品一覧｜塗塑鋼管・3PE/TPEP防食鋼管・亜鉛めっき鋼管・継手",
+        "titleLength": 33,
+        "description": "恒基泰管道設備の製品ラインナップ：塗塑鋼管、3PE/TPEP防食鋼管、内外塗塑複合鋼管、亜鉛めっき鋼管、消防用鋼管、ケーブル保護管、継手類。DN15-DN2200全規格、色・接続方式カスタム可。",
+        "descriptionLength": 94,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "jp/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "会社概要｜配管設備・鋼製継手サプライヤー恒基泰管道設備",
+        "titleLength": 29,
+        "description": "恒基泰管道設備有限公司は2026年設立、河北省沧州盐山産業園に工程配套の工場と年産20万トンの生産能力を有し、ISO9001/CE/SGS認証を取得した塗塑鋼管業界の主要サプライヤーです。",
+        "descriptionLength": 92,
+        "h1Count": 1,
+        "imageCount": 17,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "jp/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "導入事例｜塗塑鋼管・3PE防食鋼管の市政・消防・ガス案件実績",
+        "titleLength": 30,
+        "description": "恒基泰管道設備の塗塑・3PE/TPEP防食鋼管は中国国内および海外60ヵ国以上の市政給水、消防、ガス配管、鉱山排水、ケーブル保護工事に採用され、累計100万トン超を納入しています。",
+        "descriptionLength": 87,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "jp/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (37 字符，建议 ≤35)"
+      ],
+      "stats": {
+        "title": "品質管理体制｜ISO9001/CE/SGS認証済み塗塑鋼管メーカー恒基泰管道設備",
+        "titleLength": 37,
+        "description": "恒基泰管道設備は完全な品質管理システムを構築し、ISO9001・CE・SGS認証を取得。分光計、水圧試験機、スパーク検査装置を備え、全ロット100%検査の上で出荷します。",
+        "descriptionLength": 84,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "jp/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "ニュース｜塗塑鋼管業界動向と技術情報｜恒基泰管道設備",
+        "titleLength": 25,
+        "description": "恒基泰管道設備ニュース：塗塑鋼管業界の最新動向、3PE/TPEP防食技術の解説、市政・ガス案件のレポート、展示会情報、製品アップデート、施工ガイドを定期的に発信しています。",
+        "descriptionLength": 83,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "jp/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "お問い合わせ｜塗塑鋼管の見積・技術相談｜恒基泰管道設備",
+        "titleLength": 26,
+        "description": "恒基泰管道設備有限公司は塗塑鋼管・3PE/TPEP防食鋼管・継手の見積、技術相談、カスタムオーダー、サンプル請求を24時間受付中。Tel +86-317-0000-0000、河北省沧州盐山産業園。",
+        "descriptionLength": 97,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "de/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (82 字符，建议 ≤70)",
+        "描述过长 (204 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Hersteller kunststoffbeschichteter Stahlrohre 3PE/TPEP — Cangzhou Hengjitai",
+        "titleLength": 82,
+        "description": "Cangzhou Hengjitai ist ein nationales Rohrleitungsausrüster, das kunststoffbeschichtete Stahlrohre, 3PE/TPEP-Korrosionsschutzrohre, verzinkte Rohre und Fittings (DN15-DN2200) für 60+ Länder fertigt.",
+        "descriptionLength": 204,
+        "h1Count": 1,
+        "imageCount": 10,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "de/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (71 字符，建议 ≤70)",
+        "描述过长 (193 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Produkte: beschichtete, 3PE/TPEP, verzinkte Rohre & Fittings — Hengjitai",
+        "titleLength": 71,
+        "description": "Gesamtsortiment: kunststoffbeschichtete Stahlrohre, 3PE/TPEP-Korrosionsschutzrohre, verzinkte Rohre, Brandschutzrohre, Kabelschutzrohre und Fittings. DN15-DN2200, Farben/Verbindungen anpassbar.",
+        "descriptionLength": 193,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "de/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (195 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Über Cangzhou Hengjitai — 20 Jahre Erfahrung in beschichteten Stahlrohren",
+        "titleLength": 69,
+        "description": "Cangzhou Hengjitai wurde 2005 im Industriepark Yanshan County (Hebei) gegründet. 80.000 m² Werksfläche, 200.000 t Jahreskapazität. ISO9001-, CE- und SGS-zertifiziert. Schlüssellieferant beschichteter Rohre.",
+        "descriptionLength": 195,
+        "h1Count": 1,
+        "imageCount": 16,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "de/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (198 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Referenzen — beschichtete Rohre für Wasser, Brandschutz, Gas",
+        "titleLength": 60,
+        "description": "Hengjitai beschichtete und 3PE/TPEP-Rohre wurden in kommunalen Wasserprojekten, Brandschutz, Gasverteilung, Bergbauentwässerung und Kabelschutz in 60+ Ländern eingesetzt – über 1.000.000 t geliefert.",
+        "descriptionLength": 198,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "de/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (192 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Qualitätskontrolle — ISO9001 / CE / SGS-Zertifizierung | Hengjitai",
+        "titleLength": 65,
+        "description": "Cangzhou Hengjitai betreibt ein umfassendes Qualitätsmanagementsystem nach ISO9001, CE und SGS. Spektrometer, hydrostatische Pressen und Funkenprüfungen gewährleisten 100% Inspektion jeder Charge.",
+        "descriptionLength": 192,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "de/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "News & Branchen-Insights — Beschichtete Rohre | Hengjitai",
+        "titleLength": 56,
+        "description": "Aktuelle News von Hengjitai: Branchenupdates zu beschichteten Stahlrohren, 3PE/TPEP-Technologie, Projektberichte, Messen, Produkteinführungen und Installationsanleitungen.",
+        "descriptionLength": 170,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "de/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (204 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Kontakt Cangzhou Hengjitai — Angebote und technischer Support für Rohre",
+        "titleLength": 67,
+        "description": "Cangzhou Hengjitai bearbeitet 24/7 Anfragen für Angebote, technische Beratung, kundenspezifische Bestellungen und Muster zu beschichteten und 3PE/TPEP-Rohren. Tel +86-317-0000-0000, Yanshan County, Hebei.",
+        "descriptionLength": 204,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "es/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (77 字符，建议 ≤70)",
+        "描述过长 (201 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Fabricante de Tubos de Acero Recubiertos 3PE/TPEP — Cangzhou Hengjitai",
+        "titleLength": 77,
+        "description": "Cangzhou Hengjitai, empresa nacional de alta tecnología, fabrica tubos de acero con recubrimiento plástico, tubos 3PE/TPEP, tubos galvanizados y accesorios (DN15-DN2200) exportando a 60+ países.",
+        "descriptionLength": 201,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "es/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (76 字符，建议 ≤70)"
+      ],
+      "stats": {
+        "title": "Productos: tubos recubiertos, 3PE/TPEP, galvanizados y accesorios — Hengjitai",
+        "titleLength": 76,
+        "description": "Gama completa: tubos de acero con recubrimiento plástico, tubos anticorrosión 3PE/TPEP, tubos galvanizados, tubos para incendios, conductos para cables y accesorios. DN15-DN2200.",
+        "descriptionLength": 178,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "es/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (183 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Sobre Cangzhou Hengjitai — 20 años fabricando tubos recubiertos de acero",
+        "titleLength": 68,
+        "description": "Cangzhou Hengjitai se fundó en 2005 en el parque industrial de Yanshan County, Hebei. 80.000 m² y capacidad anual de 200.000 toneladas. Certificada ISO9001, CE y SGS, líder en tubos recubiertos.",
+        "descriptionLength": 183,
+        "h1Count": 1,
+        "imageCount": 17,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "es/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (73 字符，建议 ≤70)",
+        "描述过长 (226 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Casos de Éxito — proyectos con tubos recubiertos en agua, incendios y gas",
+        "titleLength": 73,
+        "description": "Tubos recubiertos y 3PE/TPEP de Hengjitai se han implementado en proyectos de agua municipal, protección contra incendios, distribución de gas, drenaje minero y protección de cables en 60+ países. Más de 1.000.000 t entregadas.",
+        "descriptionLength": 226,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "es/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (183 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Control de Calidad — Certificaciones ISO9001 / CE / SGS | Hengjitai",
+        "titleLength": 66,
+        "description": "Cangzhou Hengjitai opera un sistema de calidad integral certificado por ISO9001, CE y SGS. Espectrómetros, prensa hidrostática y pruebas de chispa garantizan inspección 100% de cada lote.",
+        "descriptionLength": 183,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "es/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Noticias e Insights del Sector — Tubos Recubiertos | Hengjitai",
+        "titleLength": 61,
+        "description": "Últimas noticias de Hengjitai: actualizaciones del sector de tubos recubiertos, tecnología 3PE/TPEP, informes de proyectos, ferias, lanzamientos y guías de instalación.",
+        "descriptionLength": 167,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "es/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (196 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Contacto Cangzhou Hengjitai — Cotizaciones y Soporte Técnico de Tubos",
+        "titleLength": 65,
+        "description": "Cangzhou Hengjitai atiende cotizaciones, consultas técnicas, pedidos personalizados y solicitudes de muestras de tubos recubiertos y 3PE/TPEP las 24h. Tel +86-317-0000-0000, Yanshan County, Hebei.",
+        "descriptionLength": 196,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "fr/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (72 字符，建议 ≤70)",
+        "描述过长 (182 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Fabricant de Tubes en Acier Revêtus 3PE/TPEP — Cangzhou Hengjitai",
+        "titleLength": 72,
+        "description": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. est une entreprise nationale de haute technologie spécialisée dans les tubes en acier à revêtement plastique et l'anticorrosion des canalisations.",
+        "descriptionLength": 182,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "fr/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (198 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Produits : tubes revêtus, 3PE/TPEP, galvanisés et raccords — Hengjitai",
+        "titleLength": 69,
+        "description": "Gamme complète : tubes en acier à revêtement plastique, tubes anticorrosion 3PE/TPEP, tubes galvanisés, tubes incendie, gaines de câbles et raccords. DN15-DN2200, couleurs/raccords personnalisables.",
+        "descriptionLength": 198,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "fr/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (190 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "À propos de Cangzhou Hengjitai — 20 ans dans les tubes en acier revêtus",
+        "titleLength": 67,
+        "description": "Cangzhou Hengjitai a été créée en 2005 dans le parc industriel de Yanshan County (Hebei). проектные поставки, capacité annuelle de 200 000 tonnes, certifiée ISO9001, CE et SGS, fournisseur clé de tubes revêtus.",
+        "descriptionLength": 190,
+        "h1Count": 1,
+        "imageCount": 10,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "fr/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (195 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Études de Cas — projets de tubes revêtus en eau, incendie et gaz",
+        "titleLength": 64,
+        "description": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. présente des références de projets réussis couvrant des projets municipaux, des canalisations industrielles, des systèmes d'alimentation en eau et plus encore.",
+        "descriptionLength": 195,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "fr/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (184 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Contrôle Qualité — Certifications ISO9001 / CE / SGS | Hengjitai",
+        "titleLength": 63,
+        "description": "Cangzhou Hengjitai exploite un système qualité complet certifié ISO9001, CE et SGS. Spectromètres, presse hydrostatique et test à étincelles garantissent une inspection 100% de chaque lot.",
+        "descriptionLength": 184,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "fr/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Actualités et Analyses Sectorielles — Tubes Revêtus | Hengjitai",
+        "titleLength": 62,
+        "description": "Dernières actualités, mises à jour de l'industrie et informations sur les expositions de Cangzhou Hengjitai Pipeline Equipment Co., Ltd.",
+        "descriptionLength": 124,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "fr/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (211 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Contact Cangzhou Hengjitai — Devis et Support Technique Tubes",
+        "titleLength": 57,
+        "description": "Cangzhou Hengjitai traite 24h/24 vos demandes de devis, consultations techniques, commandes personnalisées et demandes d'échantillons pour tubes revêtus et 3PE/TPEP. Tél +86-317-0000-0000, Yanshan County, Hebei.",
+        "descriptionLength": 211,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "pt/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (74 字符，建议 ≤70)",
+        "描述过长 (199 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Fabricante de Tubos de Aço Revestidos 3PE/TPEP — Cangzhou Hengjitai",
+        "titleLength": 74,
+        "description": "Cangzhou Hengjitai, empresa nacional de alta tecnologia, fabrica tubos de aço com revestimento plástico, tubos 3PE/TPEP, tubos galvanizados e conexões (DN15-DN2200) exportando para 60+ países.",
+        "descriptionLength": 199,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "pt/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (72 字符，建议 ≤70)",
+        "描述过长 (184 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Produtos: tubos revestidos, 3PE/TPEP, galvanizados e conexões — Hengjitai",
+        "titleLength": 72,
+        "description": "Linha completa: tubos de aço com revestimento plástico, tubos anticorrosão 3PE/TPEP, tubos galvanizados, tubos de combate a incêndio, eletrodutos e conexões. DN15-DN2200 customizáveis.",
+        "descriptionLength": 184,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "pt/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Sobre a Cangzhou Hengjitai — 20 anos de experiência em tubos revestidos",
+        "titleLength": 67,
+        "description": "Fundada em 2026 no parque industrial de Yanshan County (Hebei), com 80.000 m² e capacidade anual de 200.000 toneladas. Certificada ISO9001, CE e SGS. Fornecedor chave de tubos revestidos.",
+        "descriptionLength": 180,
+        "h1Count": 1,
+        "imageCount": 17,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "pt/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (216 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Estudos de Caso — projetos de tubos revestidos em água, incêndio e gás",
+        "titleLength": 70,
+        "description": "Tubos revestidos e 3PE/TPEP da Hengjitai foram aplicados em água potável municipal, proteção contra incêndio, distribuição de gás, drenagem mineira e proteção de cabos em 60+ países, com mais de 1.000.000 t entregues.",
+        "descriptionLength": 216,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "pt/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "描述过长 (183 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "Controle de Qualidade — Certificações ISO9001 / CE / SGS | Hengjitai",
+        "titleLength": 67,
+        "description": "A Cangzhou Hengjitai opera um sistema integral de qualidade certificado pela ISO9001, CE e SGS. Espectrômetros, prensa hidrostática e teste de faíscas garantem inspeção 100% de cada lote.",
+        "descriptionLength": 183,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "pt/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Notícias e Análises Setoriais — Tubos Revestidos | Hengjitai",
+        "titleLength": 59,
+        "description": "Últimas notícias da Hengjitai: tendências do setor de tubos revestidos, tecnologia 3PE/TPEP, relatórios de projetos, feiras, lançamentos de produtos e guias de instalação.",
+        "descriptionLength": 170,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "pt/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Contato Cangzhou Hengjitai — Cotações e Suporte Técnico de Tubos",
+        "titleLength": 60,
+        "description": "A Cangzhou Hengjitai atende 24h cotações, consultas técnicas, pedidos personalizados e amostras de tubos revestidos e 3PE/TPEP. Tel +86-317-0000-0000, Yanshan County, Hebei.",
+        "descriptionLength": 173,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ru/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (79 字符，建议 ≤75)"
+      ],
+      "stats": {
+        "title": "Производитель труб с пластиковым покрытием 3PE/TPEP — Cangzhou Hengjitai",
+        "titleLength": 79,
+        "description": "Cangzhou Hengjitai — поставщик трубопроводного оборудования. Производство стальных труб с пластиковым покрытием, 3PE/TPEP труб, оцинкованных труб и фитингов (DN15-DN2200) для 60+ стран.",
+        "descriptionLength": 198,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ru/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (84 字符，建议 ≤75)"
+      ],
+      "stats": {
+        "title": "Продукция: трубы с пластиковым покрытием, 3PE/TPEP, оцинкованные, фитинги — Hengjitai",
+        "titleLength": 84,
+        "description": "Полная линейка: стальные трубы с пластиковым покрытием, 3PE/TPEP антикоррозийные трубы, оцинкованные трубы, противопожарные трубы, кабельные каналы, фитинги. DN15-DN2200.",
+        "descriptionLength": 170,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ru/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (77 字符，建议 ≤75)"
+      ],
+      "stats": {
+        "title": "О компании Cangzhou Hengjitai — производитель труб с пластиковым покрытием с 2026 года",
+        "titleLength": 77,
+        "description": "Cangzhou Hengjitai основана в 2026 году, расположен в индустриальном парке Яньшань (Хэбэй), 80 000 м², годовая мощность поставка под проект. Сертификаты ISO9001, CE, SGS.",
+        "descriptionLength": 169,
+        "h1Count": 1,
+        "imageCount": 17,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ru/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (90 字符，建议 ≤75)"
+      ],
+      "stats": {
+        "title": "Реализованные проекты — трубы с пластиковым покрытием в водоснабжении, газе, пожаротушении",
+        "titleLength": 90,
+        "description": "Трубы Hengjitai с пластиковым и 3PE/TPEP покрытием применяются в коммунальном водоснабжении, пожаротушении, газоснабжении, водоотведении и защите кабелей в 60+ странах. Поставлено более 1 000 000 тонн.",
+        "descriptionLength": 200,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ru/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Контроль качества — сертификаты ISO9001 / CE / SGS | Cangzhou Hengjitai",
+        "titleLength": 67,
+        "description": "Cangzhou Hengjitai имеет полную систему контроля качества, сертифицированную ISO9001, CE и SGS. Спектрометры, гидростатические испытания и контроль искрой обеспечивают 100% проверку каждой партии.",
+        "descriptionLength": 192,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ru/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Новости и аналитика — трубы с пластиковым покрытием | Cangzhou Hengjitai",
+        "titleLength": 68,
+        "description": "Новости Hengjitai: отраслевые обновления о трубах с пластиковым покрытием, технологии 3PE/TPEP, отчёты о проектах, выставки, новинки продукции и инструкции по монтажу.",
+        "descriptionLength": 166,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ru/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Контакты Cangzhou Hengjitai — заказы и техническая поддержка по трубам",
+        "titleLength": 66,
+        "description": "Cangzhou Hengjitai круглосуточно принимает запросы цен, технические консультации, заказы и заявки на образцы по трубам с пластиковым покрытием. Тел +86-317-0000-0000, Яньшань (Хэбэй).",
+        "descriptionLength": 190,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ar/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (77 字符，建议 ≤65)",
+        "描述过长 (182 字符，建议 ≤180)"
+      ],
+      "stats": {
+        "title": "مُصنّع الأنابيب الفولاذية المطلية بالبلاستيك 3PE/TPEP - شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب",
+        "titleLength": 77,
+        "description": "شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب مورد متخصص لمعدات خطوط الأنابيب تصنع الأنابيب الفولاذية المطلية بالبلاستيك وأنابيب 3PE/TPEP المضادة للتآكل وأنابيب مجلفنة وملحقاتها (DN15-DN2200) لأكثر من 60 دولة.",
+        "descriptionLength": 182,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ar/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (71 字符，建议 ≤65)"
+      ],
+      "stats": {
+        "title": "منتجاتنا: أنابيب مطلية بالبلاستيك، 3PE، TPEP، مجلفنة، تجهيزات - هينغجيتاي",
+        "titleLength": 71,
+        "description": "مجموعة كاملة: أنابيب فولاذية مطلية بالبلاستيك، أنابيب 3PE/TPEP المضادة للتآكل، أنابيب مجلفنة، أنابيب إطفاء حريق، قنوات كابلات وتجهيزات. DN15-DN2200 بألوان ووصلات قابلة للتخصيص.",
+        "descriptionLength": 176,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ar/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "عن هينغجيتاي لمعدات خطوط الأنابيب - منذ عام 2026 في تصنيع الأنابيب المطلية",
+        "titleLength": 56,
+        "description": "تأسست شركة هينغجيتاي عام 2026 في منطقة يانشان الصناعية بمقاطعة خبي، تمتد على 80,000 م² بطاقة إنتاجية 200,000 طن سنوياً، حاصلة على شهادات ISO9001 وCE وSGS.",
+        "descriptionLength": 152,
+        "h1Count": 1,
+        "imageCount": 10,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ar/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "دراسات الحالة - مشاريع الأنابيب المطلية في المياه والإطفاء والغاز",
+        "titleLength": 65,
+        "description": "تم استخدام أنابيب هينغجيتاي المطلية و3PE/TPEP في مشاريع مياه البلديات والإطفاء وتوزيع الغاز والصرف المنجمي وحماية الكابلات في أكثر من 60 دولة، بكمية تتجاوز 1,000,000 طن.",
+        "descriptionLength": 167,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ar/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "مراقبة الجودة - شهادات ISO9001 / CE / SGS | شركة هينغجيتاي",
+        "titleLength": 56,
+        "description": "تمتلك هينغجيتاي نظاماً شاملاً لضمان الجودة معتمداً من ISO9001 وCE وSGS. أجهزة الطيف، اختبار الضغط الهيدروستاتيكي والشرر تضمن فحص 100% لكل دفعة من الأنابيب.",
+        "descriptionLength": 153,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ar/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "الأخبار والرؤى الصناعية - الأنابيب المطلية بالبلاستيك | هينغجيتاي",
+        "titleLength": 63,
+        "description": "أحدث أخبار هينغجيتاي: تحديثات صناعة الأنابيب المطلية بالبلاستيك، تقنيات 3PE/TPEP، تقارير المشاريع، المعارض، إطلاق المنتجات وإرشادات التركيب.",
+        "descriptionLength": 138,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "ar/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "تواصل مع هينغجيتاي لمعدات خطوط الأنابيب - عروض الأسعار والدعم الفني",
+        "titleLength": 53,
+        "description": "تستقبل هينغجيتاي طلبات عروض الأسعار والاستشارات الفنية وطلبات العينات حول الأنابيب المطلية و3PE/TPEP والملحقات على مدار 24 ساعة. هاتف +86-317-0000-0000، يانشان، خبي.",
+        "descriptionLength": 163,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "hi/index.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (72 字符，建议 ≤65)",
+        "描述过长 (202 字符，建议 ≤200)"
+      ],
+      "stats": {
+        "title": "प्लास्टिक-कोटेड स्टील पाइप निर्माता 3PE/TPEP - Cangzhou Hengjitai",
+        "titleLength": 72,
+        "description": "Cangzhou Hengjitai एक पाइपलाइन उपकरण आपूर्तिकर्ता है जो प्लास्टिक कोटेड स्टील पाइप, 3PE/TPEP एंटी-कोरोज़न पाइप, गैल्वेनाइज़्ड पाइप और फिटिंग्स (DN15-DN2200) का निर्माण करता है, 60+ देशों में निर्यात।",
+        "descriptionLength": 202,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 30,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "hi/products.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (76 字符，建议 ≤65)"
+      ],
+      "stats": {
+        "title": "उत्पाद: प्लास्टिक कोटेड, 3PE/TPEP, गैल्वेनाइज़्ड पाइप और फिटिंग्स - Hengjitai",
+        "titleLength": 76,
+        "description": "पूरी रेंज: प्लास्टिक कोटेड स्टील पाइप, 3PE/TPEP एंटी-कोरोज़न पाइप, गैल्वेनाइज़्ड पाइप, फायर पाइप, केबल कंड्यूट और फिटिंग्स। DN15-DN2200, रंग/जोड़ कस्टमाइज़ करने योग्य।",
+        "descriptionLength": 167,
+        "h1Count": 1,
+        "imageCount": 5,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "hi/about.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (68 字符，建议 ≤65)"
+      ],
+      "stats": {
+        "title": "Cangzhou Hengjitai के बारे में - 20 वर्षों का प्लास्टिक कोटेड पाइप अनुभव",
+        "titleLength": 68,
+        "description": "Cangzhou Hengjitai की स्थापना 2005 में हेबेई के यानशान औद्योगिक पार्क में हुई। 80,000 वर्ग मीटर सुविधा, 200,000 टन वार्षिक क्षमता, ISO9001, CE और SGS प्रमाणित।",
+        "descriptionLength": 155,
+        "h1Count": 1,
+        "imageCount": 17,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "hi/cases.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [
+        "标题过长 (66 字符，建议 ≤65)"
+      ],
+      "stats": {
+        "title": "केस स्टडीज़ - जल, अग्नि और गैस परियोजनाओं में प्लास्टिक कोटेड पाइप",
+        "titleLength": 66,
+        "description": "Hengjitai के प्लास्टिक कोटेड और 3PE/TPEP पाइपों को 60+ देशों में नगरपालिका जल, अग्नि सुरक्षा, गैस वितरण, खनन जल निकासी और केबल सुरक्षा परियोजनाओं में लगाया गया है — 1,000,000+ टन वितरित।",
+        "descriptionLength": 185,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 11,
+        "jsonLdBlocks": 1
+      }
+    },
+    "hi/quality.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "गुणवत्ता नियंत्रण - ISO9001 / CE / SGS प्रमाणन | Hengjitai",
+        "titleLength": 57,
+        "description": "Cangzhou Hengjitai ISO9001, CE और SGS द्वारा प्रमाणित व्यापक गुणवत्ता प्रबंधन प्रणाली संचालित करता है। स्पेक्ट्रोमीटर, हाइड्रोस्टैटिक प्रेस और स्पार्क परीक्षण हर बैच की 100% जांच सुनिश्चित करते हैं।",
+        "descriptionLength": 194,
+        "h1Count": 1,
+        "imageCount": 11,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "hi/news.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "समाचार और उद्योग अंतर्दृष्टि - प्लास्टिक कोटेड पाइप | Hengjitai",
+        "titleLength": 62,
+        "description": "Hengjitai के नवीनतम समाचार: प्लास्टिक कोटेड पाइप उद्योग अपडेट, 3PE/TPEP तकनीक, परियोजना रिपोर्ट, प्रदर्शनियां, उत्पाद लॉन्च और इंस्टॉलेशन गाइड।",
+        "descriptionLength": 142,
+        "h1Count": 1,
+        "imageCount": 4,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    },
+    "hi/contact.html": {
+      "exists": true,
+      "issues": [],
+      "warnings": [],
+      "stats": {
+        "title": "Cangzhou Hengjitai से संपर्क करें - पाइप कोटेशन और तकनीकी सहायता",
+        "titleLength": 60,
+        "description": "Cangzhou Hengjitai 24 घंटे प्लास्टिक कोटेड और 3PE/TPEP पाइपों के लिए कोटेशन, तकनीकी परामर्श, कस्टम ऑर्डर और सैंपल अनुरोध स्वीकार करता है। टेल +86-317-0000-0000, यानशान, हेबेई।",
+        "descriptionLength": 182,
+        "h1Count": 1,
+        "imageCount": 3,
+        "imagesWithoutAlt": 0,
+        "imagesEmptyAlt": 0,
+        "internalLinks": 25,
+        "hreflangCount": 10,
+        "jsonLdBlocks": 1
+      }
+    }
+  }
+}

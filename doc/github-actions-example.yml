@@ -1,0 +1,58 @@
+# 示例 GitHub Actions 工作流配置文件
+# 文件路径: .github/workflows/publish-news.yml
+
+name: Daily News Publication
+
+on:
+  # 定时触发 - 每天早上8:30 (UTC+8，即 00:30 UTC)
+  schedule:
+    - cron: '30 0 * * *'
+  
+  # 允许手动触发
+  workflow_dispatch:
+
+jobs:
+  publish-news:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 获取完整历史记录
+
+      # 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      # 运行发布脚本
+      - name: Run publication script
+        run: node cn/news/scripts/publish-news.js
+
+      # 检查是否有变更
+      - name: Check if there are changes
+        id: check-changes
+        run: |
+          git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      # 提交和推送变更
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config --global user.name 'News Publication Bot'
+          git config --global user.email 'bot@example.com'
+          git add -A  # 添加所有变更
+          git commit -m "Auto-publish news for $(date +'%Y-%m-%d')"
+          git push
+
+      # 通知发布结果 (可选)
+      - name: Notify publication result
+        if: always()
+        run: |
+          if [ "${{ steps.check-changes.outputs.has_changes }}" == "true" ]; then
+            echo "今日新闻已成功发布!"
+          else
+            echo "今日无新闻需要发布。"
+          fi

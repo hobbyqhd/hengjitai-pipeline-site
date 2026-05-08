@@ -1,0 +1,20 @@
+/**
+ * 主CSS入口文件 - 用于PostCSS处理
+ * 这个文件会通过@import引入所有需要的CSS文件
+ * PostCSS将会处理这些导入并创建一个合并后的文件
+ */
+
+/* 字体文件 */
+@import './fonts/fonts.css';
+
+/* 图标字体 */
+@import './all.min.css';
+
+/* 基础样式 */
+@import './common.css';
+
+/* 页面特定样式 */
+@import './style.css';
+
+/* Tailwind CSS样式 */
+@import './tailwind.min.css';

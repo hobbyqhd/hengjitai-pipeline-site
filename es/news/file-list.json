@@ -1,0 +1,129 @@
+{
+  "categories": {
+    "category1": "Noticias de la empresa",
+    "category2": "Actualizaciones de la industria",
+    "category3": "Artículos técnicos",
+    "category4": "Cobertura mediática"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": []
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": [
+        {
+          "title": "Tubo de acero galvanizado exterior y revestido de plástico interior",
+          "slug": "Galvanized-outer-and-plastic-coated-steel-pipe.html",
+          "date": "2025-08-25",
+          "publishDate": "2025-08-25",
+          "content": "El tubo de acero galvanizado exterior y revestido de plástico interior combina la resistencia mecánica del acero con la resistencia a la corrosión del plástico, ofreciendo excelente resistencia a la corrosión y al desgaste, ampliamente utilizado en suministro y drenaje de agua, protección contra incendios, minería y otros sistemas de tuberías.",
+          "src": "/images/news/Galvanized-outer-and-plastic-coated-steel-pipe.jpg",
+          "alt": "Tubo de acero galvanizado exterior y revestido de plástico interior",
+          "detailUrl": "Galvanized-outer-and-plastic-coated-steel-pipe.html"
+        },
+        {
+          "title": "Tubo protector de cable eléctrico de acero plastificado por inmersión en caliente",
+          "slug": "hot-dip-plastic-electric-wire-conduit.html",
+          "date": "2025-08-15",
+          "publishDate": "2025-08-15",
+          "content": "El tubo protector de cable eléctrico de acero plastificado por inmersión en caliente utiliza tecnología de inmersión en lecho fluidizado, con excelentes propiedades antiestáticas, retardantes de llama y anticorrosivas, ideal para la construcción de sistemas de tuberías eléctricas, de comunicaciones, mineras y otras.",
+          "src": "/images/news/hot-dip-plastic-electric-wire-conduit.jpg",
+          "alt": "Tubo protector de cable eléctrico de acero plastificado por inmersión en caliente",
+          "detailUrl": "hot-dip-plastic-electric-wire-conduit.html"
+        },
+        {
+          "title": "Tubo de acero recubierto en polvo de color doble resistencia",
+          "slug": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html",
+          "date": "2025-08-12",
+          "publishDate": "2025-08-12",
+          "content": "El tubo de acero recubierto en polvo de color doble resistencia combina resistencia a la corrosión y al desgaste con colores diversos, adecuado para aplicaciones municipales, industriales, protección contra incendios y otras. Es una tubería de alto rendimiento que combina seguridad, economía y protección ambiental.",
+          "src": "/images/news/Groove-connection-color-double-resistance-powder-coated-steel-pipe.jpg",
+          "alt": "Tubo de acero recubierto en polvo de color doble resistencia con conexión ranurada",
+          "detailUrl": "Groove-connection-color-double-resistance-powder-coated-steel-pipe.html"
+        },
+        {
+          "title": "Tubo de Acero Anticorrosión TPEP",
+          "slug": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html",
+          "date": "2025-08-05",
+          "publishDate": "2025-08-05",
+          "content": "Tubo de acero anticorrosión TPEP con tecnología de protección doble mediante recubrimientos 3PE y FBE, ofrece resistencia superior a la corrosión, alta resistencia mecánica y larga vida útil para tuberías de transporte de petróleo, gas, químicos y agua.",
+          "src": "/images/news/1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.jpg",
+          "alt": "Tubo de Acero Anticorrosión TPEP",
+          "detailUrl": "1620TPEP-anti-corrosion-steel-pipe-large-diameter-water-transport.html"
+        },
+        {
+          "title": "Tubería de Acero Revestida de Plástico Blanco Ranurada DN300",
+          "slug": "DN300-grooved-white-plastic.html",
+          "date": "2025-07-26",
+          "publishDate": "2025-07-26",
+          "content": "La tubería de acero revestida de plástico blanco ranurada DN300 presenta revestimiento epoxi de grado alimentario con ventajas revolucionarias de instalación y mantenimiento, reduciendo el tiempo de construcción en 65% comparado con soldadura, siendo la elección ideal para servicios de agua inteligentes y suministro de agua de emergencia.",
+          "src": "/images/news/DN300-grooved-white-plastic.jpg",
+          "alt": "Tubería de Acero Revestida de Plástico Blanco Ranurada DN300",
+          "detailUrl": "DN300-grooved-white-plastic.html"
+        },
+        {
+          "title": "Tubería de Acero Anticorrosión 3PE DN1000 para Transporte de Gas",
+          "slug": "dn1000-gas-3pe.html",
+          "date": "2025-07-19",
+          "publishDate": "2025-07-19",
+          "content": "La tubería de acero anticorrosión 3PE DN1000 para transporte de gas presenta una estructura anticorrosión compuesta de tres capas con una vida útil de diseño de 50 años, adecuada para transmisión de gas de alta presión y sistemas de tuberías de ambiente hostil, garantizando un funcionamiento estable a largo plazo.",
+          "src": "/images/news/dn1000-gas-3pe.jpg",
+          "alt": "Tubería de Acero Anticorrosión 3PE DN1000 para Transporte de Gas",
+          "detailUrl": "dn1000-gas-3pe.html"
+        },
+        {
+          "title": "Análisis Técnico de Tubería de Acero Anticorrosión DN1200",
+          "slug": "DN1200-anti-corrosion.html",
+          "date": "2025-07-12",
+          "publishDate": "2025-07-12",
+          "content": "Análisis técnico de tubería de acero anticorrosión DN1200 epoxi interior 3PE exterior - la solución preferida para proyectos de transporte de agua de larga distancia con resistencia a la corrosión superior y rendimiento hidráulico.",
+          "src": "/images/news/DN1200-tech.jpg",
+          "alt": "Tubería de Acero Anticorrosión DN1200",
+          "detailUrl": "DN1200-anti-corrosion.html"
+        },
+        {
+          "title": "Tubería de Acero DN600 con Revestimiento Plástico y Acoplamiento Ranurado para Ventilación Minera",
+          "slug": "DN600-plastic-coating-formining.html",
+          "date": "2025-07-06",
+          "publishDate": "2025-07-06",
+          "content": "La tubería de acero DN600 con revestimiento plástico para ventilación minera de Cangzhou Hengjitai Pipeline Equipment Co., Ltd. presenta una estructura compuesta acero-plástico con excelentes propiedades anticorrosivas de seguridad y ventajas en dinámica de fluidos, convirtiéndola en la solución de tubería preferida para operaciones mineras modernas.",
+          "src": "/images/news/dn600-tech.jpg",
+          "alt": "Tubería de Acero DN600 con Revestimiento Plástico y Acoplamiento Ranurado para Ventilación Minera",
+          "detailUrl": "DN600-plastic-coating-formining.html"
+        },
+        {
+          "title": "Tubo de acero anticorrosión TPEP - Solución de tubería de alto rendimiento",
+          "slug": "DN1200-TPEP-anti-corrosion-steel-pipe.html",
+          "date": "2025-06-28",
+          "publishDate": "2025-06-28",
+          "content": "Los tubos de acero anticorrosión TPEP logran una mejora integral del rendimiento anticorrosión a través de la tecnología compuesta de polietileno de tres capas (3PE) en la pared externa y resina epoxi fusionada (FBE) en la pared interna. Comparados con los materiales de tubos anticorrosión de una sola capa tradicionales, su vida útil anticorrosión mejora de 3 a 5 veces, mostrando un rendimiento excelente en entornos severos como alta salinidad y humedad. Adoptando la tecnología de enrollado por fusión térmica de cuarta generación, forman capas de aleación acero-plástico que combinan resistencia al impacto e inercia química. Aplicados exitosamente en proyectos importantes como el Proyecto de Transferencia de Agua Sur-Norte y el Proyecto de Transferencia de Agua del Embalse Shuanghou de Linyi en Shandong, logrando cero fugas en 50 km de tuberías y reduciendo los costos de operación y mantenimiento en un 30%. Adecuados para suministro y drenaje municipal, transporte de agua de larga distancia y escenarios industriales especiales, con una vida útil de diseño de 50 años.",
+          "src": "/images/hp-products/%E5%A4%A7%E5%8F%A3%E5%BE%84%E5%86%85%E7%8E%AF%E6%B0%A7%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1/(1420%C3%9712%E7%B1%B3)%E5%86%85%E7%8E%AF%E6%B0%A7%E7%B2%89%E6%9C%AB%E6%B6%82%E5%A1%91%E9%92%A2%E7%AE%A1.jpg",
+          "alt": "Tubo de acero anticorrosión TPEP - Tubo de acero recubierto con polvo epoxi interno de gran diámetro",
+          "detailUrl": "DN1200-TPEP-anti-corrosion-steel-pipe.html"
+        },
+        {
+          "title": "Análisis técnico de tuberías de acero recubiertas DN1000 de alto rendimiento",
+          "slug": "dn1000-coated-steel-pipe-tech.html",
+          "date": "2025-06-20",
+          "publishDate": "2025-06-20",
+          "categoryKey": "category3",
+          "category": "Artículo técnico",
+          "content": "<p>La tubería de acero recubierta DN1000, pieza clave en sistemas municipales e industriales de transporte de agua a gran escala, combina la resistencia mecánica del acero con la excelente protección anticorrosiva del recubrimiento plástico. Gracias a su innovador sistema de doble recubrimiento, la suavidad interna supera en más de un 40% a las tuberías tradicionales, mejorando la eficiencia de transporte entre un 15% y un 20%.</p><p>El producto utiliza un recubrimiento interno de resina epoxi de calidad alimentaria (grosor ≥0,35 mm), cumpliendo plenamente con la norma sanitaria GB/T 17219 para agua potable. La capa exterior, de PE de alta densidad o polvo epoxi (grosor ≥0,5 mm), ofrece excelente resistencia a los rayos UV y a la corrosión química, soportando temperaturas de -40℃ a 80℃.</p>",
+          "src": "/images/news/dn1000-tech.jpg",
+          "alt": "Características técnicas de la tubería de acero recubierta DN1000",
+          "detailUrl": "dn1000-coated-steel-pipe-tech.html"
+        }
+      ]
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

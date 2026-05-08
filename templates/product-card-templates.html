@@ -1,0 +1,51 @@
+<!-- 单个产品卡片模板 -->
+<div class="product-card group col-span-1 bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg" data-category="{{CATEGORY_ID}}">
+  <div class="h-[280px] overflow-hidden">
+    <img src="{{PRODUCT_IMAGE}}" 
+         class="w-full h-full object-cover product-image hover:opacity-90 transition-opacity duration-200" 
+         alt="{{PRODUCT_NAME}}" 
+         loading="lazy"
+         title="{{CLICK_TO_VIEW_IMAGE}}">
+  </div>
+  <div class="p-6"{{RTL_DIR}}>
+    <h3 class="text-xl font-semibold text-gray-900 mb-3">{{PRODUCT_NAME}}</h3>
+    
+    <div class="mb-4 flex flex-wrap gap-2">
+      {{PRODUCT_TAGS}}
+    </div>
+    
+    {{PRODUCT_SPECS}}
+    
+    <div class="flex justify-between items-center mt-4">
+      <button class="!rounded-button bg-primary text-white px-4 py-2 whitespace-nowrap hover:bg-opacity-90" title="{{VIEW_DETAILS}}" aria-label="{{VIEW_DETAILS}}">
+        {{VIEW_DETAILS}} <i class="fas fa-arrow-{{RTL_ARROW}} ml-1"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 产品分类区块模板 -->
+<section class="py-16 {{BG_COLOR}}" id="{{CATEGORY_ID}}">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4"{{RTL_DIR}}>{{CATEGORY_NAME}}</h2>
+      <div class="w-24 h-1 bg-primary mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{PRODUCT_CARDS}}
+    </div>
+  </div>
+</section>
+
+<!-- 应用场景标签模板 -->
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">{{TAG_TEXT}}</span>
+
+<!-- 特性标签模板 -->
+<span class="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">{{TAG_TEXT}}</span>
+
+<!-- 连接方式标签模板 -->
+<span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">{{TAG_TEXT}}</span>
+
+<!-- 规格信息模板 -->
+<div class="mt-2 text-sm text-gray-500 mb-4">{{SPECS_LABEL}}: {{SPECS_VALUE}}</div>

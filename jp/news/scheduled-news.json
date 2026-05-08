@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "category1": "企業ニュース",
+    "category2": "業界動向",
+    "category3": "技術記事",
+    "category4": "メディア報道"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": [
+        {
+          "title": "2020年スパイラル鋼管 品質パンフレット",
+          "slug": "2020.html",
+          "date": "2026-07-15",
+          "publishDate": "2026-07-15",
+          "content": "卓越した品質で非凡なエンジニアリングを築き上げ、私たちは全ての鋼管メーターが安全と信頼を運ぶことをお約束します。磐石の基礎、世代を超える配管。",
+          "src": "/images/news/spiral-steel-pipe-2020.jpg",
+          "alt": "2020年スパイラル鋼管",
+          "detailUrl": "2020.html"
+        },
+        {
+          "title": "大口径ライニング鋼管のご紹介",
+          "slug": "大口径ライニング.html",
+          "date": "2026-07-14",
+          "publishDate": "2026-07-14",
+          "content": "大口径ライニング鋼管の特性、用途、優位性について詳しくご紹介いたします...",
+          "src": "/images/news/large-diameter-coated-pipe.jpg",
+          "alt": "大口径ライニング鋼管",
+          "detailUrl": "大口径ライニング.html"
+        }
+      ]
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": []
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}

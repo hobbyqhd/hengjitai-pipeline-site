@@ -1,0 +1,47 @@
+{
+  "categories": {
+    "category1": "أخبار الشركة",
+    "category2": "ديناميكيات الصناعة",
+    "category3": "مقالات تقنية",
+    "category4": "تقارير إعلامية"
+  },
+  "files": [
+    {
+      "category": "category1",
+      "results": [
+        {
+          "title": "كتيب جودة الأنابيب الفولاذية الحلزونية 2020",
+          "slug": "2020.html",
+          "date": "2026-07-15",
+          "publishDate": "2026-07-15",
+          "content": "إنشاء هندسة استثنائية بجودة متفوقة، نحن نلتزم بأن كل متر من الأنبوب الفولاذي يحمل الأمان والثقة. أساس من الحجر، أنابيب للأجيال.",
+          "src": "/images/news/spiral-steel-pipe-2020.jpg",
+          "alt": "الأنبوب الفولاذي الحلزوني 2020",
+          "detailUrl": "2020.html"
+        },
+        {
+          "title": "مقدمة عن الأنابيب الفولاذية المبطنة كبيرة القطر",
+          "slug": "كبير-القطر-مبطن.html",
+          "date": "2026-07-14",
+          "publishDate": "2026-07-14",
+          "content": "مقدمة شاملة عن خصائص وتطبيقات ومزايا الأنابيب الفولاذية المبطنة كبيرة القطر...",
+          "src": "/images/news/large-diameter-coated-pipe.jpg",
+          "alt": "الأنبوب الفولاذي المبطن كبير القطر",
+          "detailUrl": "كبير-القطر-مبطن.html"
+        }
+      ]
+    },
+    {
+      "category": "category2",
+      "results": []
+    },
+    {
+      "category": "category3",
+      "results": []
+    },
+    {
+      "category": "category4",
+      "results": []
+    }
+  ]
+}
