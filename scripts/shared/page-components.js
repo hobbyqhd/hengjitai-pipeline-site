@@ -159,7 +159,8 @@ const languageConfigs = {
             wechat: 'WeChat',
             linkedin: 'LinkedIn',
             facebook: 'Facebook',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                '100 m south of the entrance to Liguo Zhuang Village, Bianwu Town, Yanshan County, Cangzhou City, Hebei Province, China',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. All Rights Reserved',
@@ -206,7 +207,8 @@ const languageConfigs = {
             wechat: 'WeChat',
             linkedin: 'LinkedIn',
             facebook: 'Facebook',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                '中国河北省滄州市塩山県辺務鎮李郭荘村・村口から南へ100メートル',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 恒基泰管道設備有限公司 無断転載禁止',
@@ -255,7 +257,8 @@ const languageConfigs = {
             wechat: 'WeChat',
             linkedin: 'LinkedIn',
             facebook: 'Facebook',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                '100 м к югу от въезда в деревню Лигочжуан, посёлок Бяньу, уезд Яньшань, город Цанчжоу, провинция Хэбэй, Китай',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 Цанчжоу Хэнцзитай Трубопроводное Оборудование. Все права защищены',
@@ -304,7 +307,8 @@ const languageConfigs = {
             wechat: 'وي تشات',
             linkedin: 'لينكد إن',
             facebook: 'فيسبوك',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                '100 متر جنوب بوابة قرية ليغوزهوانغ، بلدة بيانوو، مقاطعة يانشان، مدينة كانغتشو، مقاطعة خبي، الصين',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب المحدودة. جميع الحقوق محفوظة',
@@ -355,7 +359,8 @@ const languageConfigs = {
             wechat: 'WeChat',
             linkedin: 'LinkedIn',
             facebook: 'Facebook',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                'A 100 m al sur de la entrada del pueblo de Liguo Zhuang, municipio de Bianwu, condado de Yanshan, ciudad de Cangzhou, provincia de Hebei, China',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos los derechos reservados',
@@ -404,7 +409,8 @@ const languageConfigs = {
             wechat: 'WeChat',
             linkedin: 'LinkedIn',
             facebook: 'Facebook',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                "À 100 m au sud de l'entrée du village de Liguo Zhuang, commune de Bianwu, district de Yanshan, ville de Cangzhou, province du Hebei, Chine",
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Tous droits réservés',
@@ -453,7 +459,8 @@ const languageConfigs = {
             wechat: 'WeChat',
             linkedin: 'LinkedIn',
             facebook: 'Facebook',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                'A 100 m a sul da entrada da aldeia de Liguo Zhuang, município de Bianwu, condado de Yanshan, cidade de Cangzhou, província de Hebei, China',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos os direitos reservados',
@@ -502,7 +509,8 @@ const languageConfigs = {
             wechat: 'वीचैट',
             linkedin: 'लिंक्डइन',
             facebook: 'फेसबुक',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                'चीन, हेबेई प्रांत, कांग्झोऊ नगर, यानशान ज़िला, बियानवू नगरपालिका, लिगुओ झुआंग गाँव के प्रवेश द्वार से दक्षिण में 100 मीटर',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड। सर्वाधिकार सुरक्षित',
@@ -551,7 +559,8 @@ const languageConfigs = {
             wechat: 'WeChat',
             linkedin: 'LinkedIn',
             facebook: 'Facebook',
-            address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
+            address:
+                '100 m südlich des Dorfeingangs Liguo Zhuang, Gemeinde Bianwu, Kreis Yanshan, Stadt Cangzhou, Provinz Hebei, China',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
             copyright: '© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Alle Rechte vorbehalten',
