@@ -3,7 +3,8 @@
 本文件夹用于存放网站所需的各类图片资源。以下是需要准备的图片列表：
 
 ## 基础图片
-- logo.png - 公司logo（深色版本）
+- logo.jpg - 公司 logo（站点默认，白底、已由 `scripts/process-logo-to-jpg.js` 自 `logo.png` 导出时可紧缩留白）
+- logo.png - 原始矢量/栅格稿（可选保留，用于重新导出 JPG）
 - logo-white.png - 公司logo（白色版本，用于深色背景）
 - favicon.ico - 网站图标
 
