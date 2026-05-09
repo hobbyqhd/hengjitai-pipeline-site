@@ -824,16 +824,16 @@ function getNavigationMenuHTML(lang, pageDepth = 0, options = {}) {
             ${config.nav.products} <i class="fas fa-chevron-down text-xs ml-1"></i>
         </a>
         <div class="dropdown-menu hidden group-hover:block absolute bg-white min-w-[200px] shadow-lg rounded-lg mt-1 py-2 z-50 left-0">
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('plastic-coating', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('plastic-coating', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.plasticCoating}
             </a>
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('anti-corrosion', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('anti-corrosion', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.antiCorrosion}
             </a>
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('steel-pipes', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('steel-pipes', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.steelPipes}
             </a>
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('pipe-fittings', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('pipe-fittings', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.fittings}
             </a>
         </div>
@@ -886,7 +886,7 @@ function getLanguageSelectorHTML(lang, pagePathWithinLangRoot, relativePathToOth
         
         const langDisplay = getLanguageDisplay(l);
         const targetUrl = `${relativePathToOtherLangRoot}${l}/${pagePathWithinLangRoot}`;
-        options += `<a href="${targetUrl}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">${langDisplay}</a>`;
+        options += `<a href="${targetUrl}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">${langDisplay}</a>`;
     });
 
     return `
@@ -929,49 +929,49 @@ function getFooterHTML(lang, pageDepth = 0) {
     };
     
     return `
-<footer class="bg-gray-800 text-white py-12">
+<footer class="bg-footer text-slate-100 py-14 border-t border-slate-800/80">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-                <h3 class="text-xl font-semibold mb-4">${config.nav.about}</h3>
-                <p class="text-gray-400 mb-4">${config.footer.aboutText}</p>
+                <h3 class="text-xl font-semibold mb-4 text-white">${config.nav.about}</h3>
+                <p class="text-slate-400 mb-4">${config.footer.aboutText}</p>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">${config.footer.quickLinks}</h3>
+                <h3 class="text-xl font-semibold mb-4 text-white">${config.footer.quickLinks}</h3>
                 <ul class="space-y-2">
-                    <li><a href="${createLink('index.html')}" class="text-gray-400 hover:text-primary">${config.homeText}</a></li>
-                    <li><a href="${createLink('about.html')}" class="text-gray-400 hover:text-primary">${config.nav.about}</a></li>
-                    <li><a href="${createLink('products.html')}" class="text-gray-400 hover:text-primary">${config.nav.products}</a></li>
-                    <li><a href="${createLink('quality.html')}" class="text-gray-400 hover:text-primary">${config.nav.quality}</a></li>
-                    <li><a href="${createLink('cases.html')}" class="text-gray-400 hover:text-primary">${config.nav.cases}</a></li>
-                    <li><a href="${createLink('news.html')}" class="text-gray-400 hover:text-primary">${config.nav.news}</a></li>
-                    <li><a href="${createLink('contact.html')}" class="text-gray-400 hover:text-primary">${config.nav.contact}</a></li>
+                    <li><a href="${createLink('index.html')}" class="text-slate-400 hover:text-secondary transition-colors">${config.homeText}</a></li>
+                    <li><a href="${createLink('about.html')}" class="text-slate-400 hover:text-secondary transition-colors">${config.nav.about}</a></li>
+                    <li><a href="${createLink('products.html')}" class="text-slate-400 hover:text-secondary transition-colors">${config.nav.products}</a></li>
+                    <li><a href="${createLink('quality.html')}" class="text-slate-400 hover:text-secondary transition-colors">${config.nav.quality}</a></li>
+                    <li><a href="${createLink('cases.html')}" class="text-slate-400 hover:text-secondary transition-colors">${config.nav.cases}</a></li>
+                    <li><a href="${createLink('news.html')}" class="text-slate-400 hover:text-secondary transition-colors">${config.nav.news}</a></li>
+                    <li><a href="${createLink('contact.html')}" class="text-slate-400 hover:text-secondary transition-colors">${config.nav.contact}</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">${config.nav.products}</h3>
+                <h3 class="text-xl font-semibold mb-4 text-white">${config.nav.products}</h3>
                 <ul class="space-y-2">
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('plastic-coating', lang))}" class="text-gray-400 hover:text-primary">${config.submenu.plasticCoating}</a></li>
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('anti-corrosion', lang))}" class="text-gray-400 hover:text-primary">${config.submenu.antiCorrosion}</a></li>
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('steel-pipes', lang))}" class="text-gray-400 hover:text-primary">${config.submenu.steelPipes}</a></li>
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('pipe-fittings', lang))}" class="text-gray-400 hover:text-primary">${config.submenu.fittings}</a></li>
+                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('plastic-coating', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.plasticCoating}</a></li>
+                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('anti-corrosion', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.antiCorrosion}</a></li>
+                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('steel-pipes', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.steelPipes}</a></li>
+                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('pipe-fittings', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.fittings}</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">${config.footer.contact}</h3>
-                <ul class="space-y-2 text-gray-400">
+                <h3 class="text-xl font-semibold mb-4 text-white">${config.footer.contact}</h3>
+                <ul class="space-y-2 text-slate-400">
                     <li class="flex items-start">
-                        <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                        <i class="fas fa-map-marker-alt mt-1 mr-2 text-secondary"></i>
                         <span>${config.footer.address}</span>
                     </li>
                     <li>
-                        <a href="mailto:${config.footer.email}" class="flex items-center hover:text-primary">
+                        <a href="mailto:${config.footer.email}" class="flex items-center hover:text-secondary transition-colors">
                             <i class="fas fa-envelope mr-2"></i>
                             <span>${config.footer.email}</span>
                         </a>
                     </li>
                     <li>
-                        <a href="tel:${config.footer.phone}" class="flex items-center hover:text-primary">
+                        <a href="tel:${config.footer.phone}" class="flex items-center hover:text-secondary transition-colors">
                             <i class="fas fa-phone mr-2"></i>
                             <span>${config.footer.phone}</span>
                         </a>
@@ -979,8 +979,8 @@ function getFooterHTML(lang, pageDepth = 0) {
                 </ul>
             </div>
         </div>
-        <div class="border-t border-gray-700 pt-4 text-center">
-            <p class="text-gray-400">${config.footer.copyright.replace('2025', currentYear)}</p>
+        <div class="border-t border-slate-700/60 pt-4 text-center">
+            <p class="text-slate-500">${config.footer.copyright.replace('2025', currentYear)}</p>
         </div>
     </div>
 </footer>`;

@@ -87,15 +87,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   en: {
@@ -114,15 +114,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   jp: {
@@ -141,15 +141,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   ru: {
@@ -168,15 +168,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   ar: {
@@ -195,15 +195,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   es: {
@@ -222,15 +222,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   fr: {
@@ -249,15 +249,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   pt: {
@@ -276,15 +276,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   hi: {
@@ -303,15 +303,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../de/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>'
     ]
   },
   de: {
@@ -330,15 +330,15 @@ const languages = {
       'link rel="alternate" hreflang="de" href="https://hengjitaipipeline.com/de/products.html" /'
     ],
     languageMenuItems: [
-      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a>',
-      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a>',
-      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a>',
-      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a>',
-      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a>',
-      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a>',
-      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a>',
-      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Português</a>',
-      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a>'
+      'a href="../cn/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a>',
+      'a href="../en/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a>',
+      'a href="../jp/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a>',
+      'a href="../ru/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a>',
+      'a href="../ar/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a>',
+      'a href="../es/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a>',
+      'a href="../fr/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a>',
+      'a href="../pt/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Português</a>',
+      'a href="../hi/products.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a>'
     ]
   }
 };

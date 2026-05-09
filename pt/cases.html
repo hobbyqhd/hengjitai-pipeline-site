@@ -19,7 +19,7 @@
     </style>
     <!-- 基本元数据 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FFFFFF">
+    <meta name="theme-color" content="#162d52">
     <meta name="application-name" content="Cangzhou Hengjitai Pipeline Equipment Co., Ltd. (Portugal)">
     <title>Estudos de Caso — projetos de tubos revestidos em água, incêndio e gás</title>
     <meta name="description" content="Tubos revestidos e 3PE/TPEP da Hengjitai foram aplicados em água potável municipal, proteção contra incêndio, distribuição de gás, drenagem mineira e proteção de cabos em 60+ países, com mais de 1.000.000 t entregues.">
@@ -79,11 +79,11 @@
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body class="bg-white">
+<body class="bg-surface text-slate-800 antialiased">
     <!-- 浮动导航菜单 -->
     <div id="floating-nav-container"></div>
 
-    <header class="fixed w-full bg-white shadow-md z-50 header-fixed">
+    <header class="fixed w-full z-50 border-b border-slate-200/90 bg-white/90 shadow-header backdrop-blur supports-[backdrop-filter]:bg-white/80 header-fixed">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-20">
                 <a href="index.html" class="flex items-center h-12" title="Cangzhou Hengjitai Pipeline Equipment Co., Ltd. (Portugal)">
@@ -108,16 +108,16 @@
             Produtos <i class="fas fa-chevron-down text-xs ml-1"></i>
         </a>
         <div class="dropdown-menu hidden group-hover:block absolute bg-white min-w-[200px] shadow-lg rounded-lg mt-1 py-2 z-50 left-0">
-            <a href="products.html?search=revestimento" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="products.html?search=revestimento" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 Tubos de Aço Revestidos com Plástico
             </a>
-            <a href="products.html?search=corros%C3%A3o" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="products.html?search=corros%C3%A3o" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 Tubos de Aço Anticorrosão
             </a>
-            <a href="products.html?search=a%C3%A7o" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="products.html?search=a%C3%A7o" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 Tubos de Aço
             </a>
-            <a href="products.html?search=acess%C3%B3rio" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+            <a href="products.html?search=acess%C3%B3rio" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 Conexões para Tubulação
             </a>
         </div>
@@ -156,7 +156,7 @@
         </svg>
     </button>
     <div id="language-menu" class="hidden absolute right-0 w-48 mt-2 py-2 bg-white rounded-lg shadow-lg z-50">
-        <a href="../cn/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">简体中文</a><a href="../en/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">English</a><a href="../jp/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">日本語</a><a href="../ru/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Русский</a><a href="../ar/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">العربية</a><a href="../es/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Español</a><a href="../fr/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Français</a><a href="../hi/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">हिन्दी</a><a href="../de/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Deutsch</a>
+        <a href="../cn/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">简体中文</a><a href="../en/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">English</a><a href="../jp/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">日本語</a><a href="../ru/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Русский</a><a href="../ar/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">العربية</a><a href="../es/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Español</a><a href="../fr/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Français</a><a href="../hi/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">हिन्दी</a><a href="../de/cases.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5">Deutsch</a>
     </div>
 </div>
             </div>
@@ -205,7 +205,7 @@
                     <div class="flex items-center gap-2 mb-3">
                         <span v-for="category in caseItem.categories" 
                               :key="category" 
-                              class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">
+                              class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
                             {{ category }}
                         </span>
                     </div>
@@ -333,49 +333,49 @@
 </div>
 <!-- 页脚部分 -->
 
-<footer class="bg-gray-800 text-white py-12">
+<footer class="bg-footer text-slate-100 py-14 border-t border-slate-800/80">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-                <h3 class="text-xl font-semibold mb-4">Sobre Nós</h3>
-                <p class="text-gray-400 mb-4">A Cangzhou Hengjitai Pipeline Equipment Co., Ltd. foi fundada em 2026 e foca no fornecimento de equipamentos de tubulação, conexões de aço, suportes e suspensões para tubulações, e conexões anticorrosão para projetos de engenharia.</p>
+                <h3 class="text-xl font-semibold mb-4 text-white">Sobre Nós</h3>
+                <p class="text-slate-400 mb-4">A Cangzhou Hengjitai Pipeline Equipment Co., Ltd. foi fundada em 2026 e foca no fornecimento de equipamentos de tubulação, conexões de aço, suportes e suspensões para tubulações, e conexões anticorrosão para projetos de engenharia.</p>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
+                <h3 class="text-xl font-semibold mb-4 text-white">Links Rápidos</h3>
                 <ul class="space-y-2">
-                    <li><a href="index.html" class="text-gray-400 hover:text-primary">Início</a></li>
-                    <li><a href="about.html" class="text-gray-400 hover:text-primary">Sobre Nós</a></li>
-                    <li><a href="products.html" class="text-gray-400 hover:text-primary">Produtos</a></li>
-                    <li><a href="quality.html" class="text-gray-400 hover:text-primary">Controle de Qualidade</a></li>
-                    <li><a href="cases.html" class="text-gray-400 hover:text-primary">Estudos de Caso</a></li>
-                    <li><a href="news.html" class="text-gray-400 hover:text-primary">Notícias</a></li>
-                    <li><a href="contact.html" class="text-gray-400 hover:text-primary">Contato</a></li>
+                    <li><a href="index.html" class="text-slate-400 hover:text-secondary transition-colors">Início</a></li>
+                    <li><a href="about.html" class="text-slate-400 hover:text-secondary transition-colors">Sobre Nós</a></li>
+                    <li><a href="products.html" class="text-slate-400 hover:text-secondary transition-colors">Produtos</a></li>
+                    <li><a href="quality.html" class="text-slate-400 hover:text-secondary transition-colors">Controle de Qualidade</a></li>
+                    <li><a href="cases.html" class="text-slate-400 hover:text-secondary transition-colors">Estudos de Caso</a></li>
+                    <li><a href="news.html" class="text-slate-400 hover:text-secondary transition-colors">Notícias</a></li>
+                    <li><a href="contact.html" class="text-slate-400 hover:text-secondary transition-colors">Contato</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">Produtos</h3>
+                <h3 class="text-xl font-semibold mb-4 text-white">Produtos</h3>
                 <ul class="space-y-2">
-                    <li><a href="products.html?search=revestimento" class="text-gray-400 hover:text-primary">Tubos de Aço Revestidos com Plástico</a></li>
-                    <li><a href="products.html?search=corros%C3%A3o" class="text-gray-400 hover:text-primary">Tubos de Aço Anticorrosão</a></li>
-                    <li><a href="products.html?search=a%C3%A7o" class="text-gray-400 hover:text-primary">Tubos de Aço</a></li>
-                    <li><a href="products.html?search=acess%C3%B3rio" class="text-gray-400 hover:text-primary">Conexões para Tubulação</a></li>
+                    <li><a href="products.html?search=revestimento" class="text-slate-400 hover:text-secondary transition-colors">Tubos de Aço Revestidos com Plástico</a></li>
+                    <li><a href="products.html?search=corros%C3%A3o" class="text-slate-400 hover:text-secondary transition-colors">Tubos de Aço Anticorrosão</a></li>
+                    <li><a href="products.html?search=a%C3%A7o" class="text-slate-400 hover:text-secondary transition-colors">Tubos de Aço</a></li>
+                    <li><a href="products.html?search=acess%C3%B3rio" class="text-slate-400 hover:text-secondary transition-colors">Conexões para Tubulação</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">Contato</h3>
-                <ul class="space-y-2 text-gray-400">
+                <h3 class="text-xl font-semibold mb-4 text-white">Contato</h3>
+                <ul class="space-y-2 text-slate-400">
                     <li class="flex items-start">
-                        <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                        <i class="fas fa-map-marker-alt mt-1 mr-2 text-secondary"></i>
                         <span>A 100 m a sul da entrada da aldeia de Liguo Zhuang, município de Bianwu, condado de Yanshan, cidade de Cangzhou, província de Hebei, China</span>
                     </li>
                     <li>
-                        <a href="mailto:sales@hypipelines.com" class="flex items-center hover:text-primary">
+                        <a href="mailto:sales@hypipelines.com" class="flex items-center hover:text-secondary transition-colors">
                             <i class="fas fa-envelope mr-2"></i>
                             <span>sales@hypipelines.com</span>
                         </a>
                     </li>
                     <li>
-                        <a href="tel:+86 189-3171-0082" class="flex items-center hover:text-primary">
+                        <a href="tel:+86 189-3171-0082" class="flex items-center hover:text-secondary transition-colors">
                             <i class="fas fa-phone mr-2"></i>
                             <span>+86 189-3171-0082</span>
                         </a>
@@ -383,8 +383,8 @@
                 </ul>
             </div>
         </div>
-        <div class="border-t border-gray-700 pt-4 text-center">
-            <p class="text-gray-400">© 2026 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos os direitos reservados</p>
+        <div class="border-t border-slate-700/60 pt-4 text-center">
+            <p class="text-slate-500">© 2026 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos os direitos reservados</p>
         </div>
     </div>
 </footer>

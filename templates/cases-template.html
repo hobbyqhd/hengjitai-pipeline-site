@@ -69,11 +69,11 @@
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body class="bg-white">
+<body class="bg-surface text-slate-800 antialiased">
     <!-- 浮动导航菜单 -->
     <div id="floating-nav-container"></div>
 
-    <header class="fixed w-full bg-white shadow-md z-50 header-fixed">
+    <header class="fixed w-full z-50 border-b border-slate-200/90 bg-white/90 shadow-header backdrop-blur supports-[backdrop-filter]:bg-white/80 header-fixed">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-20">
                 <a href="index.html" class="flex items-center h-12" title="{{COMPANY_FULL_NAME}}">
@@ -131,7 +131,7 @@
                     <div class="flex items-center gap-2 mb-3">
                         <span v-for="category in caseItem.categories" 
                               :key="category" 
-                              class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full">
+                              class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
                             {{ category }}
                         </span>
                     </div>

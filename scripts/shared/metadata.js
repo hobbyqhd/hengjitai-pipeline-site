@@ -372,7 +372,7 @@ function getPageMetadata(lang, pageType, currentData = null) {
         author: companyName,
         contentLanguage: langConfig.langCode,
         viewport: 'width=device-width, initial-scale=1.0',
-        themeColor: '#FFFFFF',
+        themeColor: '#162d52',
         applicationName: companyName
     };
 

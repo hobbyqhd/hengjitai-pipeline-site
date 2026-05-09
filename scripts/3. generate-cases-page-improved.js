@@ -102,7 +102,7 @@ function generateCasesPage(lang, menuOptions = {}) {
     pageContent = pageContent.replace(/{{META_KEYWORDS}}/g, casesSeo.keywords);
     pageContent = pageContent.replace(/{{PAGE_TITLE}}/g, langTranslations.title);
     pageContent = pageContent.replace(/{{META_VIEWPORT}}/g, meta.viewport || 'width=device-width, initial-scale=1.0');
-    pageContent = pageContent.replace(/{{META_THEME_COLOR}}/g, meta.themeColor || '#FFFFFF');
+    pageContent = pageContent.replace(/{{META_THEME_COLOR}}/g, meta.themeColor || '#162d52');
     pageContent = pageContent.replace(/{{COMPANY_FULL_NAME}}/g, langConfig.companyFullName);
     pageContent = pageContent.replace(/{{COMPANY_NAME}}/g, langConfig.companyName);
     pageContent = pageContent.replace(/{{HOME_TEXT}}/g, langConfig.homeText);

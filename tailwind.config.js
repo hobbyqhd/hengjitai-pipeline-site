@@ -16,8 +16,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1B3C8C',
-        secondary: '#0088CC'
+        primary: {
+          DEFAULT: '#162d52',
+          dark: '#0f1f38',
+          muted: '#2a4570'
+        },
+        secondary: {
+          DEFAULT: '#1ba8d8',
+          dark: '#1382a8'
+        },
+        surface: '#f1f5f9',
+        footer: '#0c1628'
+      },
+      boxShadow: {
+        header:
+          '0 1px 0 0 rgb(15 23 42 / 0.06), 0 8px 24px -12px rgb(15 23 42 / 0.12)',
+        card: '0 4px 24px -6px rgb(15 23 42 / 0.08), 0 0 0 1px rgb(15 23 42 / 0.04)'
       },
       borderRadius: {
         'none': '0px',

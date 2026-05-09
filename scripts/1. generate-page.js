@@ -638,15 +638,28 @@ const INDEX_HOME_HERO = {
     }
 };
 
+function replaceIndexHeroShell(content) {
+    return content.replace(
+        /<section class="relative h-\[600px\] bg-gradient-to-r from-primary\/90 to-primary\/70 overflow-hidden">\s*(<div class="absolute inset-0">[\s\S]*?<\/div>)\s*(<div class="container mx-auto px-4 h-full">)/,
+        `<section class="relative min-h-[440px] h-[min(68vh,640px)] overflow-hidden bg-slate-950 shadow-[inset_0_-8px_24px_-8px_rgba(0,0,0,0.35)]">
+            $1
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/92 via-slate-900/50 to-slate-950/95 pointer-events-none" aria-hidden="true"></div>
+            <div class="absolute inset-0 opacity-[0.04] bg-[repeating-linear-gradient(-18deg,rgba(255,255,255,0.06)_0,rgba(255,255,255,0.06)_1px,transparent_1px,transparent_14px)] pointer-events-none" aria-hidden="true"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-secondary to-transparent opacity-70" aria-hidden="true"></div>
+            $2`
+    );
+}
+
 function replaceIndexHomeHero(content, lang) {
     const hero = INDEX_HOME_HERO[lang] || INDEX_HOME_HERO.en;
-    let next = content.replace(
-        /<h1 class="text-5xl font-bold mb-6">[\s\S]*?<\/h1>/,
-        `<h1 class="text-5xl font-bold mb-6">${hero.titleHtml}</h1>`
+    let next = replaceIndexHeroShell(content);
+    next = next.replace(
+        /<h1 class="text-5xl font-bold mb-6">[\s\S]*?<\/h1>|<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight leading-tight drop-shadow-sm">[\s\S]*?<\/h1>/,
+        `<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight leading-tight drop-shadow-sm">${hero.titleHtml}</h1>`
     );
     next = next.replace(
-        /<p class="text-lg mb-8 opacity-90">[\s\S]*?<\/p>/,
-        `<p class="text-lg mb-8 opacity-90">\n                        ${hero.subtitle}</p>`
+        /<p class="text-lg mb-8 opacity-90">[\s\S]*?<\/p>|<p class="text-lg md:text-xl mb-8 text-white\/90 max-w-xl leading-relaxed">\s*[\s\S]*?<\/p>/,
+        `<p class="text-lg md:text-xl mb-8 text-white/90 max-w-xl leading-relaxed">\n                        ${hero.subtitle}</p>`
     );
     return next;
 }
@@ -680,7 +693,7 @@ function generatePage(lang, pageName, content, menuOptions = {}) {
         contentLanguage: langConfig.langCode,
         canonicalUrl: `https://hengjitaipipeline.com/${lang}/${pageName}.html`,
         viewport: 'width=device-width, initial-scale=1.0',
-        themeColor: '#FFFFFF',
+        themeColor: '#162d52',
         robots: 'index, follow',
         // OpenGraph
         ogTitle: pageConfig.title || 'Quality Control',
