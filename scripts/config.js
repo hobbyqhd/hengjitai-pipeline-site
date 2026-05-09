@@ -113,7 +113,7 @@ module.exports = {
                 },
                 about: {
                     title: 'About Cangzhou Hengjitai — Pipeline Equipment and Steel Fitting Supplier & High-Tech Enterprise',
-                    description: 'Established in 2026, Cangzhou Hengjitai covers project-based supply in 100 meters south of the entrance of Liguozhuang Village, Bianwu Town, Yanshan County, Cangzhou, Hebei, China. Annual capacity custom project supply. ISO9001/CE/SGS certified. Backbone supplier of plastic-coated pipes worldwide.',
+                    description: 'Established in 2026, Cangzhou Hengjitai Pipeline Equipment Co., Ltd. is based in Yanshan County, Cangzhou, Hebei, China (100 m south of the entrance of Liguozhuang Village, Bianwu Town). It supplies pipeline equipment, steel fittings, supports and anti-corrosion accessories for engineering projects. ISO9001, CE and SGS certified.',
                     keywords: 'Cangzhou Hengjitai profile,company history,production capacity,ISO9001 certified,plastic-coated pipe supplier,high-tech enterprise'
                 },
                 products: {
@@ -150,7 +150,7 @@ module.exports = {
                 },
                 about: {
                     title: '会社概要｜配管設備・鋼製継手サプライヤー恒基泰管道設備',
-                    description: '恒基泰管道設備有限公司は2026年設立、河北省沧州盐山産業園に工程配套の工場と年産20万トンの生産能力を有し、ISO9001/CE/SGS認証を取得した塗塑鋼管業界の主要サプライヤーです。',
+                    description: '恒基泰管道設備有限公司は2026年設立、所在地は中国河北省沧州市盐山县边务镇李郭庄村口南100米。管道装备、鋼製継手、管托支吊架及び防食継手などの工程向け製品を供給。ISO9001／CE／SGS認証取得のハイテク企業です。',
                     keywords: '恒基泰管道設備会社概要,会社沿革,生産能力,ISO9001認証,塗塑鋼管メーカー,ハイテク企業'
                 },
                 products: {
@@ -224,7 +224,7 @@ module.exports = {
                 },
                 about: {
                     title: 'عن هينغجيتاي لمعدات خطوط الأنابيب - منذ عام 2026 في تصنيع الأنابيب المطلية',
-                    description: 'تأسست شركة هينغجيتاي عام 2026 في منطقة يانشان الصناعية بمقاطعة خبي، تمتد على 80,000 م² بطاقة إنتاجية 200,000 طن سنوياً، حاصلة على شهادات ISO9001 وCE وSGS.',
+                    description: 'تأسست شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب عام 2026، ومقرها 中国河北省沧州市盐山县边务镇李郭庄村口南100米 (مقاطعة يانشان، تسانغتشو، خبي). تورد معدات خطوط الأنابيب وتجهيزات الفولاذ وملحقات مكافحة التآكل لمشاريع الهندسة. معتمدة ISO9001 وCE وSGS.',
                     keywords: 'عن هينغجيتاي,تاريخ الشركة,طاقة إنتاجية,ISO9001,مُصنّع أنابيب,شركة تكنولوجيا'
                 },
                 products: {
@@ -260,8 +260,8 @@ module.exports = {
                     keywords: 'fabricante de tubos recubiertos,tubos 3PE,tubos TPEP,tubos galvanizados,accesorios,DN15-DN2200,Hengjitai'
                 },
                 about: {
-                    title: 'Sobre Cangzhou Hengjitai — 20 años fabricando tubos recubiertos de acero',
-                    description: 'Cangzhou Hengjitai se fundó en 2005 en el parque industrial de Yanshan County, Hebei. 80.000 m² y capacidad anual de 200.000 toneladas. Certificada ISO9001, CE y SGS, líder en tubos recubiertos.',
+                    title: 'Sobre Cangzhou Hengjitai — Equipos de tuberías y tubos recubiertos anticorrosión',
+                    description: 'Cangzhou Hengjitai se fundó en 2026 en Cangzhou (Hebei, China), con domicilio operativo en 中国河北省沧州市盐山县边务镇李郭庄村口南100米. Suministra equipos de tuberías, accesorios de acero, soportes y piezas anticorrosión para proyectos. Certificada ISO9001, CE y SGS.',
                     keywords: 'sobre Hengjitai,historia empresa,capacidad producción,ISO9001,fabricante de tubos,empresa alta tecnología'
                 },
                 products: {
@@ -297,8 +297,8 @@ module.exports = {
                     keywords: 'fabricant tubes revêtus,tubes 3PE,tubes TPEP,tubes galvanisés,raccords,DN15-DN2200,Hengjitai'
                 },
                 about: {
-                    title: 'À propos de Cangzhou Hengjitai — 20 ans dans les tubes en acier revêtus',
-                    description: "Cangzhou Hengjitai a été créée en 2005 dans le parc industriel de Yanshan County (Hebei). проектные поставки, capacité annuelle de 200 000 tonnes, certifiée ISO9001, CE et SGS, fournisseur clé de tubes revêtus.",
+                    title: 'À propos de Cangzhou Hengjitai — Équipements de tuyauterie et tubes revêtus',
+                    description: "Cangzhou Hengjitai a été créée en 2026 à Cangzhou (Hebei, Chine), 中国河北省沧州市盐山县边务镇李郭庄村口南100米. Elle fournit équipements de tuyauterie, raccords en acier, supports et pièces anticorrosion pour projets. Certifiée ISO9001, CE et SGS.",
                     keywords: 'à propos Hengjitai,historique,capacité production,ISO9001,fabricant tubes,entreprise high-tech'
                 },
                 products: {
@@ -334,7 +334,7 @@ module.exports = {
                     keywords: 'fabricante de tubos revestidos,tubos 3PE,tubos TPEP,tubos galvanizados,conexões,DN15-DN2200,Hengjitai'
                 },
                 about: {
-                    title: 'Sobre a Cangzhou Hengjitai — 20 anos de experiência em tubos revestidos',
+                    title: 'Sobre a Cangzhou Hengjitai — Equipamentos de tubulação e tubos revestidos',
                     description: 'Fundada em 2026 no parque industrial de Yanshan County (Hebei), com 80.000 m² e capacidade anual de 200.000 toneladas. Certificada ISO9001, CE e SGS. Fornecedor chave de tubos revestidos.',
                     keywords: 'sobre Hengjitai,história,capacidade produção,ISO9001,fabricante tubos,empresa high-tech'
                 },
@@ -371,8 +371,8 @@ module.exports = {
                     keywords: 'प्लास्टिक कोटेड पाइप निर्माता,3PE पाइप,TPEP पाइप,गैल्वेनाइज़्ड पाइप,फिटिंग्स,DN15-DN2200,Hengjitai'
                 },
                 about: {
-                    title: 'Cangzhou Hengjitai के बारे में - 20 वर्षों का प्लास्टिक कोटेड पाइप अनुभव',
-                    description: 'Cangzhou Hengjitai की स्थापना 2005 में हेबेई के यानशान औद्योगिक पार्क में हुई। 80,000 वर्ग मीटर सुविधा, 200,000 टन वार्षिक क्षमता, ISO9001, CE और SGS प्रमाणित।',
+                    title: 'Cangzhou Hengjitai के बारे में — पाइपलाइन उपकरण और प्लास्टिक कोटेड पाइप',
+                    description: 'Cangzhou Hengjitai की स्थापना 2026 में हुई; पता: 中国河北省沧州市盐山县边务镇李郭庄村口南100米, कांगझोउ, हेबेई। पाइपलाइन उपकरण, स्टील फिटिंग, सपोर्ट और एंटी-कोरोज़न सामान की आपूर्ति। ISO9001, CE और SGS प्रमाणित।',
                     keywords: 'Hengjitai परिचय,कंपनी इतिहास,उत्पादन क्षमता,ISO9001,पाइप निर्माता,हाई-टेक उद्यम'
                 },
                 products: {
@@ -408,8 +408,8 @@ module.exports = {
                     keywords: 'Hersteller kunststoffbeschichtete Stahlrohre,3PE-Rohre,TPEP-Rohre,verzinkte Rohre,Fittings,DN15-DN2200,Hengjitai'
                 },
                 about: {
-                    title: 'Über Cangzhou Hengjitai — 20 Jahre Erfahrung in beschichteten Stahlrohren',
-                    description: 'Cangzhou Hengjitai wurde 2005 im Industriepark Yanshan County (Hebei) gegründet. 80.000 m² Werksfläche, 200.000 t Jahreskapazität. ISO9001-, CE- und SGS-zertifiziert. Schlüssellieferant beschichteter Rohre.',
+                    title: 'Über Cangzhou Hengjitai — Rohrleitungsausrüstung und beschichtete Stahlrohre',
+                    description: 'Cangzhou Hengjitai wurde 2026 in Cangzhou (Hebei, China) gegründet, Standort: 中国河北省沧州市盐山县边务镇李郭庄村口南100米. Lieferant für Rohrleitungsausrüstung, Stahlfittings, Rohrauflagen und Korrosionsschutzteile für Projekte. ISO9001-, CE- und SGS-zertifiziert.',
                     keywords: 'über Hengjitai,Firmengeschichte,Produktionskapazität,ISO9001,Rohrhersteller,Rohrleitungsausrüster'
                 },
                 products: {

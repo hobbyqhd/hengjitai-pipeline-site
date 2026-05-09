@@ -152,7 +152,7 @@ const languageConfigs = {
             fittings: 'Pipe Fittings'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., established in 2003, is a pipeline equipment supplier specializing in plastic-coated steel pipes and pipeline anti-corrosion solutions.',
+            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. was established in 2026. It focuses on supplying pipeline equipment, steel pipe fittings, pipe supports and hangers, and anti-corrosion fittings for engineering projects.',
             quickLinks: 'Quick Links',
             contact: 'Contact',
             followUs: 'Follow Us',
@@ -199,7 +199,7 @@ const languageConfigs = {
             fittings: '管継手'
         },
         footer: {
-            aboutText: '恒基泰管道設備有限公司は2003年に設立され、プラスチック被覆鋼管および配管防食ソリューションを専門とする国家ハイテク企業です。',
+            aboutText: '恒基泰管道設備有限公司は2026年に設立され、配管設備・鋼製継手・管托・支吊架および防食継手などの工程配套製品の供給を専門とする企業です。',
             quickLinks: 'クイックリンク',
             contact: 'お問い合わせ',
             followUs: 'フォロー',
@@ -248,7 +248,7 @@ const languageConfigs = {
             fittings: 'Трубные фитинги'
         },
         footer: {
-            aboutText: 'Цанчжоу Хэнцзитай Трубопроводное Оборудование, основанная в 2003 году, является национальным высокотехнологичным предприятием, специализирующимся на стальных трубах с пластиковым покрытием и решениях для антикоррозийной защиты трубопроводов.',
+            aboutText: 'Компания основана в 2026 году и специализируется на поставках трубопроводного оборудования, стальных фитингов, опор и подвесок для труб, а также антикоррозионной арматуры для инженерных объектов.',
             quickLinks: 'Быстрые ссылки',
             contact: 'Контакты',
             followUs: 'Подписывайтесь на нас',
@@ -297,7 +297,7 @@ const languageConfigs = {
             fittings: 'تجهيزات الأنابيب'
         },
         footer: {
-            aboutText: 'تأسست شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب المحدودة في عام 2003، وهي شركة وطنية عالية التقنية متخصصة في أنابيب الصلب المطلية بالبلاستيك وحلول مكافحة تآكل خطوط الأنابيب.',
+            aboutText: 'تأسست شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب المحدودة عام 2026، وهي متخصصة في توريد معدات خطوط الأنابيب وتجهيزات الفولاذ ودعامات ومعلِّقات الأنابيب وتجهيزات مكافحة التآكل لمشاريع الهندسة.',
             quickLinks: 'روابط سريعة',
             contact: 'اتصل بنا',
             followUs: 'تابعنا',
@@ -348,7 +348,7 @@ const languageConfigs = {
             fittings: 'Accesorios para Tuberías'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., establecida en 2003, es una empresa nacional de alta tecnología especializada en tubos de acero con recubrimiento plástico y soluciones anticorrosión para tuberías.',
+            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. se fundó en 2026 y se centra en el suministro de equipos de tuberías, accesorios de acero, soportes y colgadores para tuberías, y accesorios anticorrosión para proyectos de ingeniería.',
             quickLinks: 'Enlaces Rápidos',
             contact: 'Contacto',
             followUs: 'Síguenos',
@@ -397,7 +397,7 @@ const languageConfigs = {
             fittings: 'Raccords de Tuyauterie'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., créée en 2003, est une entreprise nationale de haute technologie spécialisée dans les tubes en acier revêtus de plastique et les solutions anticorrosion pour pipelines.',
+            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. a été créée en 2026. Elle se spécialise dans l\'approvisionnement en équipements de tuyauterie, raccords en acier, supports et suspentes pour tuyauteries, et raccords anticorrosion pour projets d\'ingénierie.',
             quickLinks: 'Liens Rapides',
             contact: 'Contact',
             followUs: 'Suivez-nous',
@@ -446,7 +446,7 @@ const languageConfigs = {
             fittings: 'Conexões para Tubulação'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., estabelecida em 2003, é uma empresa nacional de alta tecnologia especializada em tubos de aço revestidos com plástico e soluções anticorrosão para tubulações.',
+            aboutText: 'A Cangzhou Hengjitai Pipeline Equipment Co., Ltd. foi fundada em 2026 e foca no fornecimento de equipamentos de tubulação, conexões de aço, suportes e suspensões para tubulações, e conexões anticorrosão para projetos de engenharia.',
             quickLinks: 'Links Rápidos',
             contact: 'Contato',
             followUs: 'Siga-nos',
@@ -473,7 +473,7 @@ const languageConfigs = {
     hi: {
         langCode: 'hi',
         homeText: 'होम',
-        companyName: 'हेंगयुआन',
+        companyName: 'हेंगजिताई',
         companyFullName: 'कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड',
         languageText: 'हिन्दी',
         nav: {
@@ -495,7 +495,7 @@ const languageConfigs = {
             fittings: 'पाइप फिटिंग्स'
         },
         footer: {
-            aboutText: 'कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड, 2003 में स्थापित, एक राष्ट्रीय उच्च तकनीक उद्यम है जो प्लास्टिक लेपित स्टील पाइप और पाइपलाइन जंग रोधी समाधानों में विशेषज्ञता रखता है।',
+            aboutText: 'कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड की स्थापना 2026 में हुई; यह पाइपलाइन उपकरण, स्टील पाइप फिटिंग्स, पाइप सपोर्ट व हैंगर, और इंजीनियरिंग परियोजनाओं के लिए एंटी-कोरोज़न फिटिंग्स की आपूर्ति पर केंद्रित है।',
             quickLinks: 'त्वरित लिंक',
             contact: 'संपर्क',
             followUs: 'हमें फॉलो करें',
@@ -544,7 +544,7 @@ const languageConfigs = {
             fittings: 'Rohrarmaturen'
         },
         footer: {
-            aboutText: 'Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd., gegründet 2003, ist ein national anerkanntes Rohrleitungsausrüster, das sich auf kunststoffummantelte Stahlrohre und Korrosionsschutzsysteme spezialisiert hat.',
+            aboutText: 'Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd. wurde 2026 gegründet und liefert Rohrleitungsausrüstung, Stahlfittings, Rohrlager und -aufhängungen sowie korrosionsbeständige Armaturen für Ingenieurprojekte.',
             quickLinks: 'Schnellnavigation',
             contact: 'Kontakt',
             followUs: 'Folgen Sie uns',

@@ -12,7 +12,7 @@ const organizationSchema = {
     "name": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd.",
     "alternateName": "沧州恒基泰管道装备有限公司",
     "url": "https://hengjitaipipeline.com",
-    "logo": "https://hengjitaipipeline.com/images/logo.png",
+    "logo": "https://hengjitaipipeline.com/images/logo.jpg",
     "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+86 189-3171-0082",
@@ -122,7 +122,7 @@ function generateNewsSchema(newsData) {
             "name": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd.",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://hengjitaipipeline.com/images/logo.png"
+                "url": "https://hengjitaipipeline.com/images/logo.jpg"
             }
         },
         "datePublished": newsData.publishDate,

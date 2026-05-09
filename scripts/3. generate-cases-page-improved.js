@@ -9,6 +9,7 @@ const config = require('./config');
 const utils = require('./shared/utils');
 const pageComponents = require('./shared/page-components');
 const metadata = require('./shared/metadata');
+const pageSeo = require('./shared/page-seo');
 
 // 站点URL配置
 const siteUrl = 'https://hengjitaipipeline.com';
@@ -95,9 +96,11 @@ function generateCasesPage(lang, menuOptions = {}) {
     pageContent = pageContent.replace(/{{LANG_CODE}}/g, langAttr);
     pageContent = pageContent.replace(/{{LANG}}/g, lang);
     pageContent = pageContent.replace(/{{DIR_ATTRIBUTE}}/g, dirAttribute);
+    const casesSeo = pageSeo.getPageSeo(lang, 'cases');
+    pageContent = pageContent.replace(/{{SEO_PAGE_TITLE}}/g, casesSeo.title);
+    pageContent = pageContent.replace(/{{META_DESCRIPTION}}/g, casesSeo.description);
+    pageContent = pageContent.replace(/{{META_KEYWORDS}}/g, casesSeo.keywords);
     pageContent = pageContent.replace(/{{PAGE_TITLE}}/g, langTranslations.title);
-    pageContent = pageContent.replace(/{{META_DESCRIPTION}}/g, langTranslations.description);
-    pageContent = pageContent.replace(/{{META_KEYWORDS}}/g, langTranslations.keywords);
     pageContent = pageContent.replace(/{{META_VIEWPORT}}/g, meta.viewport || 'width=device-width, initial-scale=1.0');
     pageContent = pageContent.replace(/{{META_THEME_COLOR}}/g, meta.themeColor || '#FFFFFF');
     pageContent = pageContent.replace(/{{COMPANY_FULL_NAME}}/g, langConfig.companyFullName);

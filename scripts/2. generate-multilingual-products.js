@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const siteConfig = require('./config');
 
 // 简化的产品搜索关键词映射表
 // 统一使用简洁的核心关键词，确保多语言版本搜索结果一致
@@ -445,7 +446,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "Click to close",
     "IMAGE_VIEWER_CLOSE_TITLE": "Close image viewer (ESC)",
     "FOOTER_ABOUT_TITLE": "About Us",
-    "FOOTER_ABOUT_TEXT": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. was established in 2003, is a pipeline equipment supplier focusing on plastic-coated steel pipes and pipeline anti-corrosion solutions.",
+    "FOOTER_ABOUT_TEXT": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. was established in 2026. It focuses on supplying pipeline equipment, steel pipe fittings, pipe supports and hangers, and anti-corrosion fittings for engineering projects.",
     "FOOTER_QUICK_LINKS": "Quick Links",
     "FOOTER_PRODUCTS_TITLE": "Products",
     "FOOTER_CONTACT_TITLE": "Contact Us",
@@ -499,7 +500,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "クリックで閉じる",
     "IMAGE_VIEWER_CLOSE_TITLE": "画像ビューアを閉じる (ESC)",
     "FOOTER_ABOUT_TITLE": "会社案内",
-    "FOOTER_ABOUT_TEXT": "恒基泰管道設備有限公司は2003年に設立された国家認定ハイテク企業で、プラスチック被覆鋼管および配管防食ソリューションを専門としています。",
+    "FOOTER_ABOUT_TEXT": "恒基泰管道設備有限公司は2026年に設立され、配管設備・鋼製継手・管托・支吊架および防食継手などの工程配套製品の供給を専門とする企業です。",
     "FOOTER_QUICK_LINKS": "クイックリンク",
     "FOOTER_PRODUCTS_TITLE": "製品情報",
     "FOOTER_CONTACT_TITLE": "お問い合わせ",
@@ -553,7 +554,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "Нажмите, чтобы закрыть",
     "IMAGE_VIEWER_CLOSE_TITLE": "Закрыть просмотрщик изображений (ESC)",
     "FOOTER_ABOUT_TITLE": "О компании",
-    "FOOTER_ABOUT_TEXT": "Цанчжоу Хэнцзитай Трубопроводное Оборудование была основана в 2003 году, является государственным высокотехнологичным предприятием, специализирующимся на производстве стальных труб с полимерным покрытием и решениях для антикоррозионной защиты трубопроводов.",
+    "FOOTER_ABOUT_TEXT": "Компания основана в 2026 году и специализируется на поставках трубопроводного оборудования, стальных фитингов, опор и подвесок для труб, а также антикоррозионной арматуры для инженерных объектов.",
     "FOOTER_QUICK_LINKS": "Быстрая навигация",
     "FOOTER_PRODUCTS_TITLE": "Продукция",
     "FOOTER_CONTACT_TITLE": "Контакты",
@@ -607,7 +608,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "انقر للإغلاق",
     "IMAGE_VIEWER_CLOSE_TITLE": "إغلاق عارض الصور (ESC)",
     "FOOTER_ABOUT_TITLE": "عن الشركة",
-    "FOOTER_ABOUT_TEXT": "تأسست شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة في عام 2003، وهي شركة تكنولوجيا عالية وطنية متخصصة في الأنابيب الفولاذية المغلفة بالبوليمر وحلول مقاومة التآكل للأنابيب.",
+    "FOOTER_ABOUT_TEXT": "تأسست شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب المحدودة عام 2026، وهي متخصصة في توريد معدات خطوط الأنابيب وتجهيزات الفولاذ ودعامات ومعلِّقات الأنابيب وتجهيزات مكافحة التآكل لمشاريع الهندسة.",
     "FOOTER_QUICK_LINKS": "روابط سريعة",
     "FOOTER_PRODUCTS_TITLE": "المنتجات",
     "FOOTER_CONTACT_TITLE": "تواصل معنا",
@@ -661,7 +662,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "Haga clic para cerrar",
     "IMAGE_VIEWER_CLOSE_TITLE": "Cerrar visor de imágenes (ESC)",
     "FOOTER_ABOUT_TITLE": "Acerca de nosotros",
-    "FOOTER_ABOUT_TEXT": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. fue establecida en 2003, es una empresa nacional de alta tecnología que se especializa en tubos de acero recubiertos de polímero y soluciones anticorrosivas para tuberías.",
+    "FOOTER_ABOUT_TEXT": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. se fundó en 2026 y se centra en el suministro de equipos de tuberías, accesorios de acero, soportes y colgadores para tuberías, y accesorios anticorrosión para proyectos de ingeniería.",
     "FOOTER_QUICK_LINKS": "Enlaces rápidos",
     "FOOTER_PRODUCTS_TITLE": "Productos",
     "FOOTER_CONTACT_TITLE": "Contactar",
@@ -715,7 +716,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "Cliquez pour fermer",
     "IMAGE_VIEWER_CLOSE_TITLE": "Fermer la visionneuse d'images (ESC)",
     "FOOTER_ABOUT_TITLE": "À propos de nous",
-    "FOOTER_ABOUT_TEXT": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. a été établie en 2003, c'est une entreprise nationale de haute technologie spécialisée dans les tubes en acier revêtus de polymère et les solutions anticorrosion de canalisations.",
+    "FOOTER_ABOUT_TEXT": "Cangzhou Hengjitai Pipeline Equipment Co., Ltd. a été créée en 2026. Elle se spécialise dans l'approvisionnement en équipements de tuyauterie, raccords en acier, supports et suspentes pour tuyauteries, et raccords anticorrosion pour projets d'ingénierie.",
     "FOOTER_QUICK_LINKS": "Liens rapides",
     "FOOTER_PRODUCTS_TITLE": "Produits",
     "FOOTER_CONTACT_TITLE": "Nous contacter",
@@ -769,7 +770,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "Clique para fechar",
     "IMAGE_VIEWER_CLOSE_TITLE": "Fechar visualizador de imagens (ESC)",
     "FOOTER_ABOUT_TITLE": "Sobre nós",
-    "FOOTER_ABOUT_TEXT": "A Cangzhou Hengjitai Pipeline Equipment Co., Ltd. foi estabelecida em 2003, é uma empresa nacional de alta tecnologia especializada em tubos de aço revestidos com polímero e soluções anticorrosivas para tubulações.",
+    "FOOTER_ABOUT_TEXT": "A Cangzhou Hengjitai Pipeline Equipment Co., Ltd. foi fundada em 2026 e foca no fornecimento de equipamentos de tubulação, conexões de aço, suportes e suspensões para tubulações, e conexões anticorrosão para projetos de engenharia.",
     "FOOTER_QUICK_LINKS": "Links rápidos",
     "FOOTER_PRODUCTS_TITLE": "Produtos",
     "FOOTER_CONTACT_TITLE": "Entre em contato",
@@ -823,7 +824,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "बंद करने के लिए क्लिक करें",
     "IMAGE_VIEWER_CLOSE_TITLE": "छवि दर्शक बंद करें (ESC)",
     "FOOTER_ABOUT_TITLE": "हमारे बारे में",
-    "FOOTER_ABOUT_TEXT": "हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड की स्थापना 2003 में हुई थी, यह एक राष्ट्रीय उच्च प्रौद्योगिकी उद्यम है जो पॉलिमर कोटेड स्टील पाइप और पाइपलाइन संक्षारण प्रतिरोधी समाधानों में विशेषज्ञता रखता है।",
+    "FOOTER_ABOUT_TEXT": "कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड की स्थापना 2026 में हुई; यह पाइपलाइन उपकरण, स्टील पाइप फिटिंग्स, पाइप सपोर्ट व हैंगर, और इंजीनियरिंग परियोजनाओं के लिए एंटी-कोरोज़न फिटिंग्स की आपूर्ति पर केंद्रित है।",
     "FOOTER_QUICK_LINKS": "त्वरित लिंक",
     "FOOTER_PRODUCTS_TITLE": "उत्पाद",
     "FOOTER_CONTACT_TITLE": "संपर्क करें",
@@ -877,7 +878,7 @@ const translations = {
     "IMAGE_VIEWER_CLICK_TO_CLOSE": "Zum Schließen klicken",
     "IMAGE_VIEWER_CLOSE_TITLE": "Bildbetrachter schließen (ESC)",
     "FOOTER_ABOUT_TITLE": "Über uns",
-    "FOOTER_ABOUT_TEXT": "Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd. wurde 2003 gegründet und ist ein staatlich anerkanntes Hochtechnologieunternehmen, das sich auf kunststoffbeschichtete Stahlrohre und Rohrleitungskorrosionsschutzlösungen spezialisiert hat.",
+    "FOOTER_ABOUT_TEXT": "Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd. wurde 2026 gegründet und liefert Rohrleitungsausrüstung, Stahlfittings, Rohrlager und -aufhängungen sowie korrosionsbeständige Armaturen für Ingenieurprojekte.",
     "FOOTER_QUICK_LINKS": "Schnellnavigation",
     "FOOTER_PRODUCTS_TITLE": "Produkte",
     "FOOTER_CONTACT_TITLE": "Kontakt",
@@ -944,16 +945,28 @@ function replaceTemplateVars(template, translations, language) {
   return result;
 }
 
+function applyProductsSeoFromConfig(translations, language) {
+  const pages = siteConfig.seo.pages[language] || siteConfig.seo.pages.en;
+  const p = pages && pages.products;
+  if (!p) return;
+  translations.SEO_TITLE = p.title;
+  translations.META_DESCRIPTION = p.description;
+  translations.META_KEYWORDS = p.keywords;
+}
+
 // 生成特定语言的页面
 function generateLanguagePage(language) {
   const template = readTemplate();
   const allTranslations = loadTranslations();
-  const translations = allTranslations[language];
+  const base = allTranslations[language];
   
-  if (!translations) {
+  if (!base) {
     console.error(`No translations found for language: ${language}`);
     return;
   }
+
+  const translations = { ...base };
+  applyProductsSeoFromConfig(translations, language);
   
   const result = replaceTemplateVars(template, translations, language);
   

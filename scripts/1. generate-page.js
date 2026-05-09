@@ -4,6 +4,7 @@ const config = require('./config');
 const utils = require('./shared/utils');
 const pageComponents = require('./shared/page-components');
 const metadata = require('./shared/metadata');
+const pageSeo = require('./shared/page-seo');
 
 // 导入语言列表和配置
 const LANGUAGES = pageComponents.LANGUAGES;
@@ -103,380 +104,6 @@ const SIMPLIFIED_PRODUCT_KEYWORDS = {
     }
 };
 
-// 多语言页面配置
-const pageConfigs = {
-    cn: {
-        contact: {
-            title: '联系我们',
-            description: '沧州恒基泰管道装备有限公司联系方式，欢迎咨询涂塑钢管、防腐钢管产品信息及相关解决方案。',
-            keywords: '恒基泰管道装备,联系方式,涂塑钢管咨询,管道防腐咨询'
-        },
-        about: {
-            title: '关于我们',
-            description: '沧州恒基泰管道装备有限公司是一家专注于涂塑钢管、防腐钢管生产的高新技术企业，拥有先进的生产设备和专业的技术团队。',
-            keywords: '恒基泰管道装备,涂塑钢管,防腐钢管,企业简介,公司历史'
-        },
-        products: {
-            title: '产品中心',
-            description: '沧州恒基泰管道装备有限公司专业生产涂塑钢管、防腐钢管及管件系列产品，品质优良，规格齐全。',
-            keywords: '涂塑钢管,防腐钢管,钢管系列,管件系列'
-        },
-        quality: {
-            title: '质量控制',
-            description: '沧州恒基泰管道装备有限公司拥有完善的质量管理体系和先进的检测设备，确保产品质量。',
-            keywords: '质量控制,质量管理,检测设备,ISO认证'
-        },
-        cases: {
-            title: '应用案例',
-            description: '沧州恒基泰管道装备有限公司成功案例展示，涵盖市政工程、工业管道、给水工程等多个领域。',
-            keywords: '工程案例,项目案例,应用案例'
-        },
-        news: {
-            title: '新闻动态',
-            description: '沧州恒基泰管道装备有限公司最新动态、行业资讯、展会信息等。',
-            keywords: '企业新闻,行业资讯,展会信息'
-        },
-        index: {
-            title: '首页',
-            description: '沧州恒基泰管道装备有限公司是一家专注于涂塑钢管及管道防腐的管道装备专业供应商。',
-            keywords: '恒基泰管道装备,涂塑钢管,防腐钢管,工业管道'
-        }
-    },
-    en: {
-        contact: {
-            title: 'Contact Us',
-            description: 'Contact information of Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Inquiries about plastic-coated steel pipes, anti-corrosion steel pipes products and related solutions are welcome.',
-            keywords: 'Cangzhou Hengjitai, contact information, plastic-coated steel pipe consultancy, pipeline anti-corrosion consultancy'
-        },
-        about: {
-            title: 'About Us',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. is a high-tech enterprise focusing on the production of plastic-coated steel pipes and anti-corrosion steel pipes.',
-            keywords: 'Cangzhou Hengjitai, plastic-coated steel pipe, anti-corrosion steel pipe, company profile, company history'
-        },
-        products: {
-            title: 'Products',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. specializes in producing high-quality plastic-coated steel pipes, anti-corrosion steel pipes and pipe fittings.',
-            keywords: 'plastic-coated steel pipes, anti-corrosion steel pipes, steel pipes, pipe fittings'
-        },
-        quality: {
-            title: 'Quality Control',
-            description: 'Comprehensive quality management system and advanced testing equipment ensuring product quality at Cangzhou Hengjitai.',
-            keywords: 'quality control, quality management, testing equipment, ISO certification'
-        },
-        cases: {
-            title: 'Case Studies',
-            description: 'Successful project cases of Cangzhou Hengjitai Pipeline Equipment Co., Ltd. in municipal works, industrial pipelines, and water supply projects.',
-            keywords: 'case studies, project cases, application cases'
-        },
-        news: {
-            title: 'News',
-            description: 'Latest news, industry updates, and exhibition information from Cangzhou Hengjitai Pipeline Equipment Co., Ltd.',
-            keywords: 'company news, industry news, exhibition information'
-        },
-        index: {
-            title: 'Home',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. is a pipeline equipment supplier specializing in plastic-coated steel pipes and pipeline anti-corrosion.',
-            keywords: 'Cangzhou Hengjitai, plastic-coated steel pipes, anti-corrosion pipes, industrial pipelines'
-        }
-    },
-    jp: {
-        contact: {
-            title: 'お問い合わせ',
-            description: '恒基泰管道設備有限公司への各種お問い合わせ。プラスチック被覆鋼管・防食鋼管に関する技術相談、お見積りなど承っております。',
-            keywords: '恒基泰管道設備,お問い合わせ,プラスチック被覆鋼管,防食鋼管,技術相談'
-        },
-        about: {
-            title: '会社概要',
-            description: '恒基泰管道設備有限公司は、プラスチック被覆鋼管・防食鋼管の製造を専門とするハイテク企業です。先進的な生産設備と専門技術チームを有しています。',
-            keywords: '恒基泰管道設備,プラスチック被覆鋼管,防食鋼管,会社概要,企業沿革'
-        },
-        products: {
-            title: '製品情報',
-            description: '恒基泰管道設備有限公司では、プラスチック被覆鋼管・防食鋼管・管継手シリーズ製品を専門製造。高品質で豊富な規格をご提供します。',
-            keywords: 'プラスチック被覆鋼管,防食鋼管,鋼管製品,管継手'
-        },
-        quality: {
-            title: '品質管理',
-            description: '恒基泰管道設備有限公司では、完備された品質管理体系と先進的な検査設備により、製品品質を保証しております。',
-            keywords: '品質管理,品質保証,検査設備,ISO認証'
-        },
-        cases: {
-            title: '施工実績',
-            description: '恒基泰管道設備有限公司の成功事例をご紹介。市政工事、工業配管、給水工事など多分野での採用実績があります。',
-            keywords: '施工実績,プロジェクト事例,導入事例'
-        },
-        news: {
-            title: 'ニュース',
-            description: '恒基泰管道設備有限公司の最新情報、業界ニュース、展示会情報などをお届けします。',
-            keywords: '企業ニュース,業界情報,展示会情報'
-        },
-        index: {
-            title: 'ホーム',
-            description: '恒基泰管道設備有限公司は、プラスチック被覆鋼管及び配管防食を専門とする国家認定ハイテク企業です。',
-            keywords: '恒基泰管道設備,プラスチック被覆鋼管,防食鋼管,工業配管'
-        }
-    },
-    ru: {
-        contact: {
-            title: 'Контакты',
-            description: 'Контактная информация компании Цанчжоу Хэнцзитай Трубопроводное Оборудование. Приглашаем к сотрудничеству по вопросам стальных труб с полимерным покрытием, антикоррозионной защиты трубопроводов и комплексных решений.',
-            keywords: 'Хэбэй Хэнцзитай, контакты, стальные трубы с покрытием, антикоррозионная защита, техническая консультация'
-        },
-        about: {
-            title: 'О компании',
-            description: 'Цанчжоу Хэнцзитай Трубопроводное Оборудование — ведущий производитель стальных труб с полимерным покрытием и решений антикоррозионной защиты. 20+ лет опыта, современное производство, международные сертификаты качества.',
-            keywords: 'Хэбэй Хэнцзитай, производство труб с покрытием, антикоррозионная защита, высокотехнологичное предприятие, история компании'
-        },
-        products: {
-            title: 'Продукция',
-            description: 'Цанчжоу Хэнцзитай Трубопроводное Оборудование специализируется на производстве стальных труб с полимерным покрытием, антикоррозионных стальных труб и трубопроводной арматуры высокого качества.',
-            keywords: 'стальные трубы с полимерным покрытием, антикоррозионные стальные трубы, трубопроводная арматура, промышленные трубопроводы'
-        },
-        quality: {
-            title: 'Контроль качества',
-            description: 'Система менеджмента качества ISO 9001, современная испытательная лаборатория и строгий контроль производства обеспечивают высочайшее качество нашей продукции.',
-            keywords: 'контроль качества, менеджмент качества, испытательное оборудование, ISO сертификация'
-        },
-        cases: {
-            title: 'Наши проекты',
-            description: 'Реализованные проекты в области водоснабжения, промышленных трубопроводов и муниципальной инфраструктуры. Опыт работы с крупнейшими предприятиями России и СНГ.',
-            keywords: 'инженерные проекты, реализованные проекты, промышленные трубопроводы, водоснабжение'
-        },
-        news: {
-            title: 'Новости',
-            description: 'Актуальные новости компании, информация о выставках, технологические инновации и отраслевые мероприятия. Будьте в курсе последних разработок в области защиты трубопроводов.',
-            keywords: 'новости компании, отраслевые новости, информация о выставках'
-        },
-        index: {
-            title: 'Главная',
-            description: 'Цанчжоу Хэнцзитай Трубопроводное Оборудование — государственное высокотехнологичное предприятие, специализирующееся на производстве стальных труб с полимерным покрытием и антикоррозионной защите трубопроводов.',
-            keywords: 'Хэбэй Хэнцзитай, стальные трубы с покрытием, антикоррозионная защита, промышленные трубопроводы'
-        }
-    },
-    ar: {
-        contact: {
-            title: 'اتصل بنا',
-            description: 'معلومات الاتصال بشركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة. نرحب باستفساراتكم حول الأنابيب الفولاذية المغلفة بالبوليمر والأنابيب المقاومة للتآكل والحلول المتكاملة.',
-            keywords: 'هيبي هينغجيتاي لمعدات خطوط الأنابيب، معلومات الاتصال، الأنابيب المغلفة بالبوليمر، استشارات مقاومة التآكل'
-        },
-        about: {
-            title: 'من نحن',
-            description: 'شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة هي شركة تكنولوجيا عالية متخصصة في إنتاج الأنابيب الفولاذية المغلفة بالبوليمر والأنابيب المقاومة للتآكل.',
-            keywords: 'هيبي هينغجيتاي لمعدات خطوط الأنابيب، الأنابيب المغلفة بالبوليمر، الأنابيب المقاومة للتآكل، نبذة عن الشركة'
-        },
-        products: {
-            title: 'المنتجات',
-            description: 'تتخصص شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة في تصنيع أنابيب فولاذية عالية الجودة مغلفة بالبوليمر وأنابيب فولاذية مقاومة للتآكل وتجهيزات الأنابيب.',
-            keywords: 'أنابيب فولاذية مغلفة بالبوليمر، أنابيب فولاذية مقاومة للتآكل، تجهيزات الأنابيب، خطوط الأنابيب الصناعية'
-        },
-        quality: {
-            title: 'مراقبة الجودة',
-            description: 'نظام إدارة الجودة الشامل ومعدات الاختبار المتقدمة لضمان جودة المنتج في شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب.',
-            keywords: 'مراقبة الجودة، إدارة الجودة، معدات الاختبار، شهادة ISO'
-        },
-        cases: {
-            title: 'دراسات الحالة',
-            description: 'مشاريع ناجحة لشركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة في الأشغال البلدية وخطوط الأنابيب الصناعية ومشاريع إمدادات المياه.',
-            keywords: 'المشاريع الهندسية، دراسات الحالة، مشاريع الأنابيب الصناعية'
-        },
-        news: {
-            title: 'الأخبار',
-            description: 'آخر الأخبار والتحديثات الصناعية ومعلومات المعارض من شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة.',
-            keywords: 'أخبار الشركة، أخبار الصناعة، معلومات المعارض'
-        },
-        index: {
-            title: 'الرئيسية',
-            description: 'شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة هي شركة تكنولوجيا عالية وطنية متخصصة في الأنابيب الفولاذية المغلفة بالبوليمر ومكافحة التآكل.',
-            keywords: 'هيبي هينغجيتاي لمعدات خطوط الأنابيب، الأنابيب المغلفة بالبوليمر، الأنابيب المقاومة للتآكل'
-        }
-    },
-    es: {
-        contact: {
-            title: 'Contáctenos',
-            description: 'Información de contacto de Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Bienvenidas las consultas sobre tubos de acero con recubrimiento plástico y tubos de acero anticorrosión.',
-            keywords: 'Cangzhou Hengjitai, información de contacto, consultoría de tubos de acero con recubrimiento plástico, consultoría anticorrosión'
-        },
-        about: {
-            title: 'Sobre Nosotros',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. es una empresa de alta tecnología especializada en la producción de tubos de acero con recubrimiento plástico y tubos de acero anticorrosión.',
-            keywords: 'Cangzhou Hengjitai, tubos de acero con recubrimiento plástico, tubos de acero anticorrosión, perfil de la empresa'
-        },
-        products: {
-            title: 'Productos',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. se especializa en la producción de tubos de acero de alta calidad con recubrimiento plástico, tubos de acero anticorrosión y accesorios.',
-            keywords: 'tubos de acero con recubrimiento plástico, tubos de acero anticorrosión, tubos de acero, accesorios'
-        },
-        quality: {
-            title: 'Control de Calidad',
-            description: 'Sistema integral de gestión de calidad y equipos de prueba avanzados que garantizan la calidad del producto en Cangzhou Hengjitai.',
-            keywords: 'control de calidad, gestión de calidad, equipos de prueba, certificación ISO'
-        },
-        cases: {
-            title: 'Casos de Estudio',
-            description: 'Casos exitosos de proyectos de Cangzhou Hengjitai Pipeline Equipment Co., Ltd. en obras municipales, tuberías industriales y proyectos de suministro de agua.',
-            keywords: 'casos de estudio, proyectos, casos de aplicación'
-        },
-        news: {
-            title: 'Noticias',
-            description: 'Últimas noticias, actualizaciones de la industria e información de exposiciones de Cangzhou Hengjitai Pipeline Equipment Co., Ltd.',
-            keywords: 'noticias de la empresa, noticias de la industria, información de exposiciones'
-        },
-        index: {
-            title: 'Inicio',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. es una empresa nacional de alta tecnología especializada en tubos de acero con recubrimiento plástico y anticorrosión de tuberías.',
-            keywords: 'Cangzhou Hengjitai, tubos de acero con recubrimiento plástico, tubos anticorrosión'
-        }
-    },
-    fr: {
-        contact: {
-            title: 'Contactez-nous',
-            description: 'Coordonnées de Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Les demandes de renseignements sur les tubes en acier à revêtement plastique et les tubes en acier anticorrosion sont les bienvenues.',
-            keywords: 'Cangzhou Hengjitai, coordonnées, consultation tubes acier revêtement plastique, consultation anticorrosion'
-        },
-        about: {
-            title: 'À Propos',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. est une entreprise de haute technologie spécialisée dans la production de tubes en acier à revêtement plastique et de tubes en acier anticorrosion.',
-            keywords: 'Cangzhou Hengjitai, tubes acier revêtement plastique, tubes acier anticorrosion, profil entreprise'
-        },
-        products: {
-            title: 'Produits',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. se spécialise dans la production de tubes en acier de haute qualité à revêtement plastique, de tubes en acier anticorrosion et de raccords.',
-            keywords: 'tubes acier revêtement plastique, tubes acier anticorrosion, tubes acier, raccords'
-        },
-        quality: {
-            title: 'Contrôle Qualité',
-            description: 'Système complet de gestion de la qualité et équipements de test avancés assurant la qualité des produits chez Cangzhou Hengjitai.',
-            keywords: 'contrôle qualité, gestion qualité, équipements test, certification ISO'
-        },
-        cases: {
-            title: 'Études de Cas',
-            description: 'Cas de projets réussis de Cangzhou Hengjitai Pipeline Equipment Co., Ltd. dans les travaux municipaux, les canalisations industrielles et les projets d\'approvisionnement en eau.',
-            keywords: 'études de cas, projets, cas d\'application'
-        },
-        news: {
-            title: 'Actualités',
-            description: 'Dernières nouvelles, mises à jour de l\'industrie et informations sur les expositions de Cangzhou Hengjitai Pipeline Equipment Co., Ltd.',
-            keywords: 'actualités entreprise, actualités industrie, informations expositions'
-        },
-        index: {
-            title: 'Accueil',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. est une entreprise nationale de haute technologie spécialisée dans les tubes en acier à revêtement plastique et l\'anticorrosion des canalisations.',
-            keywords: 'Cangzhou Hengjitai, tubes acier revêtement plastique, tubes anticorrosion'
-        }
-    },
-    pt: {
-        contact: {
-            title: 'Contato',
-            description: 'Informações de contato da Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Consultas sobre tubos de aço com revestimento plástico e tubos de aço anticorrosão são bem-vindas.',
-            keywords: 'Cangzhou Hengjitai, informações de contato, consultoria tubos aço revestimento plástico, consultoria anticorrosão'
-        },
-        about: {
-            title: 'Sobre Nós',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. é uma empresa de alta tecnologia especializada na produção de tubos de aço com revestimento plástico e tubos de aço anticorrosão.',
-            keywords: 'Cangzhou Hengjitai, tubos aço revestimento plástico, tubos aço anticorrosão, perfil empresa'
-        },
-        products: {
-            title: 'Produtos',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. especializa-se na produção de tubos de aço de alta qualidade com revestimento plástico, tubos de aço anticorrosão e conexões.',
-            keywords: 'tubos aço revestimento plástico, tubos aço anticorrosão, tubos aço, conexões'
-        },
-        quality: {
-            title: 'Controle de Qualidade',
-            description: 'Sistema abrangente de gestão da qualidade e equipamentos de teste avançados garantindo a qualidade do produto na Cangzhou Hengjitai.',
-            keywords: 'controle qualidade, gestão qualidade, equipamentos teste, certificação ISO'
-        },
-        cases: {
-            title: 'Estudos de Caso',
-            description: 'Casos de projetos bem-sucedidos da Cangzhou Hengjitai Pipeline Equipment Co., Ltd. em obras municipais, tubulações industriais e projetos de abastecimento de água.',
-            keywords: 'estudos caso, projetos, casos aplicação'
-        },
-        news: {
-            title: 'Notícias',
-            description: 'Últimas notícias, atualizações do setor e informações sobre exposições da Cangzhou Hengjitai Pipeline Equipment Co., Ltd.',
-            keywords: 'notícias empresa, notícias setor, informações exposições'
-        },
-        index: {
-            title: 'Início',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. é uma empresa nacional de alta tecnologia especializada em tubos de aço com revestimento plástico e anticorrosão de tubulações.',
-            keywords: 'Cangzhou Hengjitai, tubos aço revestimento plástico, tubos anticorrosão'
-        }
-    },
-    hi: {
-        contact: {
-            title: 'संपर्क करें',
-            description: 'हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड की संपर्क जानकारी। पॉलिमर कोटेड स्टील पाइप, एंटी-कोरोज़न स्टील पाइप उत्पादों और संबंधित समाधानों के बारे में पूछताछ का स्वागत है।',
-            keywords: 'हेबई कांगझोउ हेंगजिताई, संपर्क जानकारी, पॉलिमर कोटेड स्टील पाइप परामर्श, पाइपलाइन एंटी-कोरोज़न परामर्श'
-        },
-        about: {
-            title: 'हमारे बारे में',
-            description: 'हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड एक उच्च तकनीक वाला उद्यम है जो पॉलिमर कोटेड स्टील पाइप और एंटी-कोरोज़न स्टील पाइप के उत्पादन पर केंद्रित है।',
-            keywords: 'हेबई कांगझोउ हेंगजिताई, पॉलिमर कोटेड स्टील पाइप, एंटी-कोरोज़न स्टील पाइप, कंपनी प्रोफाइल, कंपनी इतिहास'
-        },
-        products: {
-            title: 'उत्पाद',
-            description: 'हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड उच्च गुणवत्ता वाले पॉलिमर कोटेड स्टील पाइप, एंटी-कोरोज़न स्टील पाइप और पाइप फिटिंग्स के उत्पादन में विशेषज्ञता रखती है।',
-            keywords: 'पॉलिमर कोटेड स्टील पाइप, एंटी-कोरोज़न स्टील पाइप, स्टील पाइप, पाइप फिटिंग्स'
-        },
-        quality: {
-            title: 'गुणवत्ता नियंत्रण',
-            description: 'हेबई कांगझोउ हेंगजिताई में व्यापक गुणवत्ता प्रबंधन प्रणाली और उन्नत परीक्षण उपकरण जो उत्पाद की गुणवत्ता सुनिश्चित करते हैं।',
-            keywords: 'गुणवत्ता नियंत्रण, गुणवत्ता प्रबंधन, परीक्षण उपकरण, ISO प्रमाणन'
-        },
-        cases: {
-            title: 'केस स्टडी',
-            description: 'नगरपालिका कार्यों, औद्योगिक पाइपलाइनों और जल आपूर्ति परियोजनाओं में हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड की सफल परियोजनाएं।',
-            keywords: 'इंजीनियरिंग परियोजनाएं, केस स्टडी, परियोजना केस'
-        },
-        news: {
-            title: 'समाचार',
-            description: 'हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड से नवीनतम समाचार, उद्योग अपडेट और प्रदर्शनी जानकारी।',
-            keywords: 'कंपनी समाचार, उद्योग समाचार, प्रदर्शनी जानकारी'
-        },
-        index: {
-            title: 'होम',
-            description: 'हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड एक राष्ट्रीय उच्च-तकनीक उद्यम है जो पॉलिमर कोटेड स्टील पाइप और पाइपलाइन एंटी-कोरोज़न में विशेषज्ञता रखता है।',
-            keywords: 'हेबई कांगझोउ हेंगजिताई, पॉलिमर कोटेड स्टील पाइप, एंटी-कोरोज़न पाइप, औद्योगिक पाइपलाइन'
-        }
-    },
-    de: {
-        contact: {
-            title: 'Kontakt',
-            description: 'Kontaktinformationen der Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Anfragen zu kunststoffummantelten Stahlrohren, korrosionsgeschützten Stahlrohren und entsprechenden Lösungen sind willkommen.',
-            keywords: 'Cangzhou Hengjitai, Kontaktinformationen, kunststoffummantelte Stahlrohre Beratung, Korrosionsschutz Beratung'
-        },
-        about: {
-            title: 'Über uns',
-            description: 'Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd. ist ein Rohrleitungsausrüster, das sich auf die Produktion von kunststoffummantelten Stahlrohren und korrosionsgeschützten Stahlrohren spezialisiert hat.',
-            keywords: 'Cangzhou Hengjitai, kunststoffummantelte Stahlrohre, korrosionsgeschützte Stahlrohre, Unternehmensprofil, Firmengeschichte'
-        },
-        products: {
-            title: 'Produkte',
-            description: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. ist spezialisiert auf die Herstellung hochwertiger kunststoffummantelter Stahlrohre, korrosionsbeständiger Stahlrohre und Rohrleitungsarmaturen.',
-            keywords: 'kunststoffummantelte Stahlrohre, korrosionsbeständige Stahlrohre, Rohrleitungsarmaturen, Industrierohre'
-        },
-        quality: {
-            title: 'Qualitätskontrolle',
-            description: 'Umfassendes Qualitätsmanagementsystem und modernste Prüfausrüstung zur Gewährleistung der Produktqualität bei Cangzhou Hengjitai.',
-            keywords: 'Qualitätskontrolle, Qualitätsmanagement, Prüfausrüstung, ISO-Zertifizierung'
-        },
-        cases: {
-            title: 'Referenzen',
-            description: 'Erfolgreiche Referenzprojekte der Cangzhou Hengjitai Pipeline Equipment Co., Ltd. in kommunalen Bauwerken, Industrierohrleitungen und Wasserversorgungsprojekten.',
-            keywords: 'Ingenieurprojekte, Referenzen, Referenzprojekte'
-        },
-        news: {
-            title: 'Aktuelles',
-            description: 'Aktuelle Nachrichten, Branchenaktualisierungen und Messeinformationen von Cangzhou Hengjitai Pipeline Equipment Co., Ltd.',
-            keywords: 'Unternehmensnachrichten, Branchennachrichten, Messeinformationen'
-        },
-        index: {
-            title: 'Startseite',
-            description: 'Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd. ist ein staatlich anerkanntes Rohrleitungsausrüster, das sich auf kunststoffummantelte Stahlrohre und Korrosionsschutzsysteme für Rohrleitungen spezialisiert hat.',
-            keywords: 'Cangzhou Hengjitai, kunststoffummantelte Stahlrohre, Korrosionsschutz, Rohrarmaturen, Industrierohre'
-        }
-    },
-};
-
 // 语言配置
 const languageConfigs = {
     cn: {
@@ -504,7 +131,7 @@ const languageConfigs = {
             fittings: '管件配件'
         },
         footer: {
-            aboutText: '沧州恒基泰管道装备有限公司成立于2026年，是一家专注于涂塑钢管及管道防腐的管道装备专业供应商。',
+            aboutText: '沧州恒基泰管道装备有限公司成立于2026年，是一家专注于管道装备、钢制管件、管托支吊架和防腐管件配套供应的企业。',
             quickLinks: '快速链接',
             contact: '联系方式',
             followUs: '关注我们',
@@ -552,7 +179,7 @@ const languageConfigs = {
             fittings: 'Pipe Fittings'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., established in 2003, is a pipeline equipment supplier specializing in plastic-coated steel pipes and pipeline anti-corrosion solutions.',
+            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. was established in 2026. It focuses on supplying pipeline equipment, steel pipe fittings, pipe supports and hangers, and anti-corrosion fittings for engineering projects.',
             quickLinks: 'Quick Links',
             contact: 'Contact',
             followUs: 'Follow Us',
@@ -598,7 +225,7 @@ const languageConfigs = {
             fittings: '管継手'
         },
         footer: {
-            aboutText: '恒基泰管道設備有限公司は2003年に設立され、プラスチック被覆鋼管及び配管防食ソリューションを専門とする国家認定ハイテク企業です。',
+            aboutText: '恒基泰管道設備有限公司は2026年に設立され、配管設備・鋼製継手・管托・支吊架および防食継手などの工程配套製品の供給を専門とする企業です。',
             quickLinks: 'クイックリンク',
             contact: 'お問い合わせ',
             followUs: 'フォロー',
@@ -644,7 +271,7 @@ const languageConfigs = {
             fittings: 'Трубопроводная арматура'
         },
         footer: {
-            aboutText: 'Цанчжоу Хэнцзитай Трубопроводное Оборудование, основанная в 2003 году, является государственным высокотехнологичным предприятием, специализирующимся в области производства стальных труб с полимерным покрытием и комплексных решений для антикоррозионной защиты трубопроводов.',
+            aboutText: 'Компания основана в 2026 году и специализируется на поставках трубопроводного оборудования, стальных фитингов, опор и подвесок для труб, а также антикоррозионной арматуры для инженерных объектов.',
             quickLinks: 'Быстрые ссылки',
             contact: 'Контакты',
             followUs: 'Следите за нами',
@@ -669,7 +296,7 @@ const languageConfigs = {
         langCode: 'ar',
         homeText: 'الرئيسية',
         companyName: 'هينغجيتاي',
-        companyFullName: 'شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة',
+        companyFullName: 'شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب المحدودة',
         languageText: 'العربية',
         nav: {
             about: 'من نحن',
@@ -690,7 +317,7 @@ const languageConfigs = {
             fittings: 'تجهيزات الأنابيب'
         },
         footer: {
-            aboutText: 'تأسست شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة في عام 2003، وهي شركة تكنولوجيا عالية وطنية متخصصة في الأنابيب الفولاذية المغلفة بالبوليمر وحلول مكافحة التآكل للأنابيب.',
+            aboutText: 'تأسست شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب المحدودة عام 2026، وهي متخصصة في توريد معدات خطوط الأنابيب وتجهيزات الفولاذ ودعامات ومعلِّقات الأنابيب وتجهيزات مكافحة التآكل لمشاريع الهندسة.',
             quickLinks: 'روابط سريعة',
             contact: 'اتصل بنا',
             followUs: 'تابعنا',
@@ -700,7 +327,7 @@ const languageConfigs = {
             address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
-            copyright: '© 2025 شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة. جميع الحقوق محفوظة | رقم ICP xxxxxxxx',
+            copyright: '© 2025 شركة تسانغتشو هينغجيتاي لمعدات خطوط الأنابيب المحدودة. جميع الحقوق محفوظة | رقم ICP xxxxxxxx',
             backToTop: 'العودة للأعلى'
         },
         contact: {
@@ -736,7 +363,7 @@ const languageConfigs = {
             fittings: 'Accesorios'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., fundada en 2003, es una empresa nacional de alta tecnología especializada en tubos de acero con recubrimiento plástico y soluciones anticorrosión para tuberías.',
+            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. se fundó en 2026 y se centra en el suministro de equipos de tuberías, accesorios de acero, soportes y colgadores para tuberías, y accesorios anticorrosión para proyectos de ingeniería.',
             quickLinks: 'Enlaces Rápidos',
             contact: 'Contacto',
             followUs: 'Síguenos',
@@ -782,7 +409,7 @@ const languageConfigs = {
             fittings: 'Raccords'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., fondée en 2003, est une entreprise nationale de haute technologie spécialisée dans les tubes en acier à revêtement plastique et les solutions anticorrosion pour tuyauterie.',
+            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd. a été créée en 2026. Elle se spécialise dans l\'approvisionnement en équipements de tuyauterie, raccords en acier, supports et suspentes pour tuyauteries, et raccords anticorrosion pour projets d\'ingénierie.',
             quickLinks: 'Liens Rapides',
             contact: 'Contact',
             followUs: 'Suivez-nous',
@@ -828,7 +455,7 @@ const languageConfigs = {
             fittings: 'Conexões'
         },
         footer: {
-            aboutText: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd., fundada em 2003, é uma empresa nacional de alta tecnologia especializada em tubos de aço com revestimento plástico e soluções anticorrosão para tubulações.',
+            aboutText: 'A Cangzhou Hengjitai Pipeline Equipment Co., Ltd. foi fundada em 2026 e foca no fornecimento de equipamentos de tubulação, conexões de aço, suportes e suspensões para tubulações, e conexões anticorrosão para projetos de engenharia.',
             quickLinks: 'Links Rápidos',
             contact: 'Contato',
             followUs: 'Siga-nos',
@@ -853,7 +480,7 @@ const languageConfigs = {
         langCode: 'hi',
         homeText: 'होम',
         companyName: 'हेंगजिताई',
-        companyFullName: 'हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड',
+        companyFullName: 'कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड',
         languageText: 'हिंदी',
         nav: {
             about: 'हमारे बारे में',
@@ -874,7 +501,7 @@ const languageConfigs = {
             fittings: 'पाइप फिटिंग्स'
         },
         footer: {
-            aboutText: 'हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड एक राष्ट्रीय उच्च-तकनीक उद्यम है जो पॉलिमर कोटेड स्टील पाइप और पाइपलाइन एंटी-कोरोज़न में विशेषज्ञता रखता है।',
+            aboutText: 'कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड की स्थापना 2026 में हुई; यह पाइपलाइन उपकरण, स्टील पाइप फिटिंग्स, पाइप सपोर्ट व हैंगर, और इंजीनियरिंग परियोजनाओं के लिए एंटी-कोरोज़न फिटिंग्स की आपूर्ति पर केंद्रित है।',
             quickLinks: 'त्वरित लिंक',
             contact: 'संपर्क करें',
             followUs: 'हमें फॉलो करें',
@@ -884,7 +511,7 @@ const languageConfigs = {
             address: '中国河北省沧州市盐山县边务镇李郭庄村口南100米',
             email: 'sales@hypipelines.com',
             phone: '+86 189-3171-0082',
-            copyright: '© 2025 हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड। सर्वाधिकार सुरक्षित | ICP क्रमांक xxxxxxxx',
+            copyright: '© 2025 कांगझोउ हेंगजिताई पाइपलाइन उपकरण कंपनी लिमिटेड। सर्वाधिकार सुरक्षित | ICP क्रमांक xxxxxxxx',
             backToTop: 'ऊपर जाएं'
         },
         contact: {
@@ -920,7 +547,7 @@ const languageConfigs = {
             fittings: 'Rohrarmaturen'
         },
         footer: {
-            aboutText: 'Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd., gegründet 2003, ist ein staatlich anerkanntes Rohrleitungsausrüster, das sich auf kunststoffummantelte Stahlrohre und Korrosionsschutzsysteme spezialisiert hat.',
+            aboutText: 'Die Cangzhou Hengjitai Pipeline Equipment Co., Ltd. wurde 2026 gegründet und liefert Rohrleitungsausrüstung, Stahlfittings, Rohrlager und -aufhängungen sowie korrosionsbeständige Armaturen für Ingenieurprojekte.',
             quickLinks: 'Schnellnavigation',
             contact: 'Kontakt',
             followUs: 'Folgen Sie uns',
@@ -943,6 +570,78 @@ const languageConfigs = {
     }
 };
 
+// 首页横幅主副标题（方案 D）：单一数据源，生成时写入各语言 index 正文
+const INDEX_HOME_HERO = {
+    cn: {
+        titleHtml: '专注石油化工电力矿山等领域的<br/>管道与管件装备专业供应商',
+        subtitle: '多年专业生产经验为全球客户提供优质的石化电力及矿山管道与管件成套解决方案'
+    },
+    en: {
+        titleHtml: 'Professional supplier of pipelines and pipe fittings<br/>for petrochemical, power generation and mining',
+        subtitle:
+            'Years of professional manufacturing experience delivering integrated pipeline and piping solutions for petrochemical, electric power and mining customers worldwide.'
+    },
+    jp: {
+        titleHtml: '石油化学・電力・鉱山などの分野における<br/>配管・管継手機材の専門サプライヤー',
+        subtitle:
+            '長年の専門製造の実績により、世界中のお客様へ石油化学・電力・鉱山向けの配管・管継手の統合ソリューションをお届けします。'
+    },
+    ru: {
+        titleHtml:
+            'Профессиональный поставщик трубопроводной арматуры и оборудования<br/>для нефтехимии, энергетики и горной добычи',
+        subtitle:
+            'Многолетний опыт производства и комплексные решения в области трубопроводов и фитингов для нефтехимии, электроэнергетики и горной промышленности для заказчиков по всему миру.'
+    },
+    ar: {
+        titleHtml: 'مورد متخصص لتجهيزات الأنابيب والوصلات<br/>في قطاعات البتروكيماويات والطاقة والتعدين',
+        subtitle:
+            'سنوات من الخبرة التصنيعية المهنية وحلول متكاملة للأنابيب والتجهيزات لقطاعات البتروكيماويات والكهرباء والتعدين لعملاء حول العالم.'
+    },
+    es: {
+        titleHtml:
+            'Proveedor especializado de tuberías y accesorios<br/>para petroquímica, generación eléctrica y minería',
+        subtitle:
+            'Años de experiencia en fabricación profesional y soluciones integrales de tuberías y accesorios para petroquímica, energía eléctrica y minería en todo el mundo.'
+    },
+    fr: {
+        titleHtml:
+            'Fournisseur spécialisé de canalisations et raccords<br/>pour la pétrochimie, la production d\'électricité et les mines',
+        subtitle:
+            'Des années d\'expérience en fabrication professionnelle et des solutions intégrées pour canalisations et raccords au service de la pétrochimie, de l\'énergie électrique et des mines dans le monde entier.'
+    },
+    pt: {
+        titleHtml:
+            'Fornecedor especializado em tubulações e conexões<br/>para petroquímica, geração de energia elétrica e mineração',
+        subtitle:
+            'Anos de experiência em fabricação profissional e soluções integradas em tubulações e conexões para petroquímica, energia elétrica e mineração para clientes em todo o mundo.'
+    },
+    hi: {
+        titleHtml:
+            'पेट्रोकेमिकल, विद्युत और खनन क्षेत्रों में<br/>पाइपलाइन व पाइप फिटिंग उपकरण का विशेषज्ञ आपूर्तिकर्ता',
+        subtitle:
+            'वर्षों का व्यावसायिक उत्पादन अनुभव; विश्व भर के ग्राहकों के लिए पेट्रोकेमिकल, विद्युत और खनन हेतु पाइपलाइन व पाइप फिटिंग की एकीकृत समाधान।'
+    },
+    de: {
+        titleHtml:
+            'Spezialist für Rohrleitungen und Rohrformstücke<br/>für Petrochemie, Energieerzeugung und Bergbau',
+        subtitle:
+            'Langjährige industrielle Fertigungserfahrung und integrierte Lösungen für Rohrleitungen und Armaturen in Petrochemie, Elektroenergie und Bergbau für Kunden weltweit.'
+    }
+};
+
+function replaceIndexHomeHero(content, lang) {
+    const hero = INDEX_HOME_HERO[lang] || INDEX_HOME_HERO.en;
+    let next = content.replace(
+        /<h1 class="text-5xl font-bold mb-6">[\s\S]*?<\/h1>/,
+        `<h1 class="text-5xl font-bold mb-6">${hero.titleHtml}</h1>`
+    );
+    next = next.replace(
+        /<p class="text-lg mb-8 opacity-90">[\s\S]*?<\/p>/,
+        `<p class="text-lg mb-8 opacity-90">\n                        ${hero.subtitle}</p>`
+    );
+    return next;
+}
+
 // 读取模板文件
 function readTemplate(lang) {
     // 使用 utils 模块中的缓存功能读取模板
@@ -958,10 +657,8 @@ function readTemplate(lang) {
 // 生成页面
 function generatePage(lang, pageName, content, menuOptions = {}) {
     const template = readTemplate(lang);
-    // 使用本地定义的pageConfigs获取页面元数据
-    const pageConfig = pageConfigs[lang] && pageConfigs[lang][pageName] 
-        ? pageConfigs[lang][pageName] 
-        : pageConfigs['en'][pageName] || {};
+    // 统一从 config.seo.pages 读取（与 script2/script3 同源）
+    const pageConfig = pageSeo.getPageSeo(lang, pageName);
     
     const langConfig = pageComponents.getLanguageConfig(lang);
     
@@ -995,7 +692,7 @@ function generatePage(lang, pageName, content, menuOptions = {}) {
             "@type": "Organization",
             "name": langConfig.companyFullName,
             "url": `https://hengjitaipipeline.com/${lang}/`,
-            "logo": "https://hengjitaipipeline.com/images/logo.png",
+            "logo": "https://hengjitaipipeline.com/images/logo.jpg",
             "description": pageConfig.description || 'Comprehensive quality management system and advanced testing equipment ensuring product quality.',
             "address": {
                 "@type": "PostalAddress",
@@ -1063,6 +760,7 @@ function generatePage(lang, pageName, content, menuOptions = {}) {
     
     // 处理首页特殊内容 - 根据showCases和showNews决定是否显示相关部分
     if (pageName === 'index') {
+        content = replaceIndexHomeHero(content, lang);
         if (menuOptions.showCases) {
             console.log(`正在处理 ${lang} 语言首页的案例展示部分...`);
             
@@ -1784,7 +1482,7 @@ function generateContactPageContent(lang) {
                 <div class="max-w-3xl mx-auto">
                     <div class="bg-gray-50 rounded-xl p-8 shadow-sm">
                         <h2 class="text-3xl font-bold text-gray-900 mb-6">${langConfig.nav.contact}</h2>
-                        <p class="text-gray-600 mb-10">${pageConfigs[lang].contact.description}</p>
+                        <p class="text-gray-600 mb-10">${pageSeo.getPageSeo(lang, 'contact').description}</p>
                         
                         <div class="space-y-8">
                             ${isRTL ? 
@@ -2046,5 +1744,7 @@ module.exports = {
     generateCasesHTML,
     addCasesToIndex,
     updateIndexProductLinks,
-    updateExistingSearchLinks
+    updateExistingSearchLinks,
+    replaceIndexHomeHero,
+    INDEX_HOME_HERO
 };

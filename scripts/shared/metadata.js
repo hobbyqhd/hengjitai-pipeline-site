@@ -19,7 +19,7 @@ const siteConfig = {
         de: 'Cangzhou Hengjitai Pipeline Equipment Co., Ltd.'
     },
     siteUrl: 'https://hengjitaipipeline.com',
-    logoUrl: '/images/logo.png',
+    logoUrl: '/images/logo.jpg',
     socialMedia: {
         twitter: '@hengjitaipipeline',
         facebook: 'hengjitaipipeline'
