@@ -1,10 +1,16 @@
 {
   "metadata": {
-    "totalProducts": 194,
-    "totalCategories": 19,
-    "lastUpdated": "2026-05-08T01:43:18.951064Z",
+    "totalProducts": 166,
+    "totalCategories": 18,
+    "lastUpdated": "2026-05-09T07:55:38.615Z",
     "language": "de",
-    "languageCode": "de-DE"
+    "languageCode": "de-DE",
+    "macroCategoryCoverage": {
+      "plastic-coating": 154,
+      "anti-corrosion": 84,
+      "steel-pipes": 166,
+      "pipe-fittings": 90
+    }
   },
   "categories": [
     {
@@ -132,13 +138,6 @@
       "count": 32,
       "image": "/images/hp-products/给水涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
       "url": "hp-products/kunststoffbeschichtetes-stahlrohr-für-die-wasserversorgung.html"
-    },
-    {
-      "id": "elbows-and-pipe-supports",
-      "name": "Rohrbögen und Rohrhalterungen",
-      "count": 28,
-      "image": "/images/wantou/90度大口径钢制弯头.jpg",
-      "url": "hp-products/elbows-and-pipe-supports.html"
     }
   ],
   "products": [
@@ -161,7 +160,12 @@
       "connectionType": null,
       "description": "Dieses Produkt ist eine spezielle Großrohrleitung für den Öl- und Gastransport, die eine fortschrittliche Verbundkorrosionsschutztechnologie aus innen schmelzgebundenem Epoxidpulver (FBE) und außen dreischichtigem Polyethylen (3PE) verwendet. Die Innenbeschichtung ist glatt, reduziert effektiv den Strömungswiderstand und verhindert Medienkorrosion. Die äußere 3PE-Struktur bietet eine hervorragende mechanische Festigkeit, chemische Beständigkeit und Beständigkeit gegen kathodische Ablösung und gewährleistet einen langfristig sicheren und stabilen Betrieb der Rohrleitung in rauen unterirdischen Umgebungen.",
       "image": "/images/hp-products/3PE防腐钢管/(1020×12米)内环氧外3PE防腐钢管.jpg",
-      "slug": "product-001"
+      "slug": "product-001",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-002",
@@ -181,7 +185,11 @@
       "connectionType": null,
       "description": "Dieses nahtlose Stahlrohr verwendet eine standardmäßige dreischichtige PE-Korrosionsschutzschicht und ist speziell für Mittel- und Hochdruck-Öl- und Gasleitungsnetze konzipiert. Der nahtlose Rohrkörper hat eine hohe Druckfestigkeit und in Kombination mit der hervorragenden Korrosionsschutz- und Isolationsleistung von 3PE kann er komplexen geologischen Bedingungen effektiv standhalten und die Transportsicherheit gewährleisten. Es ist eine zuverlässige Wahl für Abzweig- und Sammelleitungsnetze.",
       "image": "/images/hp-products/3PE防腐钢管/(DN50×12米)外3PE防腐无缝钢管.jpg",
-      "slug": "product-002"
+      "slug": "product-002",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-003",
@@ -205,7 +213,11 @@
       "connectionType": null,
       "description": "Großkalibriges Design, Innen- und Außenwände sind streng behandelt. Der äußere 3PE-Korrosionsschutz gewährleistet, dass die Rohrleitung vor Bodenerosion geschützt ist, und die Innenwand entspricht den Hygienestandards für den Trinkwassertransport. Dieses Produkt ist sowohl für die Wasserversorgung als auch für den Öl- und Gastransport geeignet und zeichnet sich durch ein sehr hohes Preis-Leistungs-Verhältnis und eine breite technische Anpassungsfähigkeit aus.",
       "image": "/images/hp-products/3PE防腐钢管/(1220×12米)埋地饮用水输送3PE防腐钢管.jpg",
-      "slug": "product-003"
+      "slug": "product-003",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-004",
@@ -225,7 +237,11 @@
       "connectionType": null,
       "description": "Extra großes Stahlrohr mit einer verstärkten 3PE-Korrosionsschutzbeschichtung, deren Dicke und Haftung die der normalen Klasse übertreffen. Es wurde speziell für stark korrosive Umgebungen oder für Haupttransportleitungen mit höheren Anforderungen an den mechanischen Schutz entwickelt, um die Lebensdauer des Rohrnetzes maximal zu verlängern und die Wartungskosten zu senken.",
       "image": "/images/hp-products/3PE防腐钢管/(1400×12米)3PE加强级防腐钢管.jpg",
-      "slug": "product-004"
+      "slug": "product-004",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-005",
@@ -245,7 +261,11 @@
       "connectionType": null,
       "description": "Kleinkalibrige, hochflexible 3PE-Korrosionsschutzrohrleitung, geeignet für städtische Gasnetze, Ölfeld-Sammelzweigleitungen und den Transport von chemischen Materialien. Seine hervorragende Korrosionsschutzleistung und die bequemen Installationseigenschaften machen es zu einer wirtschaftlichen und effizienten Wahl bei kleinkalibrigen Rohrleitungsprojekten.",
       "image": "/images/hp-products/3PE防腐钢管/(114×6米)小口径3PE防腐钢管.jpg",
-      "slug": "product-005"
+      "slug": "product-005",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-006",
@@ -265,7 +285,11 @@
       "connectionType": null,
       "description": "Extra großes 3PE-korrosionsgeschütztes Stahlrohr, maßgeschneidert für nationale Schlüsselenergiearterien und Langstreckenleitungsprojekte. Die Kombination aus starker struktureller Stabilität und einem erstklassigen 3PE-Korrosionsschutzsystem gewährleistet die Sicherheit und Effizienz des Energietransports unter verschiedenen rauen Klima- und geologischen Bedingungen.",
       "image": "/images/hp-products/3PE防腐钢管/(1620×12米)3PE防腐钢管.jpg",
-      "slug": "product-006"
+      "slug": "product-006",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-007",
@@ -285,7 +309,11 @@
       "connectionType": null,
       "description": "Universelles 3PE-korrosionsgeschütztes Stahlrohr mit mittlerer Spezifikation, weit verbreitet im Oberflächenbau verschiedener Öl- und Gasfelder, in Sammelleitungen und in städtischen Gasnetzen mit mittlerem und niedrigem Druck. Der ausgereifte Produktionsprozess und die stabile Produktqualität machen es zu einem der beliebtesten Korrosionsschutzrohre auf dem Markt.",
       "image": "/images/hp-products/3PE防腐钢管/(159×12米)3PE防腐钢管.jpg",
-      "slug": "product-007"
+      "slug": "product-007",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-008",
@@ -305,7 +333,11 @@
       "connectionType": null,
       "description": "Dies ist derzeit das branchenweit größte korrosionsgeschützte Stahlrohr mit extra großem Durchmesser und einer verstärkten 3PE-Beschichtung. Es bietet höchste Sicherheit für den überregionalen Transport großer Mengen an Erdgas, Rohöl und anderen Energieträgern. Es ist ein unverzichtbares Schlüsselprodukt für den Bau nationaler strategischer Energiekorridore.",
       "image": "/images/hp-products/3PE防腐钢管/(2200×12米)加强级3PE防腐钢管.jpg",
-      "slug": "product-008"
+      "slug": "product-008",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-009",
@@ -325,7 +357,11 @@
       "connectionType": null,
       "description": "Großkalibriges, verstärktes 3PE-korrosionsgeschütztes Stahlrohr, speziell entwickelt, um den Anforderungen von Langstrecken-, Hochdruck- und Großmengentransporten von Öl und Gas gerecht zu werden. Die verdickte Korrosionsschutzschicht bietet zusätzlichen mechanischen Schutz und Korrosionsbeständigkeit und gewährleistet, dass die Rohrleitung auch bei der Durchquerung von komplexem Gelände wie Bergen und Gewässern sicher und zuverlässig bleibt.",
       "image": "/images/hp-products/3PE防腐钢管/(1820×12米)加强级3PE防腐钢管.jpg",
-      "slug": "product-009"
+      "slug": "product-009",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-010",
@@ -345,7 +381,11 @@
       "connectionType": null,
       "description": "DN600 ist eine gängige Spezifikation in Öl- und Gastransport-Hauptleitungen. Dieses Produkt verwendet ein standardisiertes 3PE-Korrosionsschutzverfahren, hat eine stabile Qualität und zuverlässige Leistung. Es eignet sich für den Ferntransport von Erdgas, Erdölprodukten und anderen industriellen Gasen und ist das Hauptprodukt für den Aufbau eines effizienten Energienetzes.",
       "image": "/images/hp-products/3PE防腐钢管/(DN600×12米)3PE防腐钢管.jpg",
-      "slug": "product-010"
+      "slug": "product-010",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-011",
@@ -365,7 +405,11 @@
       "connectionType": null,
       "description": "Dieses Produkt hat eine innere und äußere Verbund-Korrosionsschutzstruktur. Die Außenwand verwendet 3PE für einen ausgezeichneten Schutz vor der äußeren Umgebung, und die Innenwand ist mit Zementmörtel ausgekleidet. Die Zementmörtelauskleidung ist nicht nur kostengünstig, sondern verhindert auch wirksam die sekundäre Wasserverschmutzung und hemmt die Bildung von Kesselstein, was sie besonders für Wasserleitungs-, Abwasser- und Wasseraufbereitungsprojekte geeignet macht.",
       "image": "/images/hp-products/3PE防腐钢管/(2020×12米)内水泥砂浆外3PE防腐钢管.jpg",
-      "slug": "product-011"
+      "slug": "product-011",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-012",
@@ -385,7 +429,11 @@
       "connectionType": null,
       "description": "Das extra große Design in Kombination mit einer verstärkten 3PE-Korrosionsschutzschicht bietet eine solide Garantie für nationale strategische Energieprojekte. Seine hervorragende Druckfestigkeit und erstklassige Korrosionsschutzleistung gewährleisten einen sicheren und kontinuierlichen Öl- und Gastransport unter allen extremen Betriebsbedingungen.",
       "image": "/images/hp-products/3PE防腐钢管/(2022×12米)加强级3PE防腐钢管.jpg",
-      "slug": "product-012"
+      "slug": "product-012",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-013",
@@ -405,7 +453,11 @@
       "connectionType": null,
       "description": "Kleinkalibriges, verstärktes 3PE-korrosionsgeschütztes Stahlrohr. Obwohl der Durchmesser klein ist, ist die Korrosionsschutzklasse hoch. Es eignet sich für den Transport stark korrosiver chemischer Medien, die Behandlung von Sole oder für städtische Gasanschlussleitungen, die eine hohe Zuverlässigkeit erfordern, und bietet eine extrem lange Lebensdauer.",
       "image": "/images/hp-products/3PE防腐钢管/(89×6米)加强级3PE防腐钢管.jpg",
-      "slug": "product-013"
+      "slug": "product-013",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-014",
@@ -426,7 +478,13 @@
       },
       "description": "Speziell für moderne Feuerlöschanlagen entwickelt, verwendet dieses kunststoffbeschichtete Stahlrohr eine doppelte Verbindungsmethode aus CDU-Schnellkupplung und Schweißen, die sowohl eine bequeme und effiziente Installation als auch die Dichtheit und strukturelle Festigkeit der Verbindung gewährleistet. Die Innen- und Außenbeschichtung ist wirksam feuerfest und korrosionsbeständig und erfüllt die hohen Anforderungen von Feuerlöschsystemen an die Sicherheit und Haltbarkeit von Rohrleitungen.",
       "image": "/images/hp-products/CDU快速接头涂塑钢管/(108×4米)CDU快速接头焊接消防涂塑钢管.jpg",
-      "slug": "product-014"
+      "slug": "product-014",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-015",
@@ -447,7 +505,11 @@
       },
       "description": "Die Innen- und Außenwände dieses Produkts sind mit lebensmittelechtem Epoxidharz beschichtet, um die Wasserqualität zu gewährleisten. Das Rohrende ist mit einem standardisierten Gewinde versehen, das eine schnelle Verbindung ohne Spezialwerkzeug ermöglicht, was die Installation und Wartung von Trinkwasserversorgungssystemen in Gebäuden erheblich erleichtert und eine ideale Alternative zu herkömmlichen verzinkten Rohren darstellt.",
       "image": "/images/hp-products/丝扣连接涂塑钢管/(60×6米)丝扣连接给水涂塑钢管.jpg",
-      "slug": "product-015"
+      "slug": "product-015",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-016",
@@ -468,7 +530,11 @@
       },
       "description": "Die innere und äußere Kunststoffbeschichtung ist glatt, chemikalienbeständig und kann die Erosion durch saure und alkalische Substanzen im Abwasser wirksam verhindern. Die bequeme Gewindeverbindung eignet sich für Abwasser- und Entwässerungssysteme in Gebäuden und Fabriken, ist schnell zu installieren, einfach zu warten und neigt nicht zur Verstopfung.",
       "image": "/images/hp-products/丝扣连接涂塑钢管/(60×6米)丝扣连接给排水涂塑钢管.jpg",
-      "slug": "product-016"
+      "slug": "product-016",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-017",
@@ -484,7 +550,12 @@
       "connectionType": null,
       "description": "Großkalibriges Spiralnahtrohr als Basisrohr, dessen Innen- und Außenwände mit hochleistungsfähigem schmelzgebundenem Epoxidharzpulver beschichtet sind. Die Innenwand ist glatt und die Transporteffizienz ist hoch; die Außenwand hat eine ausgezeichnete Korrosionsschutzleistung und kann unterirdisch oder oberirdisch verlegt werden. Es eignet sich für verschiedene Bereiche wie städtische Wasserversorgung und -entsorgung, industrielle Kreislaufwasser- und Abwasserbehandlung.",
       "image": "/images/hp-products/内外环氧树脂涂塑钢管/(DN600×12米)防腐螺旋钢管.jpg",
-      "slug": "product-017"
+      "slug": "product-017",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-018",
@@ -500,7 +571,12 @@
       "connectionType": null,
       "description": "Großkalibriges Design, Innen- und Außenwände sind gleichmäßig mit Epoxidharz beschichtet, wodurch eine dichte Schutzschicht entsteht, die die Festigkeit von Stahlrohren mit der Korrosionsbeständigkeit von Kunststoffrohren kombiniert. Es eignet sich für den Transport von industriellen Flüssigkeiten und für kommunale Projekte mit hohen Anforderungen an Korrosionsschutz und Sauberkeit.",
       "image": "/images/hp-products/内外环氧树脂涂塑钢管/(630×12米)双面涂覆复合钢管.jpg",
-      "slug": "product-018"
+      "slug": "product-018",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-019",
@@ -516,7 +592,12 @@
       "connectionType": null,
       "description": "Dieses Produkt basiert auf einem Stahlrohr und verwendet ein Heißschmelz-Sprühverfahren, um Epoxidharz gleichmäßig auf die Innen- und Außenflächen aufzutragen. Es isoliert das Transportmedium und die äußere Umgebung wirksam von der Korrosion des Stahlrohrs und ist ein neuartiges Verbundrohr, das hohe Festigkeit, Korrosionsbeständigkeit und geringen Strömungswiderstand vereint.",
       "image": "/images/hp-products/内外环氧树脂涂塑钢管/(630×12米)内外环氧树脂涂塑钢管.jpg",
-      "slug": "product-019"
+      "slug": "product-019",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-020",
@@ -537,7 +618,12 @@
       },
       "description": "Das Rohrende ist speziell genutet und wird mit einer Nutrohrkupplung (Rillenkupplung) verbunden. Die Installationsgeschwindigkeit ist extrem hoch und eine gewisse Winkelabweichung ist zulässig. Die Innen- und Außenbeschichtung gewährleistet die Wasserqualität und die Haltbarkeit der Rohrleitung und ist eine bevorzugte Lösung für Wasserversorgungssysteme in Hochhäusern und industrielle Wasseraufbereitungsnetze.",
       "image": "/images/hp-products/卡箍连接涂塑钢管/(114×6米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-020"
+      "slug": "product-020",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-021",
@@ -558,7 +644,13 @@
       },
       "description": "Geeignet für schnell zu installierende Wasserversorgungsnetze. Die Nutrohrkupplung erfordert kein Schweißen oder Gewindeschneiden, die Konstruktion ist sicher und umweltfreundlich und verkürzt die Bauzeit erheblich. Die Innen- und Außenbeschichtung entspricht den Hygienestandards, ist korrosionsbeständig und bildet keine Ablagerungen, was eine langfristige Wasserqualität gewährleistet.",
       "image": "/images/hp-products/卡箍连接涂塑钢管/(108×4米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-021"
+      "slug": "product-021",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-023",
@@ -579,7 +671,12 @@
       },
       "description": "Dieses 4,5 Meter lange, standardmäßige, kunststoffbeschichtete Rohr mit Nutrohrkupplung ist einfacher zu transportieren und in engen Räumen zu handhaben. Die innere und äußere hygienische Beschichtung gewährleistet die Sicherheit des Trinkwassers, und die schnelle Nutrohrkupplung eignet sich besonders für Bauprojekte der Wasserversorgung mit engen Zeitplänen.",
       "image": "/images/hp-products/卡箍连接涂塑钢管/(114×4.5米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-023"
+      "slug": "product-023",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-024",
@@ -602,7 +699,12 @@
       },
       "description": "Es verwendet eine innovative Bimetall-Verbundtechnologie, wobei die Innenschicht normalerweise aus Edelstahl besteht, was eine ausgezeichnete Korrosionsbeständigkeit und Hygieneleistung gewährleistet, und die Außenschicht aus Kohlenstoffstahl, die eine hohe Festigkeit und Tragfähigkeit bietet. Geeignet für Bereiche mit extrem hohen Hygieneanforderungen wie hochwertige Trinkwasserversorgung, Lebensmittel und Medizin.",
       "image": "/images/hp-products/双金属焊接涂塑钢管/(325×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-024"
+      "slug": "product-024",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-025",
@@ -620,7 +722,11 @@
       },
       "description": "Einzigartiges zweifarbiges Design für innen und außen. Die blaue Innenbeschichtung steht normalerweise für die Wasserversorgung, während die schwarze Außenbeschichtung einen grundlegenden Schutz bietet. Das Bimetall-Grundrohr in Kombination mit der Innen- und Außenbeschichtung bietet einen mehrfachen Schutz von innen nach außen, mit hervorragender Leistung und langer Lebensdauer.",
       "image": "/images/hp-products/双金属焊接涂塑钢管/(159×6米)外黑内蓝双金属焊接涂塑钢管.jpg",
-      "slug": "product-025"
+      "slug": "product-025",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-026",
@@ -643,7 +749,12 @@
       },
       "description": "Kleinkalibriges Bimetall-Verbundrohr, das die Korrosionsbeständigkeit von Edelstahl mit der Wirtschaftlichkeit von Kohlenstoffstahl verbindet. Die Innenwand ist glatt und sauber und eignet sich für Direkttrinkwasser- oder hochwertige Wasserversorgungssysteme in gehobenen Wohngebäuden, Krankenhäusern und Schulen, die durch Schweißen eine dauerhaft zuverlässige Verbindung herstellen.",
       "image": "/images/hp-products/双金属焊接涂塑钢管/(60×6米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-026"
+      "slug": "product-026",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-027",
@@ -658,7 +769,12 @@
       "connectionType": null,
       "description": "Dieses Stahlrohr verwendet ein Verbundverfahren aus Feuerverzinkung der Außenwand und Kunststoffbeschichtung der Innenwand, das sowohl hervorragende Korrosionsschutzeigenschaften als auch mechanische Festigkeit aufweist. Die äußere Verzinkung schützt wirksam vor äußerer Umgebungskorrosion, während die innere Kunststoffbeschichtung die Sauberkeit und Hygiene des Fördermediums gewährleistet, keine Ablagerungen bildet und einen geringen Widerstand aufweist. Es ist ein ideales Upgrade-Produkt für herkömmliche verzinkte Rohre und wird häufig in verschiedenen Gebäude-Wasserversorgungs- und Industrie-Flüssigkeitstransportsystemen eingesetzt.",
       "image": "/images/hp-products/外镀锌内涂塑钢管/(21×6米)外镀锌内涂塑钢管.jpg",
-      "slug": "product-027"
+      "slug": "product-027",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-028",
@@ -673,7 +789,12 @@
       "connectionType": null,
       "description": "DN15 kleinkalibriges Design, die äußere Zinkschicht ist rostfrei, die innere Kunststoffschicht ist korrosionsbeständig und hygienisch. Es kombiniert die Festigkeit von Stahlrohren mit den Vorteilen von Kunststoffrohren und ist eine wirtschaftliche und langlebige Lösung für Bereiche wie Kalt- und Warmwasser in Gebäuden, Feuerlöschanlagen und Klimaanlagen.",
       "image": "/images/hp-products/外镀锌内涂塑钢管/(DN15×6米)外镀锌涂塑钢管.jpg",
-      "slug": "product-028"
+      "slug": "product-028",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-029",
@@ -688,7 +809,12 @@
       "connectionType": null,
       "description": "Mittlerer Durchmesser, die außen verzinkte und innen kunststoffbeschichtete Struktur bietet doppelten Schutz. Geeignet für Anwendungen, bei denen sowohl der innere als auch der äußere Korrosionsschutz der Rohrleitung erforderlich ist, wie z. B. industrielle Kühlwassersysteme, kommunale Wasserversorgungs-Abzweigleitungen usw., mit einer längeren Lebensdauer im Vergleich zu Produkten mit nur einer Beschichtung.",
       "image": "/images/hp-products/外镀锌内涂塑钢管/(89×6米)外镀锌内涂塑防腐钢管.jpg",
-      "slug": "product-029"
+      "slug": "product-029",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-030",
@@ -703,7 +829,12 @@
       "connectionType": null,
       "description": "Großkalibrige Rohrleitung mit einer Verbund-Korrosionsschutzstruktur aus Epoxid (EP) an der Innenwand und Polyethylen (PE) an der Außenwand. Die EP-Beschichtung der Innenwand ist glatt und korrosionsbeständig, während die PE-Beschichtung der Außenwand eine hohe mechanische Festigkeit und Stoßfestigkeit aufweist. Es ist eine kostengünstige Wahl für kommunale Wasserleitungen, Abwasserentsorgung und große Wasserumleitungsprojekte.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(1020×6米)内EP外PE防腐钢管.jpg",
-      "slug": "product-030"
+      "slug": "product-030",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-031",
@@ -719,7 +850,12 @@
       "connectionType": null,
       "description": "610mm großkalibriges Stahlrohr, die Innenwand verwendet eine hygienische Epoxidharzbeschichtung, die Außenwand eine Polyethylen-Korrosionsschutzschicht. Diese Verbundstruktur aus unterschiedlichen Materialien für innen und außen ermöglicht es, gleichzeitig die Reinheitsanforderungen des internen Mediums und die strengen Korrosionsschutzanforderungen der externen unterirdischen Umgebung zu erfüllen.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(610×6米)内环氧外PE涂塑钢管.jpg",
-      "slug": "product-031"
+      "slug": "product-031",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-032",
@@ -737,7 +873,13 @@
       },
       "description": "Diese Rohrleitung verwendet das fortschrittliche Korrosionsschutzverfahren Innen-Epoxid/Außen-Polyethylen (Innen-EP/Außen-PE) und ist mit Flanschverbindungen ausgestattet, was die Verbindung mit Ventilen, Pumpen und anderen Geräten sowie die abschnittsweise Installation und Wartung der Rohrleitung erleichtert. Geeignet für industrielle Rohrnetze, Wasseraufbereitung und andere Systeme, die häufig demontiert und gewartet werden müssen.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(219×6米)法兰连接 内EP外PE防腐钢管.jpg",
-      "slug": "product-032"
+      "slug": "product-032",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-033",
@@ -752,7 +894,12 @@
       "connectionType": null,
       "description": "1020mm extra großer Durchmesser, Innen-EP/Außen-PE-Verbundbeschichtungstechnologie, bietet eine zuverlässige Rohrleitungslösung für große Wasserbau- und Kommunalprojekte. Dieses Produkt kombiniert die Vorteile beider Beschichtungen und erreicht ein optimales Gleichgewicht zwischen Kosten und Leistung.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(1020×6米)内EP外PE涂塑钢管.jpg",
-      "slug": "product-033"
+      "slug": "product-033",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-034",
@@ -768,7 +915,12 @@
       "connectionType": null,
       "description": "Basierend auf hochfestem Spiralstahlrohr, wird die Innenwand mit schmelzgebundenem Epoxidpulver (FBE) und die Außenwand mit gewickeltem oder ummanteltem Polyethylen (PE) beschichtet. Speziell für Langstrecken- und Großvolumen-Wassertransportprojekte wie das Süd-Nord-Wassertransferprojekt und überregionale Wasserumleitungsprojekte konzipiert, mit stabiler und zuverlässiger Leistung.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(DN1200×12米)内环氧粉末外聚乙烯防腐螺旋钢管.jpg",
-      "slug": "product-034"
+      "slug": "product-034",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-035",
@@ -784,7 +936,12 @@
       "connectionType": null,
       "description": "DN800 großer Durchmesser, die innere Epoxidbeschichtung gewährleistet die Wasserqualität, die äußere Polyethylenbeschichtung bietet ausgezeichneten physikalischen und chemischen Schutz. Dieses Produkt ist das ideale Material für den Bau von städtischen Hauptwasserleitungsnetzen, industriellen Kreislaufwassersystemen und großen Abwasserleitungen.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(DN800×6米)内环氧外聚乙烯大口径涂塑钢管.jpg",
-      "slug": "product-035"
+      "slug": "product-035",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-036",
@@ -799,7 +956,12 @@
       "connectionType": null,
       "description": "Zweifarbige Innen- und Außenbeschichtung. Die weiße Epoxid-Innenbeschichtung ist sauber und glatt, was die Inspektion erleichtert. Die schwarze Polyethylen-Außenbeschichtung ist sehr witterungsbeständig. Dieses Design, das sowohl innen als auch außen verbessert ist, macht es in Wasserversorgungs- und Industrieanwendungen, bei denen hohe Anforderungen an die Rohrleitungsumgebung gestellt werden, weit verbreitet.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(325×12米)外黑内白涂塑钢管.jpg",
-      "slug": "product-036"
+      "slug": "product-036",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-037",
@@ -814,7 +976,12 @@
       "connectionType": null,
       "description": "Mittlere bis große Spezifikation, verwendet die ausgereifte Innen-EP-Außen-PE-Verbund-Korrosionsschutztechnologie, die sowohl die internen Korrosionsschutz- als auch die externen Schutzanforderungen berücksichtigt und gleichzeitig eine hohe Wirtschaftlichkeit aufweist. Es ist eines der am weitesten verbreiteten Verbund-Korrosionsschutzrohre im kommunalen und industriellen Bereich.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(529×12米)内EP外PE涂塑钢管.jpg",
-      "slug": "product-037"
+      "slug": "product-037",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-038",
@@ -830,7 +997,12 @@
       "connectionType": null,
       "description": "820mm großer Durchmesser, die innere Epoxidbeschichtung hat eine ausgezeichnete chemische Beständigkeit, die äußere Polyethylenbeschichtung ist schlag- und verschleißfest. Die Gesamtleistung des Produkts ist überlegen, es kann die Lebensdauer des Rohrnetzes effektiv verlängern und wird häufig in Projekten wie der städtischen Wasserversorgung, der Wiederverwendung von aufbereitetem Wasser und der Abwasserbehandlung eingesetzt.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(820×12米)内环氧外聚乙烯涂塑钢管.jpg",
-      "slug": "product-038"
+      "slug": "product-038",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-039",
@@ -846,7 +1018,12 @@
       "connectionType": null,
       "description": "Dieses Produkt konzentriert sich auf den Korrosionsschutz der Rohrinnenwand und verwendet lebensmittelechtes Epoxidharzpulver für die Heißschmelzbeschichtung. Es eignet sich besonders für Transportumgebungen mit hohen Wasserqualitätsanforderungen und geringer äußerer Korrosion, wie z. B. oberirdische oder in Rohrschächten verlegte Wasserleitungen, und ist sehr kosteneffektiv.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(426×12米)内环氧涂塑钢管.jpg",
-      "slug": "product-039"
+      "slug": "product-039",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-040",
@@ -868,7 +1045,12 @@
       "connectionType": null,
       "description": "Branchenführende Korrosionsschutzkonfiguration. Die Innenwand ist mit Epoxidharz beschichtet, um spezielle Medienanforderungen zu erfüllen oder den Strömungswiderstand zu verringern, während die Außenwand den höchsten Grad an 3PE-Korrosionsschutz verwendet. Diese ultimative Schutzlösung, die 'innen und außen verbessert' ist, wurde speziell für den Öl- und Gastransport in den rauesten Umgebungen wie Offshore-Plattformen und Durchquerungsprojekten entwickelt.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(2220×6米)内涂塑外3PE防腐钢管.jpg",
-      "slug": "product-040"
+      "slug": "product-040",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-041",
@@ -887,7 +1069,13 @@
       },
       "description": "Großkalibriges, innen epoxidbeschichtetes Rohr in Kombination mit einer effizienten Steckmuffenverbindung, was die Installationseffizienz vor Ort erheblich verbessert. Die Epoxidbeschichtung der Innenwand bietet hervorragende Korrosionsschutz- und hydraulische Eigenschaften und ist die ideale Wahl für den schnellen Bau großer Wasserleitungs- und Abwasserprojekte.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(820×12米)承插口内环氧粉末涂塑钢管.jpg",
-      "slug": "product-041"
+      "slug": "product-041",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-042",
@@ -903,7 +1091,12 @@
       "connectionType": null,
       "description": "Großkalibriges Rohrmaterial, das sich auf den inneren Korrosionsschutz konzentriert. Die gleichmäßig auf die Innenwand aufgetragene Epoxidpulverschicht weist eine extrem starke Haftung und Korrosionsbeständigkeit auf. Es eignet sich für industrielle Prozesswasser-, Kühlkreislaufwassersysteme usw. und kann die Korrosion und Ablagerungen im Inneren der Rohrleitung wirksam verhindern und den hocheffizienten Betrieb des Systems aufrechterhalten.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(630×12米)内环氧粉末涂塑钢管.jpg",
-      "slug": "product-042"
+      "slug": "product-042",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-043",
@@ -919,7 +1112,12 @@
       "connectionType": null,
       "description": "Extra großes Stahlrohr mit einer Korrosionsschutzbeschichtung aus schmelzgebundenem Epoxidpulver auf der Innenseite. Hauptsächlich verwendet in großen Wasserumleitungskanälen, Druckrohrleitungen von Wasserkraftwerken und Ein- und Auslassrohrleitungen von Pumpstationen. Die glatte Innenwand kann den Druckverlust erheblich reduzieren und die Fördereffizienz verbessern.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(1420×12米)内环氧粉末涂塑钢管.jpg",
-      "slug": "product-043"
+      "slug": "product-043",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-044",
@@ -943,7 +1141,12 @@
       },
       "description": "Großkalibriges Bimetall-Verbundrohr, innen mit korrosionsbeständigen Legierungen wie Edelstahl ausgekleidet und außen mit Kohlenstoffstahl ummantelt. Es gewährleistet sowohl die Sicherheit der Wasserqualität und eine extrem lange Lebensdauer der Rohrleitung als auch eine ausreichende strukturelle Festigkeit. Geeignet für hochwertige städtische Hauptwasserleitungen und lebensmittelechte industrielle Prozessrohrleitungen.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN350×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-044"
+      "slug": "product-044",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-045",
@@ -959,7 +1162,12 @@
       "connectionType": null,
       "description": "Basierend auf Spiralstahlrohr, sind Innen- und Außenwände mit Epoxidharz beschichtet. Dieser umfassende Korrosionsschutz ermöglicht es, sich an komplexe innere und äußere Korrosionsumgebungen anzupassen, wie z. B. Prozess- und Abwasserleitungen in Chemieparks, Kläranlagen usw., und ist sehr kostengünstig.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(426×12米)内外环氧树脂涂塑螺旋钢管.jpg",
-      "slug": "product-045"
+      "slug": "product-045",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-046",
@@ -979,7 +1187,12 @@
       "connectionType": null,
       "description": "Universelles großkalibriges kunststoffbeschichtetes Rohr für die Wasserversorgung mit einer hygienischen Beschichtung auf der Innen- und Außenseite, das die Probleme der Korrosion und Ablagerungen in Rohrleitungen auf wirtschaftliche Weise löst und die Sicherheit und Stabilität des Wasserversorgungssystems gewährleistet. Es ist eine konventionelle und bevorzugte Wahl für kommunale und bauliche Wasserversorgungsprojekte.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(219×12米)给水涂塑复合钢管.jpg",
-      "slug": "product-046"
+      "slug": "product-046",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-047",
@@ -995,7 +1208,12 @@
       "connectionType": null,
       "description": "Extra großes, innen und außen kunststoffbeschichtetes Verbundrohr, konzipiert für riesige Wasserumleitungs-, Hochwasserentlastungs- und Kommunalprojekte. Die Innen- und Außenbeschichtung bietet einen umfassenden Korrosionsschutz und gewährleistet die Haltbarkeit der Rohrleitung und den reibungslosen Wasserfluss. Es ist ein wichtiges Rohrmaterial für den Bau großer Infrastrukturen.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN2400×12米)大口径内外涂塑螺旋钢管.jpg",
-      "slug": "product-047"
+      "slug": "product-047",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-048",
@@ -1015,7 +1233,11 @@
       "connectionType": null,
       "description": "DN1200 großkalibrige Verbundleitung speziell für die Wasserversorgung, mit hygienischer Innenbeschichtung zur Gewährleistung der Wasserqualität ab Werk. Geeignet für wichtige Verbindungen wie städtische Hauptwasserleitungsnetze und Wasserentnahme aus Stauseen, um eine sichere und zuverlässige Lebensader für Städte mit Millionen von Einwohnern zu gewährleisten.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN1200×12米)给水涂塑复合钢管.jpg",
-      "slug": "product-048"
+      "slug": "product-048",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-049",
@@ -1031,7 +1253,12 @@
       "connectionType": null,
       "description": "Großkalibriges, innen und außen beschichtetes Rohr auf Basis eines kostengünstigen Spiralrohrs. Die Beschichtung auf der Innen- und Außenseite bietet eine zuverlässige Korrosionsschutzleistung. Es eignet sich für Bereiche wie industrielles Kreislaufwasser, kommunale Abwasserentsorgung und landwirtschaftliche Bewässerung und hat ein breites Anwendungsspektrum.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN800×12米)内外涂塑螺旋钢管.jpg",
-      "slug": "product-049"
+      "slug": "product-049",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-050",
@@ -1047,7 +1274,12 @@
       "connectionType": null,
       "description": "Dieses Produkt konzentriert sich auf den Schutz der Außenwand durch eine Epoxidharzbeschichtung und eignet sich für die oberirdische Verlegung oder für Betriebsbedingungen mit relativ aggressiven äußeren Korrosionsumgebungen. Es kann atmosphärischer Korrosion und UV-Alterung wirksam widerstehen und die strukturelle Integrität der Rohrleitung schützen.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN200×12米)外环氧树脂涂塑钢管.jpg",
-      "slug": "product-050"
+      "slug": "product-050",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-051",
@@ -1071,7 +1303,12 @@
       },
       "description": "Dieses Produkt kombiniert Bimetall-Verbund- und Kunststoffbeschichtungstechnologie und bietet erstklassigen Korrosionsschutz und Hygieneleistung. Die Edelstahlauskleidung gewährleistet die Wasserqualität, und die Innen- und Außenbeschichtung verbessert die Korrosionsbeständigkeit weiter. Es ist die ideale Wahl für Wasserversorgungssysteme an wichtigen Orten wie hochwertigen Gebäuden, Krankenhäusern und Rechenzentren.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(219×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-051"
+      "slug": "product-051",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-052",
@@ -1095,7 +1332,11 @@
       },
       "description": "Mittelgroßes bis großes Bimetall-Verbundrohr, das durch Schweißen eine dauerhafte Verbindung herstellt und für Hauptwasserleitungen mit höherem Druck geeignet ist. Das innere Edelstahlmaterial löst das Problem der sekundären Wasserverschmutzung grundlegend und ist ein wichtiges Rohrmaterial zur Verbesserung der Wasserqualität.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(325×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-052"
+      "slug": "product-052",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-053",
@@ -1110,7 +1351,12 @@
       "connectionType": null,
       "description": "Großkalibriges kunststoffbeschichtetes Verbundrohrmaterial auf Basis von Spiralstahlrohr. Die Innen- und Außenbeschichtung verhindert wirksam Korrosion, und die Spiralnaht erhöht die Ringsteifigkeit des Rohrkörpers. Geeignet für den Transport großer Wassermengen in der kommunalen Wasserversorgung und -entsorgung sowie in der Industrie, mit einem hervorragenden Preis-Leistungs-Verhältnis.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN800×6米)大口径涂塑复合螺旋钢管.jpg",
-      "slug": "product-053"
+      "slug": "product-053",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-054",
@@ -1125,7 +1371,12 @@
       "connectionType": null,
       "description": "Mittelgroßes bis großes korrosionsgeschütztes Spiralrohr. Je nach Kundenwunsch können verschiedene Korrosionsschutzlösungen wie Innen- und Außenbeschichtung, 3PE usw. angeboten werden. Spiralrohre haben einen deutlichen Kostenvorteil, eine hohe Druckfestigkeit und sind eine wirtschaftliche und praktische Wahl für mittelgroße und große Wasser-, Gastransport- und Rammarbeiten.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN400×12米)防腐螺旋钢管.jpg",
-      "slug": "product-054"
+      "slug": "product-054",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-055",
@@ -1146,7 +1397,12 @@
       "connectionType": null,
       "description": "Speziell für die Bergbauumgebung entwickelt, verwendet eine 'doppelt resistente' (antistatische, flammhemmende) Epoxidharzbeschichtung, die Gas- und Staubexplosionen unter Tage wirksam verhindern kann. Die Innen- und Außenbeschichtung weist gleichzeitig eine ausgezeichnete Verschleiß- und Korrosionsbeständigkeit auf und gewährleistet die Sicherheit von Bergbausystemen wie Wasserversorgung und -entsorgung, Druckluft und Gasabsaugung.",
       "image": "/images/hp-products/彩色双抗涂塑钢管/(108×6米)双抗环氧粉末矿用涂塑复合钢管.jpg",
-      "slug": "product-055"
+      "slug": "product-055",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-056",
@@ -1169,7 +1425,12 @@
       },
       "description": "Kunststoffbeschichtetes Stahlrohr mit 'doppelter Resistenz', das eine bequeme Nutrohrkupplung verwendet. Es eignet sich für Wasserversorgungs- und -entsorgungssysteme in speziellen Umgebungen wie untertägigen Kohlebergwerken und erfüllt sowohl die Sicherheitsvorschriften für den Bergbau als auch eine schnelle Installation und Wartung.",
       "image": "/images/hp-products/彩色双抗涂塑钢管/(108×6米)卡箍连接给排水涂塑钢管.jpg",
-      "slug": "product-056"
+      "slug": "product-056",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-057",
@@ -1192,7 +1453,12 @@
       },
       "description": "Dieses kunststoffbeschichtete Rohr für den Bergbau ist innen und außen mit speziellen 'doppelt resistenten' Materialien beschichtet und wird durch eine genutete Verbindung verbunden. Das farbige Erscheinungsbild erleichtert die Identifizierung und Verwaltung von untertägigen Rohrleitungssystemen und ist das ideale Produkt für den Aufbau moderner Bergbau-Rohrnetze mit hohen Sicherheitsstandards.",
       "image": "/images/hp-products/彩色双抗涂塑钢管/(108×6米)沟槽连接彩色双抗矿用涂塑钢管.jpg",
-      "slug": "product-057"
+      "slug": "product-057",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-059",
@@ -1210,7 +1476,13 @@
       },
       "description": "Verwendet die erstklassige TPEP-Korrosionsschutztechnologie (außen dreischichtiges Polyethylen, innen schmelzgebundenes Epoxid), deren Korrosionsschutzleistung die von herkömmlichem 3PE bei weitem übertrifft und die sich besonders für Langstrecken- und Großrohrleitungen für Wasser und Gas eignet. Die bequeme Steckmuffenverbindung kann die Bauzeit erheblich verkürzen, die Installationskosten senken und gleichzeitig die Dichtheit und Zuverlässigkeit der Verbindung gewährleisten. Sie ist die ideale Wahl für große Rohrnetzprojekte.",
       "image": "/images/hp-products/承插口TPEP防腐钢管/(820×12米)承插口TPEP防腐钢管.jpg",
-      "slug": "product-059"
+      "slug": "product-059",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-060",
@@ -1228,7 +1500,12 @@
       },
       "description": "Großkalibriges, innen epoxidbeschichtetes Rohr mit Steckmuffenverbindung. Die Verbindung verfügt über ein zuverlässiges Dichtungsdesign und ist einfach und schnell zu installieren. Geeignet für Schwerkraft- oder Niederdruck-Wassersysteme mit geringem Druck wie kommunale Wasserversorgung und -entsorgung, landwirtschaftliche Bewässerung, mit extrem hoher Baueffizienz.",
       "image": "/images/hp-products/承插口涂塑钢管/(820×12米)承插口内环氧粉末涂塑钢管.jpg",
-      "slug": "product-060"
+      "slug": "product-060",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-061",
@@ -1249,7 +1526,12 @@
       },
       "description": "Speziell für großkalibrige Wasserversorgungsprojekte entwickeltes kunststoffbeschichtetes Stahlrohr mit Steckmuffenverbindung. Die hygienische Innenbeschichtung gewährleistet die Wasserqualität. Die Steckmuffenverbindung erfordert keine komplizierte Ausrüstung, die Konstruktion ist einfach und kann die Bauzeit effektiv verkürzen, was sie sehr geeignet für die schnelle Verlegung großer kommunaler Wasserversorgungsnetze macht.",
       "image": "/images/hp-products/承插口涂塑钢管/(820×12米)承插口给水涂塑钢管.jpg",
-      "slug": "product-061"
+      "slug": "product-061",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-062",
@@ -1270,7 +1552,12 @@
       },
       "description": "Das kunststoffbeschichtete Rohr für den Bergbau ist mit einem Losflansch ausgestattet. Bei der Installation kann sich der Flansch frei drehen, um die Löcher auszurichten, was die Installation von Rohrleitungsverbindungen in komplexen untertägigen Umgebungen erheblich erleichtert und die Zeit für die Ausrichtung spart. Geeignet für Bereiche im Bergbau-Rohrnetz, die häufig demontiert oder an Geräte angeschlossen werden müssen.",
       "image": "/images/hp-products/松套法兰连接涂塑钢管/(140×6米)松套法兰矿用涂塑钢管.jpg",
-      "slug": "product-062"
+      "slug": "product-062",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-063",
@@ -1291,7 +1578,13 @@
       },
       "description": "Spezielles kunststoffbeschichtetes Stahlrohr für Feuerlöschanlagen, das eine Nutrohrkupplung verwendet. Die Installation ist schnell und ohne offene Flammen, was den Anforderungen an die Brandschutzsicherheit entspricht. Die rote Epoxidbeschichtung hat eine starke Haftung, ist feuer- und korrosionsbeständig und gewährleistet, dass das Feuerlöschsystem im entscheidenden Moment schnell reagiert und zuverlässig funktioniert.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-063"
+      "slug": "product-063",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-064",
@@ -1312,7 +1605,13 @@
       },
       "description": "Standardisiertes Rohrleitungssystem für Feuerlöschanlagen, innen und außen rot beschichtet, genutete Verbindung. Das Produkt wird streng nach den Brandschutzvorschriften hergestellt, weist eine ausgezeichnete Druck- und Korrosionsbeständigkeit auf und ist die erste Wahl für Sprinkler- und Hydrantensysteme in verschiedenen Gebäuden.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-064"
+      "slug": "product-064",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-065",
@@ -1333,7 +1632,12 @@
       },
       "description": "Innen- und Außenwände sind kunststoffbeschichtet, hygienisch und ungiftig, speziell für Wasserversorgungssysteme konzipiert. Die genutete Verbindungsmethode ist bequem zu installieren, die Verbindung ist zuverlässig und eignet sich für die Gebäude-, Direkttrinkwasser- und Reinwasserversorgungssysteme. Es ist eine effiziente und umweltfreundliche Rohrleitungslösung.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(89×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-065"
+      "slug": "product-065",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-066",
@@ -1354,7 +1658,13 @@
       },
       "description": "Mittleres Kaliber, kunststoffbeschichtetes Rohr für die Wasserversorgung mit Nutrohrkupplung zur schnellen Errichtung eines stabilen und zuverlässigen Wasserversorgungsnetzes. Die Innen- und Außenbeschichtung verhindert wirksam Korrosion und Ablagerungen und gewährleistet eine langfristig stabile Wasserförderkapazität und Wasserqualität.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(165×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-066"
+      "slug": "product-066",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-067",
@@ -1372,7 +1682,13 @@
       },
       "description": "Bei diesem Produkt wird die Innenwand des Stahlrohrs mit einer schmelzgebundenen Epoxidpulverbeschichtung versehen, die eine ausgezeichnete Korrosionsbeständigkeit aufweist, während die Außenwand im Originalzustand des Stahlrohrs belassen wird. In Verbindung mit der Nutrohrkupplung eignet es sich für Innen- oder Rohrleitungsprojekte, bei denen ein Korrosionsschutz der Innenwand erforderlich ist, die äußere Umgebung jedoch nicht stark korrosiv ist, und bietet ein hohes Preis-Leistungs-Verhältnis.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)沟槽连接内环氧粉末涂塑钢管.jpg",
-      "slug": "product-067"
+      "slug": "product-067",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-068",
@@ -1390,7 +1706,13 @@
       },
       "description": "Eine genutete Rohrleitung, die sich auf den Korrosionsschutz der Innenwand konzentriert. Die Epoxidbeschichtung der Innenwand kann der Erosion durch verschiedene chemische Medien wirksam widerstehen und eignet sich für Bereiche wie industrielle Prozessrohrleitungen und chemische Wasseraufbereitung. Die Nutrohrkupplung erleichtert eine schnelle Installation und Systemänderungen.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)沟槽连接内环氧涂塑钢管.jpg",
-      "slug": "product-068"
+      "slug": "product-068",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-069",
@@ -1406,7 +1728,13 @@
       },
       "description": "Universelles, kunststoffbeschichtetes Stahlrohr mit Nutrohrkupplung, dessen Innen- und Außenwände mit einer Korrosionsschutzschicht versehen sind und das eine ausgewogene Leistung aufweist. Es kann in verschiedenen Rohrleitungssystemen wie Feuerlöschanlagen, Wasserversorgung und -entsorgung, Klimaanlagen-Kreislaufwasser usw. weit verbreitet eingesetzt werden, wobei die schnelle Installationsmethode der größte Vorteil ist.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(108×4米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-069"
+      "slug": "product-069",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-070",
@@ -1429,7 +1757,12 @@
       },
       "description": "Großkalibriges Wasserleitungsrohr, dessen Innen- und Außenwände mit lebensmittelechtem Epoxidharz beschichtet und über eine Nutrohrkupplung verbunden sind. Geeignet für Hauptwasserleitungen in großen Geschäftsgebäuden, Sportstätten, Ausstellungszentren usw., um sowohl die Sicherheit der Wasserversorgung als auch eine effiziente Bauweise zu gewährleisten.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(426×6米)内外环氧给水涂塑钢管.jpg",
-      "slug": "product-070"
+      "slug": "product-070",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-071",
@@ -1450,7 +1783,12 @@
       },
       "description": "Großkalibriges, kunststoffbeschichtetes Rohr für die Wasserversorgung mit Nutrohrkupplung. Im Vergleich zu herkömmlichen Schweiß- oder Flanschverbindungen ist die Baugeschwindigkeit höher und die Gesamtkosten sind geringer. Es ist die ideale Wahl für moderne große Wasserversorgungsprojekte, insbesondere für solche mit engen Zeitplänen.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(325×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-071"
+      "slug": "product-071",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-074",
@@ -1471,7 +1809,12 @@
       },
       "description": "DN60 Wasserleitungsrohr mit Nutrohrkupplung für eine einfache Installation. Die hygienische Kunststoffbeschichtung auf der Innen- und Außenseite sorgt für sauberes Wasser, rostet nicht und bildet keine Ablagerungen, was es zu einer wirtschaftlichen Wahl für moderne, gesunde Wasserversorgungssysteme in Gebäuden macht.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN60×6米)给水涂塑钢管.jpg",
-      "slug": "product-074"
+      "slug": "product-074",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-076",
@@ -1492,7 +1835,12 @@
       },
       "description": "Kleinkalibriges, kunststoffbeschichtetes Stahlrohr für die Wasserversorgung mit bequemer Nutrohrkupplung. Es ist die bevorzugte Lösung zur Lösung von Installationsproblemen von Abzweigleitungen und kleinen Wasserversorgungssystemen in Gebäuden und vereint Langlebigkeit und Wirtschaftlichkeit.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(76×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-076"
+      "slug": "product-076",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-078",
@@ -1513,7 +1861,12 @@
       },
       "description": "Einzigartiges graues Erscheinungsbild zur einfachen Unterscheidung und Verwaltung von Rohrleitungssystemen (z. B. zur Unterscheidung von Brauchwasser und aufbereitetem Wasser). Es verwendet eine Nutrohrkupplung, ist innen und außen kunststoffbeschichtet und vereint die Eigenschaften von Ästhetik, Praktikabilität und effizienter Installation.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)灰色沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-078"
+      "slug": "product-078",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-079",
@@ -1534,7 +1887,13 @@
       },
       "description": "Das leuchtend rote Erscheinungsbild ist das spezielle Kennzeichen für Feuerlöschleitungen. Dieses Verbundstahlrohr ist innen und außen kunststoffbeschichtet, feuer- und korrosionsbeständig. Die Nutrohrkupplung ist sicher und schnell und erfüllt die strengen Anforderungen verschiedener Feuerlöschprojekte vollständig.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)红色沟槽连接消防涂塑复合钢.jpg",
-      "slug": "product-079"
+      "slug": "product-079",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-080",
@@ -1555,7 +1914,12 @@
       },
       "description": "Kunststoffbeschichtetes Stahlrohr für den Bergbau mit Sicherheitszertifizierung für Bergbauprodukte. Die Beschichtung hat antistatische und flammhemmende Eigenschaften. Die Nutrohrkupplung eignet sich für untertägige Umgebungen, ist sicher zu installieren und leicht zu demontieren.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(108×4米)沟槽连接矿用涂塑钢管.jpg",
-      "slug": "product-080"
+      "slug": "product-080",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-081",
@@ -1576,7 +1940,12 @@
       },
       "description": "3 Meter kurzes Design, besser geeignet für die Verlegung von Feuerlöschleitungen in engen Räumen oder bei häufigen Richtungswechseln. Rote Beschichtung, Nutrohrkupplung, erfüllt die Anforderungen an Sicherheit, Zuverlässigkeit und einfache Installation von Feuerlöschsystemen vollständig.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN100×3米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-081"
+      "slug": "product-081",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-082",
@@ -1597,7 +1966,12 @@
       },
       "description": "Universelles, kunststoffbeschichtetes Wasserleitungsrohr mit Nutrohrkupplung, zuverlässige Qualität, breite Anwendung. Die Innen- und Außenbeschichtung gewährleistet die Wasserqualität, die schnelle Verbindungsmethode verbessert die Baueffizienz und ist eine kostengünstige Wahl für verschiedene Wasserversorgungsprojekte.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-082"
+      "slug": "product-082",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-083",
@@ -1615,7 +1989,12 @@
       },
       "description": "Ein High-End-Produkt, das Farbcodierung, doppelte Resistenz (antistatisch, flammhemmend) und eine Nutrohrkupplung vereint. Besonders geeignet für Minen oder Chemieanlagen mit besonderen Sicherheitsanforderungen und komplexen Rohrleitungssystemen, einfach zu verwalten und mit hoher Sicherheit.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(108×6米)彩色双抗沟槽连接涂塑钢管.jpg",
-      "slug": "product-083"
+      "slug": "product-083",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-085",
@@ -1636,7 +2015,12 @@
       },
       "description": "Großkalibriges Spezialrohr für Feuerlöschanlagen, geeignet für Schlüsselbereiche wie Feuerlöschpumpenräume und externe Hauptfeuerlöschleitungen. Die rote Beschichtung ist witterungsbeständig, und die Nutrohrkupplung kann hohem Druck standhalten, um die Integrität und Wirksamkeit des gesamten Feuerlöschsystems zu gewährleisten.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN200×6米)消防沟槽连接涂塑钢管.jpg",
-      "slug": "product-085"
+      "slug": "product-085",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-086",
@@ -1657,7 +2041,12 @@
       },
       "description": "Kernrohrmaterial für Feuerlöschsysteme, DN150 Durchmesser, innen und außen rote Epoxidbeschichtung. Verwendet eine Nutrohrkupplung, um die Verlegung des Rohrnetzes schnell abzuschließen und die doppelten Anforderungen moderner Feuerlöschtechnik an Effizienz und Sicherheit zu erfüllen.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN150×6米)红色沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-086"
+      "slug": "product-086",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-087",
@@ -1678,7 +2067,12 @@
       },
       "description": "DN100 ist eine der am weitesten verbreiteten Spezifikationen in Feuerlöschsystemen. Dieses rote Nutrohr wird nach strengen Produktionsstandards hergestellt, mit stabiler Chargenqualität, und ist die Standardkonfiguration für Feuerlöschrohrnetze in verschiedenen Gebäuden.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN100×6米)红色沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-087"
+      "slug": "product-087",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-089",
@@ -1699,7 +2093,12 @@
       },
       "description": "Großkalibriges Nutrohr für Feuerlöschanlagen, geeignet für Hauptsteig- oder Querleitungen in großen Komplexen und Hochhäusern. Einfache Installation, hohe Druckfestigkeit, kann einen großen Wasserdurchfluss gewährleisten und ist eine zuverlässige Garantie für moderne große Feuerlöschprojekte.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(219×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-089"
+      "slug": "product-089",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-090",
@@ -1720,7 +2119,13 @@
       },
       "description": "Universelles Nutrohr, das für Wasserversorgungs- und -entsorgungssysteme geeignet ist. Die Innen- und Außenbeschichtung ist glatt und korrosionsbeständig, was sowohl die Wasserqualität gewährleistet als auch eine reibungslose Abwasserentsorgung ermöglicht. Die Nutrohrkupplung vereinfacht die Installations- und Wartungsarbeiten erheblich.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN150×6米)沟槽连接给排水涂塑钢管.jpg",
-      "slug": "product-090"
+      "slug": "product-090",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-091",
@@ -1741,7 +2146,12 @@
       },
       "description": "Kunststoffbeschichtetes Rohr für den Bergbau, das die Sicherheitszertifizierung erfüllt. Die Beschichtung hat flammhemmende und antistatische Eigenschaften. Die Nutrohrkupplung ist sicher und umweltfreundlich, erfordert keine offenen Flammen und eignet sich besonders für die Installation von Rohrleitungen in gefährlichen Umgebungen wie Gas und Staub im Bergbau.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接矿用涂塑钢管.jpg",
-      "slug": "product-091"
+      "slug": "product-091",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-092",
@@ -1762,7 +2172,12 @@
       },
       "description": "Großkalibriges Wasserleitungsrohr, innen und außen hygienisch kunststoffbeschichtet, mit einer effizienten Nutrohrkupplung. Geeignet für Projekte wie die sekundäre Wasserversorgung in Städten und Hauptwasserleitungen in Industrieparks, kann es die Bauzeit effektiv verkürzen.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(219×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-092"
+      "slug": "product-092",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-093",
@@ -1783,7 +2198,12 @@
       },
       "description": "DN100 universelles kunststoffbeschichtetes Rohr für die Wasserversorgung mit Nutrohrkupplung. Es ist eines der am häufigsten verwendeten Rohrmaterialien in Gewerbe- und Wohnprojekten. Die Innen- und Außenbeschichtung verhindert Rost, gewährleistet die Wasserqualität, ist einfach zu installieren und wirtschaftlich.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
-      "slug": "product-093"
+      "slug": "product-093",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-094",
@@ -1801,7 +2221,13 @@
       },
       "description": "Ein Hochleistungsrohr, das drei Schutzarten in einem vereint: Die Außenwand ist feuerverzinkt für Rostschutz, die Innenwand ist kunststoffbeschichtet für Korrosionsschutz und Hygiene, und die Verbindungsmethode ist eine effiziente Nutrohrkupplung. Geeignet für Anwendungen, bei denen extrem hohe Anforderungen an den Innen- und Außenschutz der Rohrleitung sowie an die Installationseffizienz gestellt werden, wie z. B. in den Wasserversorgungssystemen von Luxushotels und Krankenhäusern.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(89×6米)外镀锌内涂塑防腐钢管.jpg",
-      "slug": "product-094"
+      "slug": "product-094",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-095",
@@ -1822,7 +2248,12 @@
       },
       "description": "Kunststoffbeschichtetes Stahlrohr, das den Sicherheitsstandards für den Bergbau entspricht, mit an beiden Enden angeschweißten Flanschen. Die Flanschverbindung ist starr und zuverlässig abgedichtet und eignet sich für Rohrleitungssysteme mit höherem Druck oder starken Vibrationen unter Tage, wie z. B. Hauptentwässerungs- und Druckluftleitungen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-095"
+      "slug": "product-095",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-096",
@@ -1843,7 +2274,12 @@
       },
       "description": "Dieses kunststoffbeschichtete Rohr für den Bergbau ist mit Flanschen ausgestattet. Die Länge von 4,5 Metern erleichtert den Transport und die Installation in engen Grubenstollen. Geeignet für Bergbau-Rohrnetze, die abschnittsweise installiert oder mit Ventilen und Geräten verbunden werden müssen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×4.5米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-096"
+      "slug": "product-096",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-097",
@@ -1864,7 +2300,12 @@
       },
       "description": "Standardmäßiges, kunststoffbeschichtetes Bergbaurohr mit Flanschverbindung. Die Innen- und Außenbeschichtung erfüllt die Anforderungen an Antistatik und Flammhemmung. Die Flanschverbindung gewährleistet die Festigkeit und Dichtheit der Verbindung und ist ein grundlegendes Element für den Bau sicherer und zuverlässiger Bergbau-Rohrnetze.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(114×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-097"
+      "slug": "product-097",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-098",
@@ -1885,7 +2326,12 @@
       },
       "description": "3 Meter kurzes Design, besonders geeignet für Bereiche mit begrenztem Platz und komplexen Rohrleitungen unter Tage. Die Flanschverbindung erleichtert eine präzise Ausrichtung und eine feste Befestigung und ist das ideale Produkt zur Lösung von Rohrinstallationsproblemen an speziellen untertägigen Standorten.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×3米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-098"
+      "slug": "product-098",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-099",
@@ -1906,7 +2352,12 @@
       },
       "description": "Dies ist ein Standardmuster oder ein für ein bestimmtes Projekt maßgeschneidertes Bergbaurohr mit Flanschverbindung, das die Beschichtungsqualität, die Flanschschweißtechnik und die Gesamtleistung des Produkts umfassend darstellt. Es ist ein idealer Referenzpunkt für Kundenbewertungen und Projektausschreibungen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×4米)法兰连接样矿用涂塑钢管.jpg",
-      "slug": "product-099"
+      "slug": "product-099",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-100",
@@ -1927,7 +2378,12 @@
       },
       "description": "Großkalibriges, kunststoffbeschichtetes Stahlrohr für den Bergbau mit Flanschverbindung. Geeignet für Rohrleitungssysteme mit hohem Durchfluss und hohen Anforderungen wie Hauptentwässerung, Hauptbelüftung und Gasabsaugung in Bergwerken. Die Verbindung ist zuverlässig und die Druckfestigkeit ist hoch.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-100"
+      "slug": "product-100",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-102",
@@ -1948,7 +2404,12 @@
       },
       "description": "Großkalibriges Bergbaurohr mit Flanschverbindung, das eine solide Garantie für die Lebensadern großer Bergwerke (wie Belüftung, Entwässerung, Absaugung) bietet. Die Kombination aus einer doppelt resistenten Innen- und Außenbeschichtung und einer robusten Flanschverbindung gewährleistet den langfristig sicheren Betrieb des Systems in rauen Umgebungen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(406×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-102"
+      "slug": "product-102",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-103",
@@ -1969,7 +2430,12 @@
       },
       "description": "Das graue Erscheinungsbild kann zur Unterscheidung von Bergbauleitungen für bestimmte Zwecke verwendet werden, wie z. B. Druckluftleitungen oder Injektionsleitungen. Die Flanschverbindung gewährleistet Sicherheit und Dichtheit unter Hochdruckbedingungen, und die Innen- und Außenbeschichtung widersteht effektiv der feuchten und korrosiven Umgebung unter Tage.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(165×6米)灰色法兰连接矿用涂塑复合钢管.jpg",
-      "slug": "product-103"
+      "slug": "product-103",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-104",
@@ -1992,7 +2458,13 @@
       },
       "description": "Feste Flansche (Doppelflansche) sind direkt an beiden Enden des Rohrkörpers angeschweißt, was zu einer hohen Verbindungssteifigkeit und einer einfachen Installation führt. Die Innen- und Außenbeschichtung bietet einen umfassenden Korrosionsschutz und eignet sich für wichtige Geräteschnittstellen unter Tage oder für Rohrabschnitte, die eine hochfeste Verbindung erfordern.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×4米)双盘法兰连接内外涂塑复合钢管.jpg",
-      "slug": "product-104"
+      "slug": "product-104",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-105",
@@ -2013,7 +2485,13 @@
       },
       "description": "Am Rohrende wird ein kurzer Abschnitt unbeschichteten Stahlrohrs (unbeschichtetes Ende) belassen, um das Schweißen von Flanschen vor Ort zu erleichtern, was eine größere Flexibilität bei der Konstruktion bietet. Nach dem Schweißen kann die Schweißnaht nachbearbeitet werden, um die Korrosionsschutzintegrität der gesamten Rohrleitung zu gewährleisten.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN300×6米)外留口矿用涂塑复合钢管.jpg",
-      "slug": "product-105"
+      "slug": "product-105",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-106",
@@ -2034,7 +2512,12 @@
       },
       "description": "Dies ist ein speziell angefertigtes Produkt, bei dem ein Ende eine Flanschverbindung und das andere eine Nutrohrkupplung aufweist. Es wird verwendet, um verschiedene Arten von Rohrleitungen oder Geräten zu verbinden, und bietet eine enorme Systemkompatibilität und Installationsfreundlichkeit. Es ist eine ideale Wahl für die Modernisierung und Aufrüstung von Bergbau-Rohrnetzen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(219×6米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-106"
+      "slug": "product-106",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-107",
@@ -2055,7 +2538,12 @@
       },
       "description": "Der gelbe Rohrkörper wird normalerweise unter Tage als Kennzeichnung für Gasabsaug- oder Druckluftleitungen verwendet. Die Flanschverbindung gewährleistet die Dichtheit und Sicherheit der Verbindung in diesen Hochrisikosystemen und entspricht den strengsten Sicherheitsvorschriften für den Bergbau.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN100×6米)黄色法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-107"
+      "slug": "product-107",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-108",
@@ -2078,7 +2566,12 @@
       },
       "description": "Großer Durchmesser, kurze Abmessungen, doppelte Resistenz, Flanschverbindung – ein hochwertiges Bergbaurohr, das viele Vorteile in sich vereint. Speziell für Schlüsselpositionen in großen Bergwerken entwickelt, wie z. B. Pumpenraum-Schnittstellen, Lüfter-Schnittstellen usw., mit hoher Sicherheitsklasse.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×4米)法兰连接双抗涂塑钢管.jpg",
-      "slug": "product-108"
+      "slug": "product-108",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-109",
@@ -2099,7 +2592,12 @@
       },
       "description": "Ausgestattet mit einem Losflansch, ist es bei der Installation nicht erforderlich, die Schraubenlöcher genau auszurichten, was die Installationseffizienz unter Tage erheblich verbessert, insbesondere bei beengten Platzverhältnissen oder komplexen Bedingungen mit mehreren parallelen Rohrleitungen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(140×6米)松套法兰矿用涂塑钢管.jpg",
-      "slug": "product-109"
+      "slug": "product-109",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-110",
@@ -2120,7 +2618,12 @@
       },
       "description": "Mittelgroßes bis großes Bergbaurohr mit Flanschverbindung, geeignet für Hauptleitungsnetze unter Tage. Die doppelt resistente Innen- und Außenbeschichtung gewährleistet seine Haltbarkeit und Sicherheit in rauen Umgebungen, während die Flanschverbindung einen langfristig stabilen Betrieb der Rohrleitung sicherstellt.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(273×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-110"
+      "slug": "product-110",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-111",
@@ -2141,7 +2644,12 @@
       },
       "description": "Kleinkalibriges Bergbaurohr mit Flanschverbindung, das häufig zum Anschluss von Sensoren, Instrumenten oder kleinen Geräten verwendet wird. Obwohl der Durchmesser klein ist, bietet die Flanschverbindung eine hochfeste, zuverlässige Befestigung, und die Innen- und Außenbeschichtung erfüllt die Sicherheitsstandards für den Bergbau.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN50×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-111"
+      "slug": "product-111",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-112",
@@ -2162,7 +2670,12 @@
       },
       "description": "Dieses kunststoffbeschichtete Verbundstahlrohr für den Bergbau verwendet eine Flanschverbindung und ist eine der am weitesten verbreiteten Spezifikationen in untertägigen Wasserversorgungs-, Entwässerungs-, Druckluft- und Spritzbetonsystemen. Das Produkt ist ausgereift und zuverlässig und wird vom Markt gut angenommen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×6米)法兰连接矿用涂塑复合钢管.jpg",
-      "slug": "product-112"
+      "slug": "product-112",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-113",
@@ -2183,7 +2696,12 @@
       },
       "description": "4 Meter maßgeschneiderte Länge, erleichtert den vertikalen Transport und die Konstruktion in Stollen mit begrenzter Höhe. Die Flanschverbindung in Kombination mit der doppelt resistenten Innen- und Außenbeschichtung bietet eine zuverlässige Rohrleitungsunterstützung für die sichere Produktion im Bergbau.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×4米)法兰连接矿用涂塑复合钢管.jpg",
-      "slug": "product-113"
+      "slug": "product-113",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-115",
@@ -2206,7 +2724,12 @@
       },
       "description": "Großkalibriges, doppelt resistentes Bergbaurohr mit Flanschverbindung, konzipiert für die Hauptbelüftungs-, Hauptentwässerungs- und hochkonzentrierten Gasabsaugsysteme großer und sehr großer Bergwerke. Es vereint eine hohe Sicherheitsklasse, eine große Förderkapazität und eine zuverlässige Verbindung.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN500×6米)法兰连接双抗矿用涂塑钢管.jpg",
-      "slug": "product-115"
+      "slug": "product-115",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-116",
@@ -2227,7 +2750,12 @@
       },
       "description": "Der Flansch wird durch Hochdruck-Stumpfschweißen mit dem Rohrkörper verbunden und kann einem höheren Druck standhalten als herkömmliche Flachschweißflansche. Geeignet für Hochdruck-Wasserinjektions-, Entwässerungs- und Druckluftsysteme in tiefen Bergwerken, mit extrem hoher Verbindungsfestigkeit.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)法兰连接高压对焊矿用涂塑钢管.jpg",
-      "slug": "product-116"
+      "slug": "product-116",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-117",
@@ -2248,7 +2776,12 @@
       },
       "description": "Der Hals-Stumpfschweißflansch bietet eine bessere Spannungsverteilung sowie eine überlegene Verbindungsfestigkeit und Ermüdungsbeständigkeit. Dieses High-End-Produkt eignet sich für kritische Rohrleitungen unter Tage mit starken Vibrationen oder Druckschwankungen und bietet einen extrem hohen Sicherheitsfaktor.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)矿用带劲对焊法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-117"
+      "slug": "product-117",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-119",
@@ -2269,7 +2802,12 @@
       },
       "description": "Großer Durchmesser, 5 Meter nicht standardmäßige Länge, graues Erscheinungsbild, Flanschverbindung. Kann je nach den spezifischen Arbeitsbedingungen des Kunden angepasst werden und wird für den Transport spezieller Medien oder für Rohrleitungssysteme in bestimmten Bereichen verwendet, mit hoher Flexibilität.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(426×5米)灰色法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-119"
+      "slug": "product-119",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-121",
@@ -2290,7 +2828,12 @@
       },
       "description": "Der blaue Rohrkörper wird normalerweise zur Kennzeichnung von Wasserversorgungs- oder Druckluftleitungen unter Tage verwendet, was die Wartung und Verwaltung erleichtert. Die Flanschverbindungsmethode ist zuverlässig, und die Innen- und Außenbeschichtung erfüllt die Sicherheitsanforderungen für den Bergbau, was ein wirksames Instrument zur Standardisierung des Bergbau-Rohrleitungssystems ist.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×4米)蓝色法兰连接涂塑钢管.jpg",
-      "slug": "product-121"
+      "slug": "product-121",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-122",
@@ -2311,7 +2854,12 @@
       },
       "description": "DN150 ist eine gängige Hauptrohrspezifikation in Bergbau-Rohrnetzen. Dieses Produkt verwendet eine zuverlässige Flanschverbindung und eine vorschriftsmäßige Innen- und Außenbeschichtung, um die Sicherheit für verschiedene Flüssigkeitstransporte unter Tage zu gewährleisten.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN150×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-122"
+      "slug": "product-122",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-124",
@@ -2332,7 +2880,12 @@
       },
       "description": "Speziell für Bergbausysteme entwickeltes DN250-Rohr mit Flanschverbindung. Die Innen- und Außenbeschichtung erfüllt die Anforderungen an Brandschutz und Antistatik unter Tage, die Verbindungsfestigkeit ist hoch und die Dichtungsleistung ist gut. Es ist ein wichtiger Bestandteil zur Gewährleistung einer sicheren und effizienten Produktion im Bergbau.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN250×6米)矿用法兰连接涂塑钢管.jpg",
-      "slug": "product-124"
+      "slug": "product-124",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-125",
@@ -2353,7 +2906,12 @@
       },
       "description": "Basierend auf einem wirtschaftlichen Spiralrohr als Grundrohr, wird es innen und außen mit einer doppelt resistenten Kunststoffbeschichtung für den Bergbau versehen und mit einer Flanschverbindung verbunden. Dieses Produkt bietet bei gleichzeitiger Gewährleistung der Sicherheitsleistung eine hohe Kosteneffizienz und eignet sich für Bergbauprojekte mit begrenztem Budget, aber hohen Sicherheitsanforderungen.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)涂塑螺旋矿用涂塑钢管.jpg",
-      "slug": "product-125"
+      "slug": "product-125",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-126",
@@ -2374,7 +2932,12 @@
       },
       "description": "Dies ist eine sehr vielseitige Spezifikation im Bergbausystem, mit stabiler Leistung, sicher und zuverlässig. Die Flanschverbindung eignet sich für verschiedene Anlässe unter Tage, die eine hochfeste Verbindung erfordern, und ist ein Standardrohrmaterial für den Bergbau.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(219×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-126"
+      "slug": "product-126",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-127",
@@ -2395,7 +2958,12 @@
       },
       "description": "Bei diesem Produkt sind an beiden Enden bereits Flansche angeschweißt. Der Benutzer muss vor Ort nur die Flansche verbinden, ohne den Rohrkörper schweißen zu müssen, was nicht nur die Verbindungsfestigkeit gewährleistet, sondern auch die Installationsschritte vor Ort vereinfacht und die Sicherheit erhöht.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×4米)两端焊接法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-127"
+      "slug": "product-127",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-128",
@@ -2416,7 +2984,13 @@
       },
       "description": "Spezielles Rohrmaterial für Feuerlöschsysteme, dessen Innen- und Außenwände mit rotem Epoxidharz beschichtet sind und eine ausgezeichnete Korrosions- und Temperaturbeständigkeit aufweisen. Verwendet eine Nutrohrkupplung, ist schnell zu installieren und erfordert keine offenen Flammen, was es zur Standardkonfiguration für moderne Gebäude-Feuerlöschprojekte macht.",
       "image": "/images/hp-products/消防涂塑钢管/(114×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-128"
+      "slug": "product-128",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-129",
@@ -2437,7 +3011,12 @@
       },
       "description": "DN150 großkalibrige Hauptfeuerlöschleitung, leuchtend rotes Erscheinungsbild, mit schneller Nutrohrkupplung. Geeignet für Hauptfeuerlöschleitungsnetze in Einkaufszentren, Fabriken und Hochhäusern, um eine schnelle und ausreichende Wasserversorgung im Brandfall zu gewährleisten.",
       "image": "/images/hp-products/消防涂塑钢管/(DN150×6米)红色沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-129"
+      "slug": "product-129",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-130",
@@ -2455,7 +3034,12 @@
       "connectionType": null,
       "description": "Kleinkalibriges, kunststoffbeschichtetes Feuerlöschrohr, geeignet für die Endabzweigungen von Sprinkleranlagen. Innen und außen rot beschichtet, gute Korrosionsschutzleistung, glatte Rohrwände, geringer Wasserströmungswiderstand, kann mit Gewinde- oder Nutverbindungen verbunden werden.",
       "image": "/images/hp-products/消防涂塑钢管/(42×6米)红色消防涂塑钢管.jpg",
-      "slug": "product-130"
+      "slug": "product-130",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-131",
@@ -2473,7 +3057,12 @@
       "connectionType": null,
       "description": "Universelles, kunststoffbeschichtetes Feuerlöschrohr, dessen Innen- und Außenwände mit speziellem feuerfestem und korrosionsbeständigem Epoxidharz beschichtet sind. Geeignet für horizontale Haupt- und Steigleitungen in Hydranten- und Sprinklersystemen und ist das grundlegende Rohrmaterial zur Gewährleistung der Brandsicherheit von Gebäuden.",
       "image": "/images/hp-products/消防涂塑钢管/(60×6米)红色消防涂塑钢管.jpg",
-      "slug": "product-131"
+      "slug": "product-131",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-132",
@@ -2491,7 +3080,12 @@
       "connectionType": null,
       "description": "DN100 ist die am weitesten verbreitete Hauptrohrspezifikation in Feuerlöschsystemen. Dieses rote, kunststoffbeschichtete Rohr wird streng nach nationalen Brandschutznormen hergestellt, hat eine hohe Druckfestigkeit, Korrosionsbeständigkeit und eine lange Lebensdauer, was die langfristige Zuverlässigkeit des Feuerlöschsystems gewährleistet.",
       "image": "/images/hp-products/消防涂塑钢管/(DN100×6米)红色消防涂塑钢管.jpg",
-      "slug": "product-132"
+      "slug": "product-132",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-134",
@@ -2512,7 +3106,12 @@
       },
       "description": "3 Meter kurzes Design, rote Beschichtung, Nutrohrkupplung. Speziell für Feuerlöschprojekte in komplexen und engen Bereichen wie Technikgeschossen, Deckenhohlräumen usw. konzipiert, um eine flexible Anordnung und Installation zu erleichtern.",
       "image": "/images/hp-products/消防涂塑钢管/(DN100×3米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-134"
+      "slug": "product-134",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-135",
@@ -2533,7 +3132,12 @@
       },
       "description": "Größeres Spezialrohr für Feuerlöschanlagen, Nutrohrkupplung, innen und außen rot kunststoffbeschichtet. Geeignet für Hauptfeuerlöschleitungen in großen Gebäuden oder Industrieanlagen, mit hoher Druckfestigkeit und großem Durchfluss, um den strengen Anforderungen an das Löschwasser gerecht zu werden.",
       "image": "/images/hp-products/消防涂塑钢管/(DN165×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-135"
+      "slug": "product-135",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-136",
@@ -2551,7 +3155,11 @@
       "connectionType": null,
       "description": "DN32 kleinkalibriges Feuerlöschrohr, hauptsächlich zum Anschluss von Sprinklerköpfen verwendet. Die Kunststoffbeschichtung der Innen- und Außenwände verhindert das Rosten und Verstopfen der Sprinklerköpfe und gewährleistet einen reibungslosen Wasserfluss. Es ist ein unverzichtbarer Bestandteil von automatischen Sprinkleranlagen.",
       "image": "/images/hp-products/消防涂塑钢管/(DN32×6米)小口径管道用消防涂塑钢管.jpg",
-      "slug": "product-136"
+      "slug": "product-136",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-137",
@@ -2572,7 +3180,12 @@
       },
       "description": "Dieses 159-mm-kunststoffbeschichtete Rohr mit Nutrohrkupplung erfüllt die Anforderungen an den Brandschutz sowohl bei der Innen- als auch bei der Außenbeschichtung. Als Hauptfeuerlöschleitung können seine bequeme Installation und zuverlässige Verbindung die Bauzeit effektiv verkürzen und die Gesamtkosten senken.",
       "image": "/images/hp-products/消防涂塑钢管/(159×6米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-137"
+      "slug": "product-137",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-138",
@@ -2590,7 +3203,12 @@
       "connectionType": null,
       "description": "Kleinkalibriges, kunststoffbeschichtetes Feuerlöschrohr, das für Hydrantenabzweigungen oder Hauptleitungen in kleinen Sprinklerbereichen verwendet werden kann. Die Innen- und Außenbeschichtung widersteht wirksam der Korrosion und hält das Innere der Rohrleitung sauber, um zu verhindern, dass Verunreinigungen den normalen Betrieb der Feuerlöscheinrichtungen beeinträchtigen.",
       "image": "/images/hp-products/消防涂塑钢管/(76×6米)小口径涂塑钢管.jpg",
-      "slug": "product-138"
+      "slug": "product-138",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-139",
@@ -2608,7 +3226,13 @@
       "connectionType": null,
       "description": "Großkalibriges, kunststoffbeschichtetes Stahlrohr für Feuerlöschanlagen, geeignet für Auslassrohre von Feuerlöschpumpenräumen, unterirdische Hauptfeuerlöschleitungen und Ein- und Auslassrohre von Feuerlöschteichen. Hohe Druckfestigkeit, innerer und äußerer Korrosionsschutz, kann durch Schweißen oder Flanschverbindungen verbunden werden, um die Sicherheit der Feuerlösch-Lebensader zu gewährleisten.",
       "image": "/images/hp-products/消防涂塑钢管/(406×6米)消防涂塑钢管.jpg",
-      "slug": "product-139"
+      "slug": "product-139",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-140",
@@ -2629,7 +3253,12 @@
       },
       "description": "Großkalibriges Nutrohr für Feuerlöschanlagen, innen und außen kunststoffbeschichtet, rote Kennzeichnung. Weit verbreitet in Feuerlöschsystemen von großen öffentlichen Gebäuden, Logistiklagern und Industrieanlagen, ermöglicht es den schnellen Aufbau eines starken Löschrohrnetzes.",
       "image": "/images/hp-products/消防涂塑钢管/(219×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-140"
+      "slug": "product-140",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-141",
@@ -2650,7 +3279,13 @@
       },
       "description": "Speziell für Feuerlöschsysteme entwickelt, kombiniert es die einfache Installation einer CDU-Schnellkupplung mit der dauerhaften Festigkeit einer Schweißverbindung und ist eine hochzuverlässige Verbindungslösung. Die Innen- und Außenbeschichtung entspricht den Brandschutznormen und ist feuer- und korrosionsbeständig.",
       "image": "/images/hp-products/消防涂塑钢管/(108×4米)CDU快速接头焊接消防涂塑钢管.jpg",
-      "slug": "product-141"
+      "slug": "product-141",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-142",
@@ -2671,7 +3306,12 @@
       },
       "description": "Als Hauptrohrmaterial für Feuerlöschsysteme ist dieses 159-mm-Nutrohr innen und außen mit rotem Epoxidharz beschichtet, was eine stabile Leistung und eine effiziente Installation gewährleistet. Es ist die ideale Wahl für alle neuen und renovierten Feuerlöschprojekte.",
       "image": "/images/hp-products/消防涂塑钢管/(159×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-142"
+      "slug": "product-142",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-143",
@@ -2689,7 +3329,12 @@
       "connectionType": null,
       "description": "Speziell für den Gastransport konzipiert. Am Rohrende ist ein unbeschichteter Bereich (unbeschichtetes Ende) belassen, um eine zuverlässige Schweißverbindung mit Ventilen und Formstücken vor Ort zu erleichtern. Die Innen- und Außenbeschichtung widersteht wirksam den Sulfiden im Gas und der Bodenkorrosion und bietet eine hohe Sicherheit.",
       "image": "/images/hp-products/燃气涂塑钢管/(57×6米)外留口燃气涂塑钢管.jpg",
-      "slug": "product-143"
+      "slug": "product-143",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-144",
@@ -2707,7 +3352,11 @@
       "connectionType": null,
       "description": "Kleinkalibriges, kunststoffbeschichtetes Spezialrohr für Gasanlagen, geeignet für Gasanschlussleitungen in Wohn- und Geschäftsgebäuden. Die gelbe Innen- und Außenbeschichtung ist das spezielle Kennzeichen für Gasleitungen, die Beschichtung ist dicht, die Gasdichtheit ist gut und Gaslecks werden wirksam verhindert.",
       "image": "/images/hp-products/燃气涂塑钢管/(25×6米)燃气涂塑钢管.jpg",
-      "slug": "product-144"
+      "slug": "product-144",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-145",
@@ -2725,7 +3374,12 @@
       "connectionType": null,
       "description": "Kleinkalibriges Gas-Verbundrohr mit unbeschichtetem Rohrende, das hochwertige Schweißarbeiten vor Ort erleichtert. Die gelbe Spezialbeschichtung innen und außen bietet einen ausgezeichneten Korrosionsschutz und eine Warnfunktion und ist eine zuverlässige Garantie für den sicheren Betrieb städtischer Gasnetze.",
       "image": "/images/hp-products/燃气涂塑钢管/(57×6米)小口径外留口燃气涂塑复合钢管.jpg",
-      "slug": "product-145"
+      "slug": "product-145",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-146",
@@ -2745,7 +3399,12 @@
       "connectionType": null,
       "description": "Verwendet ein doppeltes Schutzverfahren aus äußerer Verzinkung und innerer Kunststoffbeschichtung. Die äußere Zinkschicht erhöht die Korrosionsbeständigkeit der Rohrleitung gegenüber der äußeren Umgebung, während die innere Kunststoffbeschichtung der Gaskorrosion widersteht und einen reibungslosen Gastransport aufrechterhält. Geeignet für Gasprojekte mit höheren Korrosionsschutzanforderungen.",
       "image": "/images/hp-products/燃气涂塑钢管/(57×6米)镀锌燃气涂塑钢管.jpg",
-      "slug": "product-146"
+      "slug": "product-146",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-147",
@@ -2763,7 +3422,12 @@
       "connectionType": null,
       "description": "Standardisiertes, kunststoffbeschichtetes Rohr für Gasanlagen, innen und außen mit einer gelben Korrosionsschutzschicht beschichtet, mit guter chemischer Beständigkeit und Isoliereigenschaften. Geeignet für städtische Gasnetze mit niedrigem und mittlerem Druck und ist das sichere Bindeglied, das Tausende von Haushalten verbindet.",
       "image": "/images/hp-products/燃气涂塑钢管/(60×6)燃气涂塑钢管.jpg",
-      "slug": "product-147"
+      "slug": "product-147",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-150",
@@ -2781,7 +3445,12 @@
       "connectionType": null,
       "description": "Mittelgroßes Gastransportrohr, dessen Innen- und Außenwände mit einer speziellen gelben Korrosionsschutzschicht beschichtet sind, was eine starke Warnwirkung hat. Geeignet für Hauptgasleitungen in Wohn- oder Industriegebieten, mit hoher Druckfestigkeit, sicher und zuverlässig.",
       "image": "/images/hp-products/燃气涂塑钢管/(89×6米)燃气钢管.jpg",
-      "slug": "product-150"
+      "slug": "product-150",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-151",
@@ -2799,7 +3468,11 @@
       "connectionType": null,
       "description": "DN100 ist eine universelle Hauptrohrspezifikation in Wasserversorgungssystemen. Die Innen- und Außenwände sind mit hygienischem Epoxidharz oder Polyethylen beschichtet, um einen sicheren und schadstofffreien Wassertransport zu gewährleisten. Die Rohrwand ist glatt, bildet keine Ablagerungen und behält eine hohe Wasserförderkapazität über einen langen Zeitraum bei.",
       "image": "/images/hp-products/给水涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
-      "slug": "product-151"
+      "slug": "product-151",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-152",
@@ -2820,7 +3493,12 @@
       },
       "description": "Großkalibriges Wasserleitungsrohr, die kurze Länge von 4 Metern erleichtert den Transport und die Installation, und es verwendet eine Nutrohrkupplung, was die Baueffizienz erhöht. Die Innen- und Außenbeschichtung entspricht den Trinkwasserstandards und ist eine ideale Wahl für große Gebäude und kommunale Wasserversorgungsprojekte.",
       "image": "/images/hp-products/给水涂塑钢管/(273×4米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-152"
+      "slug": "product-152",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-153",
@@ -2841,7 +3519,12 @@
       },
       "description": "Mittleres Kaliber, kunststoffbeschichtetes Wasserleitungsrohr mit Nutrohrkupplung, innen und außen beschichtet, einfach zu installieren. Geeignet für Hauptwasserleitungen von Gebäudekomplexen oder vertikale Steigleitungen in großen Gebäuden und ist ein repräsentatives Produkt moderner Schnellbautechnologie.",
       "image": "/images/hp-products/给水涂塑钢管/(165×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-153"
+      "slug": "product-153",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-154",
@@ -2861,7 +3544,12 @@
       "connectionType": null,
       "description": "Großkalibriges Wasserleitungsrohr, dessen Innen- und Außenwände mit lebensmittelechtem Epoxidharz beschichtet sind, was einen hervorragenden Korrosionsschutz und eine hygienische Garantie bietet. Geeignet für Projekte mit strengen Anforderungen an die Wasserqualität und die Haltbarkeit der Rohrleitungen, wie z. B. kommunale Hauptwasserleitungen und Wasserwerke.",
       "image": "/images/hp-products/给水涂塑钢管/(426×6米)内外环氧给水涂塑钢管.jpg",
-      "slug": "product-154"
+      "slug": "product-154",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-155",
@@ -2882,7 +3570,12 @@
       },
       "description": "Dieses großkalibrige Wasserleitungsrohr verwendet eine Nutrohrkupplung und ist innen und außen kunststoffbeschichtet. Im Vergleich zu herkömmlichen Verbindungsmethoden kann es viel Installationszeit sparen, und die Verbindung ist zuverlässig. Es ist eine effiziente Lösung für den Bau moderner, groß angelegter Wasserversorgungsnetze.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-155"
+      "slug": "product-155",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-156",
@@ -2900,7 +3593,13 @@
       "connectionType": null,
       "description": "89 mm ist eine gängige Spezifikation in Wasserleitungsnetzen von Gebäuden. Dieses Produkt ist innen und außen kunststoffbeschichtet, korrosionsbeständig und hygienisch. Es kann mit Gewinde-, Nut- oder Flanschverbindungen verbunden werden, ist vielseitig einsetzbar und ein grundlegendes Rohrmaterial für verschiedene Wasserversorgungsprojekte.",
       "image": "/images/hp-products/给水涂塑钢管/(89×6米)给水涂塑钢管.jpg",
-      "slug": "product-156"
+      "slug": "product-156",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-157",
@@ -2918,7 +3617,11 @@
       "connectionType": null,
       "description": "Großkalibriges, kunststoffbeschichtetes Spezialrohr für die Wasserversorgung mit glatter Innenwand, guten hydraulischen Bedingungen und geringem Energieverbrauch beim Wassertransport. Die Innen- und Außenbeschichtung verhindert wirksam das Auftreten von gelbem und rotem Wasser, verbessert die Wasserqualität umfassend und eignet sich für städtische Hauptwasserversorgungsnetze.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)给水涂塑钢管.jpg",
-      "slug": "product-157"
+      "slug": "product-157",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-158",
@@ -2939,7 +3642,12 @@
       },
       "description": "Dieses Produkt kombiniert den universellen Rohrdurchmesser von 89 mm mit einer effizienten Nutrohrkupplung und bietet eine wirtschaftliche und bequeme Lösung für Wasserversorgungssysteme in Gebäuden. Es hat eine hohe Marktnachfrage und wird häufig eingesetzt.",
       "image": "/images/hp-products/给水涂塑钢管/(89×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-158"
+      "slug": "product-158",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-159",
@@ -2957,7 +3665,13 @@
       "connectionType": null,
       "description": "Großkalibriges Wasserleitungsrohr mit unbeschichtetem Rohrende, das dem Benutzer eine hohe Flexibilität für Schweiß- oder Flanschinstallationen vor Ort bietet. Nach der Schweißinstallation wird die Schweißnaht mit einem Korrosionsschutz versehen, um eine vollständige korrosionsgeschützte Rohrleitung zu bilden.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)外留口给水涂塑钢管.jpg",
-      "slug": "product-159"
+      "slug": "product-159",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-160",
@@ -2975,7 +3689,12 @@
       "connectionType": null,
       "description": "Mittelgroßes, doppelseitig beschichtetes Rohr mit gleichmäßiger und dichter Innen- und Außenbeschichtung, die den Kontakt zwischen Wasser und Stahlrohr vollständig isoliert und das Korrosionsproblem der Rohrleitung grundlegend löst. Geeignet für alle Arten von zivilen und industriellen Wasserversorgungssystemen.",
       "image": "/images/hp-products/给水涂塑钢管/(159×6米)双面涂塑复合钢管.jpg",
-      "slug": "product-160"
+      "slug": "product-160",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-161",
@@ -2996,7 +3715,12 @@
       },
       "description": "Das 114-mm-Wasserleitungsrohr mit Nutrohrkupplung ist die ideale Wahl für Wassersteig- und -hauptleitungen in Hochhäusern. Schnelle Installation, feste Verbindungen und eine Innen- und Außenbeschichtung gewährleisten die Wasserqualität und eine lange Lebensdauer des Systems.",
       "image": "/images/hp-products/给水涂塑钢管/(114×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-161"
+      "slug": "product-161",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-162",
@@ -3017,7 +3741,12 @@
       },
       "description": "Speziell für Wasserversorgungssysteme konzipiertes Nutrohr mit hygienischer und ungiftiger Innen- und Außenbeschichtung. Die Standardlänge von 4 Metern erleichtert die Konstruktion in Innenräumen und engen Räumen und macht es zu einem sehr flexiblen Produkt.",
       "image": "/images/hp-products/给水涂塑钢管/(108×4米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-162"
+      "slug": "product-162",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-163",
@@ -3038,7 +3767,12 @@
       },
       "description": "Kleinkalibriges Wasserleitungsrohr mit Nutrohrkupplung, innen und außen kunststoffbeschichtet. Geeignet für Wasserabzweigleitungen in Gebäuden oder kleine Kreislaufwassersysteme, einfach zu installieren, zuverlässige Leistung, ein ausgezeichneter Ersatz für herkömmliche Rohrmaterialien.",
       "image": "/images/hp-products/给水涂塑钢管/(76×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-163"
+      "slug": "product-163",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-164",
@@ -3056,7 +3790,12 @@
       "connectionType": null,
       "description": "Mittlerer Durchmesser, unbeschichtetes Rohrende für eine bequeme Verbindung vor Ort. Benutzer können Flansche selbst schweißen oder mit anderen Rohren verschweißen, besonders geeignet für Wasserversorgungsprojekte, die nicht standardmäßige Verbindungen oder Umbauten vor Ort erfordern.",
       "image": "/images/hp-products/给水涂塑钢管/(159×6米)外留口给水涂塑钢管.jpg",
-      "slug": "product-164"
+      "slug": "product-164",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-165",
@@ -3076,7 +3815,12 @@
       "connectionType": null,
       "description": "Kleinkalibriges Wasserleitungsrohr, dessen Innen- und Außenwände mit einem Heißschmelz-Epoxidpulververfahren beschichtet sind. Die Beschichtung hat eine extrem starke Haftung und eine ausgezeichnete Korrosionsschutzleistung. Geeignet für Anwendungen mit extrem hohen Anforderungen an Wasserqualität und Rohlebensdauer, wie z. B. in hochwertigen Wohngebäuden und Krankenhäusern.",
       "image": "/images/hp-products/给水涂塑钢管/(25×6米)内外热熔环氧粉末给水涂塑钢管.jpg",
-      "slug": "product-165"
+      "slug": "product-165",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-166",
@@ -3097,7 +3841,12 @@
       },
       "description": "Dieses 159-mm-Wasserleitungsrohr mit Nutrohrkupplung ist ein Mainstream-Produkt auf dem Markt, mit stabiler Qualität und effizienter Installation. Es wird häufig in den Hauptwasserleitungen verschiedener Gebäude eingesetzt und ist eine der ersten Wahlen für moderne Wasserversorgungsprojekte.",
       "image": "/images/hp-products/给水涂塑钢管/(159×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-166"
+      "slug": "product-166",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-167",
@@ -3122,7 +3871,12 @@
       },
       "description": "Extrem vielseitiges, kunststoffbeschichtetes Rohr mit Klemm- (Nut-)Verbindung, das sowohl für Druckwasserversorgungssysteme als auch für drucklose Abwassersysteme verwendet werden kann. Die glatte und korrosionsbeständige Innen- und Außenbeschichtung macht es zu einem vielseitigen und hocheffizienten Rohrleitungsprodukt.",
       "image": "/images/hp-products/给水涂塑钢管/(108×6米)卡箍连接给排水涂塑钢管.jpg",
-      "slug": "product-167"
+      "slug": "product-167",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-168",
@@ -3143,7 +3897,12 @@
       },
       "description": "Klassisches Wasserleitungsrohr mit Nutrohrkupplung, innen und außen hygienische Beschichtung, 4 Meter Länge für einfache Handhabung. Geeignet für die schnelle Installation verschiedener Wasserleitungsnetze in Gebäuden, zuverlässige Leistung, wirtschaftlich und langlebig.",
       "image": "/images/hp-products/给水涂塑钢管/(108×4米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-168"
+      "slug": "product-168",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-169",
@@ -3164,7 +3923,12 @@
       },
       "description": "Großkalibriges Wasserleitungsrohr mit Nutrohrkupplung, das eine effiziente Rohrinstallationslösung für große Projekte bietet. Die Innen- und Außenbeschichtung gewährleistet die Sicherheit des Wassertransports, und die schnelle Verbindungsmethode reduziert die Arbeits- und Zeitkosten erheblich.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-169"
+      "slug": "product-169",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-170",
@@ -3182,7 +3946,11 @@
       "connectionType": null,
       "description": "Großkalibriges Wasserleitungsrohr, das blaue Erscheinungsbild kann als spezielle Kennzeichnung für die Wasserversorgung dienen, und das unbeschichtete Rohrende erleichtert das Schweißen vor Ort. Geeignet für große kommunale oder industrielle Wasserversorgungsprojekte, die eine spezielle Kennzeichnung und flexible Verbindungsmethoden erfordern.",
       "image": "/images/hp-products/给水涂塑钢管/(529×6米)蓝色外留口给水涂塑钢管.jpg",
-      "slug": "product-170"
+      "slug": "product-170",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-171",
@@ -3203,7 +3971,12 @@
       },
       "description": "Dieses kunststoffbeschichtete Wasserleitungsrohr ist speziell für Anwendungen konzipiert, die eine Schweißverbindung erfordern. Das Rohrende ist für das Schweißen vor Ort vorbereitet. Nach dem Schweißen muss die Schweißnaht professionell mit einem Korrosionsschutz versehen werden, um die Korrosionsschutzleistung der gesamten Rohrleitung zu gewährleisten.",
       "image": "/images/hp-products/给水涂塑钢管/(DN200×6米)焊接给水涂塑钢管.jpg",
-      "slug": "product-171"
+      "slug": "product-171",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-172",
@@ -3221,7 +3994,11 @@
       "connectionType": null,
       "description": "Das kleinstkalibrige, kunststoffbeschichtete Wasserleitungsrohr, geeignet für Hausinstallationen, Wohnungen usw. Innen und außen kunststoffbeschichtet, löst es das Rostproblem von verzinkten Rohren vollständig und liefert gesundes, sauberes Haushaltswasser.",
       "image": "/images/hp-products/给水涂塑钢管/(DN15×6米)给水涂塑钢管.jpg",
-      "slug": "product-172"
+      "slug": "product-172",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-173",
@@ -3239,7 +4016,12 @@
       "connectionType": null,
       "description": "Mittelgroßes, kunststoffbeschichtetes Wasserleitungsrohr, die ideale Wahl zur Verbindung von kommunalen Hauptleitungen mit dem internen Rohrnetz von Gebäuden. Innen- und Außenkorrosionsschutz, gewährleistet die Wasserqualität, lange Lebensdauer, geringe Wartungskosten.",
       "image": "/images/hp-products/给水涂塑钢管/(DN125×6米)给水涂塑钢管.jpg",
-      "slug": "product-173"
+      "slug": "product-173",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-174",
@@ -3257,7 +4039,11 @@
       "connectionType": null,
       "description": "Großkalibriges Wasserleitungsrohr mit unbeschichtetem Ende, das maximale Flexibilität für die Verbindung vor Ort bei großen Rohrleitungsprojekten bietet. Geeignet für Projekte, bei denen eine Verbindung mit bestehenden unterschiedlichen Rohrtypen oder großen Geräten erforderlich ist.",
       "image": "/images/hp-products/给水涂塑钢管/(426×6米)外留口给水涂塑钢管.jpg",
-      "slug": "product-174"
+      "slug": "product-174",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-175",
@@ -3279,7 +4065,11 @@
       "connectionType": null,
       "description": "Dies ist ein universelles, kunststoffbeschichtetes Rohr für die Wasserversorgung und -entsorgung mit unbeschichtetem Ende. Es erfüllt sowohl die hygienischen Anforderungen der Wasserversorgung als auch die korrosiven Bedingungen der Entwässerung und ist ein flexibles, vielseitiges Rohrleitungsprodukt.",
       "image": "/images/hp-products/给水涂塑钢管/(89×6米)外留口给排水涂塑复合钢管.jpg",
-      "slug": "product-175"
+      "slug": "product-175",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-176",
@@ -3304,7 +4094,13 @@
       },
       "description": "Ein Nutrohr, das sowohl für Wasserversorgungs- als auch für Abwassersysteme verwendet werden kann. Die Innen- und Außenbeschichtung weist eine gute Korrosionsbeständigkeit und Glätte auf, die Verbindung ist schnell, der Anwendungsbereich ist breit und die Anzahl der Lagertypen kann effektiv reduziert werden.",
       "image": "/images/hp-products/给水涂塑钢管/(DN150×6米)沟槽连接给排水涂塑钢管.jpg",
-      "slug": "product-176"
+      "slug": "product-176",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-177",
@@ -3322,7 +4118,12 @@
       "connectionType": null,
       "description": "Großkalibriges Wasserversorgungs-Verbundrohr mit unbeschichtetem Rohrende zum einfachen Schweißen. Die Innen- und Außenbeschichtung gewährleistet die Korrosionsschutzleistung und die hygienische Sicherheit der Rohrleitung. Es ist die erste Wahl für große Wasserversorgungsprojekte, die eine hochgradig maßgeschneiderte Verbindungslösung erfordern.",
       "image": "/images/hp-products/给水涂塑钢管/(426×6米)外留口给水涂塑复合钢管.jpg",
-      "slug": "product-177"
+      "slug": "product-177",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-178",
@@ -3340,7 +4141,11 @@
       "connectionType": null,
       "description": "Kleinkalibriges, kunststoffbeschichtetes Wasserleitungsrohr, geeignet für Wasserabzweigleitungen in Gebäuden. Die Innen- und Außenwände haben eine hygienische Beschichtung, rosten nicht, bilden keine Ablagerungen und gewährleisten die Sicherheit des Trinkwassers im Haushalt. Es ist ein Upgrade-Produkt für herkömmliche Rohrmaterialien.",
       "image": "/images/hp-products/给水涂塑钢管/(48×6米)给水涂塑钢管.jpg",
-      "slug": "product-178"
+      "slug": "product-178",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-180",
@@ -3358,7 +4163,12 @@
       "connectionType": null,
       "description": "Kleinkalibriges Wasserleitungsrohr mit unbeschichtetem Ende, speziell für Präzisionsrohrleitungen oder Renovierungsprojekte, die ein Schweißen vor Ort erfordern. Es bietet maximale Verbindungsfreiheit bei gleichzeitigem inneren und äußeren Korrosionsschutz.",
       "image": "/images/hp-products/给水涂塑钢管/(76×6米)小口径外留口给水涂塑钢管.jpg",
-      "slug": "product-180"
+      "slug": "product-180",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-181",
@@ -3379,7 +4189,11 @@
       },
       "description": "Kunststoffbeschichtetes Wasserleitungsrohr mit Klemm- (Nut-)Verbindung, sehr einfach und schnell zu installieren. Die Innen- und Außenbeschichtung entspricht den Trinkwasserstandards und ist eine bevorzugte Lösung für die schnelle Installation von Wasserversorgungssystemen in Hochhäusern und großen Veranstaltungsorten.",
       "image": "/images/hp-products/给水涂塑钢管/(114×6米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-181"
+      "slug": "product-181",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-182",
@@ -3404,7 +4218,13 @@
       },
       "description": "Dies ist ein multifunktionales Nutrohr, das sowohl für druckbeaufschlagte Wasserversorgungssysteme als auch für drucklose Abwassersysteme verwendet werden kann. Die glatte und korrosionsbeständige Innen- und Außenbeschichtung macht es vielseitig einsetzbar und kostengünstig.",
       "image": "/images/hp-products/给水涂塑钢管/(108×6米)沟槽连接给排水涂塑钢管.jpg",
-      "slug": "product-182"
+      "slug": "product-182",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-183",
@@ -3422,759 +4242,12 @@
       "connectionType": null,
       "description": "Basierend auf einem Spiralrohr, innen und außen kunststoffbeschichtet, mit unbeschichtetem Rohrende. Spiralrohre sind kostengünstiger, haben eine gute Druckfestigkeit und in Kombination mit dem Korrosionsschutz durch Kunststoffbeschichtung und der Flexibilität des Schweißens mit unbeschichtetem Ende ist es eine wirtschaftliche und praktische Wahl für große Wasserversorgungsprojekte.",
       "image": "/images/hp-products/给水涂塑钢管/(219×6米)外留口螺旋给水涂塑钢管.jpg",
-      "slug": "product-183"
-    },
-    {
-      "id": "product-wantou-001",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "90° Stahlrohrbogen mit großem Durchmesser",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Stahlkonstruktion",
-        "Großdurchmesser-Formung",
-        "Projektbezogene Anpassung"
-      ],
-      "connectionType": null,
-      "description": "90° Large-Diameter Steel Elbow gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/90度大口径钢制弯头.jpg",
-      "slug": "elbows-and-pipe-supports-001"
-    },
-    {
-      "id": "product-wantou-002",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "90° Stahlrohrbogen mit Flansch und großem Durchmesser",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Stahlkonstruktion",
-        "Großdurchmesser-Formung",
-        "Projektbezogene Anpassung"
-      ],
-      "connectionType": {
-        "name": "Flanschverbindung",
-        "id": "flange"
-      },
-      "description": "Large-Diameter Flanged 90° Steel Elbow gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/大口径法兰90度钢制弯头.jpg",
-      "slug": "elbows-and-pipe-supports-002"
-    },
-    {
-      "id": "product-wantou-003",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Chargenfertige 90° Stahlrohrbögen mit großem Durchmesser",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Stahlkonstruktion",
-        "Großdurchmesser-Formung",
-        "Projektbezogene Anpassung"
-      ],
-      "connectionType": null,
-      "description": "Batch-Finished Large-Diameter 90° Steel Elbows gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/大口径90度钢制弯头批量成品.jpg",
-      "slug": "elbows-and-pipe-supports-003"
-    },
-    {
-      "id": "product-wantou-004",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Chargenfertige nahtlose Kohlenstoffstahlbögen",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Stahlkonstruktion",
-        "Großdurchmesser-Formung",
-        "Projektbezogene Anpassung"
-      ],
-      "connectionType": null,
-      "description": "Batch-Finished Carbon Steel Seamless Elbows gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/碳钢无缝弯头批量成品.jpg",
-      "slug": "elbows-and-pipe-supports-004"
-    },
-    {
-      "id": "product-wantou-005",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Kundenspezifisches 180° Hochdruck-Flanschformteil",
-      "specification": "180° kundenspezifisch",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Flanschverbindung",
-        "Für Hochdruck geeignet",
-        "Kundenspezifische Fertigung"
-      ],
-      "connectionType": {
-        "name": "Flanschverbindung",
-        "id": "flange"
-      },
-      "description": "180° Custom High-Pressure Flanged Fitting gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/180°定制高压法兰管件.jpg",
-      "slug": "elbows-and-pipe-supports-005"
-    },
-    {
-      "id": "product-wantou-006",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Kundenspezifisches Hochdruck-Flansch-Geradstück",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Flanschverbindung",
-        "Für Hochdruck geeignet",
-        "Kundenspezifische Fertigung"
-      ],
-      "connectionType": {
-        "name": "Flanschverbindung",
-        "id": "flange"
-      },
-      "description": "Custom High-Pressure Flanged Straight Pipe Spool gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/定制高压法兰直管段.jpg",
-      "slug": "elbows-and-pipe-supports-006"
-    },
-    {
-      "id": "product-wantou-007",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Verschiedene Flansche auf Lager",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Breites Größenspektrum",
-        "Lieferung ab Lager",
-        "Projektzubehör"
-      ],
-      "connectionType": {
-        "name": "Flanschverbindung",
-        "id": "flange"
-      },
-      "description": "Various Flanges in Stock gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/各种法兰现货供应.jpg",
-      "slug": "elbows-and-pipe-supports-007"
-    },
-    {
-      "id": "product-wantou-008",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Halbfertige korrosionsgeschützte Stahlrohrformteile",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Kommunale Projekte",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Korrosionsschutzbehandlung",
-        "Stahlformteil",
-        "Bereit zur Weiterbearbeitung"
-      ],
-      "connectionType": null,
-      "description": "Semi-Finished Anti-Corrosion Steel Pipe Fittings gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/防腐钢管管件半成品.jpg",
-      "slug": "elbows-and-pipe-supports-008"
-    },
-    {
-      "id": "product-wantou-009",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Isolierte Festrohrhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Insulated Fixed Pipe Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/保温固定管托.jpg",
-      "slug": "elbows-and-pipe-supports-009"
-    },
-    {
-      "id": "product-wantou-010",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Isolierte Gleithalterung für Rohre",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Insulated Sliding Pipe Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/保温滑动管托.jpg",
-      "slug": "elbows-and-pipe-supports-010"
-    },
-    {
-      "id": "product-wantou-011",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Isolierte Rohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Insulated Pipe Clamp Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/保温管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-011"
-    },
-    {
-      "id": "product-wantou-012",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Isolierte Zweiloch-Rohrhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Double-Hole Insulated Pipe Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/双孔保温管托.jpg",
-      "slug": "elbows-and-pipe-supports-012"
-    },
-    {
-      "id": "product-wantou-013",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Wärmeisolierte Festrohrhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Thermal-Insulated Fixed Pipe Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/隔热固定管托.jpg",
-      "slug": "elbows-and-pipe-supports-013"
-    },
-    {
-      "id": "product-wantou-014",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Schwere isolierte Rohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Heavy-Duty Insulated Pipe Clamp Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/重型保温管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-014"
-    },
-    {
-      "id": "product-wantou-015",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Rohrhalterung für Bogen",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Elbow Pipe Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/弯头管托支座.jpg",
-      "slug": "elbows-and-pipe-supports-015"
-    },
-    {
-      "id": "product-wantou-016",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Sattel-Gleithalterung für Rohre",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Saddle Sliding Pipe Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/鞍式滑动管托.jpg",
-      "slug": "elbows-and-pipe-supports-016"
-    },
-    {
-      "id": "product-wantou-017",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Quadratische Führungsrohrhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Stabile Unterstützung",
-        "Rohrbegrenzung",
-        "Technisches Zubehör"
-      ],
-      "connectionType": null,
-      "description": "Square Guide Pipe Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/方形导向管托.jpg",
-      "slug": "elbows-and-pipe-supports-017"
-    },
-    {
-      "id": "product-wantou-018",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "U-Bolzen-Rohrschelle",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": {
-        "name": "Schraubverbindung",
-        "id": "bolted"
-      },
-      "description": "U-Bolt Pipe Clamp gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/U型螺栓管夹.jpg",
-      "slug": "elbows-and-pipe-supports-018"
-    },
-    {
-      "id": "product-wantou-019",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Leichte U-Rohrschelle",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": {
-        "name": "Schraubverbindung",
-        "id": "bolted"
-      },
-      "description": "Light-Duty U Pipe Clamp gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/轻型U型管夹.jpg",
-      "slug": "elbows-and-pipe-supports-019"
-    },
-    {
-      "id": "product-wantou-020",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Schwerer U-Schellenhalter",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": {
-        "name": "Schraubverbindung",
-        "id": "bolted"
-      },
-      "description": "Heavy-Duty U Clamp Bracket gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/重型U型管夹支架.jpg",
-      "slug": "elbows-and-pipe-supports-020"
-    },
-    {
-      "id": "product-wantou-021",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Doppelbolzen-Rohrschellenbaugruppe",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": {
-        "name": "Schraubverbindung",
-        "id": "bolted"
-      },
-      "description": "Double-Bolt Pipe Clamp Assembly gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/双螺栓管夹组件.jpg",
-      "slug": "elbows-and-pipe-supports-021"
-    },
-    {
-      "id": "product-wantou-022",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Vierwege-Begrenzungsrohrschellenbaugruppe",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": null,
-      "description": "Four-Way Limit Pipe Clamp Assembly gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/四向限位管夹组件.jpg",
-      "slug": "elbows-and-pipe-supports-022"
-    },
-    {
-      "id": "product-wantou-023",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Feste Doppelrohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": null,
-      "description": "Double-Clamp Fixed Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/双管夹固定支座.jpg",
-      "slug": "elbows-and-pipe-supports-023"
-    },
-    {
-      "id": "product-wantou-024",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Gleitende Doppelrohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": null,
-      "description": "Double-Clamp Sliding Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/双管夹滑动支座.jpg",
-      "slug": "elbows-and-pipe-supports-024"
-    },
-    {
-      "id": "product-wantou-025",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Begrenzungs-Doppelrohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": null,
-      "description": "Double-Clamp Limit Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/双管夹限位支座.jpg",
-      "slug": "elbows-and-pipe-supports-025"
-    },
-    {
-      "id": "product-wantou-026",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Vier-Ecken-Begrenzungsrohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": null,
-      "description": "Four-Corner Limit Pipe Clamp Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/四角限位管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-026"
-    },
-    {
-      "id": "product-wantou-027",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Feste Rohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": null,
-      "description": "Fixed Pipe Clamp Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/固定管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-027"
-    },
-    {
-      "id": "product-wantou-028",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Rohrbögen und Rohrhalterungen",
-      "name": "Vertikale Rohrschellenhalterung",
-      "specification": "Kundenspezifische Spezifikation",
-      "applications": [
-        {
-          "name": "Industrielle Rohrleitungen",
-          "id": "industrial"
-        },
-        {
-          "name": "Rohrunterstützung",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Schraubbefestigung",
-        "Einfache Montage",
-        "Zuverlässige Unterstützung"
-      ],
-      "connectionType": null,
-      "description": "Vertical Pipe Clamp Support gehört zur Serie Rohrbögen und Rohrhalterungen und eignet sich für industrielle Rohrleitungen, kommunale Projekte und Rohrunterstützungssysteme. Das Produkt kann nach Durchmesser, Druckklasse und Montagebedingungen angepasst werden und bietet hohe Strukturfestigkeit, effiziente Montage und langfristig stabilen Betrieb.",
-      "image": "/images/wantou/立式管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-028"
+      "slug": "product-183",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     }
   ],
   "groupedProducts": {
@@ -4469,41 +4542,6 @@
         "product-183"
       ],
       "count": 32
-    },
-    "elbows-and-pipe-supports": {
-      "id": "elbows-and-pipe-supports",
-      "name": "Rohrbögen und Rohrhalterungen",
-      "productIds": [
-        "product-wantou-001",
-        "product-wantou-002",
-        "product-wantou-003",
-        "product-wantou-004",
-        "product-wantou-005",
-        "product-wantou-006",
-        "product-wantou-007",
-        "product-wantou-008",
-        "product-wantou-009",
-        "product-wantou-010",
-        "product-wantou-011",
-        "product-wantou-012",
-        "product-wantou-013",
-        "product-wantou-014",
-        "product-wantou-015",
-        "product-wantou-016",
-        "product-wantou-017",
-        "product-wantou-018",
-        "product-wantou-019",
-        "product-wantou-020",
-        "product-wantou-021",
-        "product-wantou-022",
-        "product-wantou-023",
-        "product-wantou-024",
-        "product-wantou-025",
-        "product-wantou-026",
-        "product-wantou-027",
-        "product-wantou-028"
-      ],
-      "count": 28
     }
   }
 }

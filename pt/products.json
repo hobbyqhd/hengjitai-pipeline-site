@@ -1,10 +1,16 @@
 {
   "metadata": {
-    "totalProducts": 194,
-    "totalCategories": 19,
-    "lastUpdated": "2026-05-08T01:43:18.951064Z",
+    "totalProducts": 166,
+    "totalCategories": 18,
+    "lastUpdated": "2026-05-09T07:55:38.560Z",
     "language": "pt",
-    "languageCode": "pt-PT"
+    "languageCode": "pt-PT",
+    "macroCategoryCoverage": {
+      "plastic-coating": 154,
+      "anti-corrosion": 59,
+      "steel-pipes": 166,
+      "pipe-fittings": 41
+    }
   },
   "categories": [
     {
@@ -132,13 +138,6 @@
       "count": 32,
       "image": "/images/hp-products/给水涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
       "url": "hp-products/tubo-de-aço-revestido-com-plástico-para-abastecimento-de-água.html"
-    },
-    {
-      "id": "elbows-and-pipe-supports",
-      "name": "Cotovelos e suportes de tubulação",
-      "count": 28,
-      "image": "/images/wantou/90度大口径钢制弯头.jpg",
-      "url": "hp-products/elbows-and-pipe-supports.html"
     }
   ],
   "products": [
@@ -161,7 +160,12 @@
       "connectionType": null,
       "description": "Este produto é um tubo de grande diâmetro dedicado ao transporte de óleo e gás, utilizando tecnologia avançada de revestimento anticorrosivo composto por pó de epóxi fundido (FBE) na parede interna e polietileno de três camadas (3PE) na parede externa. O revestimento interno é liso, reduzindo eficazmente a resistência ao transporte e prevenindo a corrosão pelo meio; a estrutura externa 3PE possui excelente resistência mecânica, resistência à corrosão química e ao descolamento catódico, garantindo a operação segura e estável do tubo a longo prazo em ambientes enterrados severos.",
       "image": "/images/hp-products/3PE防腐钢管/(1020×12米)内环氧外3PE防腐钢管.jpg",
-      "slug": "product-001"
+      "slug": "product-001",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-002",
@@ -181,7 +185,11 @@
       "connectionType": null,
       "description": "Este tubo de aço sem costura adota uma camada anticorrosiva 3PE padrão, projetada para redes de oleodutos e gasodutos de média e alta pressão. O corpo do tubo sem costura possui alta capacidade de suportar pressão, que, combinada com o excelente desempenho anticorrosivo e de isolamento do 3PE, pode lidar eficazmente com condições geológicas complexas, garantindo a segurança do transporte. É uma escolha confiável para ramais e redes de coleta e transporte.",
       "image": "/images/hp-products/3PE防腐钢管/(DN50×12米)外3PE防腐无缝钢管.jpg",
-      "slug": "product-002"
+      "slug": "product-002",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-003",
@@ -205,7 +213,11 @@
       "connectionType": null,
       "description": "Design de grande diâmetro, com paredes interna e externa rigorosamente tratadas. O revestimento anticorrosivo externo 3PE garante que o tubo fique protegido contra a corrosão do ambiente do solo, e a parede interna está em conformidade com as normas sanitárias para transporte de água potável. Este produto é adequado tanto para o abastecimento de água como para o transporte de óleo e gás, apresentando uma excelente relação custo-benefício e ampla adaptabilidade de engenharia.",
       "image": "/images/hp-products/3PE防腐钢管/(1220×12米)埋地饮用水输送3PE防腐钢管.jpg",
-      "slug": "product-003"
+      "slug": "product-003",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-004",
@@ -225,7 +237,11 @@
       "connectionType": null,
       "description": "Tubo de aço de diâmetro extra grande, utilizando um revestimento anticorrosivo 3PE de grau reforçado, cuja espessura e aderência são superiores às do grau comum. É projetado para ambientes altamente corrosivos ou para linhas troncais de transporte que exigem maior proteção mecânica, maximizando a vida útil da rede de tubos e reduzindo os custos de manutenção.",
       "image": "/images/hp-products/3PE防腐钢管/(1400×12米)3PE加强级防腐钢管.jpg",
-      "slug": "product-004"
+      "slug": "product-004",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-005",
@@ -245,7 +261,11 @@
       "connectionType": null,
       "description": "Tubo anticorrosivo 3PE de pequeno diâmetro e alta flexibilidade, adequado para redes de gás urbano, ramais de coleta em campos de petróleo e transporte de materiais químicos. O seu excelente desempenho anticorrosivo e a facilidade de instalação tornam-no uma escolha econômica e eficiente para projetos de tubulação de pequeno diâmetro.",
       "image": "/images/hp-products/3PE防腐钢管/(114×6米)小口径3PE防腐钢管.jpg",
-      "slug": "product-005"
+      "slug": "product-005",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-006",
@@ -265,7 +285,11 @@
       "connectionType": null,
       "description": "Tubo de aço anticorrosivo 3PE de diâmetro extra grande, feito sob medida para artérias energéticas nacionais chave e projetos de gasodutos de longa distância. A combinação de uma forte estabilidade estrutural e um sistema de anticorrosão 3PE de topo garante o transporte seguro e eficiente de energia em diversas condições climáticas e geológicas adversas.",
       "image": "/images/hp-products/3PE防腐钢管/(1620×12米)3PE防腐钢管.jpg",
-      "slug": "product-006"
+      "slug": "product-006",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-007",
@@ -285,7 +309,11 @@
       "connectionType": null,
       "description": "Tubo de aço anticorrosivo 3PE de uso geral, com especificações moderadas, amplamente utilizado na construção de superfície em vários campos de petróleo e gás, linhas de coleta e redes de gás urbano de média e baixa pressão. O processo de produção maduro e a qualidade estável do produto tornam-no um dos tubos anticorrosivos mais populares do mercado.",
       "image": "/images/hp-products/3PE防腐钢管/(159×12米)3PE防腐钢管.jpg",
-      "slug": "product-007"
+      "slug": "product-007",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-008",
@@ -305,7 +333,11 @@
       "connectionType": null,
       "description": "Este é atualmente o tubo de aço anticorrosivo de diâmetro ultra grande com as especificações de topo na indústria, utilizando um revestimento 3PE de grau reforçado. Fornece a mais alta garantia de segurança para o transporte de energia, como gás natural e petróleo bruto, em longas distâncias e com grande fluxo. É um produto chave indispensável na construção de corredores estratégicos de energia nacionais.",
       "image": "/images/hp-products/3PE防腐钢管/(2200×12米)加强级3PE防腐钢管.jpg",
-      "slug": "product-008"
+      "slug": "product-008",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-009",
@@ -325,7 +357,11 @@
       "connectionType": null,
       "description": "Tubo de aço anticorrosivo 3PE de grande diâmetro e grau reforçado, projetado para atender às necessidades de transporte de óleo e gás de longa distância, alta pressão e grande fluxo. A camada anticorrosiva espessada fornece proteção mecânica e capacidade anticorrosiva adicionais, garantindo que o tubo permaneça seguro e confiável ao atravessar terrenos complexos como montanhas e corpos d'água.",
       "image": "/images/hp-products/3PE防腐钢管/(1820×12米)加强级3PE防腐钢管.jpg",
-      "slug": "product-009"
+      "slug": "product-009",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-010",
@@ -345,7 +381,11 @@
       "connectionType": null,
       "description": "DN600 é uma especificação comum em linhas troncais de transporte de óleo e gás. Este produto utiliza um processo de anticorrosão 3PE padronizado, com qualidade estável e desempenho confiável. É adequado para o transporte de longa distância de gás natural, produtos petrolíferos e outros gases industriais, sendo o principal produto na construção de redes de energia eficientes.",
       "image": "/images/hp-products/3PE防腐钢管/(DN600×12米)3PE防腐钢管.jpg",
-      "slug": "product-010"
+      "slug": "product-010",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-011",
@@ -365,7 +405,11 @@
       "connectionType": null,
       "description": "Este produto possui uma estrutura anticorrosiva composta interna e externa. A parede externa utiliza 3PE para fornecer excelente proteção contra o ambiente externo, enquanto a parede interna é revestida com argamassa de cimento. O revestimento de argamassa de cimento não só é econômico, mas também previne eficazmente a poluição secundária da água e inibe a formação de incrustações, sendo especialmente adequado para projetos de transporte de água, esgoto e tratamento de água.",
       "image": "/images/hp-products/3PE防腐钢管/(2020×12米)内水泥砂浆外3PE防腐钢管.jpg",
-      "slug": "product-011"
+      "slug": "product-011",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-012",
@@ -385,7 +429,11 @@
       "connectionType": null,
       "description": "O design de diâmetro ultra grande, combinado com uma camada anticorrosiva 3PE de grau reforçado, oferece uma garantia sólida para projetos estratégicos de energia a nível nacional. A sua excelente capacidade de suportar pressão e o desempenho anticorrosivo de topo garantem um transporte seguro e contínuo de óleo e gás em todas as condições de trabalho extremas.",
       "image": "/images/hp-products/3PE防腐钢管/(2022×12米)加强级3PE防腐钢管.jpg",
-      "slug": "product-012"
+      "slug": "product-012",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-013",
@@ -405,7 +453,11 @@
       "connectionType": null,
       "description": "Tubo de aço anticorrosivo 3PE de pequeno diâmetro e grau reforçado. Embora o diâmetro seja pequeno, o nível de anticorrosão é alto. É adequado para o transporte de meios químicos mais corrosivos, tratamento de salmoura ou ramais de gás urbano que exigem alta confiabilidade, oferecendo uma vida útil extra longa.",
       "image": "/images/hp-products/3PE防腐钢管/(89×6米)加强级3PE防腐钢管.jpg",
-      "slug": "product-013"
+      "slug": "product-013",
+      "macroCategories": [
+        "anti-corrosion",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-014",
@@ -426,7 +478,12 @@
       },
       "description": "Projetado especificamente para engenharia de combate a incêndio moderna, este tubo de aço revestido com plástico utiliza um método de conexão dupla de junta rápida CDU e solda, garantindo tanto a conveniência e eficiência da instalação quanto a vedação e resistência estrutural da conexão. O revestimento interno e externo pode prevenir eficazmente o fogo e a corrosão, cumprindo integralmente os elevados padrões de segurança e durabilidade dos sistemas de combate a incêndio para tubulações.",
       "image": "/images/hp-products/CDU快速接头涂塑钢管/(108×4米)CDU快速接头焊接消防涂塑钢管.jpg",
-      "slug": "product-014"
+      "slug": "product-014",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-015",
@@ -447,7 +504,11 @@
       },
       "description": "As paredes interna e externa deste produto são tratadas com revestimento de resina epóxi de grau sanitário para garantir a qualidade da água. As extremidades do tubo são processadas com roscas padronizadas, permitindo uma conexão rápida sem ferramentas especiais, o que facilita enormemente a instalação e manutenção de sistemas de abastecimento de água em edifícios, sendo a escolha ideal para substituir os tubos galvanizados tradicionais.",
       "image": "/images/hp-products/丝扣连接涂塑钢管/(60×6米)丝扣连接给水涂塑钢管.jpg",
-      "slug": "product-015"
+      "slug": "product-015",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-016",
@@ -468,7 +529,11 @@
       },
       "description": "A camada de revestimento plástico interna e externa é lisa e resistente à corrosão química, podendo prevenir eficazmente a erosão por substâncias ácidas e alcalinas em águas residuais. O conveniente método de conexão roscada é adequado para sistemas de tubulação de drenagem e esgoto em edifícios e fábricas, com instalação rápida, manutenção simples e baixa propensão a entupimentos.",
       "image": "/images/hp-products/丝扣连接涂塑钢管/(60×6米)丝扣连接给排水涂塑钢管.jpg",
-      "slug": "product-016"
+      "slug": "product-016",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-017",
@@ -484,7 +549,12 @@
       "connectionType": null,
       "description": "Tubo base de solda espiral de grande diâmetro, com paredes interna e externa revestidas com pó de resina epóxi de fusão de alto desempenho. A parede interna é lisa, proporcionando alta eficiência de transporte; a parede externa tem excelente desempenho anticorrosivo, podendo ser instalada enterrada ou suspensa. Adequado para diversas áreas, como abastecimento de água e drenagem municipal, água de circulação industrial e tratamento de esgoto.",
       "image": "/images/hp-products/内外环氧树脂涂塑钢管/(DN600×12米)防腐螺旋钢管.jpg",
-      "slug": "product-017"
+      "slug": "product-017",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-018",
@@ -500,7 +570,12 @@
       "connectionType": null,
       "description": "Design de grande diâmetro, com resina epóxi uniformemente revestida nas paredes interna e externa, formando uma camada protetora densa que combina a resistência do tubo de aço com a resistência à corrosão do tubo de plástico. Adequado para transporte de fluidos industriais e engenharia municipal com altos requisitos de anticorrosão e limpeza.",
       "image": "/images/hp-products/内外环氧树脂涂塑钢管/(630×12米)双面涂覆复合钢管.jpg",
-      "slug": "product-018"
+      "slug": "product-018",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-019",
@@ -516,7 +591,11 @@
       "connectionType": null,
       "description": "Este produto usa um tubo de aço como base e, através de um processo de pulverização por fusão a quente, a resina epóxi é uniformemente revestida nas superfícies interna e externa, isolando eficazmente a corrosão do meio transportado e do ambiente externo sobre o tubo de aço. É um novo tipo de tubo composto que integra alta resistência, resistência à corrosão e baixa resistência ao fluxo.",
       "image": "/images/hp-products/内外环氧树脂涂塑钢管/(630×12米)内外环氧树脂涂塑钢管.jpg",
-      "slug": "product-019"
+      "slug": "product-019",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-020",
@@ -537,7 +616,12 @@
       },
       "description": "A extremidade do tubo é tratada com um processo especial de ranhuragem para conexão com juntas de ranhura (clamp), o que torna a instalação extremamente rápida e permite um certo desvio angular. O revestimento interno e externo garante a qualidade da água transportada e a durabilidade do tubo, sendo a solução preferida para sistemas de abastecimento de água em edifícios altos e redes de tubulação de tratamento de água industrial.",
       "image": "/images/hp-products/卡箍连接涂塑钢管/(114×6米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-020"
+      "slug": "product-020",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-021",
@@ -558,7 +642,11 @@
       },
       "description": "Adequado para sistemas de rede de abastecimento de água de instalação rápida. A conexão por ranhura não requer solda ou rosqueamento, tornando a construção segura e amiga do ambiente, e encurtando significativamente o período de construção. O revestimento interno e externo está em conformidade com as normas sanitárias, é resistente à corrosão e não forma incrustações, garantindo a qualidade do abastecimento de água a longo prazo.",
       "image": "/images/hp-products/卡箍连接涂塑钢管/(108×4米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-021"
+      "slug": "product-021",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-023",
@@ -579,7 +667,11 @@
       },
       "description": "Este tubo revestido de 4,5 metros de comprimento padrão com conexão por ranhura é mais fácil de transportar e operar em espaços apertados. O revestimento interno e externo de grau sanitário garante a segurança da água potável, e o método de conexão rápida por ranhura é especialmente adequado para projetos de abastecimento de água em edifícios com prazos apertados.",
       "image": "/images/hp-products/卡箍连接涂塑钢管/(114×4.5米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-023"
+      "slug": "product-023",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-024",
@@ -602,7 +694,11 @@
       },
       "description": "Utilizando uma inovadora tecnologia de compósito bimetálico, a camada interna é geralmente de aço inoxidável, garantindo excelente resistência à corrosão e desempenho sanitário, enquanto a camada externa é de aço carbono, fornecendo alta resistência e suporte. Adequado para transporte de água potável de alta qualidade, indústria alimentícia e farmacêutica, e outros campos com requisitos sanitários extremamente elevados.",
       "image": "/images/hp-products/双金属焊接涂塑钢管/(325×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-024"
+      "slug": "product-024",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-025",
@@ -620,7 +716,11 @@
       },
       "description": "Design único de duas cores, interna e externa. O revestimento azul na parede interna geralmente representa o uso para abastecimento de água, enquanto o revestimento preto na parede externa oferece proteção básica. O tubo base bimetálico combinado com o processo de revestimento plástico interno e externo oferece múltiplas proteções de dentro para fora, com desempenho excelente e durabilidade.",
       "image": "/images/hp-products/双金属焊接涂塑钢管/(159×6米)外黑内蓝双金属焊接涂塑钢管.jpg",
-      "slug": "product-025"
+      "slug": "product-025",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-026",
@@ -643,7 +743,11 @@
       },
       "description": "Tubo compósito bimetálico de pequeno diâmetro, que combina a resistência à corrosão do aço inoxidável com a economicidade do aço carbono. A parede interna é lisa e limpa, adequada para sistemas de água potável direta ou de abastecimento de alta qualidade em residências de luxo, hospitais e escolas, alcançando uma conexão permanente e confiável através de solda.",
       "image": "/images/hp-products/双金属焊接涂塑钢管/(60×6米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-026"
+      "slug": "product-026",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-027",
@@ -658,7 +762,12 @@
       "connectionType": null,
       "description": "Este tubo de aço utiliza um processo composto de galvanização por imersão a quente na parede externa e revestimento plástico na parede interna, combinando excelente desempenho anticorrosivo e resistência mecânica. A camada externa galvanizada resiste eficazmente à corrosão do ambiente externo, enquanto a camada interna de plástico garante a limpeza do meio transportado, não forma incrustações e tem baixa resistência. É o produto de atualização ideal para os tubos galvanizados tradicionais, amplamente aplicável a vários sistemas de abastecimento de água de edifícios e transporte de fluidos industriais.",
       "image": "/images/hp-products/外镀锌内涂塑钢管/(21×6米)外镀锌内涂塑钢管.jpg",
-      "slug": "product-027"
+      "slug": "product-027",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-028",
@@ -673,7 +782,12 @@
       "connectionType": null,
       "description": "Design de pequeno diâmetro DN15, com camada externa galvanizada para proteção contra ferrugem e camada interna de plástico para anticorrosão e higiene. Combina a resistência dos tubos de aço com as vantagens dos tubos de plástico, sendo uma solução econômica e durável para áreas como tubulações de água fria e quente em edifícios, sistemas de combate a incêndio e de ar condicionado.",
       "image": "/images/hp-products/外镀锌内涂塑钢管/(DN15×6米)外镀锌涂塑钢管.jpg",
-      "slug": "product-028"
+      "slug": "product-028",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-029",
@@ -688,7 +802,12 @@
       "connectionType": null,
       "description": "Diâmetro médio, com estrutura galvanizada por fora e revestida com plástico por dentro, oferecendo dupla proteção. Adequado para situações que exigem anticorrosão tanto interna quanto externa, como sistemas de água de refrigeração industrial, ramais de abastecimento de água municipal, etc. Tem uma vida útil mais longa em comparação com produtos de revestimento único.",
       "image": "/images/hp-products/外镀锌内涂塑钢管/(89×6米)外镀锌内涂塑防腐钢管.jpg",
-      "slug": "product-029"
+      "slug": "product-029",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-030",
@@ -703,7 +822,12 @@
       "connectionType": null,
       "description": "Tubo de grande diâmetro, utilizando uma estrutura anticorrosiva composta de epóxi (EP) na parede interna e polietileno (PE) na parede externa. O revestimento de EP na parede interna é liso e resistente à corrosão, enquanto o revestimento de PE na parede externa possui alta resistência mecânica e resistência a impactos, sendo uma escolha de alta relação custo-benefício para transporte de água municipal, drenagem de esgoto e grandes projetos de adução de água.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(1020×6米)内EP外PE防腐钢管.jpg",
-      "slug": "product-030"
+      "slug": "product-030",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-031",
@@ -719,7 +843,12 @@
       "connectionType": null,
       "description": "Tubo de aço de 610 mm de grande diâmetro, com a parede interna utilizando um revestimento de resina epóxi de grau sanitário e a parede externa uma camada anticorrosiva de polietileno. Esta estrutura composta com materiais diferentes interna e externamente permite-lhe satisfazer simultaneamente os requisitos de pureza do meio interno e os rigorosos requisitos anticorrosivos do ambiente enterrado externo.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(610×6米)内环氧外PE涂塑钢管.jpg",
-      "slug": "product-031"
+      "slug": "product-031",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-032",
@@ -737,7 +866,13 @@
       },
       "description": "Este tubo utiliza um processo anticorrosivo avançado de epóxi interno e polietileno externo (EP interno/PE externo) e está equipado com conexão por flange, facilitando a ligação com equipamentos como válvulas e bombas, bem como a instalação e manutenção de seções do tubo. É adequado para sistemas de rede industrial, tratamento de água, etc., que requerem desmontagem e manutenção frequentes.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(219×6米)法兰连接 内EP外PE防腐钢管.jpg",
-      "slug": "product-032"
+      "slug": "product-032",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-033",
@@ -752,7 +887,12 @@
       "connectionType": null,
       "description": "Diâmetro extra grande de 1020 mm, com tecnologia de revestimento composto interno e externo (EP interno/PE externo), fornecendo uma solução de tubulação confiável para grandes projetos hidráulicos e municipais. Este produto combina as vantagens de dois revestimentos, alcançando o equilíbrio ideal entre custo e desempenho.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(1020×6米)内EP外PE涂塑钢管.jpg",
-      "slug": "product-033"
+      "slug": "product-033",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-034",
@@ -768,7 +908,12 @@
       "connectionType": null,
       "description": "Baseado em tubo de aço espiral de alta resistência, a parede interna utiliza pó de epóxi fundido (FBE) e a parede externa utiliza enrolamento ou revestimento de polietileno (PE). Projetado para projetos de transporte de água de longa distância e grande fluxo, como o Projeto de Transferência de Água Sul-Norte e projetos de adução de água inter-regionais, com desempenho estável e confiável.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(DN1200×12米)内环氧粉末外聚乙烯防腐螺旋钢管.jpg",
-      "slug": "product-034"
+      "slug": "product-034",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-035",
@@ -784,7 +929,12 @@
       "connectionType": null,
       "description": "DN800 de grande diâmetro, o revestimento de epóxi interno garante a qualidade da água, enquanto o revestimento de polietileno externo fornece excelente proteção física e química. Este produto é o material ideal para a construção de redes principais de abastecimento de água urbana, sistemas de água de circulação industrial e grandes tubulações de esgoto.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(DN800×6米)内环氧外聚乙烯大口径涂塑钢管.jpg",
-      "slug": "product-035"
+      "slug": "product-035",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-036",
@@ -799,7 +949,12 @@
       "connectionType": null,
       "description": "Revestimento de duas cores, interno e externo. O revestimento de epóxi branco na parede interna é limpo e liso, facilitando a observação, enquanto o revestimento de polietileno preto na parede externa tem forte resistência às intempéries. Este design que cuida tanto do interior quanto do exterior o torna amplamente utilizado em abastecimento de água e campos industriais com requisitos elevados tanto para o ambiente interno quanto externo do tubo.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(325×12米)外黑内白涂塑钢管.jpg",
-      "slug": "product-036"
+      "slug": "product-036",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-037",
@@ -814,7 +969,12 @@
       "connectionType": null,
       "description": "Especificação de diâmetro médio a grande, utilizando uma tecnologia madura de anticorrosão composta de EP interno e PE externo, que atende às duplas necessidades de anticorrosão interna e proteção externa, ao mesmo tempo em que possui alta economicidade. É um dos tubos anticorrosivos compostos mais amplamente aplicados nos campos municipal e industrial.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(529×12米)内EP外PE涂塑钢管.jpg",
-      "slug": "product-037"
+      "slug": "product-037",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-038",
@@ -830,7 +990,12 @@
       "connectionType": null,
       "description": "820 mm de grande diâmetro, o revestimento de epóxi interno tem excelente resistência química, e o revestimento de polietileno externo é resistente a impactos e desgaste. O desempenho geral do produto é superior, podendo prolongar eficazmente a vida útil do sistema de rede de tubos, sendo amplamente utilizado em projetos de abastecimento de água urbana, reutilização de água de média qualidade, tratamento de esgoto, etc.",
       "image": "/images/hp-products/大口径内EP外PE防腐钢管/(820×12米)内环氧外聚乙烯涂塑钢管.jpg",
-      "slug": "product-038"
+      "slug": "product-038",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-039",
@@ -846,7 +1011,12 @@
       "connectionType": null,
       "description": "Este produto foca na proteção anticorrosiva da parede interna do tubo, utilizando pó de resina epóxi de grau alimentício para revestimento por fusão a quente. É especialmente adequado para ambientes de transporte com altos requisitos de qualidade da água e corrosão externa não severa, como linhas de abastecimento de água suspensas ou em galerias de tubos, com um custo-benefício significativo.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(426×12米)内环氧涂塑钢管.jpg",
-      "slug": "product-039"
+      "slug": "product-039",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-040",
@@ -868,7 +1038,12 @@
       "connectionType": null,
       "description": "Configuração anticorrosiva de topo da indústria, com a parede interna utilizando revestimento de plástico epóxi para atender a requisitos especiais de meio ou reduzir a resistência ao fluxo, e a parede externa utilizando o mais alto nível de anticorrosão 3PE. Esta solução de proteção definitiva 'interna e externa' é projetada para o transporte de óleo e gás nos ambientes mais severos, como plataformas marítimas e projetos de travessia.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(2220×6米)内涂塑外3PE防腐钢管.jpg",
-      "slug": "product-040"
+      "slug": "product-040",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-041",
@@ -887,7 +1062,12 @@
       },
       "description": "Tubo revestido com epóxi interno de grande diâmetro, combinado com uma eficiente conexão do tipo ponta e bolsa, o que melhora muito a eficiência da instalação no local. O revestimento de epóxi na parede interna oferece excelente desempenho anticorrosivo e hidráulico, sendo a escolha ideal para a construção rápida de grandes projetos de transporte e drenagem de água.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(820×12米)承插口内环氧粉末涂塑钢管.jpg",
-      "slug": "product-041"
+      "slug": "product-041",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-042",
@@ -903,7 +1083,12 @@
       "connectionType": null,
       "description": "Tubo de grande diâmetro focado em anticorrosão interna, a camada de pó de epóxi uniformemente revestida na parede interna tem adesão extremamente forte e resistência à corrosão. Adequado para sistemas de água de processo industrial, água de resfriamento circulante, etc., pode prevenir eficazmente a corrosão e incrustação interna do tubo, mantendo o sistema funcionando eficientemente.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(630×12米)内环氧粉末涂塑钢管.jpg",
-      "slug": "product-042"
+      "slug": "product-042",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-043",
@@ -919,7 +1104,12 @@
       "connectionType": null,
       "description": "Tubo de aço de diâmetro extra grande, com a parede interna utilizando anticorrosão por pó de epóxi fundido. Usado principalmente em grandes canais de adução de água, tubos de aço de pressão em usinas hidrelétricas e linhas de entrada e saída de estações de bombeamento, a parede interna lisa pode reduzir significativamente a perda de carga, aumentando a eficiência do transporte.",
       "image": "/images/hp-products/大口径内环氧涂塑钢管/(1420×12米)内环氧粉末涂塑钢管.jpg",
-      "slug": "product-043"
+      "slug": "product-043",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-044",
@@ -943,7 +1133,11 @@
       },
       "description": "Tubo composto bimetálico de grande diâmetro, revestido internamente com ligas resistentes à corrosão como aço inoxidável e externamente com aço carbono, garantindo tanto a segurança da qualidade da água transportada e a vida útil extra longa do tubo, quanto a resistência estrutural suficiente. Adequado para linhas principais de abastecimento de água de alta qualidade em cidades e tubulações de processo industrial de grau alimentício.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN350×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-044"
+      "slug": "product-044",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-045",
@@ -959,7 +1153,12 @@
       "connectionType": null,
       "description": "Baseado em tubo de aço espiral, com paredes interna e externa revestidas com resina epóxi. Esta proteção anticorrosiva abrangente permite que ele se adapte a ambientes corrosivos complexos, tanto internos quanto externos, como em parques industriais, estações de tratamento de esgoto, etc., para linhas de processo e de descarga, com alta relação custo-benefício.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(426×12米)内外环氧树脂涂塑螺旋钢管.jpg",
-      "slug": "product-045"
+      "slug": "product-045",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-046",
@@ -979,7 +1178,11 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para abastecimento de água de grande diâmetro de uso geral, com paredes interna e externa utilizando revestimento de grau sanitário, que resolve de forma econômica os problemas de corrosão e incrustação da tubulação, garantindo a segurança e estabilidade do sistema de abastecimento de água. É o produto de primeira escolha convencional para projetos de abastecimento de água municipais e de construção.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(219×12米)给水涂塑复合钢管.jpg",
-      "slug": "product-046"
+      "slug": "product-046",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-047",
@@ -995,7 +1198,11 @@
       "connectionType": null,
       "description": "Tubo composto revestido de plástico interno e externo de diâmetro ultra grande, projetado para projetos gigantes de adução de água, drenagem de inundações e engenharia municipal. O revestimento interno e externo oferece proteção abrangente contra a corrosão, garantindo a durabilidade do tubo e a fluidez do fluxo de água, sendo um material de tubulação chave na construção de grandes infraestruturas.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN2400×12米)大口径内外涂塑螺旋钢管.jpg",
-      "slug": "product-047"
+      "slug": "product-047",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-048",
@@ -1015,7 +1222,11 @@
       "connectionType": null,
       "description": "Tubo composto dedicado ao abastecimento de água de grande diâmetro DN1200, com revestimento plástico de grau sanitário na parede interna para garantir a qualidade da água de fábrica. Adequado para elos cruciais como redes principais de abastecimento de água urbana, captação de água de reservatórios, etc., fornecendo uma garantia de linha de vida segura e confiável para cidades com milhões de habitantes.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN1200×12米)给水涂塑复合钢管.jpg",
-      "slug": "product-048"
+      "slug": "product-048",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-049",
@@ -1031,7 +1242,12 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico interno e externo de grande diâmetro, usando tubo espiral de alta relação custo-benefício como material de base, com o revestimento das paredes interna e externa fornecendo desempenho anticorrosivo confiável. Adequado para água de circulação industrial, esgoto municipal, irrigação agrícola e outros campos, com uma ampla gama de aplicações.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN800×12米)内外涂塑螺旋钢管.jpg",
-      "slug": "product-049"
+      "slug": "product-049",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-050",
@@ -1047,7 +1263,11 @@
       "connectionType": null,
       "description": "Este produto foca na proteção do revestimento de resina epóxi na parede externa, adequado para instalação suspensa ou condições de trabalho com ambiente corrosivo externo mais severo. Pode resistir eficazmente à corrosão atmosférica e ao envelhecimento por UV, protegendo a integridade estrutural do tubo.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN200×12米)外环氧树脂涂塑钢管.jpg",
-      "slug": "product-050"
+      "slug": "product-050",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-051",
@@ -1071,7 +1291,12 @@
       },
       "description": "Este produto combina a tecnologia de compósito bimetálico com revestimento de plástico, oferecendo desempenho anticorrosivo e sanitário de topo. O revestimento interno de aço inoxidável garante a qualidade da água, e o revestimento interno e externo reforça ainda mais a capacidade anticorrosiva. É a escolha ideal para sistemas de abastecimento de água em locais importantes como edifícios de luxo, hospitais e centros de dados.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(219×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-051"
+      "slug": "product-051",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-052",
@@ -1095,7 +1320,11 @@
       },
       "description": "Tubo composto bimetálico de diâmetro médio a grande, que realiza uma conexão permanente através de soldagem, adequado para linhas principais de abastecimento de água com pressão relativamente alta. O material de aço inoxidável da camada interna resolve fundamentalmente o problema da poluição secundária da água, sendo um material de tubulação chave para melhorar a qualidade do abastecimento de água.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(325×12米)双金属焊接给水涂塑钢管.jpg",
-      "slug": "product-052"
+      "slug": "product-052",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-053",
@@ -1110,7 +1339,11 @@
       "connectionType": null,
       "description": "Material de tubo composto revestido de plástico de grande diâmetro baseado em tubo de aço espiral, o revestimento interno e externo previne eficazmente a corrosão, e a solda em espiral aumenta a rigidez anular do corpo do tubo. Adequado para o transporte de água municipal e industrial de grande fluxo, com excelente relação custo-benefício.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN800×6米)大口径涂塑复合螺旋钢管.jpg",
-      "slug": "product-053"
+      "slug": "product-053",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-054",
@@ -1125,7 +1358,12 @@
       "connectionType": null,
       "description": "Tubo espiral anticorrosivo de diâmetro médio a grande, que pode fornecer várias soluções anticorrosivas, como revestimento plástico interno e externo, 3PE, etc., de acordo com as necessidades do cliente. O tubo espiral tem uma vantagem de custo óbvia e forte capacidade de suportar pressão, sendo uma escolha econômica e aplicável para projetos de médio e grande porte de transporte de água, gás, cravação de estacas, etc.",
       "image": "/images/hp-products/大口径涂塑复合钢管/(DN400×12米)防腐螺旋钢管.jpg",
-      "slug": "product-054"
+      "slug": "product-054",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-055",
@@ -1146,7 +1384,11 @@
       "connectionType": null,
       "description": "Projetado especificamente para o ambiente de minas, utiliza um revestimento de resina epóxi de 'dupla resistência' (antiestático, retardante de chamas), que pode prevenir eficazmente acidentes de explosão de gás e poeira no subsolo. O revestimento interno e externo possui simultaneamente excelente resistência ao desgaste e à corrosão, garantindo a segurança de sistemas de abastecimento de água e drenagem, ar comprimido, extração de gás, etc., em minas.",
       "image": "/images/hp-products/彩色双抗涂塑钢管/(108×6米)双抗环氧粉末矿用涂塑复合钢管.jpg",
-      "slug": "product-055"
+      "slug": "product-055",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-056",
@@ -1169,7 +1411,11 @@
       },
       "description": "Tubo de aço revestido com plástico com desempenho de 'dupla resistência', utilizando um método de conexão por ranhura conveniente. Adequado para sistemas de abastecimento e drenagem de água em ambientes especiais como minas de carvão subterrâneas, satisfazendo tanto os regulamentos de segurança para mineração quanto permitindo uma instalação e manutenção rápidas.",
       "image": "/images/hp-products/彩色双抗涂塑钢管/(108×6米)卡箍连接给排水涂塑钢管.jpg",
-      "slug": "product-056"
+      "slug": "product-056",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-057",
@@ -1192,7 +1438,11 @@
       },
       "description": "As paredes interna e externa deste tubo revestido para mineração são revestidas com um material especial de 'dupla resistência' e conectadas por ranhura. A aparência colorida facilita a identificação e o gerenciamento de sistemas de tubulação subterrâneos, sendo o produto ideal para a construção de redes de tubulação de minas modernas e de alto padrão de segurança.",
       "image": "/images/hp-products/彩色双抗涂塑钢管/(108×6米)沟槽连接彩色双抗矿用涂塑钢管.jpg",
-      "slug": "product-057"
+      "slug": "product-057",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-059",
@@ -1210,7 +1460,12 @@
       },
       "description": "Utilizando a tecnologia anticorrosiva de topo TPEP (polietileno de três camadas externo e epóxi fundido interno), o desempenho da camada anticorrosiva é superior ao do 3PE tradicional, sendo especialmente adequado para projetos de transporte de água e gás de longa distância e grande diâmetro. O método de conexão conveniente por ponta e bolsa pode reduzir significativamente o ciclo de construção e os custos de instalação, garantindo ao mesmo tempo a estanqueidade e a confiabilidade da junta, sendo a escolha ideal para grandes projetos de rede de tubulação.",
       "image": "/images/hp-products/承插口TPEP防腐钢管/(820×12米)承插口TPEP防腐钢管.jpg",
-      "slug": "product-059"
+      "slug": "product-059",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-060",
@@ -1228,7 +1483,11 @@
       },
       "description": "Tubo revestido com epóxi interno de grande diâmetro, utilizando conexão do tipo ponta e bolsa, com um design de vedação confiável na junta, tornando a instalação conveniente e rápida. Adequado para sistemas de abastecimento e drenagem de água municipal, irrigação agrícola e outros sistemas de transporte de água por gravidade ou de baixa pressão, com altíssima eficiência de construção.",
       "image": "/images/hp-products/承插口涂塑钢管/(820×12米)承插口内环氧粉末涂塑钢管.jpg",
-      "slug": "product-060"
+      "slug": "product-060",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-061",
@@ -1249,7 +1508,11 @@
       },
       "description": "Projetado para projetos de abastecimento de água de grande diâmetro, este tubo de aço revestido com plástico do tipo ponta e bolsa possui um revestimento interno de grau sanitário para garantir a segurança da qualidade da água. A conexão ponta e bolsa não requer equipamentos complexos, a construção é simples e pode encurtar eficazmente o período de construção, sendo muito adequado para a instalação rápida de grandes redes de abastecimento de água municipais.",
       "image": "/images/hp-products/承插口涂塑钢管/(820×12米)承插口给水涂塑钢管.jpg",
-      "slug": "product-061"
+      "slug": "product-061",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-062",
@@ -1270,7 +1533,12 @@
       },
       "description": "O tubo de aço revestido para mineração é equipado com flanges soltos. Durante a instalação, o flange pode girar livremente para alinhar os furos, o que facilita muito a conexão de tubos em ambientes subterrâneos complexos, economizando tempo de alinhamento. Adequado para partes da rede de tubulação de minas que precisam ser frequentemente desmontadas e montadas ou conectadas a equipamentos.",
       "image": "/images/hp-products/松套法兰连接涂塑钢管/(140×6米)松套法兰矿用涂塑钢管.jpg",
-      "slug": "product-062"
+      "slug": "product-062",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-063",
@@ -1291,7 +1559,11 @@
       },
       "description": "Tubo de aço revestido de plástico dedicado para combate a incêndio, utilizando conexão por ranhura, com instalação rápida e sem chama aberta, cumprindo os requisitos de segurança na construção de sistemas de combate a incêndio. O revestimento de epóxi vermelho tem forte aderência, é resistente ao fogo e à corrosão, garantindo que o sistema de combate a incêndio reaja rapidamente em momentos críticos e tenha um desempenho confiável.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-063"
+      "slug": "product-063",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-064",
@@ -1312,7 +1584,11 @@
       },
       "description": "Tubulação dedicada para sistema de combate a incêndio com design padronizado, revestimento vermelho interno e externo, e conexão do tipo ranhura. O produto é fabricado em estrita conformidade com as normas de combate a incêndio, possui excelente resistência à pressão e à corrosão, sendo o material de primeira escolha para sistemas de sprinklers e hidrantes em vários edifícios.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-064"
+      "slug": "product-064",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-065",
@@ -1333,7 +1609,11 @@
       },
       "description": "Tratamento de revestimento plástico interno e externo, sanitário e não tóxico, projetado para sistemas de abastecimento de água. O método de conexão por ranhura é conveniente para a construção e a junta é confiável, adequada para sistemas de abastecimento de água em edifícios, água potável direta e transporte de água purificada, sendo uma solução de tubulação eficiente e amiga do ambiente.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(89×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-065"
+      "slug": "product-065",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-066",
@@ -1354,7 +1634,11 @@
       },
       "description": "Tubo revestido de plástico para abastecimento de água de diâmetro médio, utilizando conexão por ranhura, que permite construir rapidamente uma rede de abastecimento de água estável e confiável. O revestimento interno e externo previne eficazmente a corrosão e a incrustação, garantindo uma capacidade de transporte de água estável e a qualidade da água a longo prazo.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(165×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-066"
+      "slug": "product-066",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-067",
@@ -1372,7 +1656,12 @@
       },
       "description": "Este produto tem um revestimento de pó de epóxi fundido na parede interna do tubo de aço, com excelente desempenho anticorrosivo, enquanto a parede externa mantém a aparência original do tubo de aço. Combinado com a conexão por ranhura, é adequado para projetos internos ou em galerias de tubos onde há requisitos de anticorrosão interna, mas o ambiente corrosivo externo não é forte, com alta relação custo-benefício.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)沟槽连接内环氧粉末涂塑钢管.jpg",
-      "slug": "product-067"
+      "slug": "product-067",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-068",
@@ -1390,7 +1679,12 @@
       },
       "description": "Tubulação com conexão por ranhura focada na anticorrosão da parede interna. O revestimento de epóxi na parede interna pode resistir eficazmente à erosão de vários meios químicos, adequado para tubulações de processo industrial, tratamento de água química e outros campos, a conexão por ranhura facilita a instalação rápida e as alterações do sistema.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)沟槽连接内环氧涂塑钢管.jpg",
-      "slug": "product-068"
+      "slug": "product-068",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-069",
@@ -1406,7 +1700,12 @@
       },
       "description": "Tubo de aço revestido de plástico com conexão por ranhura de uso geral, com revestimento anticorrosivo nas paredes interna e externa e desempenho equilibrado. Pode ser amplamente utilizado em vários sistemas de tubulação, como combate a incêndio, abastecimento de água e drenagem, água de circulação de ar condicionado, sendo o método de instalação rápido a sua maior vantagem.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(108×4米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-069"
+      "slug": "product-069",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-070",
@@ -1429,7 +1728,11 @@
       },
       "description": "Material de tubo de grande diâmetro para abastecimento de água, com paredes interna e externa revestidas com resina epóxi de grau alimentício e conectado por ranhura. Adequado para linhas principais de abastecimento de água em grandes edifícios comerciais, estádios, centros de exposições, etc., garantindo tanto a segurança do abastecimento de água quanto a construção eficiente.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(426×6米)内外环氧给水涂塑钢管.jpg",
-      "slug": "product-070"
+      "slug": "product-070",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-071",
@@ -1450,7 +1753,12 @@
       },
       "description": "Tubo revestido de plástico para abastecimento de água de grande diâmetro, utilizando tecnologia de conexão por ranhura. Em comparação com a soldagem tradicional ou conexão por flange, a velocidade de construção é mais rápida e o custo geral é menor. É a escolha ideal para projetos modernos de abastecimento de água em grande escala, especialmente aqueles com prazos apertados.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(325×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-071"
+      "slug": "product-071",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-074",
@@ -1471,7 +1779,11 @@
       },
       "description": "Tubo de abastecimento de água de diâmetro DN60, utilizando conexão por ranhura, de fácil instalação. A camada de revestimento plástico de grau sanitário nas paredes interna e externa garante a limpeza da água, não enferruja e não forma incrustações, sendo a escolha econômica para sistemas de abastecimento de água de edifícios saudáveis e modernos.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN60×6米)给水涂塑钢管.jpg",
-      "slug": "product-074"
+      "slug": "product-074",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-076",
@@ -1492,7 +1804,11 @@
       },
       "description": "Tubo de aço revestido de plástico para abastecimento de água de pequeno diâmetro, utilizando uma conveniente conexão por ranhura. É a solução preferida para resolver problemas de instalação de ramais em edifícios e pequenos sistemas de abastecimento de água, combinando durabilidade e economicidade.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(76×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-076"
+      "slug": "product-076",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-078",
@@ -1513,7 +1829,11 @@
       },
       "description": "Aparência cinza única, que facilita a gestão por diferenciação de sistemas de tubulação (por exemplo, distinguir entre água de uso doméstico e água de reúso). Utiliza conexão por ranhura, revestimento plástico interno e externo, combinando características de beleza, praticidade e instalação eficiente.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)灰色沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-078"
+      "slug": "product-078",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-079",
@@ -1534,7 +1854,11 @@
       },
       "description": "A aparência vermelha viva é a identificação dedicada para tubulações de combate a incêndio. Este tubo de aço composto é revestido com plástico interna e externamente, resistente ao fogo e à corrosão, e o método de conexão por ranhura é seguro e rápido, atendendo plenamente aos rigorosos requisitos de vários projetos de combate a incêndio.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(114×6米)红色沟槽连接消防涂塑复合钢.jpg",
-      "slug": "product-079"
+      "slug": "product-079",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-080",
@@ -1555,7 +1879,11 @@
       },
       "description": "Tubo de aço revestido para mineração, com certificação de segurança de produto para mineração, o revestimento tem propriedades antiestáticas e retardantes de chamas. O método de conexão por ranhura é adequado para ambientes subterrâneos, com instalação segura e desmontagem conveniente.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(108×4米)沟槽连接矿用涂塑钢管.jpg",
-      "slug": "product-080"
+      "slug": "product-080",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-081",
@@ -1576,7 +1904,11 @@
       },
       "description": "Design de 3 metros de comprimento curto, mais adequado para layouts de tubulação de combate a incêndio em espaços limitados ou que exigem curvas frequentes. Revestimento vermelho, conexão por ranhura, atende plenamente aos requisitos de segurança, confiabilidade e instalação conveniente do sistema de combate a incêndio.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN100×3米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-081"
+      "slug": "product-081",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-082",
@@ -1597,7 +1929,11 @@
       },
       "description": "Tubo revestido de plástico para abastecimento de água do tipo ranhura de especificações gerais, com qualidade confiável e ampla aplicação. O revestimento interno e externo garante a qualidade da água, e o método de conexão rápida melhora a eficiência da construção, sendo uma escolha de alta relação custo-benefício para vários projetos de abastecimento de água.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-082"
+      "slug": "product-082",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-083",
@@ -1615,7 +1951,11 @@
       },
       "description": "Produto de ponta que integra identificação colorida, desempenho de dupla resistência (antiestático, retardante de chamas) e conexão por ranhura. Especialmente adequado para minas ou fábricas de produtos químicos com requisitos especiais de segurança e sistemas de tubulação complexos, facilitando o gerenciamento e com alta segurança.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(108×6米)彩色双抗沟槽连接涂塑钢管.jpg",
-      "slug": "product-083"
+      "slug": "product-083",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-085",
@@ -1636,7 +1976,11 @@
       },
       "description": "Tubo dedicado para combate a incêndio de grande diâmetro, adequado para locais chave como casas de bombas de incêndio, linhas principais de combate a incêndio externas, etc. O revestimento vermelho tem boa resistência às intempéries, e a conexão por ranhura pode suportar alta pressão, garantindo a integridade e eficácia de todo o sistema de combate a incêndio.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN200×6米)消防沟槽连接涂塑钢管.jpg",
-      "slug": "product-085"
+      "slug": "product-085",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-086",
@@ -1657,7 +2001,11 @@
       },
       "description": "Material de tubulação central do sistema de combate a incêndio, diâmetro DN150, revestimento de epóxi vermelho interno e externo. Utiliza conexão por ranhura, permitindo a conclusão rápida da instalação da rede de tubos, atendendo à dupla demanda por eficiência e segurança da engenharia de combate a incêndio moderna.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN150×6米)红色沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-086"
+      "slug": "product-086",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-087",
@@ -1678,7 +2026,11 @@
       },
       "description": "DN100 é uma das especificações mais amplamente utilizadas em sistemas de combate a incêndio. Este tubo ranhurado vermelho é produzido com padrões rigorosos, com qualidade de lote estável, sendo a configuração padrão para redes de tubulação de combate a incêndio em vários edifícios.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN100×6米)红色沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-087"
+      "slug": "product-087",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-089",
@@ -1699,7 +2051,11 @@
       },
       "description": "Tubo de combate a incêndio do tipo ranhura de grande diâmetro, adequado para colunas principais ou ramais horizontais de combate a incêndio em grandes complexos e edifícios altos. A instalação é conveniente, a capacidade de suportar pressão é forte e pode garantir o transporte de grande fluxo de água, sendo uma garantia confiável para grandes projetos modernos de combate a incêndio.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(219×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-089"
+      "slug": "product-089",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-090",
@@ -1720,7 +2076,11 @@
       },
       "description": "Adequado para sistemas de abastecimento e drenagem de água, tubo de conexão por ranhura de uso geral. O revestimento interno e externo é liso e resistente à corrosão, podendo tanto garantir a qualidade da água de abastecimento quanto drenar esgoto suavemente, com a conexão por ranhura simplificando muito o trabalho de instalação e manutenção.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN150×6米)沟槽连接给排水涂塑钢管.jpg",
-      "slug": "product-090"
+      "slug": "product-090",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-091",
@@ -1741,7 +2101,11 @@
       },
       "description": "Tubo revestido para mineração com certificação de segurança, o revestimento possui propriedades retardantes de chamas e antiestáticas. O método de conexão por ranhura é seguro e amigo do ambiente, sem trabalho com chama aberta, especialmente adequado para a instalação de tubulações em minas em ambientes de alto risco, como gás e poeira.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接矿用涂塑钢管.jpg",
-      "slug": "product-091"
+      "slug": "product-091",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-092",
@@ -1762,7 +2126,11 @@
       },
       "description": "Material de tubo de abastecimento de água de grande diâmetro, revestimento plástico de grau sanitário interno e externo, utilizando um método de conexão por ranhura eficiente. Adequado para projetos como abastecimento de água secundário urbano, linhas principais de abastecimento de água em parques industriais, etc., pode encurtar eficazmente o ciclo de construção.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(219×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-092"
+      "slug": "product-092",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-093",
@@ -1783,7 +2151,11 @@
       },
       "description": "Tubo revestido de plástico para abastecimento de água universal DN100, utilizando conexão por ranhura. É um dos materiais de tubulação mais comumente utilizados em projetos comerciais e residenciais, o revestimento interno e externo previne a ferrugem, garante a qualidade da água, é fácil de instalar, econômico e prático.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
-      "slug": "product-093"
+      "slug": "product-093",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-094",
@@ -1801,7 +2173,12 @@
       },
       "description": "Material de tubulação de alto desempenho que integra três tipos de proteção: galvanização a quente na parede externa para proteção contra ferrugem, revestimento plástico na parede interna para anticorrosão e higiene, e conexão por ranhura eficiente. Adequado para situações que exigem proteção interna e externa extremamente alta da tubulação e eficiência de instalação, como sistemas de abastecimento de água em hotéis e hospitais de luxo.",
       "image": "/images/hp-products/沟槽连涂塑钢管/(89×6米)外镀锌内涂塑防腐钢管.jpg",
-      "slug": "product-094"
+      "slug": "product-094",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-095",
@@ -1822,7 +2199,12 @@
       },
       "description": "Tubo de aço revestido com plástico que atende aos padrões de segurança para mineração, com flanges soldados em ambas as extremidades. A conexão por flange tem boa rigidez e vedação confiável, adequada para sistemas de tubulação subterrâneos de minas com pressão relativamente alta ou grande vibração, como drenagem principal, linhas de ar comprimido, etc.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-095"
+      "slug": "product-095",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-096",
@@ -1843,7 +2225,12 @@
       },
       "description": "Este tubo revestido para mineração é equipado com flanges, e o comprimento de 4,5 metros facilita o transporte e a instalação em túneis de mina estreitos. Adequado para redes de tubulação de minas que precisam ser instaladas em seções ou conectadas a válvulas e equipamentos.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×4.5米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-096"
+      "slug": "product-096",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-097",
@@ -1864,7 +2251,12 @@
       },
       "description": "Tubo revestido para mineração com conexão por flange de especificações padrão, o revestimento das paredes interna e externa atende aos requisitos antiestáticos e retardantes de chamas, e a conexão por flange garante a resistência e a vedação da conexão, sendo um componente básico para a construção de redes de tubulação de minas seguras e confiáveis.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(114×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-097"
+      "slug": "product-097",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-098",
@@ -1885,7 +2277,12 @@
       },
       "description": "Design de 3 metros de comprimento curto, especialmente adequado para áreas subterrâneas de minas com espaço limitado e tubulações complexas. A conexão por flange facilita o alinhamento preciso e a fixação firme, sendo o produto ideal para resolver os desafios de instalação de tubulações em locais especiais no subsolo.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×3米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-098"
+      "slug": "product-098",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-099",
@@ -1906,7 +2303,12 @@
       },
       "description": "Esta é uma amostra padrão ou um tubo para mineração com conexão por flange personalizado para um projeto específico, que demonstra de forma abrangente a qualidade do revestimento do produto, o processo de soldagem do flange e o desempenho geral, sendo uma referência ideal para avaliação do cliente e licitação de projetos.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×4米)法兰连接样矿用涂塑钢管.jpg",
-      "slug": "product-099"
+      "slug": "product-099",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-100",
@@ -1927,7 +2329,12 @@
       },
       "description": "Tubo de aço revestido de plástico de grande diâmetro para mineração, utilizando conexão por flange. Adequado para sistemas de tubulação de grande fluxo e alta exigência, como drenagem principal, ventilação principal e extração de gás em minas, com conexão confiável e forte capacidade de suportar pressão.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-100"
+      "slug": "product-100",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-102",
@@ -1948,7 +2355,12 @@
       },
       "description": "Tubo para mineração com conexão por flange de grande diâmetro, que fornece uma garantia sólida para as linhas vitais de grandes minas (como ventilação, drenagem, extração). O revestimento de dupla resistência interno e externo, combinado com uma conexão por flange robusta, garante a operação segura do sistema a longo prazo em ambientes adversos.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(406×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-102"
+      "slug": "product-102",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-103",
@@ -1969,7 +2381,12 @@
       },
       "description": "A aparência cinza pode ser usada para distinguir tubulações de mineração para fins específicos, como tubulações de ar comprimido ou de injeção de calda. A conexão por flange garante a segurança e a vedação em condições de alta pressão, e o revestimento interno e externo resiste eficazmente ao ambiente úmido e corrosivo do subsolo.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(165×6米)灰色法兰连接矿用涂塑复合钢管.jpg",
-      "slug": "product-103"
+      "slug": "product-103",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-104",
@@ -1992,7 +2409,13 @@
       },
       "description": "O corpo do tubo tem flanges fixos soldados diretamente em ambas as extremidades (flange de disco duplo), a conexão é rígida e a instalação é conveniente. O revestimento plástico interno e externo oferece proteção anticorrosiva abrangente, adequado para interfaces de equipamentos importantes no subsolo de minas ou seções de tubos que requerem conexões de alta resistência.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×4米)双盘法兰连接内外涂塑复合钢管.jpg",
-      "slug": "product-104"
+      "slug": "product-104",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-105",
@@ -2013,7 +2436,13 @@
       },
       "description": "Uma pequena seção de tubo de aço não revestido é reservada na extremidade do tubo (abertura externa reservada), para facilitar a soldagem de flanges no local, proporcionando maior flexibilidade de construção. Após a conclusão da soldagem, a junta soldada pode ser reparada para garantir a integridade anticorrosiva de toda a linha de tubulação.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN300×6米)外留口矿用涂塑复合钢管.jpg",
-      "slug": "product-105"
+      "slug": "product-105",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-106",
@@ -2034,7 +2463,12 @@
       },
       "description": "Este é um produto personalizado especial, com uma extremidade para conexão por flange e a outra para conexão por ranhura. Usado para conectar diferentes tipos de tubos ou equipamentos, oferece grande compatibilidade de sistema e conveniência de instalação, sendo a escolha ideal para a reforma e atualização de redes de tubulação de minas.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(219×6米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-106"
+      "slug": "product-106",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-107",
@@ -2055,7 +2489,12 @@
       },
       "description": "O corpo do tubo amarelo é geralmente usado no subsolo de minas como identificação para tubulações de extração de gás ou de ar comprimido. O método de conexão por flange garante a estanqueidade e a segurança da conexão nesses sistemas de alto risco, em conformidade com os mais rigorosos regulamentos de segurança de minas.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN100×6米)黄色法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-107"
+      "slug": "product-107",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-108",
@@ -2078,7 +2517,12 @@
       },
       "description": "Grande diâmetro, comprimento curto, desempenho de dupla resistência, conexão por flange - um material de tubulação para mineração de alta especificação que combina várias vantagens. Projetado para locais chave de grandes minas, como interfaces de estações de bombeamento, interfaces de ventiladores, etc., com alto nível de segurança.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×4米)法兰连接双抗涂塑钢管.jpg",
-      "slug": "product-108"
+      "slug": "product-108",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-109",
@@ -2099,7 +2543,12 @@
       },
       "description": "Equipado com flanges soltos, a instalação não requer alinhamento rigoroso dos furos dos parafusos, o que melhora muito a eficiência da instalação no subsolo, especialmente adequado para condições de trabalho complexas com espaço apertado ou vários tubos paralelos.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(140×6米)松套法兰矿用涂塑钢管.jpg",
-      "slug": "product-109"
+      "slug": "product-109",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-110",
@@ -2120,7 +2569,12 @@
       },
       "description": "Tubo para mineração com conexão por flange de diâmetro médio a grande, adequado para redes principais subterrâneas. O revestimento de dupla resistência interno e externo garante sua durabilidade e segurança em ambientes adversos, enquanto a conexão por flange garante a operação estável da tubulação a longo prazo.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(273×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-110"
+      "slug": "product-110",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-111",
@@ -2141,7 +2595,12 @@
       },
       "description": "Tubo para mineração com conexão por flange de pequeno diâmetro, frequentemente usado para conectar sensores, instrumentos ou pequenos equipamentos. Embora o diâmetro seja pequeno, a conexão por flange oferece uma fixação confiável de alta resistência, e o revestimento interno e externo atende aos padrões de segurança para mineração.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN50×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-111"
+      "slug": "product-111",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-112",
@@ -2162,7 +2621,12 @@
       },
       "description": "Este tubo de aço composto revestido de plástico para mineração utiliza conexão por flange, sendo uma das especificações mais amplamente utilizadas em sistemas subterrâneos de abastecimento de água e drenagem, ar comprimido, injeção de argamassa, etc. O produto é maduro, confiável e bem reconhecido no mercado.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×6米)法兰连接矿用涂塑复合钢管.jpg",
-      "slug": "product-112"
+      "slug": "product-112",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-113",
@@ -2183,7 +2647,12 @@
       },
       "description": "Comprimento personalizado de 4 metros, que facilita o transporte vertical e a construção em túneis de altura limitada. O método de conexão por flange, combinado com o revestimento de dupla resistência interno e externo, fornece um suporte de tubulação confiável para a produção segura em minas.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×4米)法兰连接矿用涂塑复合钢管.jpg",
-      "slug": "product-113"
+      "slug": "product-113",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-115",
@@ -2206,7 +2675,12 @@
       },
       "description": "Tubo de mineração de dupla resistência e grande diâmetro, utilizando conexão por flange, projetado para sistemas de ventilação principal, drenagem principal e extração de gás de alta concentração em minas de grande e extra grande porte. Integra alto nível de segurança, grande capacidade de transporte e conexão confiável.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN500×6米)法兰连接双抗矿用涂塑钢管.jpg",
-      "slug": "product-115"
+      "slug": "product-115",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-116",
@@ -2227,7 +2701,12 @@
       },
       "description": "O flange é conectado ao corpo do tubo por solda de topo de alta pressão, que pode suportar uma pressão maior do que os flanges soldados planos comuns. Adequado para sistemas de injeção de água de alta pressão, drenagem e ar comprimido em partes profundas de minas, com resistência de conexão extremamente alta.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)法兰连接高压对焊矿用涂塑钢管.jpg",
-      "slug": "product-116"
+      "slug": "product-116",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-117",
@@ -2248,7 +2727,12 @@
       },
       "description": "O flange de pescoço para solda oferece melhor distribuição de tensão, com maior resistência de conexão e resistência à fadiga. Este produto de ponta é adequado para tubulações chave no subsolo de minas com vibração severa ou flutuações de pressão, com um fator de segurança extremamente alto.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)矿用带劲对焊法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-117"
+      "slug": "product-117",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-119",
@@ -2269,7 +2753,12 @@
       },
       "description": "Grande diâmetro, comprimento não padrão de 5 metros, aparência cinza, conexão por flange. Pode ser personalizado de acordo com as condições de trabalho específicas do cliente, usado para o transporte de meios especiais ou sistemas de tubulação em áreas específicas, com alta flexibilidade.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(426×5米)灰色法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-119"
+      "slug": "product-119",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-121",
@@ -2290,7 +2779,12 @@
       },
       "description": "O corpo do tubo azul é geralmente usado para identificar tubulações de abastecimento de água ou ar comprimido no subsolo, facilitando a manutenção e o gerenciamento. O método de conexão por flange é confiável, e o revestimento interno e externo atende aos requisitos de segurança para mineração, sendo uma ferramenta eficaz para alcançar o gerenciamento padronizado de sistemas de tubulação de minas.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(159×4米)蓝色法兰连接涂塑钢管.jpg",
-      "slug": "product-121"
+      "slug": "product-121",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-122",
@@ -2311,7 +2805,12 @@
       },
       "description": "DN150 é uma especificação de tubo principal comumente usada em redes de tubulação de minas. Este produto utiliza uma conexão por flange confiável e revestimento interno e externo em conformidade com os regulamentos de segurança, fornecendo garantia de segurança para o transporte de vários fluidos no subsolo.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN150×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-122"
+      "slug": "product-122",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-124",
@@ -2332,7 +2831,12 @@
       },
       "description": "Projetado para sistemas de mineração, o tubo com conexão por flange DN250, com revestimento interno e externo que atende aos requisitos de prevenção de incêndio e antiestático no subsolo, alta resistência de conexão e bom desempenho de vedação, é um elo chave para garantir a produção segura e eficiente da mina.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(DN250×6米)矿用法兰连接涂塑钢管.jpg",
-      "slug": "product-124"
+      "slug": "product-124",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-125",
@@ -2353,7 +2857,12 @@
       },
       "description": "Usando tubo espiral econômico como tubo base, com tratamento de revestimento de dupla resistência para mineração interno e externo, e utilizando conexão por flange. Este produto, garantindo o desempenho de segurança, tem uma alta relação custo-benefício, adequado para projetos de mineração com orçamento limitado, mas com requisitos de segurança.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(325×6米)涂塑螺旋矿用涂塑钢管.jpg",
-      "slug": "product-125"
+      "slug": "product-125",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-126",
@@ -2374,7 +2883,12 @@
       },
       "description": "Esta é uma especificação muito versátil em sistemas de mineração, com desempenho estável, seguro e confiável. A conexão por flange é adequada para várias ocasiões subterrâneas que exigem conexões de alta resistência, sendo um material de tubulação常備 para a construção de minas.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(219×6米)法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-126"
+      "slug": "product-126",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-127",
@@ -2395,7 +2909,12 @@
       },
       "description": "Este produto já tem flanges pré-soldados em ambas as extremidades, o usuário no local só precisa fazer a conexão dos flanges, sem a necessidade de soldar o corpo do tubo no local, o que garante a resistência da conexão e simplifica as etapas de instalação no local, aumentando a segurança.",
       "image": "/images/hp-products/法兰连接矿用涂塑钢管/(108×4米)两端焊接法兰连接矿用涂塑钢管.jpg",
-      "slug": "product-127"
+      "slug": "product-127",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-128",
@@ -2416,7 +2935,11 @@
       },
       "description": "Material de tubulação dedicado para sistemas de combate a incêndio, com as paredes interna e externa revestidas com resina epóxi vermelha, com excelente resistência à corrosão e à temperatura. Utiliza o método de conexão por ranhura, com instalação rápida e sem trabalho com chama aberta, sendo a configuração padrão para a engenharia moderna de combate a incêndio em edifícios.",
       "image": "/images/hp-products/消防涂塑钢管/(114×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-128"
+      "slug": "product-128",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-129",
@@ -2437,7 +2960,11 @@
       },
       "description": "Tubo principal de combate a incêndio de grande diâmetro DN150, com aparência vermelha viva e conexão rápida por ranhura. Adequado para redes principais de combate a incêndio em shoppings, fábricas e edifícios altos, garantindo um abastecimento de água rápido e suficiente em caso de incêndio.",
       "image": "/images/hp-products/消防涂塑钢管/(DN150×6米)红色沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-129"
+      "slug": "product-129",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-130",
@@ -2455,7 +2982,12 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para combate a incêndio de pequeno diâmetro, adequado para os ramais finais de sistemas de sprinklers. Revestimento vermelho interno e externo, bom desempenho anticorrosivo, parede do tubo lisa, baixa resistência ao fluxo de água, pode ser conectado por rosca ou ranhura.",
       "image": "/images/hp-products/消防涂塑钢管/(42×6米)红色消防涂塑钢管.jpg",
-      "slug": "product-130"
+      "slug": "product-130",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-131",
@@ -2473,7 +3005,12 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para combate a incêndio de uso geral, com as paredes interna e externa revestidas com resina epóxi especial à prova de fogo e anticorrosiva. Adequado para tubos horizontais e verticais de sistemas de hidrantes e sprinklers, sendo o material de tubulação básico para garantir a segurança contra incêndios em edifícios.",
       "image": "/images/hp-products/消防涂塑钢管/(60×6米)红色消防涂塑钢管.jpg",
-      "slug": "product-131"
+      "slug": "product-131",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-132",
@@ -2491,7 +3028,11 @@
       "connectionType": null,
       "description": "DN100 é a especificação de tubo principal mais amplamente utilizada em sistemas de combate a incêndio. Este tubo revestido de plástico vermelho é produzido em estrita conformidade com os padrões nacionais de combate a incêndio, com alta resistência à pressão, resistência à corrosão e longa vida útil, garantindo a confiabilidade do sistema de combate a incêndio a longo prazo.",
       "image": "/images/hp-products/消防涂塑钢管/(DN100×6米)红色消防涂塑钢管.jpg",
-      "slug": "product-132"
+      "slug": "product-132",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-134",
@@ -2512,7 +3053,11 @@
       },
       "description": "Design de 3 metros de comprimento curto, revestimento vermelho, conexão por ranhura. Personalizado para áreas de engenharia de combate a incêndio com tubulações complexas e espaço apertado, como andares de equipamentos, tetos falsos, etc., facilitando o layout e a instalação flexíveis.",
       "image": "/images/hp-products/消防涂塑钢管/(DN100×3米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-134"
+      "slug": "product-134",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-135",
@@ -2533,7 +3078,11 @@
       },
       "description": "Tubo dedicado para combate a incêndio de diâmetro maior, conexão por ranhura, revestimento de plástico vermelho interno e externo. Adequado para linhas principais de combate a incêndio em grandes edifícios ou instalações industriais, com forte capacidade de suportar pressão e grande fluxo, atendendo às rigorosas demandas de água para combate a incêndio.",
       "image": "/images/hp-products/消防涂塑钢管/(DN165×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-135"
+      "slug": "product-135",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-136",
@@ -2551,7 +3100,11 @@
       "connectionType": null,
       "description": "Tubo de combate a incêndio de pequeno diâmetro DN32, usado principalmente para conectar cabeças de sprinkler. O revestimento plástico nas paredes interna e externa pode prevenir o entupimento das cabeças de sprinkler por ferrugem e garantir um fluxo de água suave, sendo um componente indispensável dos sistemas automáticos de extinção de incêndio por sprinklers.",
       "image": "/images/hp-products/消防涂塑钢管/(DN32×6米)小口径管道用消防涂塑钢管.jpg",
-      "slug": "product-136"
+      "slug": "product-136",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-137",
@@ -2572,7 +3125,11 @@
       },
       "description": "O revestimento interno e externo deste tubo revestido de 159 mm com conexão por ranhura atende aos requisitos de combate a incêndio. Como tubo principal de combate a incêndio, suas características de instalação conveniente e conexão confiável podem encurtar eficazmente o período de construção e reduzir o custo geral.",
       "image": "/images/hp-products/消防涂塑钢管/(159×6米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-137"
+      "slug": "product-137",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-138",
@@ -2590,7 +3147,11 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para combate a incêndio de pequeno diâmetro, que pode ser usado para ramais de hidrantes ou tubos principais em pequenas áreas de sprinklers. A camada de revestimento plástico interna e externa pode resistir eficazmente à corrosão, garantindo a limpeza interna da tubulação e evitando que impurezas afetem o funcionamento normal dos equipamentos de combate a incêndio.",
       "image": "/images/hp-products/消防涂塑钢管/(76×6米)小口径涂塑钢管.jpg",
-      "slug": "product-138"
+      "slug": "product-138",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-139",
@@ -2608,7 +3169,13 @@
       "connectionType": null,
       "description": "Tubo de aço revestido de plástico para combate a incêndio de grande diâmetro, adequado para tubos de saída de bombas de incêndio, tubos principais de combate a incêndio enterrados no exterior e tubos de entrada e saída de reservatórios de incêndio. Forte capacidade de suportar pressão, anticorrosivo interno e externo, pode ser conectado por solda ou flange, garantindo a segurança das linhas vitais de combate a incêndio.",
       "image": "/images/hp-products/消防涂塑钢管/(406×6米)消防涂塑钢管.jpg",
-      "slug": "product-139"
+      "slug": "product-139",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-140",
@@ -2629,7 +3196,11 @@
       },
       "description": "Tubo de combate a incêndio do tipo ranhura de grande diâmetro, revestido de plástico interna e externamente, com identificação vermelha. Amplamente utilizado em sistemas de combate a incêndio de grandes edifícios públicos, armazéns logísticos e fábricas industriais, permitindo a construção rápida de uma poderosa rede de tubulação de combate a incêndio.",
       "image": "/images/hp-products/消防涂塑钢管/(219×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-140"
+      "slug": "product-140",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-141",
@@ -2650,7 +3221,12 @@
       },
       "description": "Projetado para sistemas de combate a incêndio, combina a conveniência de instalação da junta rápida CDU com a firmeza permanente da soldagem, sendo uma solução de conexão de alta confiabilidade. A camada de revestimento plástico interna e externa atende aos padrões de combate a incêndio, sendo resistente ao fogo e à corrosão.",
       "image": "/images/hp-products/消防涂塑钢管/(108×4米)CDU快速接头焊接消防涂塑钢管.jpg",
-      "slug": "product-141"
+      "slug": "product-141",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-142",
@@ -2671,7 +3247,11 @@
       },
       "description": "Como o principal material de tubulação do sistema de combate a incêndio, este tubo ranhurado de 159 mm é revestido interna e externamente com resina epóxi vermelha, com desempenho estável e instalação eficiente. É a escolha ideal para vários projetos de combate a incêndio novos e de reforma.",
       "image": "/images/hp-products/消防涂塑钢管/(159×6米)沟槽连接消防涂塑钢管.jpg",
-      "slug": "product-142"
+      "slug": "product-142",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-143",
@@ -2689,7 +3269,12 @@
       "connectionType": null,
       "description": "Projetado especificamente para o transporte de gás, a extremidade do tubo tem uma parte não revestida reservada (abertura externa reservada), para facilitar a conexão confiável por solda com válvulas e acessórios no local. O revestimento interno e externo pode resistir eficazmente aos sulfetos no gás e à corrosão do solo, com alta segurança.",
       "image": "/images/hp-products/燃气涂塑钢管/(57×6米)外留口燃气涂塑钢管.jpg",
-      "slug": "product-143"
+      "slug": "product-143",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-144",
@@ -2707,7 +3292,11 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para gás de pequeno diâmetro, adequado para ramais de entrada de gás em residências e edifícios comerciais. A camada de revestimento plástico amarela interna e externa é a identificação dedicada para tubulações de gás, o revestimento é denso, com boa estanqueidade ao gás, prevenindo eficazmente vazamentos de gás.",
       "image": "/images/hp-products/燃气涂塑钢管/(25×6米)燃气涂塑钢管.jpg",
-      "slug": "product-144"
+      "slug": "product-144",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-145",
@@ -2725,7 +3314,12 @@
       "connectionType": null,
       "description": "Tubo composto para gás de pequeno diâmetro, com design de extremidade com abertura reservada para facilitar a realização de trabalhos de soldagem de alta qualidade no local. O revestimento especial amarelo interno e externo oferece excelente proteção anticorrosiva e função de alerta, sendo uma garantia confiável para a operação segura da rede de gás urbano.",
       "image": "/images/hp-products/燃气涂塑钢管/(57×6米)小口径外留口燃气涂塑复合钢管.jpg",
-      "slug": "product-145"
+      "slug": "product-145",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-146",
@@ -2745,7 +3339,12 @@
       "connectionType": null,
       "description": "Utiliza um processo de proteção dupla de galvanização externa e revestimento plástico interno. A camada de galvanização externa aumenta a capacidade de resistência do tubo à corrosão do ambiente externo, enquanto a camada de revestimento plástico interna resiste à corrosão do gás e mantém o transporte de gás suave, adequado para projetos de gás com requisitos de anticorrosão mais elevados.",
       "image": "/images/hp-products/燃气涂塑钢管/(57×6米)镀锌燃气涂塑钢管.jpg",
-      "slug": "product-146"
+      "slug": "product-146",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-147",
@@ -2763,7 +3362,12 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para gás padronizado, revestido interna e externamente com uma camada anticorrosiva amarela, com boa resistência química e propriedades de isolamento. Adequado para redes de gás urbano de média e baixa pressão, sendo o elo de segurança que conecta milhares de residências.",
       "image": "/images/hp-products/燃气涂塑钢管/(60×6)燃气涂塑钢管.jpg",
-      "slug": "product-147"
+      "slug": "product-147",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-150",
@@ -2781,7 +3385,12 @@
       "connectionType": null,
       "description": "Tubo de aço para transporte de gás de diâmetro médio, com as paredes interna e externa revestidas com uma camada anticorrosiva especial amarela, com forte efeito de alerta. Adequado para tubos principais de gás em complexos residenciais ou parques industriais, com forte capacidade de suportar pressão, seguro e confiável.",
       "image": "/images/hp-products/燃气涂塑钢管/(89×6米)燃气钢管.jpg",
-      "slug": "product-150"
+      "slug": "product-150",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-151",
@@ -2799,7 +3408,11 @@
       "connectionType": null,
       "description": "DN100 é uma especificação de tubo principal universal em sistemas de abastecimento de água, com as paredes interna e externa revestidas com resina epóxi de grau sanitário ou polietileno, garantindo um transporte de água seguro e livre de poluição. A parede do tubo é lisa, não forma incrustações e mantém uma capacidade de transporte de água eficiente a longo prazo.",
       "image": "/images/hp-products/给水涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
-      "slug": "product-151"
+      "slug": "product-151",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-152",
@@ -2820,7 +3433,11 @@
       },
       "description": "Tubo de abastecimento de água de grande diâmetro, o comprimento curto de 4 metros facilita o transporte e a instalação, utilizando o método de conexão por ranhura, com alta eficiência de construção. O revestimento interno e externo atende aos padrões de água potável, sendo a escolha ideal para grandes projetos de construção e abastecimento de água municipal.",
       "image": "/images/hp-products/给水涂塑钢管/(273×4米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-152"
+      "slug": "product-152",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-153",
@@ -2841,7 +3458,11 @@
       },
       "description": "Tubo de abastecimento de água do tipo ranhura de diâmetro médio, revestido de plástico interna e externamente, de fácil instalação. Adequado para tubos principais de abastecimento de água em complexos de edifícios ou colunas verticais em grandes edifícios, é um produto representativo da tecnologia de construção rápida moderna.",
       "image": "/images/hp-products/给水涂塑钢管/(165×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-153"
+      "slug": "product-153",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-154",
@@ -2861,7 +3482,12 @@
       "connectionType": null,
       "description": "Tubo de abastecimento de água de grande diâmetro, com paredes interna e externa revestidas com resina epóxi de grau alimentício, oferecendo excelente desempenho anticorrosivo e garantia sanitária. Adequado para projetos com requisitos rigorosos de qualidade da água e durabilidade da tubulação, como linhas principais de abastecimento de água municipal, estações de tratamento de água, etc.",
       "image": "/images/hp-products/给水涂塑钢管/(426×6米)内外环氧给水涂塑钢管.jpg",
-      "slug": "product-154"
+      "slug": "product-154",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-155",
@@ -2882,7 +3508,11 @@
       },
       "description": "Este tubo de abastecimento de água de grande diâmetro utiliza conexão por ranhura, revestido de plástico interna e externamente. Em comparação com os métodos de conexão tradicionais, pode economizar muito tempo de instalação e a conexão é confiável. É uma solução eficiente para a construção de redes de abastecimento de água modernas e em grande escala.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-155"
+      "slug": "product-155",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-156",
@@ -2900,7 +3530,13 @@
       "connectionType": null,
       "description": "89 mm é uma especificação comumente usada em redes de tubulação de abastecimento de água de edifícios, este produto é revestido de plástico interna e externamente, anticorrosivo e higiênico, pode ser conectado por rosca, ranhura ou flange, com forte versatilidade, sendo o material de tubulação básico para todos os tipos de projetos de abastecimento de água.",
       "image": "/images/hp-products/给水涂塑钢管/(89×6米)给水涂塑钢管.jpg",
-      "slug": "product-156"
+      "slug": "product-156",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-157",
@@ -2918,7 +3554,11 @@
       "connectionType": null,
       "description": "Tubo de aço revestido de plástico dedicado para abastecimento de água de grande diâmetro, com parede interna lisa, boas condições hidráulicas e baixo consumo de energia no transporte de água. O revestimento interno e externo elimina eficazmente o fenômeno da água amarela e vermelha, melhorando de forma abrangente a qualidade do abastecimento de água, adequado para redes principais de abastecimento de água urbana.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)给水涂塑钢管.jpg",
-      "slug": "product-157"
+      "slug": "product-157",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-158",
@@ -2939,7 +3579,11 @@
       },
       "description": "Este produto combina o diâmetro universal de 89 mm com a conexão eficiente por ranhura, fornecendo uma solução econômica e conveniente para sistemas de abastecimento de água em edifícios, com grande demanda de mercado e ampla aplicação.",
       "image": "/images/hp-products/给水涂塑钢管/(89×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-158"
+      "slug": "product-158",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-159",
@@ -2957,7 +3601,13 @@
       "connectionType": null,
       "description": "Tubo de abastecimento de água de grande diâmetro, com design de extremidade com abertura reservada, conveniente para o usuário realizar a instalação por solda ou flange de acordo com as necessidades do local, com alta flexibilidade. Após a instalação por solda, a junta soldada deve ser reparada com anticorrosivo para formar uma linha de tubulação anticorrosiva completa.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)外留口给水涂塑钢管.jpg",
-      "slug": "product-159"
+      "slug": "product-159",
+      "macroCategories": [
+        "pipe-fittings",
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-160",
@@ -2975,7 +3625,11 @@
       "connectionType": null,
       "description": "Tubo com revestimento duplo de diâmetro médio, com a camada de revestimento das paredes interna e externa uniforme e densa, isolando completamente o contato entre a água e o tubo de aço, resolvendo fundamentalmente o problema de corrosão da tubulação. Adequado para todos os tipos de sistemas de abastecimento de água civil e industrial.",
       "image": "/images/hp-products/给水涂塑钢管/(159×6米)双面涂塑复合钢管.jpg",
-      "slug": "product-160"
+      "slug": "product-160",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-161",
@@ -2996,7 +3650,11 @@
       },
       "description": "O tubo de abastecimento de água com conexão por ranhura de 114 mm de diâmetro é a escolha ideal para colunas e tubos principais de abastecimento de água em edifícios altos. A instalação é rápida, a junta é firme e o revestimento plástico interno e externo garante a segurança da qualidade da água e a operação de longa vida do sistema.",
       "image": "/images/hp-products/给水涂塑钢管/(114×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-161"
+      "slug": "product-161",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-162",
@@ -3017,7 +3675,11 @@
       },
       "description": "Projetado para sistemas de abastecimento de água, tubo com conexão por ranhura, com revestimento interno e externo higiênico e não tóxico. O comprimento padrão de 4 metros facilita a construção em ambientes internos e espaços apertados, sendo um produto de aplicação muito flexível.",
       "image": "/images/hp-products/给水涂塑钢管/(108×4米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-162"
+      "slug": "product-162",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-163",
@@ -3038,7 +3700,11 @@
       },
       "description": "Tubo de abastecimento de água com conexão por ranhura de pequeno diâmetro, revestido de plástico interna e externamente. Adequado para ramais de abastecimento de água em edifícios ou pequenos sistemas de água de circulação, com instalação simples e desempenho confiável, é um excelente substituto para materiais de tubulação tradicionais.",
       "image": "/images/hp-products/给水涂塑钢管/(76×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-163"
+      "slug": "product-163",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-164",
@@ -3056,7 +3722,12 @@
       "connectionType": null,
       "description": "Diâmetro médio, com extremidade com abertura reservada, proporcionando conveniência para a conexão no local. O usuário pode soldar flanges ou soldar com outros tubos, especialmente adequado para projetos de abastecimento de água que exigem conexões não padronizadas ou reformas no local.",
       "image": "/images/hp-products/给水涂塑钢管/(159×6米)外留口给水涂塑钢管.jpg",
-      "slug": "product-164"
+      "slug": "product-164",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-165",
@@ -3076,7 +3747,12 @@
       "connectionType": null,
       "description": "Tubo de abastecimento de água de pequeno diâmetro, com as paredes interna e externa utilizando processo de pó de epóxi de fusão a quente, a aderência do revestimento é extremamente forte e o desempenho anticorrosivo é excelente. Adequado para ocasiões com requisitos extremamente altos de qualidade da água e vida útil da tubulação, como residências de luxo e hospitais.",
       "image": "/images/hp-products/给水涂塑钢管/(25×6米)内外热熔环氧粉末给水涂塑钢管.jpg",
-      "slug": "product-165"
+      "slug": "product-165",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-166",
@@ -3097,7 +3773,11 @@
       },
       "description": "Este tubo de abastecimento de água com conexão por ranhura de 159 mm é um produto convencional no mercado, com qualidade estável e instalação eficiente. Amplamente utilizado em tubos principais de abastecimento de água em vários tipos de edifícios, é uma das primeiras escolhas para a engenharia moderna de abastecimento de água.",
       "image": "/images/hp-products/给水涂塑钢管/(159×6米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-166"
+      "slug": "product-166",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-167",
@@ -3122,7 +3802,12 @@
       },
       "description": "Tubo revestido de plástico com conexão por clamp (ranhura) de extrema versatilidade, que pode ser usado tanto em sistemas de abastecimento de água pressurizados quanto em sistemas de drenagem sem pressão. O revestimento interno e externo é liso e resistente à corrosão, sendo um produto de tubulação multiuso e de alta eficiência.",
       "image": "/images/hp-products/给水涂塑钢管/(108×6米)卡箍连接给排水涂塑钢管.jpg",
-      "slug": "product-167"
+      "slug": "product-167",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-168",
@@ -3143,7 +3828,11 @@
       },
       "description": "Tubo de abastecimento de água clássico com conexão por ranhura, revestimento de grau sanitário interno e externo, comprimento de 4 metros para fácil manuseio. Adequado para a instalação rápida de várias redes de abastecimento de água em edifícios, com desempenho confiável, econômico e durável.",
       "image": "/images/hp-products/给水涂塑钢管/(108×4米)沟槽连接给水涂塑钢管.jpg",
-      "slug": "product-168"
+      "slug": "product-168",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-169",
@@ -3164,7 +3853,11 @@
       },
       "description": "O tubo de abastecimento de água com conexão por ranhura de grande diâmetro oferece uma solução de instalação de tubulação eficiente para grandes projetos. O revestimento interno e externo garante a segurança do transporte de água, e o método de conexão rápida reduz significativamente os custos de mão de obra e tempo.",
       "image": "/images/hp-products/给水涂塑钢管/(325×6米)沟槽连接涂塑钢管.jpg",
-      "slug": "product-169"
+      "slug": "product-169",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-170",
@@ -3182,7 +3875,11 @@
       "connectionType": null,
       "description": "Tubo de abastecimento de água de grande diâmetro, a aparência azul pode servir como identificação dedicada para abastecimento de água, e a extremidade com abertura reservada facilita a soldagem no local. Adequado para grandes projetos de abastecimento de água municipal ou industrial que exigem identificação especial e métodos de conexão flexíveis.",
       "image": "/images/hp-products/给水涂塑钢管/(529×6米)蓝色外留口给水涂塑钢管.jpg",
-      "slug": "product-170"
+      "slug": "product-170",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-171",
@@ -3203,7 +3900,12 @@
       },
       "description": "Este tubo de aço revestido de plástico para abastecimento de água é projetado para situações que exigem conexão por solda, com as extremidades tratadas para facilitar a soldagem no local. Após a conclusão da soldagem, a junta de solda precisa passar por um tratamento anticorrosivo profissional para garantir o desempenho anticorrosivo de toda a linha de tubulação.",
       "image": "/images/hp-products/给水涂塑钢管/(DN200×6米)焊接给水涂塑钢管.jpg",
-      "slug": "product-171"
+      "slug": "product-171",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-172",
@@ -3221,7 +3923,11 @@
       "connectionType": null,
       "description": "O tubo revestido de plástico para abastecimento de água de menor diâmetro, adequado para tubos de entrada de água em residências, apartamentos, etc. Revestido de plástico interna e externamente, resolve completamente o problema de ferrugem dos tubos galvanizados, fornecendo água doméstica saudável e limpa.",
       "image": "/images/hp-products/给水涂塑钢管/(DN15×6米)给水涂塑钢管.jpg",
-      "slug": "product-172"
+      "slug": "product-172",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-173",
@@ -3239,7 +3945,12 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para abastecimento de água de diâmetro médio, é a escolha ideal para conectar as tubulações principais municipais às redes de tubulação internas dos edifícios. Anticorrosivo interno e externo, garante a qualidade da água, tem longa vida útil e baixo custo de manutenção.",
       "image": "/images/hp-products/给水涂塑钢管/(DN125×6米)给水涂塑钢管.jpg",
-      "slug": "product-173"
+      "slug": "product-173",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-174",
@@ -3257,7 +3968,11 @@
       "connectionType": null,
       "description": "Tubo de abastecimento de água de grande diâmetro, com design de abertura externa reservada, que oferece a máxima flexibilidade para a conexão no local de grandes projetos de tubulação. Adequado para projetos que precisam ser conectados a diferentes tipos de tubulações existentes ou equipamentos de grande porte.",
       "image": "/images/hp-products/给水涂塑钢管/(426×6米)外留口给水涂塑钢管.jpg",
-      "slug": "product-174"
+      "slug": "product-174",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-175",
@@ -3279,7 +3994,11 @@
       "connectionType": null,
       "description": "Este é um tubo revestido de plástico de uso geral para abastecimento e drenagem, com design de extremidade com abertura reservada. Pode atender tanto aos requisitos sanitários do abastecimento de água quanto lidar com o ambiente corrosivo da drenagem, sendo um produto de tubulação flexível e multiuso.",
       "image": "/images/hp-products/给水涂塑钢管/(89×6米)外留口给排水涂塑复合钢管.jpg",
-      "slug": "product-175"
+      "slug": "product-175",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-176",
@@ -3304,7 +4023,11 @@
       },
       "description": "Um tubo com conexão por ranhura que pode ser usado tanto para sistemas de abastecimento de água quanto para sistemas de drenagem. O revestimento interno e externo tem boa resistência à corrosão e lisura, a conexão é rápida, a aplicação é ampla e pode reduzir eficazmente os tipos de estoque.",
       "image": "/images/hp-products/给水涂塑钢管/(DN150×6米)沟槽连接给排水涂塑钢管.jpg",
-      "slug": "product-176"
+      "slug": "product-176",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-177",
@@ -3322,7 +4045,12 @@
       "connectionType": null,
       "description": "Tubo composto para abastecimento de água de grande diâmetro, com extremidade com abertura reservada para facilitar a soldagem, e revestimento interno e externo que garante o desempenho anticorrosivo e a segurança sanitária da tubulação. É a primeira escolha em grandes projetos de abastecimento de água que exigem soluções de conexão altamente personalizadas.",
       "image": "/images/hp-products/给水涂塑钢管/(426×6米)外留口给水涂塑复合钢管.jpg",
-      "slug": "product-177"
+      "slug": "product-177",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-178",
@@ -3340,7 +4068,11 @@
       "connectionType": null,
       "description": "Tubo revestido de plástico para abastecimento de água de pequeno diâmetro, adequado para ramais de abastecimento de água em edifícios. Revestimento de grau sanitário nas paredes interna e externa, não enferruja, não forma incrustações, garantindo a segurança da água potável doméstica, é um produto de atualização para materiais de tubulação tradicionais.",
       "image": "/images/hp-products/给水涂塑钢管/(48×6米)给水涂塑钢管.jpg",
-      "slug": "product-178"
+      "slug": "product-178",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-180",
@@ -3358,7 +4090,12 @@
       "connectionType": null,
       "description": "Tubo de abastecimento de água de pequeno diâmetro, com design de extremidade com abertura reservada, nascido para tubulações de precisão que exigem soldagem no local ou projetos de reforma. Garante a anticorrosão interna e externa, ao mesmo tempo que oferece a máxima liberdade de conexão.",
       "image": "/images/hp-products/给水涂塑钢管/(76×6米)小口径外留口给水涂塑钢管.jpg",
-      "slug": "product-180"
+      "slug": "product-180",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-181",
@@ -3379,7 +4116,12 @@
       },
       "description": "Tubo de aço revestido de plástico para abastecimento de água com conexão por clamp (ranhura), a instalação é extremamente conveniente e rápida. O revestimento interno e externo atende aos padrões de água potável, sendo a solução preferida para a construção rápida de sistemas de abastecimento de água em edifícios altos e grandes locais.",
       "image": "/images/hp-products/给水涂塑钢管/(114×6米)卡箍连接给水涂塑钢管.jpg",
-      "slug": "product-181"
+      "slug": "product-181",
+      "macroCategories": [
+        "pipe-fittings",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-182",
@@ -3404,7 +4146,11 @@
       },
       "description": "Este é um tubo de conexão por ranhura multifuncional, que pode ser usado tanto em sistemas de abastecimento de água pressurizados quanto em sistemas de drenagem sem pressão. O revestimento interno e externo liso e resistente à corrosão o torna amplamente aplicável, com alta relação custo-benefício.",
       "image": "/images/hp-products/给水涂塑钢管/(108×6米)沟槽连接给排水涂塑钢管.jpg",
-      "slug": "product-182"
+      "slug": "product-182",
+      "macroCategories": [
+        "plastic-coating",
+        "steel-pipes"
+      ]
     },
     {
       "id": "product-183",
@@ -3422,759 +4168,12 @@
       "connectionType": null,
       "description": "Usando tubo espiral como material de base, com tratamento de revestimento plástico interno e externo, e extremidade com abertura reservada. O tubo espiral tem um custo menor, boa capacidade de suportar pressão, combinado com a flexibilidade da anticorrosão por revestimento de plástico e da soldagem com abertura reservada, é uma escolha econômica e prática em grandes projetos de abastecimento de água.",
       "image": "/images/hp-products/给水涂塑钢管/(219×6米)外留口螺旋给水涂塑钢管.jpg",
-      "slug": "product-183"
-    },
-    {
-      "id": "product-wantou-001",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Cotovelo de aço 90° de grande diâmetro",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Estrutura em aço",
-        "Formação de grande diâmetro",
-        "Personalização por projeto"
-      ],
-      "connectionType": null,
-      "description": "90° Large-Diameter Steel Elbow faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/90度大口径钢制弯头.jpg",
-      "slug": "elbows-and-pipe-supports-001"
-    },
-    {
-      "id": "product-wantou-002",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Cotovelo de aço flangeado 90° de grande diâmetro",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Estrutura em aço",
-        "Formação de grande diâmetro",
-        "Personalização por projeto"
-      ],
-      "connectionType": {
-        "name": "Conexão flangeada",
-        "id": "flange"
-      },
-      "description": "Large-Diameter Flanged 90° Steel Elbow faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/大口径法兰90度钢制弯头.jpg",
-      "slug": "elbows-and-pipe-supports-002"
-    },
-    {
-      "id": "product-wantou-003",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Cotovelo de aço 90° de grande diâmetro acabado em lote",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Estrutura em aço",
-        "Formação de grande diâmetro",
-        "Personalização por projeto"
-      ],
-      "connectionType": null,
-      "description": "Batch-Finished Large-Diameter 90° Steel Elbows faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/大口径90度钢制弯头批量成品.jpg",
-      "slug": "elbows-and-pipe-supports-003"
-    },
-    {
-      "id": "product-wantou-004",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Cotovelos sem costura de aço carbono acabados em lote",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Estrutura em aço",
-        "Formação de grande diâmetro",
-        "Personalização por projeto"
-      ],
-      "connectionType": null,
-      "description": "Batch-Finished Carbon Steel Seamless Elbows faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/碳钢无缝弯头批量成品.jpg",
-      "slug": "elbows-and-pipe-supports-004"
-    },
-    {
-      "id": "product-wantou-005",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Conexão flangeada de alta pressão personalizada de 180°",
-      "specification": "180° personalizado",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Conexão flangeada",
-        "Serviço de alta pressão",
-        "Fabricação personalizada"
-      ],
-      "connectionType": {
-        "name": "Conexão flangeada",
-        "id": "flange"
-      },
-      "description": "180° Custom High-Pressure Flanged Fitting faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/180°定制高压法兰管件.jpg",
-      "slug": "elbows-and-pipe-supports-005"
-    },
-    {
-      "id": "product-wantou-006",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Trecho reto flangeado de alta pressão personalizado",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Conexão flangeada",
-        "Serviço de alta pressão",
-        "Fabricação personalizada"
-      ],
-      "connectionType": {
-        "name": "Conexão flangeada",
-        "id": "flange"
-      },
-      "description": "Custom High-Pressure Flanged Straight Pipe Spool faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/定制高压法兰直管段.jpg",
-      "slug": "elbows-and-pipe-supports-006"
-    },
-    {
-      "id": "product-wantou-007",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Diversos flanges disponíveis em estoque",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Ampla gama de tamanhos",
-        "Fornecimento em estoque",
-        "Acessório para projetos"
-      ],
-      "connectionType": {
-        "name": "Conexão flangeada",
-        "id": "flange"
-      },
-      "description": "Various Flanges in Stock faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/各种法兰现货供应.jpg",
-      "slug": "elbows-and-pipe-supports-007"
-    },
-    {
-      "id": "product-wantou-008",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Conexões de aço anticorrosivas semiacabadas",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Projetos municipais",
-          "id": "municipal"
-        }
-      ],
-      "features": [
-        "Tratamento anticorrosivo",
-        "Conexão em aço",
-        "Pronto para acabamento"
-      ],
-      "connectionType": null,
-      "description": "Semi-Finished Anti-Corrosion Steel Pipe Fittings faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/防腐钢管管件半成品.jpg",
-      "slug": "elbows-and-pipe-supports-008"
-    },
-    {
-      "id": "product-wantou-009",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte fixo isolado para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Insulated Fixed Pipe Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/保温固定管托.jpg",
-      "slug": "elbows-and-pipe-supports-009"
-    },
-    {
-      "id": "product-wantou-010",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte deslizante isolado para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Insulated Sliding Pipe Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/保温滑动管托.jpg",
-      "slug": "elbows-and-pipe-supports-010"
-    },
-    {
-      "id": "product-wantou-011",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte de abraçadeira isolado para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Insulated Pipe Clamp Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/保温管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-011"
-    },
-    {
-      "id": "product-wantou-012",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte isolado de duplo furo para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Double-Hole Insulated Pipe Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/双孔保温管托.jpg",
-      "slug": "elbows-and-pipe-supports-012"
-    },
-    {
-      "id": "product-wantou-013",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte fixo com isolamento térmico para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Thermal-Insulated Fixed Pipe Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/隔热固定管托.jpg",
-      "slug": "elbows-and-pipe-supports-013"
-    },
-    {
-      "id": "product-wantou-014",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte pesado de abraçadeira isolado para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Heavy-Duty Insulated Pipe Clamp Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/重型保温管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-014"
-    },
-    {
-      "id": "product-wantou-015",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte de tubulação para cotovelo",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Elbow Pipe Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/弯头管托支座.jpg",
-      "slug": "elbows-and-pipe-supports-015"
-    },
-    {
-      "id": "product-wantou-016",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte deslizante tipo sela para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Saddle Sliding Pipe Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/鞍式滑动管托.jpg",
-      "slug": "elbows-and-pipe-supports-016"
-    },
-    {
-      "id": "product-wantou-017",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte guia quadrado para tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Suporte estável",
-        "Restrição da tubulação",
-        "Acessório de engenharia"
-      ],
-      "connectionType": null,
-      "description": "Square Guide Pipe Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/方形导向管托.jpg",
-      "slug": "elbows-and-pipe-supports-017"
-    },
-    {
-      "id": "product-wantou-018",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Abraçadeira de tubulação com parafuso U",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": {
-        "name": "Conexão parafusada",
-        "id": "bolted"
-      },
-      "description": "U-Bolt Pipe Clamp faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/U型螺栓管夹.jpg",
-      "slug": "elbows-and-pipe-supports-018"
-    },
-    {
-      "id": "product-wantou-019",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Abraçadeira de tubulação tipo U leve",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": {
-        "name": "Conexão parafusada",
-        "id": "bolted"
-      },
-      "description": "Light-Duty U Pipe Clamp faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/轻型U型管夹.jpg",
-      "slug": "elbows-and-pipe-supports-019"
-    },
-    {
-      "id": "product-wantou-020",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte pesado para abraçadeira tipo U",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": {
-        "name": "Conexão parafusada",
-        "id": "bolted"
-      },
-      "description": "Heavy-Duty U Clamp Bracket faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/重型U型管夹支架.jpg",
-      "slug": "elbows-and-pipe-supports-020"
-    },
-    {
-      "id": "product-wantou-021",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Conjunto de abraçadeira de duplo parafuso",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": {
-        "name": "Conexão parafusada",
-        "id": "bolted"
-      },
-      "description": "Double-Bolt Pipe Clamp Assembly faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/双螺栓管夹组件.jpg",
-      "slug": "elbows-and-pipe-supports-021"
-    },
-    {
-      "id": "product-wantou-022",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Conjunto de abraçadeira limitadora de quatro vias",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": null,
-      "description": "Four-Way Limit Pipe Clamp Assembly faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/四向限位管夹组件.jpg",
-      "slug": "elbows-and-pipe-supports-022"
-    },
-    {
-      "id": "product-wantou-023",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte fixo de dupla abraçadeira",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": null,
-      "description": "Double-Clamp Fixed Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/双管夹固定支座.jpg",
-      "slug": "elbows-and-pipe-supports-023"
-    },
-    {
-      "id": "product-wantou-024",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte deslizante de dupla abraçadeira",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": null,
-      "description": "Double-Clamp Sliding Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/双管夹滑动支座.jpg",
-      "slug": "elbows-and-pipe-supports-024"
-    },
-    {
-      "id": "product-wantou-025",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte limitador de dupla abraçadeira",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": null,
-      "description": "Double-Clamp Limit Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/双管夹限位支座.jpg",
-      "slug": "elbows-and-pipe-supports-025"
-    },
-    {
-      "id": "product-wantou-026",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte de abraçadeira limitadora de quatro cantos",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": null,
-      "description": "Four-Corner Limit Pipe Clamp Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/四角限位管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-026"
-    },
-    {
-      "id": "product-wantou-027",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte fixo com abraçadeira de tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": null,
-      "description": "Fixed Pipe Clamp Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/固定管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-027"
-    },
-    {
-      "id": "product-wantou-028",
-      "categoryId": "elbows-and-pipe-supports",
-      "categoryName": "Cotovelos e suportes de tubulação",
-      "name": "Suporte vertical com abraçadeira de tubulação",
-      "specification": "Especificação personalizada",
-      "applications": [
-        {
-          "name": "Tubulação industrial",
-          "id": "industrial"
-        },
-        {
-          "name": "Suporte de tubulação",
-          "id": "support"
-        }
-      ],
-      "features": [
-        "Fixação por parafusos",
-        "Instalação simples",
-        "Suporte confiável"
-      ],
-      "connectionType": null,
-      "description": "Vertical Pipe Clamp Support faz parte da linha Cotovelos e suportes de tubulação, indicada para tubulações industriais, projetos municipais e sistemas de suporte. Pode ser personalizado por diâmetro, classe de pressão e condições de instalação para garantir resistência estrutural, montagem eficiente e operação estável de longo prazo.",
-      "image": "/images/wantou/立式管夹支座.jpg",
-      "slug": "elbows-and-pipe-supports-028"
+      "slug": "product-183",
+      "macroCategories": [
+        "anti-corrosion",
+        "plastic-coating",
+        "steel-pipes"
+      ]
     }
   ],
   "groupedProducts": {
@@ -4469,41 +4468,6 @@
         "product-183"
       ],
       "count": 32
-    },
-    "elbows-and-pipe-supports": {
-      "id": "elbows-and-pipe-supports",
-      "name": "Cotovelos e suportes de tubulação",
-      "productIds": [
-        "product-wantou-001",
-        "product-wantou-002",
-        "product-wantou-003",
-        "product-wantou-004",
-        "product-wantou-005",
-        "product-wantou-006",
-        "product-wantou-007",
-        "product-wantou-008",
-        "product-wantou-009",
-        "product-wantou-010",
-        "product-wantou-011",
-        "product-wantou-012",
-        "product-wantou-013",
-        "product-wantou-014",
-        "product-wantou-015",
-        "product-wantou-016",
-        "product-wantou-017",
-        "product-wantou-018",
-        "product-wantou-019",
-        "product-wantou-020",
-        "product-wantou-021",
-        "product-wantou-022",
-        "product-wantou-023",
-        "product-wantou-024",
-        "product-wantou-025",
-        "product-wantou-026",
-        "product-wantou-027",
-        "product-wantou-028"
-      ],
-      "count": 28
     }
   }
 }

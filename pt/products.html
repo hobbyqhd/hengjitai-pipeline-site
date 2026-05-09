@@ -411,10 +411,10 @@
                             Produtos 
                         </a>
                         <div class="dropdown-menu hidden group-hover:block absolute bg-white min-w-[200px] shadow-lg rounded-lg mt-1 py-2 z-50 left-0">
-                            <a href="products.html?search=revestimento" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tubos revestidos com polímero</a>
-                            <a href="products.html?search=corros%C3%A3o" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tubos anticorrosão</a>
-                            <a href="products.html?search=a%C3%A7o" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tubos de aço</a>
-                            <a href="products.html?search=acess%C3%B3rio" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Acessórios de tubulação</a>
+                            <a href="products.html?macro=plastic-coating" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tubos revestidos com polímero</a>
+                            <a href="products.html?macro=anti-corrosion" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tubos anticorrosão</a>
+                            <a href="products.html?macro=steel-pipes" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tubos de aço</a>
+                            <a href="products.html?macro=pipe-fittings" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Acessórios de tubulação</a>
                         </div>
                     </div>
                     <div class="nav-item">
@@ -545,11 +545,13 @@
             <!-- 产品列表视图 -->
             <div v-show="viewMode === 'products'">
                 <!-- 当前筛选信息 -->
-                <div v-if="selectedCategory || searchQuery" class="mb-6 p-4 bg-primary/5 rounded-lg">
+                <div v-if="selectedCategory || selectedMacro || searchQuery" class="mb-6 p-4 bg-primary/5 rounded-lg">
                     <div class="flex items-center justify-between">
                         <div class="text-sm text-gray-600">
                             <span v-if="selectedCategory">Categoria: {{ getCategoryName(selectedCategory) }}</span>
-                            <span v-if="selectedCategory && searchQuery"> | </span>
+                            <span v-if="selectedCategory && (selectedMacro || searchQuery)"> | </span>
+                            <span v-if="selectedMacro">Categoria: {{ getMacroLabel(selectedMacro) }}</span>
+                            <span v-if="selectedMacro && searchQuery"> | </span>
                             <span v-if="searchQuery">Pesquisar: "{{ searchQuery }}"</span>
                             <span class="ml-2">Encontrado {{ filteredProducts.length }}  produtos</span>
                         </div>
@@ -720,10 +722,10 @@
                 <div>
                     <h3 class="text-xl font-semibold mb-4 text-white">Produtos</h3>
                     <ul class="space-y-2">
-                        <li><a href="products.html?search=revestimento" class="text-slate-400 hover:text-secondary transition-colors">Tubos revestidos com polímero</a></li>
-                        <li><a href="products.html?search=corros%C3%A3o" class="text-slate-400 hover:text-secondary transition-colors">Tubos anticorrosão</a></li>
-                        <li><a href="products.html?search=a%C3%A7o" class="text-slate-400 hover:text-secondary transition-colors">Tubos de aço</a></li>
-                        <li><a href="products.html?search=acess%C3%B3rio" class="text-slate-400 hover:text-secondary transition-colors">Acessórios de tubulação</a></li>
+                        <li><a href="products.html?macro=plastic-coating" class="text-slate-400 hover:text-secondary transition-colors">Tubos revestidos com polímero</a></li>
+                        <li><a href="products.html?macro=anti-corrosion" class="text-slate-400 hover:text-secondary transition-colors">Tubos anticorrosão</a></li>
+                        <li><a href="products.html?macro=steel-pipes" class="text-slate-400 hover:text-secondary transition-colors">Tubos de aço</a></li>
+                        <li><a href="products.html?macro=pipe-fittings" class="text-slate-400 hover:text-secondary transition-colors">Acessórios de tubulação</a></li>
                     </ul>
                 </div>
                 <div>
@@ -773,10 +775,17 @@
                     allCategories: [],
                     viewMode: 'categories', // 'categories' 或 'products'
                     selectedCategory: '',
+                    selectedMacro: '',
                     searchQuery: '',
                     currentPage: 1,
                     itemsPerPage: 9,
-                    isLoading: true
+                    isLoading: true,
+                    macroLabels: {
+                        'plastic-coating': 'Tubos revestidos com polímero',
+                        'anti-corrosion': 'Tubos anticorrosão',
+                        'steel-pipes': 'Tubos de aço',
+                        'pipe-fittings': 'Acessórios de tubulação'
+                    }
                 }
             },
             computed: {
@@ -786,6 +795,13 @@
                     // 按分类筛选
                     if (this.selectedCategory) {
                         filtered = filtered.filter(product => product.categoryId === this.selectedCategory);
+                    }
+
+                    // 按四大类筛选（严格匹配 macroCategories）
+                    if (this.selectedMacro) {
+                        filtered = filtered.filter(product =>
+                            Array.isArray(product.macroCategories) && product.macroCategories.includes(this.selectedMacro)
+                        );
                     }
                     
                     // 按搜索关键词筛选
@@ -831,6 +847,9 @@
             
             watch: {
                 selectedCategory() {
+                    this.currentPage = 1;
+                },
+                selectedMacro() {
                     this.currentPage = 1;
                 },
                 searchQuery() {
@@ -950,8 +969,15 @@
                 
                 checkUrlParameters() {
                     const urlParams = new URLSearchParams(window.location.search);
+                    const macro = urlParams.get('macro');
                     const category = urlParams.get('category');
                     const search = urlParams.get('search');
+                    const validMacros = new Set(Object.keys(this.macroLabels));
+
+                    if (macro && validMacros.has(macro)) {
+                        this.viewMode = 'products';
+                        this.selectedMacro = macro;
+                    }
                     
                     if (category) {
                         // 切换到产品列表视图并设置分类筛选
@@ -968,25 +994,34 @@
                 
                 selectCategory(categoryId) {
                     this.selectedCategory = categoryId;
+                    this.selectedMacro = '';
                     this.viewMode = 'products';
                     this.currentPage = 1;
                     
                     // 更新URL
                     const url = new URL(window.location);
                     url.searchParams.set('category', categoryId);
+                    url.searchParams.delete('macro');
+                    url.searchParams.delete('search');
                     window.history.pushState({}, '', url);
                 },
                 
                 clearFilters() {
                     this.selectedCategory = '';
+                    this.selectedMacro = '';
                     this.searchQuery = '';
                     this.currentPage = 1;
                     
                     // 清除URL参数
                     const url = new URL(window.location);
+                    url.searchParams.delete('macro');
                     url.searchParams.delete('category');
                     url.searchParams.delete('search');
                     window.history.pushState({}, '', url);
+                },
+
+                getMacroLabel(macroId) {
+                    return this.macroLabels[macroId] || macroId;
                 },
                 
                 getCategoryName(categoryId) {

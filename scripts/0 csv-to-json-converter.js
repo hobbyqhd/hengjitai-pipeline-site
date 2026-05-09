@@ -31,6 +31,7 @@
 const fs = require('fs');
 const path = require('path');
 const { parse } = require('csv-parse/sync');
+const macroCategoryConfig = require('./config/macro-category-mapping.json');
 
 // 语言配置
 const LANGUAGES = ['cn', 'en', 'jp', 'ru', 'ar', 'es', 'fr', 'pt', 'hi', 'de'];
@@ -78,6 +79,50 @@ const connectionMapping = {
   '沟槽连接': 'grooved',
   '承插连接': 'socket'
 };
+
+function normalizeText(value) {
+  return String(value || '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .trim();
+}
+
+function resolveMacroCategories({ categoryId, categoryName, productName, description, connectionTypeName }) {
+  const allowed = new Set(macroCategoryConfig.macroCategories || []);
+  const resolved = new Set();
+
+  const mapped = macroCategoryConfig.categoryIdToMacroCategories?.[categoryId];
+  if (Array.isArray(mapped)) {
+    mapped.forEach(category => {
+      if (allowed.has(category)) resolved.add(category);
+    });
+  }
+
+  const searchableText = [
+    categoryId,
+    categoryName,
+    productName,
+    description,
+    connectionTypeName
+  ]
+    .filter(Boolean)
+    .map(normalizeText)
+    .join(' ');
+
+  for (const rule of macroCategoryConfig.fallbackRules || []) {
+    if (!allowed.has(rule.macroCategory)) continue;
+    const hit = (rule.keywords || []).some(keyword => searchableText.includes(normalizeText(keyword)));
+    if (hit) resolved.add(rule.macroCategory);
+  }
+
+  if (!resolved.size) {
+    for (const fallback of macroCategoryConfig.defaultMacroCategories || []) {
+      if (allowed.has(fallback)) resolved.add(fallback);
+    }
+  }
+
+  return Array.from(resolved);
+}
 
 /**
  * 解析产品特性
@@ -129,22 +174,35 @@ function generateImagePath(categoryName, productName, chineseCategoryName = null
 function processProduct(row, index, chineseCategoryName = null, chineseProductName = null) {
   // 处理可能的BOM问题，获取序号
   const serialNumber = row['序号'] || row['﻿序号'] || (index + 1);
+  const categoryName = row['产品种类'] || '';
+  const categoryId = categoryMapping[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
+  const productName = row['产品名称'] || '';
+  const description = row['产品描述'] || '';
+  const connectionTypeName = row['连接类型'] || '';
+  const macroCategories = resolveMacroCategories({
+    categoryId,
+    categoryName,
+    productName,
+    description,
+    connectionTypeName
+  });
   
   const product = {
     id: `product-${String(serialNumber).padStart(3, '0')}`,
-    categoryId: categoryMapping[row['产品种类']] || row['产品种类'].toLowerCase().replace(/\s+/g, '-'),
-    categoryName: row['产品种类'],
-    name: row['产品名称'],
+    categoryId: categoryId,
+    categoryName: categoryName,
+    name: productName,
     specification: row['产品规格'],
     applications: parseApplications(row['应用领域']),
     features: parseFeatures(row['产品特性']),
-    connectionType: row['连接类型'] ? {
-      name: row['连接类型'],
-      id: connectionMapping[row['连接类型']] || row['连接类型'].toLowerCase().replace(/\s+/g, '-')
+    connectionType: connectionTypeName ? {
+      name: connectionTypeName,
+      id: connectionMapping[connectionTypeName] || connectionTypeName.toLowerCase().replace(/\s+/g, '-')
     } : null,
-    description: row['产品描述'],
-    image: generateImagePath(row['产品种类'], row['产品名称'], chineseCategoryName, chineseProductName),
-    slug: `${categoryMapping[row['产品种类']] || 'product'}-${String(serialNumber).padStart(3, '0')}`
+    description: description,
+    image: generateImagePath(categoryName, productName, chineseCategoryName, chineseProductName),
+    slug: `${categoryMapping[categoryName] || 'product'}-${String(serialNumber).padStart(3, '0')}`,
+    macroCategories
   };
 
   return product;
@@ -192,6 +250,32 @@ function generateCategories(groupedProducts, products) {
   });
 }
 
+function buildMacroCoverage(products) {
+  const summary = {};
+  for (const macro of macroCategoryConfig.macroCategories || []) {
+    summary[macro] = 0;
+  }
+
+  const uncategorizedIds = [];
+  for (const product of products) {
+    if (!Array.isArray(product.macroCategories) || product.macroCategories.length === 0) {
+      uncategorizedIds.push(product.id);
+      continue;
+    }
+
+    product.macroCategories.forEach(macro => {
+      if (summary[macro] !== undefined) {
+        summary[macro] += 1;
+      }
+    });
+  }
+
+  return {
+    summary,
+    uncategorizedIds
+  };
+}
+
 /**
  * 读取CSV文件并转换为JSON
  */
@@ -219,18 +303,24 @@ async function convertCsvToJson(csvFilePath, outputPath) {
     const categories = generateCategories(groupedProducts, products);
 
     // 构建最终的JSON结构（仅包含产品数据，不包含页面翻译）
+    const macroCoverage = buildMacroCoverage(products);
     const jsonData = {
       metadata: {
         totalProducts: products.length,
         totalCategories: categories.length,
         lastUpdated: new Date().toISOString(),
         language: 'cn',
-        languageCode: 'zh-CN'
+        languageCode: 'zh-CN',
+        macroCategoryCoverage: macroCoverage.summary
       },
       categories: categories,
       products: products,
       groupedProducts: groupedProducts
     };
+
+    if (macroCoverage.uncategorizedIds.length > 0) {
+      console.warn(`⚠️ 未命中宏分类的产品数量: ${macroCoverage.uncategorizedIds.length}`);
+    }
 
     // 创建输出目录
     const outputDir = path.dirname(outputPath);
@@ -397,18 +487,24 @@ async function generateAllLanguageJsonFiles() {
       const categories = generateCategories(groupedProducts, products);
 
       // 构建最终的JSON结构（仅包含产品数据，不包含页面翻译）
+      const macroCoverage = buildMacroCoverage(products);
       const jsonData = {
         metadata: {
           totalProducts: products.length,
           totalCategories: categories.length,
           lastUpdated: new Date().toISOString(),
           language: lang,
-          languageCode: getLanguageCode(lang)
+          languageCode: getLanguageCode(lang),
+          macroCategoryCoverage: macroCoverage.summary
         },
         categories: categories,
         products: products,
         groupedProducts: groupedProducts
       };
+
+      if (macroCoverage.uncategorizedIds.length > 0) {
+        console.warn(`⚠️  ${lang} 语言存在未命中宏分类的产品: ${macroCoverage.uncategorizedIds.slice(0, 5).join(', ')}`);
+      }
 
       // 写入JSON文件
       fs.writeFileSync(outputPath, JSON.stringify(jsonData, null, 2), 'utf-8');

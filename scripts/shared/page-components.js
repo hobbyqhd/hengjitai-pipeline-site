@@ -824,16 +824,16 @@ function getNavigationMenuHTML(lang, pageDepth = 0, options = {}) {
             ${config.nav.products} <i class="fas fa-chevron-down text-xs ml-1"></i>
         </a>
         <div class="dropdown-menu hidden group-hover:block absolute bg-white min-w-[200px] shadow-lg rounded-lg mt-1 py-2 z-50 left-0">
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('plastic-coating', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
+            <a href="${createLink('products.html')}?macro=plastic-coating" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.plasticCoating}
             </a>
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('anti-corrosion', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
+            <a href="${createLink('products.html')}?macro=anti-corrosion" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.antiCorrosion}
             </a>
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('steel-pipes', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
+            <a href="${createLink('products.html')}?macro=steel-pipes" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.steelPipes}
             </a>
-            <a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('pipe-fittings', lang))}" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
+            <a href="${createLink('products.html')}?macro=pipe-fittings" class="block px-4 py-2 text-gray-800 hover:bg-primary/5">
                 ${config.submenu.fittings}
             </a>
         </div>
@@ -951,10 +951,10 @@ function getFooterHTML(lang, pageDepth = 0) {
             <div>
                 <h3 class="text-xl font-semibold mb-4 text-white">${config.nav.products}</h3>
                 <ul class="space-y-2">
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('plastic-coating', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.plasticCoating}</a></li>
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('anti-corrosion', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.antiCorrosion}</a></li>
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('steel-pipes', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.steelPipes}</a></li>
-                    <li><a href="${createLink('products.html')}?search=${encodeURIComponent(getSimplifiedKeyword('pipe-fittings', lang))}" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.fittings}</a></li>
+                    <li><a href="${createLink('products.html')}?macro=plastic-coating" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.plasticCoating}</a></li>
+                    <li><a href="${createLink('products.html')}?macro=anti-corrosion" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.antiCorrosion}</a></li>
+                    <li><a href="${createLink('products.html')}?macro=steel-pipes" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.steelPipes}</a></li>
+                    <li><a href="${createLink('products.html')}?macro=pipe-fittings" class="text-slate-400 hover:text-secondary transition-colors">${config.submenu.fittings}</a></li>
                 </ul>
             </div>
             <div>

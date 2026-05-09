@@ -1128,129 +1128,141 @@ function generateCasesHTML(lang, cases) {
 
 // 定义产品搜索关键词映射
 
-// 更新所有产品链接（首页产品卡片、导航菜单、页脚），统一使用简化的 search 参数
+// 更新所有产品链接（首页产品卡片、导航菜单、页脚），统一使用 macro 参数
 function updateIndexProductLinks(content, lang) {
     console.log(`正在更新 ${lang} 语言页面的所有产品链接（首页卡片、导航菜单、页脚）...`);
     
     let updatedContent = content;
     
-    // 查找并替换所有产品链接，使用简化的关键词
+    // 查找并替换所有产品链接，统一为宏分类参数
     Object.keys(SIMPLIFIED_PRODUCT_KEYWORDS).forEach(categoryId => {
         const searchKeyword = SIMPLIFIED_PRODUCT_KEYWORDS[categoryId][lang] || SIMPLIFIED_PRODUCT_KEYWORDS[categoryId].en;
         
         // 匹配 href="products.html?category=categoryId" 格式的链接（包括导航菜单和页脚）
         const categoryLinkPattern = new RegExp(`href="products\\.html\\?category=${categoryId}"`, 'g');
-        const searchLink = `href="products.html?search=${encodeURIComponent(searchKeyword)}"`;
+        const macroLink = `href="products.html?macro=${categoryId}"`;
         
-        // 替换链接
+        // 替换 category 参数链接
         const beforeCount = (updatedContent.match(categoryLinkPattern) || []).length;
-        updatedContent = updatedContent.replace(categoryLinkPattern, searchLink);
+        updatedContent = updatedContent.replace(categoryLinkPattern, macroLink);
         const afterCount = (updatedContent.match(categoryLinkPattern) || []).length;
         
         if (beforeCount > afterCount) {
-            console.log(`  ✓ 更新了 ${beforeCount - afterCount} 个 ${categoryId} 链接为 search=${searchKeyword}`);
+            console.log(`  ✓ 更新了 ${beforeCount - afterCount} 个 ${categoryId} 分类链接为 macro 参数`);
+        }
+
+        // 替换 search 参数链接（首页产品卡片等）
+        const encodedKeyword = encodeURIComponent(searchKeyword).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const searchLinkPattern = new RegExp(`href="products\\.html\\?search=${encodedKeyword}"`, 'g');
+        const searchBeforeCount = (updatedContent.match(searchLinkPattern) || []).length;
+        updatedContent = updatedContent.replace(searchLinkPattern, macroLink);
+        const searchAfterCount = (updatedContent.match(searchLinkPattern) || []).length;
+
+        if (searchBeforeCount > searchAfterCount) {
+            console.log(`  ✓ 更新了 ${searchBeforeCount - searchAfterCount} 个 ${categoryId} 搜索链接为 macro 参数`);
         }
     });
     
-    // 还需要更新已经存在的 search 参数链接，确保使用简化关键词
+    // 兼容历史关键词搜索链接，统一转为 macro 参数
     updatedContent = updateExistingSearchLinks(updatedContent, lang);
     
     return updatedContent;
 }
 
-// 更新已存在的 search 参数链接，使用简化关键词
+// 更新已存在的历史 search 参数链接，统一映射为 macro 参数
 function updateExistingSearchLinks(content, lang) {
     let updatedContent = content;
     
     // 定义旧关键词到新简化关键词的映射
     const keywordMappings = {
         cn: {
-            '涂塑系列': '涂塑',
-            '防腐系列': '防腐', 
-            '防腐处理': '防腐',
-            '钢管系列': '钢管',
-            '配套管件': '管件',
-            '管件配件': '管件'
+            '涂塑系列': 'plastic-coating',
+            '防腐系列': 'anti-corrosion',
+            '防腐处理': 'anti-corrosion',
+            '钢管系列': 'steel-pipes',
+            '配套管件': 'pipe-fittings',
+            '管件配件': 'pipe-fittings'
         },
         en: {
-            'plastic coating': 'coating',
-            'plastic-coating': 'coating',
-            'anti-corrosion': 'corrosion',
-            'steel pipes': 'steel',
-            'steel-pipes': 'steel',
-            'pipe fittings': 'fitting',
-            'pipe-fittings': 'fitting'
+            'plastic coating': 'plastic-coating',
+            'plastic-coating': 'plastic-coating',
+            'anti-corrosion': 'anti-corrosion',
+            'steel pipes': 'steel-pipes',
+            'steel-pipes': 'steel-pipes',
+            'pipe fittings': 'pipe-fittings',
+            'pipe-fittings': 'pipe-fittings'
         },
         jp: {
-            'プラスチックコーティング': '被覆',
-            '防食処理': '防食',
-            '鋼管': '鋼管',
-            '配管継手': '管継手',
-            'プラスチック被覆': '被覆'  // 新增：确保一致性
+            'プラスチックコーティング': 'plastic-coating',
+            '防食処理': 'anti-corrosion',
+            '鋼管': 'steel-pipes',
+            '配管継手': 'pipe-fittings',
+            '管継手': 'pipe-fittings',
+            'プラスチック被覆': 'plastic-coating'
         },
         ru: {
-            'пластиковое покрытие': 'покрытие',
-            'антикоррозийный': 'коррозия',
-            'стальные трубы': 'сталь',
-            'фитинги': 'фитинг'
+            'пластиковое покрытие': 'plastic-coating',
+            'антикоррозийный': 'anti-corrosion',
+            'антикоррозионный': 'anti-corrosion',
+            'стальные трубы': 'steel-pipes',
+            'фитинги': 'pipe-fittings'
         },
         ar: {
-            'طلاء بلاستيكي': 'طلاء',
-            'مضاد للتآكل': 'تآكل',
-            'أنابيب فولاذية': 'فولاذ',
-            'تركيبات الأنابيب': 'تجهيزات'
+            'طلاء بلاستيكي': 'plastic-coating',
+            'مضاد للتآكل': 'anti-corrosion',
+            'أنابيب فولاذية': 'steel-pipes',
+            'تركيبات الأنابيب': 'pipe-fittings'
         },
         es: {
-            'revestimiento plástico': 'revestimiento',
-            'anticorrosión': 'corrosión',
-            'tubos de acero': 'acero',
-            'accesorios de tubería': 'accesorio'
+            'revestimiento plástico': 'plastic-coating',
+            'anticorrosión': 'anti-corrosion',
+            'tubos de acero': 'steel-pipes',
+            'accesorios de tubería': 'pipe-fittings'
         },
         fr: {
-            'revêtement plastique': 'revêtement',
-            'anticorrosion': 'corrosion',
-            'tubes en acier': 'acier',
-            'raccords de tuyauterie': 'raccord'
+            'revêtement plastique': 'plastic-coating',
+            'anticorrosion': 'anti-corrosion',
+            'tubes en acier': 'steel-pipes',
+            'raccords de tuyauterie': 'pipe-fittings'
         },
         pt: {
-            'revestimento plástico': 'revestimento',
-            'anticorrosão': 'corrosão',
-            'tubos de aço': 'aço',
-            'conexões de tubulação': 'acessório'
+            'revestimento plástico': 'plastic-coating',
+            'anticorrosão': 'anti-corrosion',
+            'tubos de aço': 'steel-pipes',
+            'conexões de tubulação': 'pipe-fittings'
         },
         hi: {
-            'प्लास्टिक कोटिंग': 'कोटिंग',
-            'जंग प्रतिरोधी': 'जंग',
-            'स्टील पाइप': 'इस्पात',
-            'पाइप फिटिंग': 'फिटिंग'
+            'प्लास्टिक कोटिंग': 'plastic-coating',
+            'जंग प्रतिरोधी': 'anti-corrosion',
+            'स्टील पाइप': 'steel-pipes',
+            'पाइप फिटिंग': 'pipe-fittings'
         },
         de: {
-            'Kunststoffbeschichtung': 'Ummantelung',
-            'Korrosionsschutz': 'Korrosion',
-            'Stahlrohre': 'Stahl',
-            'Rohrbeschläge': 'Armaturen',
-            'Beschichtung': 'Ummantelung',  // 新增：旧术语到新术语的映射
-            'Fitting': 'Armaturen'          // 新增：旧术语到新术语的映射
+            'Kunststoffbeschichtung': 'plastic-coating',
+            'Korrosionsschutz': 'anti-corrosion',
+            'Stahlrohre': 'steel-pipes',
+            'Rohrbeschläge': 'pipe-fittings',
+            'Beschichtung': 'plastic-coating',
+            'Fitting': 'pipe-fittings'
         }
     };
     
     const langMappings = keywordMappings[lang] || {};
     
-    Object.entries(langMappings).forEach(([oldKeyword, newKeyword]) => {
+    Object.entries(langMappings).forEach(([oldKeyword, macroCategory]) => {
         // 使用URL编码处理特殊字符
         const encodedOldKeyword = encodeURIComponent(oldKeyword);
-        const encodedNewKeyword = encodeURIComponent(newKeyword);
         
         // 匹配并替换现有的 search 参数
         const searchPattern = new RegExp(`href="products\\.html\\?search=${encodedOldKeyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}"`, 'g');
-        const newSearchLink = `href="products.html?search=${encodedNewKeyword}"`;
+        const newMacroLink = `href="products.html?macro=${macroCategory}"`;
         
         const beforeCount = (updatedContent.match(searchPattern) || []).length;
-        updatedContent = updatedContent.replace(searchPattern, newSearchLink);
+        updatedContent = updatedContent.replace(searchPattern, newMacroLink);
         const afterCount = (updatedContent.match(searchPattern) || []).length;
         
         if (beforeCount > afterCount) {
-            console.log(`  ✓ 简化了 ${beforeCount - afterCount} 个链接：${oldKeyword} → ${newKeyword}`);
+            console.log(`  ✓ 迁移了 ${beforeCount - afterCount} 个旧搜索链接：${oldKeyword} → ${macroCategory}`);
         }
     });
     
