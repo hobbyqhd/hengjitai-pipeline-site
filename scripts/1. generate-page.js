@@ -573,7 +573,7 @@ const languageConfigs = {
 // 首页横幅主副标题（方案 D）：单一数据源，生成时写入各语言 index 正文
 const INDEX_HOME_HERO = {
     cn: {
-        titleHtml: '专注石油化工电力矿山等领域的<br/>管道与管件装备专业供应商',
+        titleHtml: '专注石油化工电力矿山等领域<br/>的管道与管件装备专业供应商',
         subtitle: '多年专业生产经验为全球客户提供优质的石化电力及矿山管道与管件成套解决方案'
     },
     en: {
