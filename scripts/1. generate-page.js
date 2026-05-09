@@ -888,14 +888,23 @@ function generatePage(lang, pageName, content, menuOptions = {}) {
     // 统一替换历史遗留联系方式，避免旧页面内容被复用后残留旧值
     const legacyAddressPatterns = [
         '中国河北省盐山经济开发区正港园区',
+        // 首页「联系我们」块等仍可能出现的短写法（无「中国」或省略国名）
+        '河北省盐山经济开发区正港园区',
         'Zhenggang Park, Yanshan County Economic Development Zone, Hebei Province, China',
+        'Zhenggang Park, Yanshan County Economic Development Zone, Hebei Province',
+        'Zhenggang Park, Wirtschaftsentwicklungszone Yanshan County, Provinz Hebei',
+        'Parc Zhenggang, Zone de Développement Économique de Yanshan County, Province du Hebei',
         '中国河北省塩山経済開発区正港工業園区',
+        '河北省燕山経済開発区鄭崗パーク',
         'Промышленный парк Чжэнган, Зона экономического развития Яньшань, провинция Хэбэй, Китай',
+        'Промышленный парк Чжэнган, Зона экономического развития Яньшань, провинция Хэбэй',
         'حديقة تشنغانغ، منطقة يانشان للتطوير الاقتصادي، مقاطعة هيبي، الصين',
+        'منطقة تشنغانغ، المنطقة الاقتصادية يانشان، مقاطعة خه باي',
         'Parque Zhenggang, Zona de Desarrollo Económico de Yanshan County, Provincia de Hebei, China',
         'Parc Zhenggang, Zone de Développement Économique de Yanshan County, Province du Hebei, Chine',
         'Parque Zhenggang, Zona de Desenvolvimento Econômico de Yanshan County, Província de Hebei, China',
         'झेंगगैंग पार्क, यानशान आर्थिक विकास क्षेत्र, हेबई प्रांत, चीन',
+        'झेंगगैंग पार्क, यानशान आर्थिक विकास क्षेत्र, हेबई प्रांत',
         'Zhenggang Industriepark, Wirtschaftszone Yanshan County, Provinz Hebei, China'
     ];
     content = content
