@@ -211,16 +211,40 @@ function loadImageOnlyDescriptions() {
   return imageOnlyDescriptionsCache;
 }
 
-/** 仅图片导入的产品：从 scripts/config/image-only-products-descriptions.json 读取多语言描述 */
+let imageOnlyI18nOverlayCache = null;
+function loadImageOnlyI18nOverlay() {
+  if (imageOnlyI18nOverlayCache !== null) return imageOnlyI18nOverlayCache;
+  const overlayPath = path.join(__dirname, 'config', 'image-only-products-i18n-overlay.json');
+  if (!fs.existsSync(overlayPath)) {
+    imageOnlyI18nOverlayCache = {};
+    return imageOnlyI18nOverlayCache;
+  }
+  imageOnlyI18nOverlayCache = JSON.parse(fs.readFileSync(overlayPath, 'utf8'));
+  return imageOnlyI18nOverlayCache;
+}
+
+/** 仅图片导入的产品：主配置 + 可选 overlay；优先本条产品的目标语言，其次 en/cn 正文，再回退到该语言品类默认段 */
 function descriptionForImageOnlyProduct(folderName, stem, lang) {
   const all = loadImageOnlyDescriptions();
   const block = all[folderName];
   if (!block) return '';
-  const row = block.products?.[stem];
-  const line = row?.[lang] || row?.en || row?.cn;
-  if (line) return line;
-  const def = block.default?.[lang] || block.default?.en || block.default?.cn;
-  return def || '';
+
+  const baseRow = block.products?.[stem] || {};
+  const overlayRow = loadImageOnlyI18nOverlay()?.[folderName]?.[stem] || {};
+  const row = { ...baseRow, ...overlayRow };
+
+  const def = block.default || {};
+  const pick = v => (v && String(v).trim() ? String(v).trim() : '');
+
+  return (
+    pick(row[lang]) ||
+    pick(row.en) ||
+    pick(row.cn) ||
+    pick(def[lang]) ||
+    pick(def.en) ||
+    pick(def.cn) ||
+    ''
+  );
 }
 
 /**

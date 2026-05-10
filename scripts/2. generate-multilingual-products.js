@@ -495,7 +495,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "产品中心",
     "FOOTER_CONTACT_TITLE": "联系我们",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 沧州恒基泰管道装备有限公司 版权所有"
+    "FOOTER_COPYRIGHT": "© 2025 沧州恒基泰管道装备有限公司 版权所有",
+    "BACK_TO_TOP": "回到顶部"
   },
   en: {
     "LANG_CODE": "en",
@@ -549,7 +550,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "Products",
     "FOOTER_CONTACT_TITLE": "Contact Us",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. All Rights Reserved"
+    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. All Rights Reserved",
+    "BACK_TO_TOP": "Back to Top"
   },
   jp: {
     "LANG_CODE": "ja",
@@ -603,7 +605,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "製品情報",
     "FOOTER_CONTACT_TITLE": "お問い合わせ",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 恒基泰管道設備有限公司 無断転載禁止"
+    "FOOTER_COPYRIGHT": "© 2025 恒基泰管道設備有限公司 無断転載禁止",
+    "BACK_TO_TOP": "ページトップへ"
   },
   ru: {
     "LANG_CODE": "ru",
@@ -657,7 +660,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "Продукция",
     "FOOTER_CONTACT_TITLE": "Контакты",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 Цанчжоу Хэнцзитай Трубопроводное Оборудование. Все права защищены"
+    "FOOTER_COPYRIGHT": "© 2025 Цанчжоу Хэнцзитай Трубопроводное Оборудование. Все права защищены",
+    "BACK_TO_TOP": "Наверх"
   },
   ar: {
     "LANG_CODE": "ar",
@@ -711,7 +715,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "المنتجات",
     "FOOTER_CONTACT_TITLE": "تواصل معنا",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة. جميع الحقوق محفوظة"
+    "FOOTER_COPYRIGHT": "© 2025 شركة هيبي هينغجيتاي لمعدات خطوط الأنابيب المحدودة. جميع الحقوق محفوظة",
+    "BACK_TO_TOP": "العودة للأعلى"
   },
   es: {
     "LANG_CODE": "es",
@@ -765,7 +770,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "Productos",
     "FOOTER_CONTACT_TITLE": "Contactar",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos los derechos reservados"
+    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos los derechos reservados",
+    "BACK_TO_TOP": "Volver Arriba"
   },
   fr: {
     "LANG_CODE": "fr",
@@ -819,7 +825,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "Produits",
     "FOOTER_CONTACT_TITLE": "Nous contacter",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Tous droits réservés"
+    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Tous droits réservés",
+    "BACK_TO_TOP": "Retour en Haut"
   },
   pt: {
     "LANG_CODE": "pt",
@@ -873,7 +880,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "Produtos",
     "FOOTER_CONTACT_TITLE": "Entre em contato",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos os direitos reservados"
+    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Todos os direitos reservados",
+    "BACK_TO_TOP": "Voltar ao Topo"
   },
   hi: {
     "LANG_CODE": "hi",
@@ -927,7 +935,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "उत्पाद",
     "FOOTER_CONTACT_TITLE": "संपर्क करें",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड। सभी अधिकार सुरक्षित"
+    "FOOTER_COPYRIGHT": "© 2025 हेबई कांगझोउ हेंगजिताई कंपनी लिमिटेड। सभी अधिकार सुरक्षित",
+    "BACK_TO_TOP": "ऊपर जाएं"
   },
   de: {
     "LANG_CODE": "de",
@@ -981,7 +990,8 @@ const translations = {
     "FOOTER_PRODUCTS_TITLE": "Produkte",
     "FOOTER_CONTACT_TITLE": "Kontakt",
     "FOOTER_ADDRESS": "中国河北省沧州市盐山县边务镇李郭庄村口南100米",
-    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Alle Rechte vorbehalten"
+    "FOOTER_COPYRIGHT": "© 2025 Cangzhou Hengjitai Pipeline Equipment Co., Ltd. Alle Rechte vorbehalten",
+    "BACK_TO_TOP": "Nach oben"
   }
 };
 

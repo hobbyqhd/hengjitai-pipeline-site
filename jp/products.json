@@ -2,7 +2,7 @@
   "metadata": {
     "totalProducts": 194,
     "totalCategories": 20,
-    "lastUpdated": "2026-05-10T02:43:10.424Z",
+    "lastUpdated": "2026-05-10T03:04:29.226Z",
     "language": "jp",
     "languageCode": "ja-JP",
     "macroCategoryCoverage": {
@@ -4221,7 +4221,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "180° high-pressure flanged fitting for tight-radius routing under elevated pressure; material and pressure class per project with inspection as required.",
+      "description": "180°高圧フランジ形継手。高圧・小曲率半径の配管向け。圧力等級・材質に応じ加工・検査が可能です。",
       "image": "/images/hp-products/弯头支吊架/180°定制高压法兰管件.jpg",
       "slug": "elbows-and-pipe-supports-img-001",
       "macroCategories": [
@@ -4237,7 +4237,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Large-diameter 90° steel elbow for mainline direction changes; weld or flanged ends matched to project requirements for transmission and industrial piping.",
+      "description": "大口径90°鋼製エルボ。本管の方向転換用。溶接端またはフランジ端をプロジェクトに合わせ選定可能。",
       "image": "/images/hp-products/弯头支吊架/90度大口径钢制弯头.jpg",
       "slug": "elbows-and-pipe-supports-img-002",
       "macroCategories": [
@@ -4253,7 +4253,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Saddle sliding shoe conforming to OD with low-friction slide pair; common for large horizontal runs.",
+      "description": "サドル式スライドシュー。外径に沿う支持面と低摩擦スライド。大口径水平配管向け。",
       "image": "/images/hp-products/弯头支吊架/鞍式滑动管托.jpg",
       "slug": "elbows-and-pipe-supports-img-003",
       "macroCategories": [
@@ -4269,7 +4269,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Insulated fixed pipe shoe limiting vertical and lateral movement while protecting the insulation jacket; common on hot/cold medium lines.",
+      "description": "保温付き固定シュー。縦横変位を拘束し断熱被覆を保護。冷熱媒配管に多用されます。",
       "image": "/images/hp-products/弯头支吊架/保温固定管托.jpg",
       "slug": "elbows-and-pipe-supports-img-004",
       "macroCategories": [
@@ -4285,7 +4285,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Insulated clamp support combining clamping and bearing for small/medium insulated piping support points.",
+      "description": "保温管挟み支座。挟み込みと支持を一体にし、中小口径の保温配管の吊点に適します。",
       "image": "/images/hp-products/弯头支吊架/保温管夹支座.jpg",
       "slug": "elbows-and-pipe-supports-img-005",
       "macroCategories": [
@@ -4301,7 +4301,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Insulated sliding pipe support permitting axial thermal expansion while reducing restraint stress and maintaining insulation continuity and guidance.",
+      "description": "保温付きスライドシュー。軸方向の熱伸びを許容し拘束応力を低減。断熱の連続性と案内を確保。",
       "image": "/images/hp-products/弯头支吊架/保温滑动管托.jpg",
       "slug": "elbows-and-pipe-supports-img-006",
       "macroCategories": [
@@ -4317,7 +4317,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Large 90° steel elbows in batch production with consistent dimensions and controlled welds/bevels for project-scale supply.",
+      "description": "大口径90°鋼製エルボ量産品。寸法そろえ、溶接・開先を規格管理。大量納入向け。",
       "image": "/images/hp-products/弯头支吊架/大口径90度钢制弯头批量成品.jpg",
       "slug": "elbows-and-pipe-supports-img-007",
       "macroCategories": [
@@ -4333,7 +4333,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Large flanged 90° elbow for bolt-up to flanged spools and easier maintenance; suited to modular pump stations and yards.",
+      "description": "大口径フランジ付き90°エルボ。フランジ管とのボルト締結・保守分解が容易。ポンプ場向け。",
       "image": "/images/hp-products/弯头支吊架/大口径法兰90度钢制弯头.jpg",
       "slug": "elbows-and-pipe-supports-img-008",
       "macroCategories": [
@@ -4349,7 +4349,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Custom high-pressure flanged spool with weld-on or integral flanges per drawing for equipment nozzles, jumpers or hydro test sections.",
+      "description": "高圧フランジ直管スプール。両端フランジは図面通り溶接または一体加工。機器ノズル・試験区間に。",
       "image": "/images/hp-products/弯头支吊架/定制高压法兰直管段.jpg",
       "slug": "elbows-and-pipe-supports-img-009",
       "macroCategories": [
@@ -4365,7 +4365,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Square guided shoe with sliding planes limiting lateral travel while permitting axial expansion for guided support arrangements.",
+      "description": "方形案内シュー。滑り面で横変位を制限し軸方向熱伸びは許容。案内支架向け。",
       "image": "/images/hp-products/弯头支吊架/方形导向管托.jpg",
       "slug": "elbows-and-pipe-supports-img-010",
       "macroCategories": [
@@ -4381,7 +4381,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Anti-corrosion coated pipe/fitting semi-finished products with beveling and pre-fit inspection ready for field coating workflow.",
+      "description": "防食塗装鋼管・継手半製品。開先加工・組立前検査・現場塗装工程との接続が可能。",
       "image": "/images/hp-products/弯头支吊架/防腐钢管管件半成品.jpg",
       "slug": "elbows-and-pipe-supports-img-011",
       "macroCategories": [
@@ -4397,7 +4397,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Insulated fixed shoe with insulating blocks to reduce thermal bridging at anchor points.",
+      "description": "断熱付き固定シュー。断熱ブロックで熱橋を低減。固定点の熱損失抑制。",
       "image": "/images/hp-products/弯头支吊架/隔热固定管托.jpg",
       "slug": "elbows-and-pipe-supports-img-012",
       "macroCategories": [
@@ -4413,7 +4413,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Flanges available from stock or short lead time across common pressure classes and facings to mate elbows, spools and valves.",
+      "description": "各種フランジ在庫または短期手配。常用圧力級・シール面に対応。エルボ・直管・バルブ接続向け。",
       "image": "/images/hp-products/弯头支吊架/各种法兰现货供应.jpg",
       "slug": "elbows-and-pipe-supports-img-013",
       "macroCategories": [
@@ -4429,7 +4429,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Fixed clamp support anchoring the pipe at the support point and transferring forces/moments to the structure.",
+      "description": "固定管挟み支座。吊点で管を確実に固定し、力・モーメントを構造へ伝達。",
       "image": "/images/hp-products/弯头支吊架/固定管夹支座.jpg",
       "slug": "elbows-and-pipe-supports-img-014",
       "macroCategories": [
@@ -4445,7 +4445,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Vertical clamp support for risers or vertical runs maintaining alignment with auxiliary anti-vibration benefit.",
+      "description": "立形管挟み支座。立上り管の保持と芯出し。軽減振の補助。",
       "image": "/images/hp-products/弯头支吊架/立式管夹支座.jpg",
       "slug": "elbows-and-pipe-supports-img-015",
       "macroCategories": [
@@ -4461,7 +4461,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Light-duty U-clamp for small pipes and low support loads with quick installation.",
+      "description": "軽量U形管挟み。小荷重・軽支持向け。施工が速い。",
       "image": "/images/hp-products/弯头支吊架/轻型U型管夹.jpg",
       "slug": "elbows-and-pipe-supports-img-016",
       "macroCategories": [
@@ -4477,7 +4477,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Twin-clamp fixed support providing enhanced lateral restraint for parallel or closely spaced lines at fixed anchor locations.",
+      "description": "ツインクランプ固定支座。横拘束を強化。並行配管や近接管の固定端に。",
       "image": "/images/hp-products/弯头支吊架/双管夹固定支座.jpg",
       "slug": "elbows-and-pipe-supports-img-017",
       "macroCategories": [
@@ -4493,7 +4493,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Twin-clamp sliding support retaining clamping force while allowing axial travel for thermal movement and light guidance.",
+      "description": "ツインクランプスライド支座。挟持力を保ちつつ軸方向スライド。熱変位と軽案内に。",
       "image": "/images/hp-products/弯头支吊架/双管夹滑动支座.jpg",
       "slug": "elbows-and-pipe-supports-img-018",
       "macroCategories": [
@@ -4509,7 +4509,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Twin-clamp stop/limit support restricting excessive travel and preventing disengagement where stroke control is required.",
+      "description": "ツインクランプ限位支座。過大変位を抑止し脱架を防止。ストローク管理が必要な区間向け。",
       "image": "/images/hp-products/弯头支吊架/双管夹限位支座.jpg",
       "slug": "elbows-and-pipe-supports-img-019",
       "macroCategories": [
@@ -4525,7 +4525,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Two-bolt insulated shoe for better load distribution and stability; suited to thicker jackets or light vibration duty.",
+      "description": "2ボルト孔付き保温シュー。締結点を分散し安定性向上。厚い保温層や軽微な振動向け。",
       "image": "/images/hp-products/弯头支吊架/双孔保温管托.jpg",
       "slug": "elbows-and-pipe-supports-img-020",
       "macroCategories": [
@@ -4541,7 +4541,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Two-bolt clamp assembly for modular installation and field adjustment across standard pipe sizes.",
+      "description": "2ボルト管挟みアセンブリ。モジュール化で現場調整が容易。標準管径向け。",
       "image": "/images/hp-products/弯头支吊架/双螺栓管夹组件.jpg",
       "slug": "elbows-and-pipe-supports-img-021",
       "macroCategories": [
@@ -4557,7 +4557,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Four-corner limit clamp support for balanced bearing and higher restraint stiffness on critical runs.",
+      "description": "4点支持限位管挟み支座。荷重分散と剛性向上。重要管区間向け。",
       "image": "/images/hp-products/弯头支吊架/四角限位管夹支座.jpg",
       "slug": "elbows-and-pipe-supports-img-022",
       "macroCategories": [
@@ -4573,7 +4573,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Four-way limiting clamp assembly restraining movement in multiple directions under complex loading.",
+      "description": "4方向限位クランプ組。複合荷重下での逸れを抑制。",
       "image": "/images/hp-products/弯头支吊架/四向限位管夹组件.jpg",
       "slug": "elbows-and-pipe-supports-img-023",
       "macroCategories": [
@@ -4589,7 +4589,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Carbon steel seamless elbows in batches for medium/high pressure service; wall and grade per applicable standards.",
+      "description": "炭素鋼シームレスエルボ量産品。中〜高圧のクリーン用途。肉厚・材質は規格に従い供給。",
       "image": "/images/hp-products/弯头支吊架/碳钢无缝弯头批量成品.jpg",
       "slug": "elbows-and-pipe-supports-img-024",
       "macroCategories": [
@@ -4605,7 +4605,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Elbow shoe supporting the fitting locally to distribute loads and reduce stress concentration near the elbow intrados.",
+      "description": "エルボ用シュー。肘近傍で局所支持・荷重分散。肘内側の応力集中低減に寄与。",
       "image": "/images/hp-products/弯头支吊架/弯头管托支座.jpg",
       "slug": "elbows-and-pipe-supports-img-025",
       "macroCategories": [
@@ -4621,7 +4621,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Heavy insulated clamp support for thick jackets and higher vertical loads on main steam or elevated-temperature lines.",
+      "description": "重型保温管挟み支座。厚い保温層と高い鉛直荷重に対応。主蒸気・高温ライン向け。",
       "image": "/images/hp-products/弯头支吊架/重型保温管夹支座.jpg",
       "slug": "elbows-and-pipe-supports-img-026",
       "macroCategories": [
@@ -4637,7 +4637,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "Heavy-duty U-clamp bracket with reinforced sections and fasteners for large OD or higher mechanical loads.",
+      "description": "重型U形管挟みブラケット。厚肉部材・高強度締結。大口径・高荷重向け。",
       "image": "/images/hp-products/弯头支吊架/重型U型管夹支架.jpg",
       "slug": "elbows-and-pipe-supports-img-027",
       "macroCategories": [
@@ -4653,7 +4653,7 @@
       "applications": [],
       "features": [],
       "connectionType": null,
-      "description": "U-bolt pipe clamp for securing pipe to supports or steel structure; straightforward installation and clear load path, sized by pipe OD and bolt specification.",
+      "description": "Uボルト管挟み。支吊架や鋼構造への固定用。外径・ボルト仕様で選定し、荷重伝達が明確です。",
       "image": "/images/hp-products/弯头支吊架/U型螺栓管夹.jpg",
       "slug": "elbows-and-pipe-supports-img-028",
       "macroCategories": [

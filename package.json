@@ -14,6 +14,7 @@
     "generate:products": "node \"./scripts/2. generate-multilingual-products.js\"",
     "generate:cases": "node \"./scripts/3. generate-cases-page-improved.js\"",
     "validate:macro-categories": "node ./scripts/validate-macro-categories.js",
+    "validate:products-parity": "node ./scripts/validate-products-json-parity.js",
     "generate:site": "npm run generate:pages && npm run generate:products && npm run generate:cases",
     "seo:sitemap": "node ./scripts/generate-sitemap-enhanced.js && node ./scripts/generate-sitemap-enhanced.js --images",
     "seo:audit": "node ./scripts/seo-audit.js",

@@ -2,7 +2,15 @@
   "弯头支吊架": {
     "default": {
       "cn": "弯头、法兰、管夹与支吊架类管道配件，可按设计图纸与工况定制，适用于固定、导向、限位及连接等场景。详情欢迎联系销售获取技术资料。",
-      "en": "Pipe accessories including elbows, flanges, clamps and supports. Custom fabrication per drawings and service conditions for fixation, guiding, restraint and connection. Contact sales for technical data sheets."
+      "en": "Pipe accessories including elbows, flanges, clamps and supports. Custom fabrication per drawings and service conditions for fixation, guiding, restraint and connection. Contact sales for technical data sheets.",
+      "jp": "エルボ、フランジ、管クランプ、支吊架などの配管部品です。図面・使用条件に応じて製作可能で、固定、案内、拘束、接続などに対応します。技術資料は営業までお問い合わせください。",
+      "ru": "Трубная арматура: отводы, фланцы, хомуты и опоры. Изготовление по чертежам и условиям эксплуатации для фиксации, направления, ограничения перемещений и соединения. Запросите техническую документацию у отдела продаж.",
+      "ar": "ملحقات أنابيب تشمل الأكواع والفلنجات والمشابك والدعامات؛ تصنيع حسب المخططات وظروف التشغيل للتثبيت والتوجيه والحد من الحركة والوصل. تواصل مع المبيعات للحصول على المستندات الفنية.",
+      "es": "Accesorios de tubería: codos, bridas, abrazaderas y soportes. Fabricación a medida según planos y condiciones de servicio para fijación, guiado, limitación y conexión. Solicite fichas técnicas al equipo comercial.",
+      "fr": "Accessoires de tuyauterie : coudes, brides, colliers et supports. Fabrication sur plans et conditions de service pour fixation, guidage, limitation et raccordement. Contactez le service commercial pour la documentation technique.",
+      "pt": "Acessórios de tubulação: cotovelos, flanges, abraçadeiras e suportes. Fabricação sob desenho e condições de serviço para fixação, guia, limitação e conexão. Solicite dados técnicos à equipe comercial.",
+      "hi": "पाइप एक्सेसरीज़: एल्बो, फ्लैंज, क्लैंप और सपोर्ट। चित्रों व सेवा शर्तों अनुसार निर्माण—फिक्सिंग, गाइडिंग, सीमित गति और कनेक्शन हेतु। तकनीकी विवरण के लिए बिक्री से संपर्क करें।",
+      "de": "Rohrzubehör: Bögen, Flansche, Schellen und Halterungen. Fertigung nach Zeichnung und Betriebsbedingungen für Fixierung, Führung, Wegbegrenzung und Anschluss. Technische Unterlagen erhalten Sie vom Vertrieb."
     },
     "products": {
       "180°定制高压法兰管件": {
