@@ -1,0 +1,312 @@
+{
+  "弯头支吊架": {
+    "180°定制高压法兰管件": {
+      "en": "180° Custom High-Pressure Flanged Pipe Fitting",
+      "jp": "180°高圧フランジ形継手（特注）",
+      "ru": "Фланцевый фитинг 180° высокого давления (на заказ)",
+      "ar": "وصلة شفة 180° عالية الضغط حسب الطلب",
+      "es": "Codo brida 180° alta presión a medida",
+      "fr": "Raccord à bride 180° haute pression sur mesure",
+      "pt": "Conexão flangeada 180° alta pressão sob medida",
+      "hi": "180° उच्च दबाव फ्लेंज फिटिंग (कस्टम)",
+      "de": "180° Hochdruck-Flanschformstück (nach Zeichnung)"
+    },
+    "90度大口径钢制弯头": {
+      "en": "90° Large-Diameter Steel Elbow",
+      "jp": "大口径90°鋼製エルボ",
+      "ru": "Стальной отвод 90° большого диаметра",
+      "ar": "كوع فولاذي 90° كبير القطر",
+      "es": "Codo de acero 90° gran diámetro",
+      "fr": "Coude acier 90° grand diamètre",
+      "pt": "Cotovelo de aço 90° grande diâmetro",
+      "hi": "बड़े व्यास का 90° स्टील एल्बो",
+      "de": "Stahlrohrbogen 90° großer Durchmesser"
+    },
+    "U型螺栓管夹": {
+      "en": "U-Bolt Pipe Clamp",
+      "jp": "Uボルト管挟み",
+      "ru": "Трубный хомут с U-болтом",
+      "ar": "مشبك أنبوب ببرغي على شكل U",
+      "es": "Abrazadera de tubo con perno en U",
+      "fr": "Collier de serrage en U pour tube",
+      "pt": "Abraçadeira de tubo tipo U",
+      "hi": "यू-बोल्ट पाइप क्लैंप",
+      "de": "U-Bolt-Rohrschelle"
+    },
+    "保温固定管托": {
+      "en": "Insulated Fixed Pipe Shoe",
+      "jp": "保温付き固定シュー",
+      "ru": "Неподвижная изолированная опора",
+      "ar": "حذاء أنبوب ثابت مع عزل حراري",
+      "es": "Zapata fija aislada para tubería",
+      "fr": "Support fixe isolé pour tuyau",
+      "pt": "Sapata fixa isolada para tubo",
+      "hi": "इन्सुलेटेड फिक्स्ड पाइप शू",
+      "de": "Isolierte feste Rohrauflage"
+    },
+    "保温滑动管托": {
+      "en": "Insulated Sliding Pipe Support",
+      "jp": "保温付きスライド管支持",
+      "ru": "Изолированная скользящая опора",
+      "ar": "دعامة أنزلاق معزولة للأنابيب",
+      "es": "Soporte deslizante aislado",
+      "fr": "Support coulissant isolé",
+      "pt": "Suporte deslizante isolado",
+      "hi": "इन्सुलेटेड स्लाइडिंग पाइप सपोर्ट",
+      "de": "Isolierte Gleitrohrstütze"
+    },
+    "保温管夹支座": {
+      "en": "Insulated Pipe Clamp Support",
+      "jp": "保温管挟み支座",
+      "ru": "Изолированная хомутовая опора",
+      "ar": "دعامة مشبك أنبوب معزولة",
+      "es": "Soporte con abrazadera aislada",
+      "fr": "Support collier isolé",
+      "pt": "Suporte com abraçadeira isolada",
+      "hi": "इन्सुलेटेड पाइप क्लैंप सपोर्ट",
+      "de": "Isolierte Rohrschellen-Stütze"
+    },
+    "双孔保温管托": {
+      "en": "Two-Bolt Insulated Pipe Shoe",
+      "jp": "2ボルト孔付き保温シュー",
+      "ru": "Двухболтовая изолированная опора",
+      "ar": "حذاء أنبوب معزول ببرغيين",
+      "es": "Zapata aislada de dos pernos",
+      "fr": "Patins isolé deux boulons",
+      "pt": "Sapata isolada de dois parafusos",
+      "hi": "दो-बोल्ट इन्सुलेटेड पाइप शू",
+      "de": "Zweibolzen-isolierte Rohrauflage"
+    },
+    "双管夹固定支座": {
+      "en": "Twin-Clamp Fixed Support",
+      "jp": "ツインクランプ固定支座",
+      "ru": "Неподвижная двуххомутовая опора",
+      "ar": "دعامة ثابتة بمشبك مزدوج",
+      "es": "Soporte fijo de doble abrazadera",
+      "fr": "Support fixe double collier",
+      "pt": "Suporte fixo de dupla abraçadeira",
+      "hi": "ट्विन-क्लैंप फिक्स्ड सपोर्ट",
+      "de": "Zwei-Schellen-Festpunkt"
+    },
+    "双管夹滑动支座": {
+      "en": "Twin-Clamp Sliding Support",
+      "jp": "ツインクランプスライド支座",
+      "ru": "Скользящая двуххомутовая опора",
+      "ar": "دعامة منزلقة بمشبك مزدوج",
+      "es": "Soporte deslizante doble abrazadera",
+      "fr": "Support coulissant double collier",
+      "pt": "Suporte deslizante dupla abraçadeira",
+      "hi": "ट्विन-क्लैंप स्लाइडिंग सपोर्ट",
+      "de": "Zwei-Schellen-Gleitlager"
+    },
+    "双管夹限位支座": {
+      "en": "Twin-Clamp Limit Support",
+      "jp": "ツインクランプ限位支座",
+      "ru": "Ограничительная двуххомутовая опора",
+      "ar": "دعامة حدّية بمشبك مزدوج",
+      "es": "Soporte limitador doble abrazadera",
+      "fr": "Support butée double collier",
+      "pt": "Suporte limitador dupla abraçadeira",
+      "hi": "ट्विन-क्लैंप लिमिट सपोर्ट",
+      "de": "Zwei-Schellen-Wegbegrenzer"
+    },
+    "双螺栓管夹组件": {
+      "en": "Two-Bolt Clamp Assembly",
+      "jp": "2ボルト管挟みアセンブリ",
+      "ru": "Двухболтовый хомутовый узел",
+      "ar": "مجمّع مشبك ببرغيين",
+      "es": "Conjunto de abrazadera de dos pernos",
+      "fr": "Assemblage collier deux boulons",
+      "pt": "Conjunto de abraçadeira de dois parafusos",
+      "hi": "दो-बोल्ट क्लैंप असेंबली",
+      "de": "Zweibolzen-Schellenbaugruppe"
+    },
+    "各种法兰现货供应": {
+      "en": "Flanges in Stock (Various Specifications)",
+      "jp": "各種フランジ在庫・短納期対応",
+      "ru": "Фланцы со склада (разные исполнения)",
+      "ar": "شفات متوفرة (مواصفات متعددة)",
+      "es": "Bridas en stock (varias especificaciones)",
+      "fr": "Brides en stock (plusieurs spécifications)",
+      "pt": "Flanges em estoque (várias especificações)",
+      "hi": "स्टॉक में फ्लेंज (विविध विनिर्देश)",
+      "de": "Flansche ab Lager (verschiedene Ausführungen)"
+    },
+    "四向限位管夹组件": {
+      "en": "Four-Way Limiting Clamp Assembly",
+      "jp": "4方向限位管挟み組立",
+      "ru": "Четырёхнаправленный ограничительный хомут",
+      "ar": "مجمّع مشبك حدّي رباعي الاتجاه",
+      "es": "Conjunto de abrazadera limitadora cuatridireccional",
+      "fr": "Assemblage collier limiteur quatre directions",
+      "pt": "Conjunto de limitação em quatro direções",
+      "hi": "चार-दिशा सीमित क्लैंप असेंबली",
+      "de": "Vierweg-Begrenzungs-Schellenbaugruppe"
+    },
+    "四角限位管夹支座": {
+      "en": "Four-Corner Limit Clamp Support",
+      "jp": "4点支持限位管挟み支座",
+      "ru": "Четырёхточечная ограничительная опора",
+      "ar": "دعامة مشبك حدّية بأربع زوايا",
+      "es": "Soporte limitador de cuatro esquinas",
+      "fr": "Support collier limiteur quatre points",
+      "pt": "Suporte limitador quatro pontos",
+      "hi": "चार-कोना लिमिट क्लैंप सपोर्ट",
+      "de": "Vierpunkt-Begrenzungs-Schellenstütze"
+    },
+    "固定管夹支座": {
+      "en": "Fixed Pipe Clamp Support",
+      "jp": "固定管挟み支座",
+      "ru": "Неподвижная хомутовая опора",
+      "ar": "دعامة مشبك أنبوب ثابتة",
+      "es": "Soporte fijo con abrazadera",
+      "fr": "Support collier fixe",
+      "pt": "Suporte fixo com abraçadeira",
+      "hi": "फिक्स्ड पाइप क्लैंप सपोर्ट",
+      "de": "Feste Rohrschellen-Stütze"
+    },
+    "大口径90度钢制弯头批量成品": {
+      "en": "Large 90° Steel Elbow (Batch Production)",
+      "jp": "大口径90°鋼製エルボ（量産品）",
+      "ru": "Отвод 90° большого диаметра (серия)",
+      "ar": "كوع فولاذي 90° كبير (إنتاج دفعي)",
+      "es": "Codo acero 90° gran diámetro (serie)",
+      "fr": "Coude acier 90° grand diamètre (série)",
+      "pt": "Cotovelo aço 90° grande diâmetro (série)",
+      "hi": "बड़ा 90° स्टील एल्बो (बैच)",
+      "de": "Großer 90°-Stahlbogen (Serie)"
+    },
+    "大口径法兰90度钢制弯头": {
+      "en": "Large Flanged 90° Steel Elbow",
+      "jp": "大口径フランジ付き90°鋼製エルボ",
+      "ru": "Фланцевый отвод 90° большого диаметра",
+      "ar": "كوع فولاذي 90° مزود بشفة كبيرة",
+      "es": "Codo acero 90° con brida gran diámetro",
+      "fr": "Coude acier 90° à bride grand diamètre",
+      "pt": "Cotovelo aço 90° flangeado grande diâmetro",
+      "hi": "बड़ा फ्लेंज्ड 90° स्टील एल्बो",
+      "de": "Großer geflanschter 90°-Stahlbogen"
+    },
+    "定制高压法兰直管段": {
+      "en": "Custom High-Pressure Flanged Spool",
+      "jp": "高圧フランジ直管スプール（特注）",
+      "ru": "Высоконапорный фланцевый катушечный участок",
+      "ar": "قطعة أنبوب مفلنجة عالية الضغط حسب الطلب",
+      "es": "Tramo bridado alta presión a medida",
+      "fr": "Tronçon bridé haute pression sur mesure",
+      "pt": "Trecho flangeado alta pressão sob medida",
+      "hi": "कस्टम उच्च दबाव फ्लेंज्ड स्पूल",
+      "de": "Hochdruck-Flanschrohrstück (nach Zeichnung)"
+    },
+    "弯头管托支座": {
+      "en": "Elbow Pipe Shoe Support",
+      "jp": "エルボ用管シュー支座",
+      "ru": "Опора-«ботинок» под отвод",
+      "ar": "دعامة حذاء أنبوب عند الكوع",
+      "es": "Soporte zapata para codo",
+      "fr": "Support patin pour coude",
+      "pt": "Suporte sapata para cotovelo",
+      "hi": "एल्बो पाइप शू सपोर्ट",
+      "de": "Bogen-Rohrschuh-Stütze"
+    },
+    "方形导向管托": {
+      "en": "Square Guided Pipe Shoe",
+      "jp": "方形案内シュー",
+      "ru": "Квадратная направляющая опора",
+      "ar": "حذاء أنبوب موجّه مربع الشكل",
+      "es": "Zapata guía cuadrada",
+      "fr": "Patins guide carré",
+      "pt": "Sapata guia quadrada",
+      "hi": "वर्गाकार गाइडेड पाइप शू",
+      "de": "Quadratische Führungsrohrauflage"
+    },
+    "碳钢无缝弯头批量成品": {
+      "en": "Carbon Steel Seamless Elbow (Batch)",
+      "jp": "炭素鋼シームレスエルボ（量産品）",
+      "ru": "Бесшовный углеродистый отвод (серия)",
+      "ar": "كوع كربوني ملحوم بلا درز (دفعي)",
+      "es": "Codo sin costura acero al carbono (serie)",
+      "fr": "Coude sans soudure acier carbone (série)",
+      "pt": "Cotovelo sem costura aço carbono (série)",
+      "hi": "कार्बन स्टील सीमलेस एल्बो (बैच)",
+      "de": "Nahtloser Kohlenstoffstahl-Bogen (Serie)"
+    },
+    "立式管夹支座": {
+      "en": "Vertical Pipe Clamp Support",
+      "jp": "立形管挟み支座",
+      "ru": "Вертикальная хомутовая опора",
+      "ar": "دعامة مشبك أنبوب عمودية",
+      "es": "Soporte vertical con abrazadera",
+      "fr": "Support collier vertical",
+      "pt": "Suporte vertical com abraçadeira",
+      "hi": "वर्टिकल पाइप क्लैंप सपोर्ट",
+      "de": "Vertikale Rohrschellen-Stütze"
+    },
+    "轻型U型管夹": {
+      "en": "Light-Duty U-Bolt Clamp",
+      "jp": "軽量Uボルト管挟み",
+      "ru": "Лёгкий хомут с U-болтом",
+      "ar": "مشبك U خفيف",
+      "es": "Abrazadera U ligera",
+      "fr": "Collier U léger",
+      "pt": "Abraçadeira U leve",
+      "hi": "लाइट-ड्यूटी यू-बोल्ट क्लैंप",
+      "de": "Leichte U-Bolt-Schelle"
+    },
+    "重型U型管夹支架": {
+      "en": "Heavy-Duty U-Bolt Clamp Bracket",
+      "jp": "重型Uボルト管挟みブラケット",
+      "ru": "Тяжёлый кронштейн с U-болтом",
+      "ar": "قوس مشبك U للأحمال الثقيلة",
+      "es": "Soporte abrazadera U pesada",
+      "fr": "Étrier U renforcé",
+      "pt": "Suporte U reforçado",
+      "hi": "भारी यू-बोल्ट क्लैंप ब्रैकेट",
+      "de": "Schwere U-Bolt-Schellenhalterung"
+    },
+    "重型保温管夹支座": {
+      "en": "Heavy Insulated Clamp Support",
+      "jp": "重型保温管挟み支座",
+      "ru": "Тяжёлая изолированная хомутовая опора",
+      "ar": "دعامة مشبك معزولة للأحمال الثقيلة",
+      "es": "Soporte aislado pesado con abrazadera",
+      "fr": "Support collier isolé renforcé",
+      "pt": "Suporte isolado pesado com abraçadeira",
+      "hi": "भारी इन्सुलेटेड क्लैंप सपोर्ट",
+      "de": "Schwere isolierte Schellenstütze"
+    },
+    "防腐钢管管件半成品": {
+      "en": "Anti-Corrosion Coated Pipe/Fitting Semi-Finished",
+      "jp": "防食塗装鋼管・継手半製品",
+      "ru": "Полуфабрикат трубы/фитинга с антикоррозионным покрытием",
+      "ar": "نصف منتج أنبوب/وصلة بطلاء مضاد للتآكل",
+      "es": "Semielaborado tubo/accesorio con recubrimiento anticorrosión",
+      "fr": "Semi-fini tube/raccord revêtu anticorrosion",
+      "pt": "Semi-acabado tubo/conexão com revestimento anticorrosivo",
+      "hi": "एंटी-कोरोज़न कोटेड पाइप/फिटिंग अर्ध-तैयार",
+      "de": "Antikorrosionsbeschichtetes Rohr/Fitting (Halbzeug)"
+    },
+    "隔热固定管托": {
+      "en": "Thermal Insulated Fixed Pipe Shoe",
+      "jp": "断熱固定シュー",
+      "ru": "Теплоизолированная неподвижная опора",
+      "ar": "حذاء أنبوب ثابت مع عزل حراري",
+      "es": "Zapata fija con aislamiento térmico",
+      "fr": "Patins fixe calorifugé",
+      "pt": "Sapata fixa com isolamento térmico",
+      "hi": "थर्मल इन्सुलेटेड फिक्स्ड पाइप शू",
+      "de": "Wärmeisolierte feste Rohrauflage"
+    },
+    "鞍式滑动管托": {
+      "en": "Saddle Sliding Pipe Support",
+      "jp": "サドル式スライド管支持",
+      "ru": "Седельная скользящая опора",
+      "ar": "دعامة منزلقة بشكل سرج",
+      "es": "Soporte deslizante tipo silla",
+      "fr": "Support coulissant en selle",
+      "pt": "Suporte deslizante tipo sela",
+      "hi": "सैडल स्लाइडिंग पाइप सपोर्ट",
+      "de": "Sattel-Gleitrohrstütze"
+    }
+  }
+}

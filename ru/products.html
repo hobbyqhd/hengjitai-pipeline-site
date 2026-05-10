@@ -807,12 +807,16 @@
                     // 按搜索关键词筛选
                     if (this.searchQuery) {
                         const query = this.searchQuery.toLowerCase();
-                        filtered = filtered.filter(product => 
-                            product.name.toLowerCase().includes(query) ||
-                            product.categoryName.toLowerCase().includes(query) ||
-                            product.specification.toLowerCase().includes(query) ||
-                            product.description.toLowerCase().includes(query)
-                        );
+                        filtered = filtered.filter(product => {
+                            const nameZh = product.nameZh ? String(product.nameZh).toLowerCase() : '';
+                            return (
+                                String(product.name || '').toLowerCase().includes(query) ||
+                                nameZh.includes(query) ||
+                                String(product.categoryName || '').toLowerCase().includes(query) ||
+                                String(product.specification || '').toLowerCase().includes(query) ||
+                                String(product.description || '').toLowerCase().includes(query)
+                            );
+                        });
                     }
                     
                     return filtered;

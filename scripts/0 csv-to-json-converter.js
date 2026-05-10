@@ -223,6 +223,39 @@ function loadImageOnlyI18nOverlay() {
   return imageOnlyI18nOverlayCache;
 }
 
+let imageOnlyNamesCache = null;
+function loadImageOnlyNames() {
+  if (imageOnlyNamesCache !== null) return imageOnlyNamesCache;
+  const namesPath = path.join(__dirname, 'config', 'image-only-products-names.json');
+  if (!fs.existsSync(namesPath)) {
+    imageOnlyNamesCache = {};
+    return imageOnlyNamesCache;
+  }
+  imageOnlyNamesCache = JSON.parse(fs.readFileSync(namesPath, 'utf8'));
+  return imageOnlyNamesCache;
+}
+
+const IMAGE_ONLY_SPEC_BY_LANG = {
+  cn: '按图定制',
+  en: 'Custom by drawing',
+  jp: '図面に基づき製作',
+  ru: 'Изготовление по чертежу',
+  ar: 'تصنيع حسب المخطط',
+  es: 'Fabricación según plano',
+  fr: 'Fabrication sur plan',
+  pt: 'Fabricação conforme desenho',
+  hi: 'चित्र के अनुसार निर्माण',
+  de: 'Fertigung nach Zeichnung'
+};
+
+/** 图片文件名（中文 stem）在各语言下的展示名；cn 与 stem 一致 */
+function displayNameForImageOnlyProduct(folderName, stem, lang) {
+  if (lang === 'cn') return stem;
+  const names = loadImageOnlyNames()?.[folderName]?.[stem] || {};
+  const pick = v => (v && String(v).trim() ? String(v).trim() : '');
+  return pick(names[lang]) || pick(names.en) || stem;
+}
+
 /** 仅图片导入的产品：主配置 + 可选 overlay；优先本条产品的目标语言，其次 en/cn 正文，再回退到该语言品类默认段 */
 function descriptionForImageOnlyProduct(folderName, stem, lang) {
   const all = loadImageOnlyDescriptions();
@@ -266,11 +299,13 @@ function appendImageOnlyProductsForOrphanFolders(products, folders, lang) {
 
     imageFiles.forEach((fileName, i) => {
       const stem = fileName.replace(/\.[^.]+$/, '');
+      const displayName = displayNameForImageOnlyProduct(folderName, stem, lang);
       const descriptionText = descriptionForImageOnlyProduct(folderName, stem, lang);
+      const specText = IMAGE_ONLY_SPEC_BY_LANG[lang] || IMAGE_ONLY_SPEC_BY_LANG.en;
       const macroCategories = macroCategoriesForImageOnlyCategory(categoryId, {
         categoryId,
         categoryName,
-        productName: stem,
+        productName: displayName,
         description: descriptionText,
         connectionTypeName: ''
       });
@@ -279,8 +314,9 @@ function appendImageOnlyProductsForOrphanFolders(products, folders, lang) {
         id: `product-${String(nextNum).padStart(3, '0')}`,
         categoryId,
         categoryName,
-        name: stem,
-        specification: lang === 'cn' ? '按图定制' : 'Custom by drawing',
+        name: displayName,
+        nameZh: stem,
+        specification: specText,
         applications: [],
         features: [],
         connectionType: null,
