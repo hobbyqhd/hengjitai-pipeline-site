@@ -1,16 +1,17 @@
 {
   "metadata": {
-    "totalProducts": 166,
-    "totalCategories": 19,
-    "lastUpdated": "2026-05-09T07:55:38.316Z",
+    "totalProducts": 194,
+    "totalCategories": 20,
+    "lastUpdated": "2026-05-10T02:43:10.398Z",
     "language": "cn",
     "languageCode": "zh-CN",
     "macroCategoryCoverage": {
       "plastic-coating": 149,
       "anti-corrosion": 61,
       "steel-pipes": 166,
-      "pipe-fittings": 71
-    }
+      "pipe-fittings": 99
+    },
+    "hpProductsFoldersCount": 20
   },
   "categories": [
     {
@@ -21,81 +22,11 @@
       "url": "hp-products/3pe-anti-corrosion-steel-pipes.html"
     },
     {
-      "id": "cdu-quick-connect-plastic-coated-steel-pipes",
-      "name": "CDU快速接头涂塑钢管",
-      "count": 1,
-      "image": "/images/hp-products/CDU快速接头涂塑钢管/(108×4米)CDU快速接头焊接消防涂塑钢管.jpg",
-      "url": "hp-products/cdu-quick-connect-plastic-coated-steel-pipes.html"
-    },
-    {
-      "id": "threaded-connection-plastic-coated-steel-pipes",
-      "name": "丝扣连接涂塑钢管",
-      "count": 2,
-      "image": "/images/hp-products/丝扣连接涂塑钢管/(60×6米)丝扣连接给水涂塑钢管.jpg",
-      "url": "hp-products/threaded-connection-plastic-coated-steel-pipes.html"
-    },
-    {
-      "id": "internal-external-epoxy-coated-steel-pipe",
-      "name": "内外环氧树脂涂塑钢管",
-      "count": 3,
-      "image": "/images/hp-products/内外环氧树脂涂塑钢管/(DN600×12米)防腐螺旋钢管.jpg",
-      "url": "hp-products/internal-external-epoxy-coated-steel-pipe.html"
-    },
-    {
-      "id": "clamp-connection-plastic-coated-steel-pipes",
-      "name": "卡箍连接涂塑钢管",
-      "count": 3,
-      "image": "/images/hp-products/卡箍连接涂塑钢管/(114×6米)卡箍连接给水涂塑钢管.jpg",
-      "url": "hp-products/clamp-connection-plastic-coated-steel-pipes.html"
-    },
-    {
-      "id": "bimetal-welded-plastic-coated-steel-pipes",
-      "name": "双金属焊接涂塑钢管",
-      "count": 3,
-      "image": "/images/hp-products/双金属焊接涂塑钢管/(325×12米)双金属焊接给水涂塑钢管.jpg",
-      "url": "hp-products/bimetal-welded-plastic-coated-steel-pipes.html"
-    },
-    {
-      "id": "external-galvanized-internal-plastic-coated-steel-pipes",
-      "name": "外镀锌内涂塑钢管",
-      "count": 3,
-      "image": "/images/hp-products/外镀锌内涂塑钢管/(21×6米)外镀锌内涂塑钢管.jpg",
-      "url": "hp-products/external-galvanized-internal-plastic-coated-steel-pipes.html"
-    },
-    {
-      "id": "large-diameter-internal-ep-external-pe-anti-corrosion-steel-pipes",
-      "name": "大口径内EP外PE防腐钢管",
-      "count": 9,
-      "image": "/images/hp-products/大口径内EP外PE防腐钢管/(1020×6米)内EP外PE防腐钢管.jpg",
-      "url": "hp-products/large-diameter-internal-ep-external-pe-anti-corrosion-steel-pipes.html"
-    },
-    {
-      "id": "large-diameter-internal-epoxy-coated-steel-pipes",
-      "name": "大口径内环氧涂塑钢管",
-      "count": 5,
-      "image": "/images/hp-products/大口径内环氧涂塑钢管/(426×12米)内环氧涂塑钢管.jpg",
-      "url": "hp-products/large-diameter-internal-epoxy-coated-steel-pipes.html"
-    },
-    {
-      "id": "large-diameter-composite-plastic-coated-steel-pipes",
-      "name": "大口径涂塑复合钢管",
-      "count": 11,
-      "image": "/images/hp-products/大口径涂塑复合钢管/(DN350×12米)双金属焊接给水涂塑钢管.jpg",
-      "url": "hp-products/large-diameter-composite-plastic-coated-steel-pipes.html"
-    },
-    {
       "id": "colored-double-resistance-plastic-coated-steel-pipes",
       "name": "彩色双抗涂塑钢管",
       "count": 3,
       "image": "/images/hp-products/彩色双抗涂塑钢管/(108×6米)双抗环氧粉末矿用涂塑复合钢管.jpg",
       "url": "hp-products/colored-double-resistance-plastic-coated-steel-pipes.html"
-    },
-    {
-      "id": "socket-tpep-anti-corrosion-steel-pipes",
-      "name": "承插口TPEP防腐钢管",
-      "count": 1,
-      "image": "/images/hp-products/承插口TPEP防腐钢管/(820×12米)承插口TPEP防腐钢管.jpg",
-      "url": "hp-products/socket-tpep-anti-corrosion-steel-pipes.html"
     },
     {
       "id": "socket-plastic-coated-steel-pipes",
@@ -105,18 +36,32 @@
       "url": "hp-products/socket-plastic-coated-steel-pipes.html"
     },
     {
-      "id": "loose-flange-connection-plastic-coated-steel-pipes",
-      "name": "松套法兰连接涂塑钢管",
+      "id": "socket-tpep-anti-corrosion-steel-pipes",
+      "name": "承插口TPEP防腐钢管",
       "count": 1,
-      "image": "/images/hp-products/松套法兰连接涂塑钢管/(140×6米)松套法兰矿用涂塑钢管.jpg",
-      "url": "hp-products/loose-flange-connection-plastic-coated-steel-pipes.html"
+      "image": "/images/hp-products/承插口TPEP防腐钢管/(820×12米)承插口TPEP防腐钢管.jpg",
+      "url": "hp-products/socket-tpep-anti-corrosion-steel-pipes.html"
     },
     {
-      "id": "grooved-connection-plastic-coated-steel-pipes",
-      "name": "沟槽连涂塑钢管",
-      "count": 26,
-      "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接消防涂塑钢管.jpg",
-      "url": "hp-products/grooved-connection-plastic-coated-steel-pipes.html"
+      "id": "large-diameter-internal-epoxy-coated-steel-pipes",
+      "name": "大口径内环氧涂塑钢管",
+      "count": 5,
+      "image": "/images/hp-products/大口径内环氧涂塑钢管/(426×12米)内环氧涂塑钢管.jpg",
+      "url": "hp-products/large-diameter-internal-epoxy-coated-steel-pipes.html"
+    },
+    {
+      "id": "large-diameter-internal-ep-external-pe-anti-corrosion-steel-pipes",
+      "name": "大口径内EP外PE防腐钢管",
+      "count": 9,
+      "image": "/images/hp-products/大口径内EP外PE防腐钢管/(1020×6米)内EP外PE防腐钢管.jpg",
+      "url": "hp-products/large-diameter-internal-ep-external-pe-anti-corrosion-steel-pipes.html"
+    },
+    {
+      "id": "large-diameter-composite-plastic-coated-steel-pipes",
+      "name": "大口径涂塑复合钢管",
+      "count": 11,
+      "image": "/images/hp-products/大口径涂塑复合钢管/(DN350×12米)双金属焊接给水涂塑钢管.jpg",
+      "url": "hp-products/large-diameter-composite-plastic-coated-steel-pipes.html"
     },
     {
       "id": "flange-connection-mining-plastic-coated-steel-pipes",
@@ -126,11 +71,32 @@
       "url": "hp-products/flange-connection-mining-plastic-coated-steel-pipes.html"
     },
     {
-      "id": "fire-protection-plastic-coated-steel-pipes",
-      "name": "消防涂塑钢管",
-      "count": 14,
-      "image": "/images/hp-products/消防涂塑钢管/(114×6米)沟槽连接消防涂塑钢管.jpg",
-      "url": "hp-products/fire-protection-plastic-coated-steel-pipes.html"
+      "id": "water-supply-plastic-coated-steel-pipes",
+      "name": "给水涂塑钢管",
+      "count": 32,
+      "image": "/images/hp-products/给水涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
+      "url": "hp-products/water-supply-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "grooved-connection-plastic-coated-steel-pipes",
+      "name": "沟槽连涂塑钢管",
+      "count": 26,
+      "image": "/images/hp-products/沟槽连涂塑钢管/(159×6米)沟槽连接消防涂塑钢管.jpg",
+      "url": "hp-products/grooved-connection-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "clamp-connection-plastic-coated-steel-pipes",
+      "name": "卡箍连接涂塑钢管",
+      "count": 3,
+      "image": "/images/hp-products/卡箍连接涂塑钢管/(114×6米)卡箍连接给水涂塑钢管.jpg",
+      "url": "hp-products/clamp-connection-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "internal-external-epoxy-coated-steel-pipe",
+      "name": "内外环氧树脂涂塑钢管",
+      "count": 3,
+      "image": "/images/hp-products/内外环氧树脂涂塑钢管/(DN600×12米)防腐螺旋钢管.jpg",
+      "url": "hp-products/internal-external-epoxy-coated-steel-pipe.html"
     },
     {
       "id": "gas-plastic-coated-steel-pipes",
@@ -140,11 +106,53 @@
       "url": "hp-products/gas-plastic-coated-steel-pipes.html"
     },
     {
-      "id": "water-supply-plastic-coated-steel-pipes",
-      "name": "给水涂塑钢管",
-      "count": 32,
-      "image": "/images/hp-products/给水涂塑钢管/(DN100×6米)给水涂塑钢管.jpg",
-      "url": "hp-products/water-supply-plastic-coated-steel-pipes.html"
+      "id": "bimetal-welded-plastic-coated-steel-pipes",
+      "name": "双金属焊接涂塑钢管",
+      "count": 3,
+      "image": "/images/hp-products/双金属焊接涂塑钢管/(325×12米)双金属焊接给水涂塑钢管.jpg",
+      "url": "hp-products/bimetal-welded-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "threaded-connection-plastic-coated-steel-pipes",
+      "name": "丝扣连接涂塑钢管",
+      "count": 2,
+      "image": "/images/hp-products/丝扣连接涂塑钢管/(60×6米)丝扣连接给水涂塑钢管.jpg",
+      "url": "hp-products/threaded-connection-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "loose-flange-connection-plastic-coated-steel-pipes",
+      "name": "松套法兰连接涂塑钢管",
+      "count": 1,
+      "image": "/images/hp-products/松套法兰连接涂塑钢管/(140×6米)松套法兰矿用涂塑钢管.jpg",
+      "url": "hp-products/loose-flange-connection-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "external-galvanized-internal-plastic-coated-steel-pipes",
+      "name": "外镀锌内涂塑钢管",
+      "count": 3,
+      "image": "/images/hp-products/外镀锌内涂塑钢管/(21×6米)外镀锌内涂塑钢管.jpg",
+      "url": "hp-products/external-galvanized-internal-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "elbows-and-pipe-supports",
+      "name": "弯头支吊架",
+      "count": 28,
+      "image": "/images/hp-products/弯头支吊架/180°定制高压法兰管件.jpg",
+      "url": "hp-products/elbows-and-pipe-supports.html"
+    },
+    {
+      "id": "fire-protection-plastic-coated-steel-pipes",
+      "name": "消防涂塑钢管",
+      "count": 14,
+      "image": "/images/hp-products/消防涂塑钢管/(114×6米)沟槽连接消防涂塑钢管.jpg",
+      "url": "hp-products/fire-protection-plastic-coated-steel-pipes.html"
+    },
+    {
+      "id": "cdu-quick-connect-plastic-coated-steel-pipes",
+      "name": "CDU快速接头涂塑钢管",
+      "count": 1,
+      "image": "/images/hp-products/CDU快速接头涂塑钢管/(108×4米)CDU快速接头焊接消防涂塑钢管.jpg",
+      "url": "hp-products/cdu-quick-connect-plastic-coated-steel-pipes.html"
     }
   ],
   "products": [
@@ -4208,6 +4216,454 @@
         "steel-pipes",
         "anti-corrosion"
       ]
+    },
+    {
+      "id": "product-184",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "180°定制高压法兰管件",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "180° 高压法兰连接管件，适用于高压、大曲率转向的管段布置，可按压力等级与材质定制加工与检验。",
+      "image": "/images/hp-products/弯头支吊架/180°定制高压法兰管件.jpg",
+      "slug": "elbows-and-pipe-supports-img-001",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-185",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "90度大口径钢制弯头",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "大口径 90° 钢制弯头，用于主管线方向改变，焊接或法兰端可按项目匹配，适合长输与工业管线。",
+      "image": "/images/hp-products/弯头支吊架/90度大口径钢制弯头.jpg",
+      "slug": "elbows-and-pipe-supports-img-002",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-186",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "鞍式滑动管托",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "鞍式滑动管托，鞍形承面贴合管外径，滑动副低摩擦，适合大管径水平敷设。",
+      "image": "/images/hp-products/弯头支吊架/鞍式滑动管托.jpg",
+      "slug": "elbows-and-pipe-supports-img-003",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-187",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "保温固定管托",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "带保温结构的固定管托，限制管道竖向与横向位移同时兼顾绝热层保护，常用于冷热媒管道。",
+      "image": "/images/hp-products/弯头支吊架/保温固定管托.jpg",
+      "slug": "elbows-and-pipe-supports-img-004",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-188",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "保温管夹支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "保温管夹支座，将管夹功能与支承结合，适用于中小管径的保温管道支吊点布置。",
+      "image": "/images/hp-products/弯头支吊架/保温管夹支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-005",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-189",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "保温滑动管托",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "保温滑动管托，允许管道轴向热胀冷缩位移，降低约束应力，并保持保温层连续与导向。",
+      "image": "/images/hp-products/弯头支吊架/保温滑动管托.jpg",
+      "slug": "elbows-and-pipe-supports-img-006",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-190",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "大口径90度钢制弯头批量成品",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "大口径 90° 钢制弯头批量成品，尺寸一致、焊缝与坡口按标准控制，适合工程批量供货。",
+      "image": "/images/hp-products/弯头支吊架/大口径90度钢制弯头批量成品.jpg",
+      "slug": "elbows-and-pipe-supports-img-007",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-191",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "大口径法兰90度钢制弯头",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "大口径法兰端 90° 弯头，便于与法兰管道段对装与检修拆卸，适合泵房、站场等模块化布置。",
+      "image": "/images/hp-products/弯头支吊架/大口径法兰90度钢制弯头.jpg",
+      "slug": "elbows-and-pipe-supports-img-008",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-192",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "定制高压法兰直管段",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "定制高压法兰直管段，两端法兰焊接或整体加工按图，用于短接、设备口连接或试压段。",
+      "image": "/images/hp-products/弯头支吊架/定制高压法兰直管段.jpg",
+      "slug": "elbows-and-pipe-supports-img-009",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-193",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "方形导向管托",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "方形导向管托，提供定向滑动面，限制横向位移而允许轴向热胀，用于导向支架。",
+      "image": "/images/hp-products/弯头支吊架/方形导向管托.jpg",
+      "slug": "elbows-and-pipe-supports-img-010",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-194",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "防腐钢管管件半成品",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "防腐涂层钢管管件半成品，可按项目要求完成坡口、组对前检验与后续涂装工艺衔接。",
+      "image": "/images/hp-products/弯头支吊架/防腐钢管管件半成品.jpg",
+      "slug": "elbows-and-pipe-supports-img-011",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-195",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "隔热固定管托",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "隔热固定管托，采用隔热垫块降低热桥，在固定点保持能量损失可控。",
+      "image": "/images/hp-products/弯头支吊架/隔热固定管托.jpg",
+      "slug": "elbows-and-pipe-supports-img-012",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-196",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "各种法兰现货供应",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "多规格法兰现货或可短期排产，涵盖常用压力等级与密封面形式，配套弯头、直管与阀门接口。",
+      "image": "/images/hp-products/弯头支吊架/各种法兰现货供应.jpg",
+      "slug": "elbows-and-pipe-supports-img-013",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-197",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "固定管夹支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "固定管夹支座，将管道可靠固定于支吊点，传递力与力矩至承载结构。",
+      "image": "/images/hp-products/弯头支吊架/固定管夹支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-014",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-198",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "立式管夹支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "立式管夹支座，用于竖向或立管的夹持支承，保持对中与防振辅助。",
+      "image": "/images/hp-products/弯头支吊架/立式管夹支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-015",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-199",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "轻型U型管夹",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "轻型 U 型管夹，适用于中小荷载与轻载支吊，安装快捷。",
+      "image": "/images/hp-products/弯头支吊架/轻型U型管夹.jpg",
+      "slug": "elbows-and-pipe-supports-img-016",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-200",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "双管夹固定支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "双管夹固定支座，双夹持结构增强侧向约束，用于需要明确固定端的并行或小间距管位。",
+      "image": "/images/hp-products/弯头支吊架/双管夹固定支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-017",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-201",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "双管夹滑动支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "双管夹滑动支座，在保持夹持力的同时允许轴向滑动，兼顾导向与热位移。",
+      "image": "/images/hp-products/弯头支吊架/双管夹滑动支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-018",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-202",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "双管夹限位支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "双管夹限位支座，限制过量位移并防止脱架，用于需要行程控制的管段。",
+      "image": "/images/hp-products/弯头支吊架/双管夹限位支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-019",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-203",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "双孔保温管托",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "双孔保温管托，双紧固点分布荷载，提高稳定性，适合保温层较厚或振动轻微场合。",
+      "image": "/images/hp-products/弯头支吊架/双孔保温管托.jpg",
+      "slug": "elbows-and-pipe-supports-img-020",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-204",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "双螺栓管夹组件",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "双螺栓管夹组件，模块化安装，便于现场调整，适合标准管径系列的快速固定。",
+      "image": "/images/hp-products/弯头支吊架/双螺栓管夹组件.jpg",
+      "slug": "elbows-and-pipe-supports-img-021",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-205",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "四角限位管夹支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "四角限位管夹支座，四角承力均衡，提高限位刚度，适合重要管段。",
+      "image": "/images/hp-products/弯头支吊架/四角限位管夹支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-022",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-206",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "四向限位管夹组件",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "四向限位管夹组件，多向约束位移，用于防止管道在复杂荷载下窜动。",
+      "image": "/images/hp-products/弯头支吊架/四向限位管夹组件.jpg",
+      "slug": "elbows-and-pipe-supports-img-023",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-207",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "碳钢无缝弯头批量成品",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "碳钢无缝弯头批量成品，适合中高压清洁工况，材质与壁厚可按标准清单供货。",
+      "image": "/images/hp-products/弯头支吊架/碳钢无缝弯头批量成品.jpg",
+      "slug": "elbows-and-pipe-supports-img-024",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-208",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "弯头管托支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "弯头管托支座，在弯头附近提供局部支承与荷载分配，降低弯头颈部应力集中风险。",
+      "image": "/images/hp-products/弯头支吊架/弯头管托支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-025",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-209",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "重型保温管夹支座",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "重型保温管夹支座，兼顾厚保温层与较高竖向荷载，用于主蒸汽或高温介质管道。",
+      "image": "/images/hp-products/弯头支吊架/重型保温管夹支座.jpg",
+      "slug": "elbows-and-pipe-supports-img-026",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-210",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "重型U型管夹支架",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "重型 U 型管夹支架，加厚型材与紧固件，用于大管径或较高机械荷载。",
+      "image": "/images/hp-products/弯头支吊架/重型U型管夹支架.jpg",
+      "slug": "elbows-and-pipe-supports-img-027",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
+    },
+    {
+      "id": "product-211",
+      "categoryId": "elbows-and-pipe-supports",
+      "categoryName": "弯头支吊架",
+      "name": "U型螺栓管夹",
+      "specification": "按图定制",
+      "applications": [],
+      "features": [],
+      "connectionType": null,
+      "description": "U 型螺栓管夹，用于将管道固定在支吊架或钢结构上，安装简便，荷载路径清晰，可按管径与螺栓规格选型。",
+      "image": "/images/hp-products/弯头支吊架/U型螺栓管夹.jpg",
+      "slug": "elbows-and-pipe-supports-img-028",
+      "macroCategories": [
+        "pipe-fittings"
+      ]
     }
   ],
   "groupedProducts": {
@@ -4509,6 +4965,41 @@
         "product-183"
       ],
       "count": 32
+    },
+    "elbows-and-pipe-supports": {
+      "id": "elbows-and-pipe-supports",
+      "name": "弯头支吊架",
+      "productIds": [
+        "product-184",
+        "product-185",
+        "product-186",
+        "product-187",
+        "product-188",
+        "product-189",
+        "product-190",
+        "product-191",
+        "product-192",
+        "product-193",
+        "product-194",
+        "product-195",
+        "product-196",
+        "product-197",
+        "product-198",
+        "product-199",
+        "product-200",
+        "product-201",
+        "product-202",
+        "product-203",
+        "product-204",
+        "product-205",
+        "product-206",
+        "product-207",
+        "product-208",
+        "product-209",
+        "product-210",
+        "product-211"
+      ],
+      "count": 28
     }
   }
 }

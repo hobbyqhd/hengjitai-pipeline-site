@@ -890,7 +890,7 @@
                         
                         this.isLoading = false;
                     } catch (error) {
-                        console.error('{{JS_ERROR_LOAD_PRODUCTS}}:', error);
+                        console.error('Failed to load products data:', error);
                         this.isLoading = false;
                     }
                 },
@@ -912,22 +912,22 @@
                     if (imageViewerOverlay) {
                         // 点击背景关闭 - 修复事件绑定
                         imageViewerOverlay.addEventListener('click', (e) => {
-                            console.log('{{JS_LOG_CLICK_VIEWER}}:', e.target.id, e.target.className);
+                            console.log('Click event:', e.target.id, e.target.className);
                             
                             // 如果点击的是图片本身，不关闭
                             if (e.target === zoomedImage) {
-                                console.log('{{JS_LOG_CLICK_IMAGE}}');
+                                console.log('Clicked product image');
                                 return;
                             }
                             
                             // 如果点击的是关闭按钮或其子元素，不处理（让按钮自己处理）
                             if (e.target.closest('#close-viewer')) {
-                                console.log('{{JS_LOG_CLICK_CLOSE_BUTTON}}');
+                                console.log('Clicked close button');
                                 return;
                             }
                             
                             // 其他情况都视为点击背景，执行关闭
-                            console.log('{{JS_LOG_CLICK_BACKGROUND}}');
+                            console.log('Clicked background');
                             e.preventDefault();
                             e.stopPropagation();
                             this.hideImage();
@@ -940,7 +940,7 @@
                             e.preventDefault();
                             e.stopPropagation();
                             this.hideImage();
-                            console.log('{{JS_LOG_CLICK_IMAGE_CLOSE}}');
+                            console.log('Clicked image to close');
                         });
                     }
                 },
@@ -1060,7 +1060,7 @@
                         
                         // 添加图片加载错误处理
                         image.onerror = () => {
-                            console.log('{{JS_ERROR_IMAGE_LOAD}}:', src);
+                            console.log('Image failed to load:', src);
                             // 添加错误样式类
                             image.classList.add('image-error');
                             // 清除src以避免显示默认的破损图片图标
@@ -1091,9 +1091,9 @@
                             viewer.style.opacity = '1';
                         }, 10);
                         
-                        console.log('{{JS_LOG_VIEWER_OPENED}}:', src);
+                        console.log('Image viewer opened:', src);
                     } else {
-                        console.error('{{JS_ERROR_VIEWER_NOT_FOUND}}');
+                        console.error('Image viewer element not found');
                     }
                 },
                 
@@ -1122,12 +1122,12 @@
                             }
                         }, 300);
                         
-                        console.log('{{JS_LOG_VIEWER_CLOSED}}');
+                        console.log('Image viewer closed');
                     }
                 },
                 
                 handleImageError(event) {
-                    console.log('{{JS_LOG_IMAGE_ERROR}}');
+                    console.log('Image error event');
                     // 图片加载失败时使用默认图片
                     if (event.target.src !== '/images/hp-products/default.svg') {
                         event.target.src = '/images/hp-products/default.svg';
@@ -1135,16 +1135,16 @@
                 },
                 
                 openProductDetails(product) {
-                    console.log('{{JS_LOG_OPEN_PRODUCT_DETAILS}}:', product);
+                    console.log('Open product details:', product);
                     
                     if (!product) {
-                        console.error('{{JS_ERROR_PRODUCT_EMPTY}}');
+                        console.error('Product data is empty');
                         return;
                     }
                     
                     const modal = document.getElementById('product-modal');
                     if (!modal) {
-                        console.error('{{JS_ERROR_MODAL_NOT_FOUND}}');
+                        console.error('Product modal not found');
                         return;
                     }
                     
@@ -1152,7 +1152,7 @@
                         // 设置标题
                         const titleEl = document.getElementById('product-modal-title');
                         if (titleEl) {
-                            titleEl.textContent = product.name || '{{JS_DEFAULT_UNKNOWN_PRODUCT}}';
+                            titleEl.textContent = product.name || '製品名不明';
                         }
                         
                         // 设置图片
@@ -1166,14 +1166,14 @@
                         // 设置分类标签
                         const categoriesEl = document.getElementById('product-modal-categories');
                         if (categoriesEl) {
-                            const categoryName = product.categoryName || '{{JS_DEFAULT_UNCATEGORIZED}}';
+                            const categoryName = product.categoryName || '未分類';
                             categoriesEl.innerHTML = `<span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">${categoryName}</span>`;
                         }
                         
                         // 设置规格
                         const specEl = document.getElementById('product-modal-specification');
                         if (specEl) {
-                            const specification = product.specification || '{{JS_DEFAULT_NO_SPECIFICATION}}';
+                            const specification = product.specification || '仕様はプロジェクトに応じてご提供します。';
                             specEl.innerHTML = `<h4 class="font-semibold text-gray-800 mb-2">製品仕様</h4><p class="text-gray-600">${specification}</p>`;
                         }
                         
@@ -1211,7 +1211,7 @@
                         // 设置描述
                         const descEl = document.getElementById('product-modal-description');
                         if (descEl) {
-                            const description = product.description || '{{JS_DEFAULT_NO_DESCRIPTION}}';
+                            const description = product.description || '詳細説明は準備中です。営業までお問い合わせください。';
                             descEl.innerHTML = `<h4 class="font-semibold text-gray-800 mb-2">製品説明</h4><p class="text-gray-700 leading-relaxed">${description}</p>`;
                         }
                         
@@ -1220,11 +1220,11 @@
                         modal.classList.add('flex');
                         document.body.style.overflow = 'hidden';
                         
-                        console.log('{{JS_LOG_MODAL_OPENED}}');
+                        console.log('Product modal opened');
                         
                     } catch (error) {
-                        console.error('{{JS_ERROR_OPEN_MODAL}}:', error);
-                        alert('{{JS_ALERT_OPEN_MODAL_FAILED}}');
+                        console.error('Failed to open product modal:', error);
+                        alert('詳細を開けませんでした。ページを再読み込みしてください。');
                     }
                 },
                 
@@ -1235,7 +1235,7 @@
                         modal.classList.remove('flex');
                         document.body.style.overflow = '';
                         
-                        console.log('{{JS_LOG_MODAL_CLOSED}}');
+                        console.log('Product modal closed');
                     }
                 }
             },

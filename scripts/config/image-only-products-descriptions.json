@@ -1,0 +1,122 @@
+{
+  "弯头支吊架": {
+    "default": {
+      "cn": "弯头、法兰、管夹与支吊架类管道配件，可按设计图纸与工况定制，适用于固定、导向、限位及连接等场景。详情欢迎联系销售获取技术资料。",
+      "en": "Pipe accessories including elbows, flanges, clamps and supports. Custom fabrication per drawings and service conditions for fixation, guiding, restraint and connection. Contact sales for technical data sheets."
+    },
+    "products": {
+      "180°定制高压法兰管件": {
+        "cn": "180° 高压法兰连接管件，适用于高压、大曲率转向的管段布置，可按压力等级与材质定制加工与检验。",
+        "en": "180° high-pressure flanged fitting for tight-radius routing under elevated pressure; material and pressure class per project with inspection as required."
+      },
+      "90度大口径钢制弯头": {
+        "cn": "大口径 90° 钢制弯头，用于主管线方向改变，焊接或法兰端可按项目匹配，适合长输与工业管线。",
+        "en": "Large-diameter 90° steel elbow for mainline direction changes; weld or flanged ends matched to project requirements for transmission and industrial piping."
+      },
+      "U型螺栓管夹": {
+        "cn": "U 型螺栓管夹，用于将管道固定在支吊架或钢结构上，安装简便，荷载路径清晰，可按管径与螺栓规格选型。",
+        "en": "U-bolt pipe clamp for securing pipe to supports or steel structure; straightforward installation and clear load path, sized by pipe OD and bolt specification."
+      },
+      "保温固定管托": {
+        "cn": "带保温结构的固定管托，限制管道竖向与横向位移同时兼顾绝热层保护，常用于冷热媒管道。",
+        "en": "Insulated fixed pipe shoe limiting vertical and lateral movement while protecting the insulation jacket; common on hot/cold medium lines."
+      },
+      "保温滑动管托": {
+        "cn": "保温滑动管托，允许管道轴向热胀冷缩位移，降低约束应力，并保持保温层连续与导向。",
+        "en": "Insulated sliding pipe support permitting axial thermal expansion while reducing restraint stress and maintaining insulation continuity and guidance."
+      },
+      "保温管夹支座": {
+        "cn": "保温管夹支座，将管夹功能与支承结合，适用于中小管径的保温管道支吊点布置。",
+        "en": "Insulated clamp support combining clamping and bearing for small/medium insulated piping support points."
+      },
+      "双孔保温管托": {
+        "cn": "双孔保温管托，双紧固点分布荷载，提高稳定性，适合保温层较厚或振动轻微场合。",
+        "en": "Two-bolt insulated shoe for better load distribution and stability; suited to thicker jackets or light vibration duty."
+      },
+      "双管夹固定支座": {
+        "cn": "双管夹固定支座，双夹持结构增强侧向约束，用于需要明确固定端的并行或小间距管位。",
+        "en": "Twin-clamp fixed support providing enhanced lateral restraint for parallel or closely spaced lines at fixed anchor locations."
+      },
+      "双管夹滑动支座": {
+        "cn": "双管夹滑动支座，在保持夹持力的同时允许轴向滑动，兼顾导向与热位移。",
+        "en": "Twin-clamp sliding support retaining clamping force while allowing axial travel for thermal movement and light guidance."
+      },
+      "双管夹限位支座": {
+        "cn": "双管夹限位支座，限制过量位移并防止脱架，用于需要行程控制的管段。",
+        "en": "Twin-clamp stop/limit support restricting excessive travel and preventing disengagement where stroke control is required."
+      },
+      "双螺栓管夹组件": {
+        "cn": "双螺栓管夹组件，模块化安装，便于现场调整，适合标准管径系列的快速固定。",
+        "en": "Two-bolt clamp assembly for modular installation and field adjustment across standard pipe sizes."
+      },
+      "各种法兰现货供应": {
+        "cn": "多规格法兰现货或可短期排产，涵盖常用压力等级与密封面形式，配套弯头、直管与阀门接口。",
+        "en": "Flanges available from stock or short lead time across common pressure classes and facings to mate elbows, spools and valves."
+      },
+      "四向限位管夹组件": {
+        "cn": "四向限位管夹组件，多向约束位移，用于防止管道在复杂荷载下窜动。",
+        "en": "Four-way limiting clamp assembly restraining movement in multiple directions under complex loading."
+      },
+      "四角限位管夹支座": {
+        "cn": "四角限位管夹支座，四角承力均衡，提高限位刚度，适合重要管段。",
+        "en": "Four-corner limit clamp support for balanced bearing and higher restraint stiffness on critical runs."
+      },
+      "固定管夹支座": {
+        "cn": "固定管夹支座，将管道可靠固定于支吊点，传递力与力矩至承载结构。",
+        "en": "Fixed clamp support anchoring the pipe at the support point and transferring forces/moments to the structure."
+      },
+      "大口径90度钢制弯头批量成品": {
+        "cn": "大口径 90° 钢制弯头批量成品，尺寸一致、焊缝与坡口按标准控制，适合工程批量供货。",
+        "en": "Large 90° steel elbows in batch production with consistent dimensions and controlled welds/bevels for project-scale supply."
+      },
+      "大口径法兰90度钢制弯头": {
+        "cn": "大口径法兰端 90° 弯头，便于与法兰管道段对装与检修拆卸，适合泵房、站场等模块化布置。",
+        "en": "Large flanged 90° elbow for bolt-up to flanged spools and easier maintenance; suited to modular pump stations and yards."
+      },
+      "定制高压法兰直管段": {
+        "cn": "定制高压法兰直管段，两端法兰焊接或整体加工按图，用于短接、设备口连接或试压段。",
+        "en": "Custom high-pressure flanged spool with weld-on or integral flanges per drawing for equipment nozzles, jumpers or hydro test sections."
+      },
+      "弯头管托支座": {
+        "cn": "弯头管托支座，在弯头附近提供局部支承与荷载分配，降低弯头颈部应力集中风险。",
+        "en": "Elbow shoe supporting the fitting locally to distribute loads and reduce stress concentration near the elbow intrados."
+      },
+      "方形导向管托": {
+        "cn": "方形导向管托，提供定向滑动面，限制横向位移而允许轴向热胀，用于导向支架。",
+        "en": "Square guided shoe with sliding planes limiting lateral travel while permitting axial expansion for guided support arrangements."
+      },
+      "碳钢无缝弯头批量成品": {
+        "cn": "碳钢无缝弯头批量成品，适合中高压清洁工况，材质与壁厚可按标准清单供货。",
+        "en": "Carbon steel seamless elbows in batches for medium/high pressure service; wall and grade per applicable standards."
+      },
+      "立式管夹支座": {
+        "cn": "立式管夹支座，用于竖向或立管的夹持支承，保持对中与防振辅助。",
+        "en": "Vertical clamp support for risers or vertical runs maintaining alignment with auxiliary anti-vibration benefit."
+      },
+      "轻型U型管夹": {
+        "cn": "轻型 U 型管夹，适用于中小荷载与轻载支吊，安装快捷。",
+        "en": "Light-duty U-clamp for small pipes and low support loads with quick installation."
+      },
+      "重型U型管夹支架": {
+        "cn": "重型 U 型管夹支架，加厚型材与紧固件，用于大管径或较高机械荷载。",
+        "en": "Heavy-duty U-clamp bracket with reinforced sections and fasteners for large OD or higher mechanical loads."
+      },
+      "重型保温管夹支座": {
+        "cn": "重型保温管夹支座，兼顾厚保温层与较高竖向荷载，用于主蒸汽或高温介质管道。",
+        "en": "Heavy insulated clamp support for thick jackets and higher vertical loads on main steam or elevated-temperature lines."
+      },
+      "防腐钢管管件半成品": {
+        "cn": "防腐涂层钢管管件半成品，可按项目要求完成坡口、组对前检验与后续涂装工艺衔接。",
+        "en": "Anti-corrosion coated pipe/fitting semi-finished products with beveling and pre-fit inspection ready for field coating workflow."
+      },
+      "隔热固定管托": {
+        "cn": "隔热固定管托，采用隔热垫块降低热桥，在固定点保持能量损失可控。",
+        "en": "Insulated fixed shoe with insulating blocks to reduce thermal bridging at anchor points."
+      },
+      "鞍式滑动管托": {
+        "cn": "鞍式滑动管托，鞍形承面贴合管外径，滑动副低摩擦，适合大管径水平敷设。",
+        "en": "Saddle sliding shoe conforming to OD with low-friction slide pair; common for large horizontal runs."
+      }
+    }
+  }
+}

@@ -30,6 +30,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { parse } = require('csv-parse/sync');
 const macroCategoryConfig = require('./config/macro-category-mapping.json');
 
@@ -57,8 +58,27 @@ const categoryMapping = {
   '法兰连接矿用涂塑钢管': 'flange-connection-mining-plastic-coated-steel-pipes',
   '消防涂塑钢管': 'fire-protection-plastic-coated-steel-pipes',
   '燃气涂塑钢管': 'gas-plastic-coated-steel-pipes',
-  '给水涂塑钢管': 'water-supply-plastic-coated-steel-pipes'
+  '给水涂塑钢管': 'water-supply-plastic-coated-steel-pipes',
+  '弯头支吊架': 'elbows-and-pipe-supports'
 };
+
+/** 与 CSV 无关、仅存在于 hp-products 子目录的分类，在各语言下的名称 */
+const FOLDER_CATEGORY_LABELS = {
+  '弯头支吊架': {
+    cn: '弯头支吊架',
+    en: 'Elbows and Pipe Supports',
+    jp: 'エルボ・管托支吊架',
+    ru: 'Отводы и опоры труб',
+    ar: 'الأكواع وحوامل الأنابيب',
+    es: 'Codos y Soportes de Tubería',
+    fr: 'Coudes et Supports de Tuyauterie',
+    pt: 'Cotovelos e Suportes de Tubulação',
+    hi: 'एल्बो और पाइप सपोर्ट',
+    de: 'Rohrbogen und Rohrhalterungen'
+  }
+};
+
+const HP_PRODUCTS_ROOT = path.join(__dirname, '..', 'images', 'hp-products');
 
 // 应用领域标准化
 const applicationMapping = {
@@ -124,6 +144,165 @@ function resolveMacroCategories({ categoryId, categoryName, productName, descrip
   return Array.from(resolved);
 }
 
+function listHpProductFolders() {
+  if (!fs.existsSync(HP_PRODUCTS_ROOT)) return [];
+  return fs
+    .readdirSync(HP_PRODUCTS_ROOT, { withFileTypes: true })
+    .filter(entry => entry.isDirectory() && !entry.name.startsWith('.'))
+    .map(entry => entry.name)
+    .sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'));
+}
+
+function listImagesInFolder(folderPath) {
+  if (!fs.existsSync(folderPath)) return [];
+  return fs
+    .readdirSync(folderPath)
+    .filter(name => /\.(jpg|jpeg|png|webp)$/i.test(name))
+    .sort((a, b) => a.localeCompare(b, 'zh-Hans-CN'));
+}
+
+function folderNameToCategoryId(folderName) {
+  if (categoryMapping[folderName]) return categoryMapping[folderName];
+  console.warn(`⚠️  hp-products 子目录未登记 categoryMapping: ${folderName}，已使用占位 categoryId`);
+  const hash = crypto.createHash('sha256').update(folderName).digest('hex').slice(0, 12);
+  return `hp-folder-${hash}`;
+}
+
+function getLocalizedFolderCategoryName(folderName, lang) {
+  const labels = FOLDER_CATEGORY_LABELS[folderName];
+  if (labels) return labels[lang] || labels.en || folderName;
+  return folderName;
+}
+
+function pickFirstImageFromFolder(folderName) {
+  const imgs = listImagesInFolder(path.join(HP_PRODUCTS_ROOT, folderName));
+  if (!imgs.length) return null;
+  return `/images/hp-products/${folderName}/${imgs[0]}`;
+}
+
+function maxNumericProductIndex(products) {
+  let max = 0;
+  for (const p of products) {
+    const m = /^product-(\d+)$/.exec(p.id);
+    if (m) max = Math.max(max, parseInt(m[1], 10));
+  }
+  return max;
+}
+
+/** 图片兜底产品时：若 categoryId 在映射表里配置了宏类，则仅使用该配置（避免关键词叠加多个宏类）。 */
+function macroCategoriesForImageOnlyCategory(categoryId, payload) {
+  const mapped = macroCategoryConfig.categoryIdToMacroCategories?.[categoryId];
+  const allowed = new Set(macroCategoryConfig.macroCategories || []);
+  if (Array.isArray(mapped) && mapped.some(m => allowed.has(m))) {
+    return mapped.filter(m => allowed.has(m));
+  }
+  return resolveMacroCategories(payload);
+}
+
+let imageOnlyDescriptionsCache = null;
+function loadImageOnlyDescriptions() {
+  if (imageOnlyDescriptionsCache !== null) return imageOnlyDescriptionsCache;
+  const configPath = path.join(__dirname, 'config', 'image-only-products-descriptions.json');
+  if (!fs.existsSync(configPath)) {
+    imageOnlyDescriptionsCache = {};
+    return imageOnlyDescriptionsCache;
+  }
+  imageOnlyDescriptionsCache = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+  return imageOnlyDescriptionsCache;
+}
+
+/** 仅图片导入的产品：从 scripts/config/image-only-products-descriptions.json 读取多语言描述 */
+function descriptionForImageOnlyProduct(folderName, stem, lang) {
+  const all = loadImageOnlyDescriptions();
+  const block = all[folderName];
+  if (!block) return '';
+  const row = block.products?.[stem];
+  const line = row?.[lang] || row?.en || row?.cn;
+  if (line) return line;
+  const def = block.default?.[lang] || block.default?.en || block.default?.cn;
+  return def || '';
+}
+
+/**
+ * 目录在磁盘存在但 CSV 无产品时：为该目录下的图片各生成一条产品（不改动已有 CSV 分类）。
+ */
+function appendImageOnlyProductsForOrphanFolders(products, folders, lang) {
+  const additions = [];
+  let nextNum = maxNumericProductIndex(products) + 1;
+
+  for (const folderName of folders) {
+    const categoryId = folderNameToCategoryId(folderName);
+    if (products.some(p => p.categoryId === categoryId)) continue;
+
+    const folderPath = path.join(HP_PRODUCTS_ROOT, folderName);
+    const imageFiles = listImagesInFolder(folderPath);
+    if (!imageFiles.length) continue;
+
+    const categoryName = getLocalizedFolderCategoryName(folderName, lang);
+
+    imageFiles.forEach((fileName, i) => {
+      const stem = fileName.replace(/\.[^.]+$/, '');
+      const descriptionText = descriptionForImageOnlyProduct(folderName, stem, lang);
+      const macroCategories = macroCategoriesForImageOnlyCategory(categoryId, {
+        categoryId,
+        categoryName,
+        productName: stem,
+        description: descriptionText,
+        connectionTypeName: ''
+      });
+
+      additions.push({
+        id: `product-${String(nextNum).padStart(3, '0')}`,
+        categoryId,
+        categoryName,
+        name: stem,
+        specification: lang === 'cn' ? '按图定制' : 'Custom by drawing',
+        applications: [],
+        features: [],
+        connectionType: null,
+        description: descriptionText,
+        image: `/images/hp-products/${folderName}/${fileName}`,
+        slug: `${categoryId}-img-${String(i + 1).padStart(3, '0')}`,
+        macroCategories
+      });
+      nextNum += 1;
+    });
+  }
+
+  return products.concat(additions);
+}
+
+/**
+ * 分类列表与 hp-products 下子目录一一对应（顺序按文件夹名排序）。
+ */
+function generateCategoriesFromFilesystem(folders, groupedProducts, products, lang) {
+  return folders.map(folderName => {
+    const categoryId = folderNameToCategoryId(folderName);
+    const group = groupedProducts[categoryId];
+    const count = group ? group.count : 0;
+
+    let name;
+    let image;
+
+    if (group && group.count > 0) {
+      name = group.name;
+      const firstProduct = products.find(p => p.id === group.productIds[0]);
+      image = firstProduct?.image || pickFirstImageFromFolder(folderName) || '/images/hp-products/default.svg';
+    } else {
+      name = getLocalizedFolderCategoryName(folderName, lang);
+      image = pickFirstImageFromFolder(folderName) || '/images/hp-products/default.svg';
+    }
+
+    return {
+      id: categoryId,
+      name,
+      count,
+      image,
+      url: `hp-products/${categoryId}.html`
+    };
+  });
+}
+
 /**
  * 解析产品特性
  */
@@ -175,7 +354,12 @@ function processProduct(row, index, chineseCategoryName = null, chineseProductNa
   // 处理可能的BOM问题，获取序号
   const serialNumber = row['序号'] || row['﻿序号'] || (index + 1);
   const categoryName = row['产品种类'] || '';
-  const categoryId = categoryMapping[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
+  let categoryId;
+  if (chineseCategoryName && categoryMapping[chineseCategoryName]) {
+    categoryId = categoryMapping[chineseCategoryName];
+  } else {
+    categoryId = categoryMapping[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
+  }
   const productName = row['产品名称'] || '';
   const description = row['产品描述'] || '';
   const connectionTypeName = row['连接类型'] || '';
@@ -201,7 +385,7 @@ function processProduct(row, index, chineseCategoryName = null, chineseProductNa
     } : null,
     description: description,
     image: generateImagePath(categoryName, productName, chineseCategoryName, chineseProductName),
-    slug: `${categoryMapping[categoryName] || 'product'}-${String(serialNumber).padStart(3, '0')}`,
+    slug: `${categoryId}-${String(serialNumber).padStart(3, '0')}`,
     macroCategories
   };
 
@@ -425,9 +609,15 @@ async function generateAllLanguageJsonFiles() {
   
   // 首先创建或加载中文名称映射
   const chineseMapping = await createOrLoadChineseMapping();
-  
+  const hpFolders = listHpProductFolders();
+  if (hpFolders.length === 0) {
+    console.warn('⚠️  未扫描到 images/hp-products 下的子目录，分类列表将仅按 CSV 推断');
+  } else {
+    console.log(`images/hp-products 子目录: ${hpFolders.length} 个（将以此生成分类列表）\n`);
+  }
+
   console.log('\n开始为所有语言生成产品JSON文件...\n');
-  
+
   for (const lang of LANGUAGES) {
     try {
       console.log(`处理语言: ${lang}`);
@@ -480,25 +670,29 @@ async function generateAllLanguageJsonFiles() {
         }
       });
       
-      // 按类别分组
-      const groupedProducts = groupProductsByCategory(products);
-      
-      // 生成分类数据
-      const categories = generateCategories(groupedProducts, products);
+      let mergedProducts = appendImageOnlyProductsForOrphanFolders(products, hpFolders, lang);
+
+      const groupedProducts = groupProductsByCategory(mergedProducts);
+
+      const categories =
+        hpFolders.length > 0
+          ? generateCategoriesFromFilesystem(hpFolders, groupedProducts, mergedProducts, lang)
+          : generateCategories(groupedProducts, mergedProducts);
 
       // 构建最终的JSON结构（仅包含产品数据，不包含页面翻译）
-      const macroCoverage = buildMacroCoverage(products);
+      const macroCoverage = buildMacroCoverage(mergedProducts);
       const jsonData = {
         metadata: {
-          totalProducts: products.length,
+          totalProducts: mergedProducts.length,
           totalCategories: categories.length,
           lastUpdated: new Date().toISOString(),
           language: lang,
           languageCode: getLanguageCode(lang),
-          macroCategoryCoverage: macroCoverage.summary
+          macroCategoryCoverage: macroCoverage.summary,
+          hpProductsFoldersCount: hpFolders.length
         },
         categories: categories,
-        products: products,
+        products: mergedProducts,
         groupedProducts: groupedProducts
       };
 
@@ -509,7 +703,7 @@ async function generateAllLanguageJsonFiles() {
       // 写入JSON文件
       fs.writeFileSync(outputPath, JSON.stringify(jsonData, null, 2), 'utf-8');
       console.log(`✅ ${lang} 语言的JSON文件已生成: ${outputPath}`);
-      console.log(`   - 产品数量: ${products.length}`);
+      console.log(`   - 产品数量: ${mergedProducts.length}`);
       console.log(`   - 分类数量: ${categories.length}\n`);
       
     } catch (error) {

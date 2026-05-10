@@ -69,6 +69,104 @@ function getSimplifiedKeyword(categoryId, lang) {
     return keywords[lang] || keywords.en || categoryId;
 }
 
+/** 产品页 Vue 内联脚本中的 {{JS_*}} 占位符（须生成时替换，避免页面上出现字面量） */
+const PRODUCT_PAGE_JS_CONSOLE_EN = {
+  JS_ERROR_LOAD_PRODUCTS: 'Failed to load products data',
+  JS_LOG_CLICK_VIEWER: 'Click event',
+  JS_LOG_CLICK_IMAGE: 'Clicked product image',
+  JS_LOG_CLICK_CLOSE_BUTTON: 'Clicked close button',
+  JS_LOG_CLICK_BACKGROUND: 'Clicked background',
+  JS_LOG_CLICK_IMAGE_CLOSE: 'Clicked image to close',
+  JS_ERROR_IMAGE_LOAD: 'Image failed to load',
+  JS_LOG_VIEWER_OPENED: 'Image viewer opened',
+  JS_ERROR_VIEWER_NOT_FOUND: 'Image viewer element not found',
+  JS_LOG_VIEWER_CLOSED: 'Image viewer closed',
+  JS_LOG_IMAGE_ERROR: 'Image error event',
+  JS_LOG_OPEN_PRODUCT_DETAILS: 'Open product details',
+  JS_ERROR_PRODUCT_EMPTY: 'Product data is empty',
+  JS_ERROR_MODAL_NOT_FOUND: 'Product modal not found',
+  JS_LOG_MODAL_OPENED: 'Product modal opened',
+  JS_ERROR_OPEN_MODAL: 'Failed to open product modal',
+  JS_LOG_MODAL_CLOSED: 'Product modal closed'
+};
+
+const PRODUCT_PAGE_JS_USER = {
+  cn: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: '未知产品',
+    JS_DEFAULT_UNCATEGORIZED: '未分类',
+    JS_DEFAULT_NO_SPECIFICATION: '规格可按项目定制，请联系获取明细。',
+    JS_DEFAULT_NO_DESCRIPTION: '暂无详细描述，欢迎联系销售获取技术资料与选型建议。',
+    JS_ALERT_OPEN_MODAL_FAILED: '无法打开产品详情，请刷新页面后重试。'
+  },
+  en: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'Unknown product',
+    JS_DEFAULT_UNCATEGORIZED: 'Uncategorized',
+    JS_DEFAULT_NO_SPECIFICATION: 'Specifications available on request.',
+    JS_DEFAULT_NO_DESCRIPTION: 'No detailed description available. Contact sales for datasheets and selection support.',
+    JS_ALERT_OPEN_MODAL_FAILED: 'Could not open product details. Please refresh and try again.'
+  },
+  jp: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: '製品名不明',
+    JS_DEFAULT_UNCATEGORIZED: '未分類',
+    JS_DEFAULT_NO_SPECIFICATION: '仕様はプロジェクトに応じてご提供します。',
+    JS_DEFAULT_NO_DESCRIPTION: '詳細説明は準備中です。営業までお問い合わせください。',
+    JS_ALERT_OPEN_MODAL_FAILED: '詳細を開けませんでした。ページを再読み込みしてください。'
+  },
+  ru: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'Неизвестный продукт',
+    JS_DEFAULT_UNCATEGORIZED: 'Без категории',
+    JS_DEFAULT_NO_SPECIFICATION: 'Спецификация предоставляется по запросу.',
+    JS_DEFAULT_NO_DESCRIPTION: 'Подробное описание отсутствует. Свяжитесь с отделом продаж.',
+    JS_ALERT_OPEN_MODAL_FAILED: 'Не удалось открыть карточку. Обновите страницу.'
+  },
+  ar: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'منتج غير معروف',
+    JS_DEFAULT_UNCATEGORIZED: 'غير مصنف',
+    JS_DEFAULT_NO_SPECIFICATION: 'المواصفات متاحة عند الطلب.',
+    JS_DEFAULT_NO_DESCRIPTION: 'لا يوجد وصف تفصيلي. تواصل مع المبيعات للحصول على الدعم.',
+    JS_ALERT_OPEN_MODAL_FAILED: 'تعذر فتح التفاصيل. حدّث الصفحة وحاول مرة أخرى.'
+  },
+  es: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'Producto desconocido',
+    JS_DEFAULT_UNCATEGORIZED: 'Sin categoría',
+    JS_DEFAULT_NO_SPECIFICATION: 'Especificaciones disponibles bajo solicitud.',
+    JS_DEFAULT_NO_DESCRIPTION: 'No hay descripción detallada. Contacte a ventas para soporte.',
+    JS_ALERT_OPEN_MODAL_FAILED: 'No se pudieron abrir los detalles. Actualice la página e inténtelo de nuevo.'
+  },
+  fr: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'Produit inconnu',
+    JS_DEFAULT_UNCATEGORIZED: 'Non classé',
+    JS_DEFAULT_NO_SPECIFICATION: 'Spécifications disponibles sur demande.',
+    JS_DEFAULT_NO_DESCRIPTION: 'Aucune description détaillée. Contactez le service commercial.',
+    JS_ALERT_OPEN_MODAL_FAILED: "Impossible d'ouvrir les détails. Actualisez la page et réessayez."
+  },
+  pt: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'Produto desconhecido',
+    JS_DEFAULT_UNCATEGORIZED: 'Sem categoria',
+    JS_DEFAULT_NO_SPECIFICATION: 'Especificações disponíveis sob consulta.',
+    JS_DEFAULT_NO_DESCRIPTION: 'Sem descrição detalhada. Contacte as vendas para suporte.',
+    JS_ALERT_OPEN_MODAL_FAILED: 'Não foi possível abrir os detalhes. Atualize a página e tente novamente.'
+  },
+  hi: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'अज्ञात उत्पाद',
+    JS_DEFAULT_UNCATEGORIZED: 'अवर्गीकृत',
+    JS_DEFAULT_NO_SPECIFICATION: 'विनिर्देश अनुरोध पर उपलब्ध।',
+    JS_DEFAULT_NO_DESCRIPTION: 'विस्तृत विवरण उपलब्ध नहीं। बिक्री से संपर्क करें।',
+    JS_ALERT_OPEN_MODAL_FAILED: 'विवरण नहीं खुल सका। पृष्ठ रीफ़्रेश करके पुनः प्रयास करें।'
+  },
+  de: {
+    JS_DEFAULT_UNKNOWN_PRODUCT: 'Unbekanntes Produkt',
+    JS_DEFAULT_UNCATEGORIZED: 'Nicht kategorisiert',
+    JS_DEFAULT_NO_SPECIFICATION: 'Spezifikationen auf Anfrage.',
+    JS_DEFAULT_NO_DESCRIPTION: 'Keine ausführliche Beschreibung. Bitte Vertrieb kontaktieren.',
+    JS_ALERT_OPEN_MODAL_FAILED: 'Details konnten nicht geöffnet werden. Seite neu laden und erneut versuchen.'
+  }
+};
+
+function getProductPageJsStrings(language) {
+  return { ...PRODUCT_PAGE_JS_CONSOLE_EN, ...(PRODUCT_PAGE_JS_USER[language] || PRODUCT_PAGE_JS_USER.en) };
+}
+
 // 多语言配置
 const languages = {
   cn: {
@@ -965,7 +1063,7 @@ function generateLanguagePage(language) {
     return;
   }
 
-  const translations = { ...base };
+  const translations = { ...base, ...getProductPageJsStrings(language) };
   applyProductsSeoFromConfig(translations, language);
   
   const result = replaceTemplateVars(template, translations, language);
